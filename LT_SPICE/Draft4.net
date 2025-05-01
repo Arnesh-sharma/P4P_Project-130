@@ -1,4 +1,4 @@
-* D:\p4p\P4P_Project-130\LT_SPICE\Draft4.asc
+* C:\Users\ash750\OneDrive - The University of Auckland\Documents\GitHub\P4P_Project-130\LT_SPICE\Draft4.asc
 C1 Vo V1 300n
 D1 0 Vo D
 D2 0 N004 D
@@ -32,7 +32,7 @@ D13 N007 N011 D
 D14 N011 N008 D
 D15 N008 output D
 .model D D
-.lib C:\Users\arnes\AppData\Local\LTspice\lib\cmp\standard.dio
+.lib C:\Users\ash750\OneDrive - The University of Auckland\Documents\LTspiceXVII\lib\cmp\standard.dio
 .tran 0 5 0 100
 * Sim settings
 * Half wave voltage doubler
