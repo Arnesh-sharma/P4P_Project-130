@@ -11,12 +11,15 @@
 */
 #include "project.h"
 
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     CapSense_1_Start(); 
     
     CapSense_1_InitializeAllBaselines(); 
+    
+
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
@@ -41,11 +44,13 @@ int main(void)
 
 void CapSense_diplay(void){
     
-    if(CapSense_1_CheckIsWidgetActive(CapSense_1_)){
+    if(CapSense_1_CheckIsWidgetActive(CapSense_1_SENSOR_BUTTON0__BTN)){
         LED_Write(1); 
     }else{
-    LED_Write(0); 
+        LED_Write(0); 
     }
 }
+
+
 
 /* [] END OF FILE */

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
   28:Generated_Source\PSoC5/CapSense_1_PM.c **** ********************************************************************************
   29:Generated_Source\PSoC5/CapSense_1_PM.c **** *
   30:Generated_Source\PSoC5/CapSense_1_PM.c **** * Summary:
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 2
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 2
 
 
   31:Generated_Source\PSoC5/CapSense_1_PM.c **** *  Saves customer configuration of CapSense none-retention registers. Resets 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
   49 0014 00000000 		.word	.LANCHOR0
   50              		.cfi_endproc
   51              	.LFE0:
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 3
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 3
 
 
   52              		.size	CapSense_1_SaveConfig, .-CapSense_1_SaveConfig
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
   67              		.cfi_offset 3, -8
   68              		.cfi_offset 14, -4
  103:Generated_Source\PSoC5/CapSense_1_PM.c ****     /* Check and save enable state */
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 4
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 4
 
 
  104:Generated_Source\PSoC5/CapSense_1_PM.c ****     if(CapSense_1_IS_CAPSENSE_ENABLE(CapSense_1_CONTROL_REG))
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  119:Generated_Source\PSoC5/CapSense_1_PM.c **** * Function Name: CapSense_1_RestoreConfig
  120:Generated_Source\PSoC5/CapSense_1_PM.c **** ********************************************************************************
  121:Generated_Source\PSoC5/CapSense_1_PM.c **** *
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 5
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 5
 
 
  122:Generated_Source\PSoC5/CapSense_1_PM.c **** * Summary:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  167:Generated_Source\PSoC5/CapSense_1_PM.c ****         /* Window PWM  - FF Timer register are retention */
  168:Generated_Source\PSoC5/CapSense_1_PM.c ****         /* Raw Counter - FF Timer register are retention */
  169:Generated_Source\PSoC5/CapSense_1_PM.c ****     #else
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 6
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 6
 
 
  170:Generated_Source\PSoC5/CapSense_1_PM.c ****         
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  138              		.align	2
  139              	.L12:
  140 0028 46640040 		.word	1073767494
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 7
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 7
 
 
  141 002c 46650040 		.word	1073767750
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  157              		.cfi_startproc
  158              		@ args = 0, pretend = 0, frame = 0
  159              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 8
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 8
 
 
  160 0000 08B5     		push	{r3, lr}
@@ -469,28 +469,28 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  199 0006 00000000 		.4byte	.Ldebug_abbrev0
  200 000a 04       		.byte	0x4
  201 000b 01       		.uleb128 0x1
- 202 000c C5000000 		.4byte	.LASF27
+ 202 000c 4F000000 		.4byte	.LASF27
  203 0010 0C       		.byte	0xc
- 204 0011 81010000 		.4byte	.LASF28
- 205 0015 41000000 		.4byte	.LASF29
+ 204 0011 0B010000 		.4byte	.LASF28
+ 205 0015 6B010000 		.4byte	.LASF29
  206 0019 00000000 		.4byte	.Ldebug_ranges0+0
  207 001d 00000000 		.4byte	0
  208 0021 00000000 		.4byte	.Ldebug_line0
  209 0025 02       		.uleb128 0x2
  210 0026 01       		.byte	0x1
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 9
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 9
 
 
  211 0027 06       		.byte	0x6
- 212 0028 95020000 		.4byte	.LASF0
+ 212 0028 55020000 		.4byte	.LASF0
  213 002c 02       		.uleb128 0x2
  214 002d 01       		.byte	0x1
  215 002e 08       		.byte	0x8
- 216 002f B7000000 		.4byte	.LASF1
+ 216 002f 41000000 		.4byte	.LASF1
  217 0033 02       		.uleb128 0x2
  218 0034 02       		.byte	0x2
  219 0035 05       		.byte	0x5
- 220 0036 51020000 		.4byte	.LASF2
+ 220 0036 11020000 		.4byte	.LASF2
  221 003a 02       		.uleb128 0x2
  222 003b 02       		.byte	0x2
  223 003c 07       		.byte	0x7
@@ -498,19 +498,19 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  225 0041 02       		.uleb128 0x2
  226 0042 04       		.byte	0x4
  227 0043 05       		.byte	0x5
- 228 0044 5B020000 		.4byte	.LASF4
+ 228 0044 1B020000 		.4byte	.LASF4
  229 0048 02       		.uleb128 0x2
  230 0049 04       		.byte	0x4
  231 004a 07       		.byte	0x7
- 232 004b 69010000 		.4byte	.LASF5
+ 232 004b F3000000 		.4byte	.LASF5
  233 004f 02       		.uleb128 0x2
  234 0050 08       		.byte	0x8
  235 0051 05       		.byte	0x5
- 236 0052 36020000 		.4byte	.LASF6
+ 236 0052 F6010000 		.4byte	.LASF6
  237 0056 02       		.uleb128 0x2
  238 0057 08       		.byte	0x8
  239 0058 07       		.byte	0x7
- 240 0059 EE010000 		.4byte	.LASF7
+ 240 0059 AE010000 		.4byte	.LASF7
  241 005d 03       		.uleb128 0x3
  242 005e 04       		.byte	0x4
  243 005f 05       		.byte	0x5
@@ -518,14 +518,14 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  245 0064 02       		.uleb128 0x2
  246 0065 04       		.byte	0x4
  247 0066 07       		.byte	0x7
- 248 0067 E1010000 		.4byte	.LASF8
+ 248 0067 A1010000 		.4byte	.LASF8
  249 006b 04       		.uleb128 0x4
- 250 006c 7B010000 		.4byte	.LASF9
+ 250 006c 05010000 		.4byte	.LASF9
  251 0070 02       		.byte	0x2
  252 0071 E701     		.2byte	0x1e7
  253 0073 2C000000 		.4byte	0x2c
  254 0077 04       		.uleb128 0x4
- 255 0078 DA010000 		.4byte	.LASF10
+ 255 0078 64010000 		.4byte	.LASF10
  256 007c 02       		.byte	0x2
  257 007d E801     		.2byte	0x1e8
  258 007f 3A000000 		.4byte	0x3a
@@ -536,16 +536,16 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  263 008a 02       		.uleb128 0x2
  264 008b 08       		.byte	0x8
  265 008c 04       		.byte	0x4
- 266 008d C1010000 		.4byte	.LASF12
+ 266 008d 4B010000 		.4byte	.LASF12
  267 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 10
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 10
 
 
  268 0092 01       		.byte	0x1
  269 0093 08       		.byte	0x8
- 270 0094 44020000 		.4byte	.LASF13
+ 270 0094 04020000 		.4byte	.LASF13
  271 0098 04       		.uleb128 0x4
- 272 0099 64010000 		.4byte	.LASF14
+ 272 0099 EE000000 		.4byte	.LASF14
  273 009d 02       		.byte	0x2
  274 009e 9102     		.2byte	0x291
  275 00a0 A4000000 		.4byte	0xa4
@@ -561,36 +561,36 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  285 00ba 02       		.uleb128 0x2
  286 00bb 08       		.byte	0x8
  287 00bc 04       		.byte	0x4
- 288 00bd 89020000 		.4byte	.LASF16
+ 288 00bd 49020000 		.4byte	.LASF16
  289 00c1 02       		.uleb128 0x2
  290 00c2 04       		.byte	0x4
  291 00c3 07       		.byte	0x7
- 292 00c4 17020000 		.4byte	.LASF17
+ 292 00c4 D7010000 		.4byte	.LASF17
  293 00c8 06       		.uleb128 0x6
  294 00c9 02       		.byte	0x2
  295 00ca 03       		.byte	0x3
  296 00cb 84       		.byte	0x84
  297 00cc E9000000 		.4byte	0xe9
  298 00d0 07       		.uleb128 0x7
- 299 00d1 64020000 		.4byte	.LASF18
+ 299 00d1 24020000 		.4byte	.LASF18
  300 00d5 03       		.byte	0x3
  301 00d6 86       		.byte	0x86
  302 00d7 6B000000 		.4byte	0x6b
  303 00db 00       		.byte	0
  304 00dc 07       		.uleb128 0x7
- 305 00dd 49020000 		.4byte	.LASF19
+ 305 00dd 09020000 		.4byte	.LASF19
  306 00e1 03       		.byte	0x3
  307 00e2 89       		.byte	0x89
  308 00e3 6B000000 		.4byte	0x6b
  309 00e7 01       		.byte	0x1
  310 00e8 00       		.byte	0
  311 00e9 08       		.uleb128 0x8
- 312 00ea 70020000 		.4byte	.LASF20
+ 312 00ea 30020000 		.4byte	.LASF20
  313 00ee 03       		.byte	0x3
  314 00ef 8A       		.byte	0x8a
  315 00f0 C8000000 		.4byte	0xc8
  316 00f4 09       		.uleb128 0x9
- 317 00f5 20020000 		.4byte	.LASF21
+ 317 00f5 E0010000 		.4byte	.LASF21
  318 00f9 01       		.byte	0x1
  319 00fa 38       		.byte	0x38
  320 00fb 00000000 		.4byte	.LFB0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  322 0103 01       		.uleb128 0x1
  323 0104 9C       		.byte	0x9c
  324 0105 13010000 		.4byte	0x113
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 11
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 11
 
 
  325 0109 0A       		.uleb128 0xa
@@ -606,7 +606,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  327 010e 85010000 		.4byte	0x185
  328 0112 00       		.byte	0
  329 0113 09       		.uleb128 0x9
- 330 0114 53010000 		.4byte	.LASF22
+ 330 0114 DD000000 		.4byte	.LASF22
  331 0118 01       		.byte	0x1
  332 0119 65       		.byte	0x65
  333 011a 00000000 		.4byte	.LFB1
@@ -622,7 +622,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  343 0136 F4000000 		.4byte	0xf4
  344 013a 00       		.byte	0
  345 013b 0B       		.uleb128 0xb
- 346 013c A8010000 		.4byte	.LASF30
+ 346 013c 32010000 		.4byte	.LASF30
  347 0140 01       		.byte	0x1
  348 0141 90       		.byte	0x90
  349 0142 00000000 		.4byte	.LFB2
@@ -630,7 +630,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  351 014a 01       		.uleb128 0x1
  352 014b 9C       		.byte	0x9c
  353 014c 09       		.uleb128 0x9
- 354 014d C8010000 		.4byte	.LASF23
+ 354 014d 52010000 		.4byte	.LASF23
  355 0151 01       		.byte	0x1
  356 0152 EF       		.byte	0xef
  357 0153 00000000 		.4byte	.LFB3
@@ -654,11 +654,11 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  375 0180 03       		.byte	0x3
  376 0181 00000000 		.4byte	CapSense_1_backup
  377 0185 0D       		.uleb128 0xd
- 378 0186 A1020000 		.4byte	.LASF24
- 379 018a A1020000 		.4byte	.LASF24
+ 378 0186 61020000 		.4byte	.LASF24
+ 379 018a 61020000 		.4byte	.LASF24
  380 018e 03       		.byte	0x3
  381 018f 9E       		.byte	0x9e
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 12
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 12
 
 
  382 0190 0D       		.uleb128 0xd
@@ -667,8 +667,8 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  385 0199 03       		.byte	0x3
  386 019a 94       		.byte	0x94
  387 019b 0D       		.uleb128 0xd
- 388 019c 05020000 		.4byte	.LASF26
- 389 01a0 05020000 		.4byte	.LASF26
+ 388 019c C5010000 		.4byte	.LASF26
+ 389 01a0 C5010000 		.4byte	.LASF26
  390 01a4 03       		.byte	0x3
  391 01a5 92       		.byte	0x92
  392 01a6 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  436 0029 04       		.uleb128 0x4
  437 002a 16       		.uleb128 0x16
  438 002b 00       		.byte	0
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 13
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 13
 
 
  439 002c 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  493 0062 49       		.uleb128 0x49
  494 0063 13       		.uleb128 0x13
  495 0064 00       		.byte	0
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 14
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 14
 
 
  496 0065 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  550 009e 9742     		.uleb128 0x2117
  551 00a0 19       		.uleb128 0x19
  552 00a1 00       		.byte	0
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 15
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 15
 
 
  553 00a2 00       		.byte	0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  607              		.section	.debug_ranges,"",%progbits
  608              	.Ldebug_ranges0:
  609 0000 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 16
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 16
 
 
  610 0004 18000000 		.4byte	.LFE0
@@ -940,162 +940,154 @@ ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 1
  630              	.LASF11:
  631 003b 666C6F61 		.ascii	"float\000"
  631      7400
- 632              	.LASF29:
- 633 0041 433A5C55 		.ascii	"C:\\Users\\ash750\\OneDrive - The University of Auc"
- 633      73657273 
- 633      5C617368 
- 633      3735305C 
- 633      4F6E6544 
- 634 0071 6B6C616E 		.ascii	"kland\\Documents\\GitHub\\P4P_Project-130\\Capsense"
- 634      645C446F 
- 634      63756D65 
- 634      6E74735C 
- 634      47697448 
- 635 00a0 5F737475 		.ascii	"_stuff\\Cap_Sense.cydsn\000"
- 635      66665C43 
- 635      61705F53 
- 635      656E7365 
- 635      2E637964 
- 636              	.LASF1:
- 637 00b7 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 17
+ 632              	.LASF1:
+ 633 0041 756E7369 		.ascii	"unsigned char\000"
+ 633      676E6564 
+ 633      20636861 
+ 633      7200
+ 634              	.LASF27:
+ 635 004f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 635      43313120 
+ 635      352E342E 
+ 635      31203230 
+ 635      31363036 
+ 636 0082 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 636      20726576 
+ 636      6973696F 
+ 636      6E203233 
+ 636      37373135 
+ 637 00b5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 637      66756E63 
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 17
 
 
- 637      676E6564 
- 637      20636861 
- 637      7200
- 638              	.LASF27:
- 639 00c5 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 639      43313120 
- 639      352E342E 
- 639      31203230 
- 639      31363036 
- 640 00f8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 640      20726576 
- 640      6973696F 
- 640      6E203233 
- 640      37373135 
- 641 012b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 641      66756E63 
- 641      74696F6E 
- 641      2D736563 
- 641      74696F6E 
- 642              	.LASF22:
- 643 0153 43617053 		.ascii	"CapSense_1_Sleep\000"
- 643      656E7365 
- 643      5F315F53 
- 643      6C656570 
- 643      00
- 644              	.LASF14:
- 645 0164 72656738 		.ascii	"reg8\000"
- 645      00
- 646              	.LASF5:
- 647 0169 6C6F6E67 		.ascii	"long unsigned int\000"
- 647      20756E73 
- 647      69676E65 
- 647      6420696E 
- 647      7400
- 648              	.LASF9:
- 649 017b 75696E74 		.ascii	"uint8\000"
- 649      3800
- 650              	.LASF28:
- 651 0181 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_1_PM.c\000"
- 651      72617465 
- 651      645F536F 
- 651      75726365 
- 651      5C50536F 
- 652              	.LASF30:
- 653 01a8 43617053 		.ascii	"CapSense_1_RestoreConfig\000"
+ 637      74696F6E 
+ 637      2D736563 
+ 637      74696F6E 
+ 638              	.LASF22:
+ 639 00dd 43617053 		.ascii	"CapSense_1_Sleep\000"
+ 639      656E7365 
+ 639      5F315F53 
+ 639      6C656570 
+ 639      00
+ 640              	.LASF14:
+ 641 00ee 72656738 		.ascii	"reg8\000"
+ 641      00
+ 642              	.LASF5:
+ 643 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 643      20756E73 
+ 643      69676E65 
+ 643      6420696E 
+ 643      7400
+ 644              	.LASF9:
+ 645 0105 75696E74 		.ascii	"uint8\000"
+ 645      3800
+ 646              	.LASF28:
+ 647 010b 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_1_PM.c\000"
+ 647      72617465 
+ 647      645F536F 
+ 647      75726365 
+ 647      5C50536F 
+ 648              	.LASF30:
+ 649 0132 43617053 		.ascii	"CapSense_1_RestoreConfig\000"
+ 649      656E7365 
+ 649      5F315F52 
+ 649      6573746F 
+ 649      7265436F 
+ 650              	.LASF12:
+ 651 014b 646F7562 		.ascii	"double\000"
+ 651      6C6500
+ 652              	.LASF23:
+ 653 0152 43617053 		.ascii	"CapSense_1_Wakeup\000"
  653      656E7365 
- 653      5F315F52 
- 653      6573746F 
- 653      7265436F 
- 654              	.LASF12:
- 655 01c1 646F7562 		.ascii	"double\000"
- 655      6C6500
- 656              	.LASF23:
- 657 01c8 43617053 		.ascii	"CapSense_1_Wakeup\000"
- 657      656E7365 
- 657      5F315F57 
- 657      616B6575 
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 18
+ 653      5F315F57 
+ 653      616B6575 
+ 653      7000
+ 654              	.LASF10:
+ 655 0164 75696E74 		.ascii	"uint16\000"
+ 655      313600
+ 656              	.LASF29:
+ 657 016b 483A5C50 		.ascii	"H:\\P4P\\P4P_Project-130\\Capsense_stuff\\Cap_Sense"
+ 657      34505C50 
+ 657      34505F50 
+ 657      726F6A65 
+ 657      63742D31 
+ 658 019a 2E637964 		.ascii	".cydsn\000"
+ 658      736E00
+ 659              	.LASF8:
+ 660 01a1 756E7369 		.ascii	"unsigned int\000"
+ 660      676E6564 
+ 660      20696E74 
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 18
 
 
- 657      7000
- 658              	.LASF10:
- 659 01da 75696E74 		.ascii	"uint16\000"
- 659      313600
- 660              	.LASF8:
- 661 01e1 756E7369 		.ascii	"unsigned int\000"
- 661      676E6564 
- 661      20696E74 
- 661      00
- 662              	.LASF7:
- 663 01ee 6C6F6E67 		.ascii	"long long unsigned int\000"
- 663      206C6F6E 
- 663      6720756E 
- 663      7369676E 
- 663      65642069 
- 664              	.LASF26:
- 665 0205 43617053 		.ascii	"CapSense_1_Enable\000"
- 665      656E7365 
- 665      5F315F45 
- 665      6E61626C 
- 665      6500
- 666              	.LASF17:
- 667 0217 73697A65 		.ascii	"sizetype\000"
- 667      74797065 
- 667      00
- 668              	.LASF21:
- 669 0220 43617053 		.ascii	"CapSense_1_SaveConfig\000"
- 669      656E7365 
- 669      5F315F53 
- 669      61766543 
- 669      6F6E6669 
- 670              	.LASF6:
- 671 0236 6C6F6E67 		.ascii	"long long int\000"
- 671      206C6F6E 
- 671      6720696E 
- 671      7400
- 672              	.LASF13:
- 673 0244 63686172 		.ascii	"char\000"
- 673      00
- 674              	.LASF19:
- 675 0249 6374726C 		.ascii	"ctrlReg\000"
- 675      52656700 
- 676              	.LASF2:
- 677 0251 73686F72 		.ascii	"short int\000"
- 677      7420696E 
- 677      7400
- 678              	.LASF4:
- 679 025b 6C6F6E67 		.ascii	"long int\000"
- 679      20696E74 
- 679      00
- 680              	.LASF18:
- 681 0264 656E6162 		.ascii	"enableState\000"
- 681      6C655374 
- 681      61746500 
- 682              	.LASF20:
- 683 0270 43617053 		.ascii	"CapSense_1_BACKUP_STRUCT\000"
- 683      656E7365 
-ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccvmNOn2.s 			page 19
+ 660      00
+ 661              	.LASF7:
+ 662 01ae 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 662      206C6F6E 
+ 662      6720756E 
+ 662      7369676E 
+ 662      65642069 
+ 663              	.LASF26:
+ 664 01c5 43617053 		.ascii	"CapSense_1_Enable\000"
+ 664      656E7365 
+ 664      5F315F45 
+ 664      6E61626C 
+ 664      6500
+ 665              	.LASF17:
+ 666 01d7 73697A65 		.ascii	"sizetype\000"
+ 666      74797065 
+ 666      00
+ 667              	.LASF21:
+ 668 01e0 43617053 		.ascii	"CapSense_1_SaveConfig\000"
+ 668      656E7365 
+ 668      5F315F53 
+ 668      61766543 
+ 668      6F6E6669 
+ 669              	.LASF6:
+ 670 01f6 6C6F6E67 		.ascii	"long long int\000"
+ 670      206C6F6E 
+ 670      6720696E 
+ 670      7400
+ 671              	.LASF13:
+ 672 0204 63686172 		.ascii	"char\000"
+ 672      00
+ 673              	.LASF19:
+ 674 0209 6374726C 		.ascii	"ctrlReg\000"
+ 674      52656700 
+ 675              	.LASF2:
+ 676 0211 73686F72 		.ascii	"short int\000"
+ 676      7420696E 
+ 676      7400
+ 677              	.LASF4:
+ 678 021b 6C6F6E67 		.ascii	"long int\000"
+ 678      20696E74 
+ 678      00
+ 679              	.LASF18:
+ 680 0224 656E6162 		.ascii	"enableState\000"
+ 680      6C655374 
+ 680      61746500 
+ 681              	.LASF20:
+ 682 0230 43617053 		.ascii	"CapSense_1_BACKUP_STRUCT\000"
+ 682      656E7365 
+ 682      5F315F42 
+ 682      41434B55 
+ 682      505F5354 
+ 683              	.LASF16:
+ 684 0249 6C6F6E67 		.ascii	"long double\000"
+ 684      20646F75 
+ 684      626C6500 
+ 685              	.LASF0:
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccQWIXKr.s 			page 19
 
 
- 683      5F315F42 
- 683      41434B55 
- 683      505F5354 
- 684              	.LASF16:
- 685 0289 6C6F6E67 		.ascii	"long double\000"
- 685      20646F75 
- 685      626C6500 
- 686              	.LASF0:
- 687 0295 7369676E 		.ascii	"signed char\000"
- 687      65642063 
- 687      68617200 
- 688              	.LASF24:
- 689 02a1 43617053 		.ascii	"CapSense_1_ClearSensors\000"
- 689      656E7365 
- 689      5F315F43 
- 689      6C656172 
- 689      53656E73 
- 690              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 686 0255 7369676E 		.ascii	"signed char\000"
+ 686      65642063 
+ 686      68617200 
+ 687              	.LASF24:
+ 688 0261 43617053 		.ascii	"CapSense_1_ClearSensors\000"
+ 688      656E7365 
+ 688      5F315F43 
+ 688      6C656172 
+ 688      53656E73 
+ 689              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

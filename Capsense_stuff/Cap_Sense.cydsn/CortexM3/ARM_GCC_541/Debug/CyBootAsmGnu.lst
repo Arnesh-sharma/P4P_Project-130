@@ -11546,12 +11546,12 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
  237              	.set UART_1_IntClock__PM_STBY_MSK, 0x02
  238              	
  239              	/* CapSense_1 */
- 240              	.set CapSense_1_BufCH0__CFG0, CYREG_CAPSL_CFG0
- 241              	.set CapSense_1_BufCH0__CFG1, CYREG_CAPSL_CFG1
+ 240              	.set CapSense_1_BufCH0__CFG0, CYREG_CAPSR_CFG0
+ 241              	.set CapSense_1_BufCH0__CFG1, CYREG_CAPSR_CFG1
  242              	.set CapSense_1_BufCH0__PM_ACT_CFG, CYREG_PM_ACT_CFG11
- 243              	.set CapSense_1_BufCH0__PM_ACT_MSK, 0x10
+ 243              	.set CapSense_1_BufCH0__PM_ACT_MSK, 0x20
  244              	.set CapSense_1_BufCH0__PM_STBY_CFG, CYREG_PM_STBY_CFG11
- 245              	.set CapSense_1_BufCH0__PM_STBY_MSK, 0x10
+ 245              	.set CapSense_1_BufCH0__PM_STBY_MSK, 0x20
  246              	.set CapSense_1_ClockGen_sC16_PRSdp_u0__16BIT_A0_REG, CYREG_B0_UDB06_07_A0
  247              	.set CapSense_1_ClockGen_sC16_PRSdp_u0__16BIT_A1_REG, CYREG_B0_UDB06_07_A1
  248              	.set CapSense_1_ClockGen_sC16_PRSdp_u0__16BIT_D0_REG, CYREG_B0_UDB06_07_D0
@@ -11654,98 +11654,98 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
  339              	.set CapSense_1_ClockGen_UDB_PrescalerDp_u0__F0_F1_REG, CYREG_B0_UDB05_F0_F1
  340              	.set CapSense_1_ClockGen_UDB_PrescalerDp_u0__F0_REG, CYREG_B0_UDB05_F0
  341              	.set CapSense_1_ClockGen_UDB_PrescalerDp_u0__F1_REG, CYREG_B0_UDB05_F1
- 342              	.set CapSense_1_CmodCH0__0__INTTYPE, CYREG_PICU15_INTTYPE4
+ 342              	.set CapSense_1_CmodCH0__0__INTTYPE, CYREG_PICU1_INTTYPE4
  343              	.set CapSense_1_CmodCH0__0__MASK, 0x10
- 344              	.set CapSense_1_CmodCH0__0__PC, CYREG_IO_PC_PRT15_PC4
- 345              	.set CapSense_1_CmodCH0__0__PORT, 15
+ 344              	.set CapSense_1_CmodCH0__0__PC, CYREG_PRT1_PC4
+ 345              	.set CapSense_1_CmodCH0__0__PORT, 1
  346              	.set CapSense_1_CmodCH0__0__SHIFT, 4
- 347              	.set CapSense_1_CmodCH0__AG, CYREG_PRT15_AG
- 348              	.set CapSense_1_CmodCH0__AMUX, CYREG_PRT15_AMUX
- 349              	.set CapSense_1_CmodCH0__BIE, CYREG_PRT15_BIE
- 350              	.set CapSense_1_CmodCH0__BIT_MASK, CYREG_PRT15_BIT_MASK
- 351              	.set CapSense_1_CmodCH0__BYP, CYREG_PRT15_BYP
- 352              	.set CapSense_1_CmodCH0__Cmod_CH0__INTTYPE, CYREG_PICU15_INTTYPE4
+ 347              	.set CapSense_1_CmodCH0__AG, CYREG_PRT1_AG
+ 348              	.set CapSense_1_CmodCH0__AMUX, CYREG_PRT1_AMUX
+ 349              	.set CapSense_1_CmodCH0__BIE, CYREG_PRT1_BIE
+ 350              	.set CapSense_1_CmodCH0__BIT_MASK, CYREG_PRT1_BIT_MASK
+ 351              	.set CapSense_1_CmodCH0__BYP, CYREG_PRT1_BYP
+ 352              	.set CapSense_1_CmodCH0__Cmod_CH0__INTTYPE, CYREG_PICU1_INTTYPE4
  353              	.set CapSense_1_CmodCH0__Cmod_CH0__MASK, 0x10
- 354              	.set CapSense_1_CmodCH0__Cmod_CH0__PC, CYREG_IO_PC_PRT15_PC4
- 355              	.set CapSense_1_CmodCH0__Cmod_CH0__PORT, 15
+ 354              	.set CapSense_1_CmodCH0__Cmod_CH0__PC, CYREG_PRT1_PC4
+ 355              	.set CapSense_1_CmodCH0__Cmod_CH0__PORT, 1
  356              	.set CapSense_1_CmodCH0__Cmod_CH0__SHIFT, 4
- 357              	.set CapSense_1_CmodCH0__CTL, CYREG_PRT15_CTL
- 358              	.set CapSense_1_CmodCH0__DM0, CYREG_PRT15_DM0
- 359              	.set CapSense_1_CmodCH0__DM1, CYREG_PRT15_DM1
- 360              	.set CapSense_1_CmodCH0__DM2, CYREG_PRT15_DM2
- 361              	.set CapSense_1_CmodCH0__DR, CYREG_PRT15_DR
- 362              	.set CapSense_1_CmodCH0__INP_DIS, CYREG_PRT15_INP_DIS
- 363              	.set CapSense_1_CmodCH0__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU15_BASE
- 364              	.set CapSense_1_CmodCH0__LCD_COM_SEG, CYREG_PRT15_LCD_COM_SEG
- 365              	.set CapSense_1_CmodCH0__LCD_EN, CYREG_PRT15_LCD_EN
+ 357              	.set CapSense_1_CmodCH0__CTL, CYREG_PRT1_CTL
+ 358              	.set CapSense_1_CmodCH0__DM0, CYREG_PRT1_DM0
+ 359              	.set CapSense_1_CmodCH0__DM1, CYREG_PRT1_DM1
+ 360              	.set CapSense_1_CmodCH0__DM2, CYREG_PRT1_DM2
+ 361              	.set CapSense_1_CmodCH0__DR, CYREG_PRT1_DR
+ 362              	.set CapSense_1_CmodCH0__INP_DIS, CYREG_PRT1_INP_DIS
+ 363              	.set CapSense_1_CmodCH0__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU1_BASE
+ 364              	.set CapSense_1_CmodCH0__LCD_COM_SEG, CYREG_PRT1_LCD_COM_SEG
+ 365              	.set CapSense_1_CmodCH0__LCD_EN, CYREG_PRT1_LCD_EN
  366              	.set CapSense_1_CmodCH0__MASK, 0x10
- 367              	.set CapSense_1_CmodCH0__PORT, 15
- 368              	.set CapSense_1_CmodCH0__PRT, CYREG_PRT15_PRT
- 369              	.set CapSense_1_CmodCH0__PRTDSI__CAPS_SEL, CYREG_PRT15_CAPS_SEL
- 370              	.set CapSense_1_CmodCH0__PRTDSI__DBL_SYNC_IN, CYREG_PRT15_DBL_SYNC_IN
- 371              	.set CapSense_1_CmodCH0__PRTDSI__OE_SEL0, CYREG_PRT15_OE_SEL0
- 372              	.set CapSense_1_CmodCH0__PRTDSI__OE_SEL1, CYREG_PRT15_OE_SEL1
- 373              	.set CapSense_1_CmodCH0__PRTDSI__OUT_SEL0, CYREG_PRT15_OUT_SEL0
- 374              	.set CapSense_1_CmodCH0__PRTDSI__OUT_SEL1, CYREG_PRT15_OUT_SEL1
- 375              	.set CapSense_1_CmodCH0__PRTDSI__SYNC_OUT, CYREG_PRT15_SYNC_OUT
- 376              	.set CapSense_1_CmodCH0__PS, CYREG_PRT15_PS
+ 367              	.set CapSense_1_CmodCH0__PORT, 1
+ 368              	.set CapSense_1_CmodCH0__PRT, CYREG_PRT1_PRT
+ 369              	.set CapSense_1_CmodCH0__PRTDSI__CAPS_SEL, CYREG_PRT1_CAPS_SEL
+ 370              	.set CapSense_1_CmodCH0__PRTDSI__DBL_SYNC_IN, CYREG_PRT1_DBL_SYNC_IN
+ 371              	.set CapSense_1_CmodCH0__PRTDSI__OE_SEL0, CYREG_PRT1_OE_SEL0
+ 372              	.set CapSense_1_CmodCH0__PRTDSI__OE_SEL1, CYREG_PRT1_OE_SEL1
+ 373              	.set CapSense_1_CmodCH0__PRTDSI__OUT_SEL0, CYREG_PRT1_OUT_SEL0
+ 374              	.set CapSense_1_CmodCH0__PRTDSI__OUT_SEL1, CYREG_PRT1_OUT_SEL1
+ 375              	.set CapSense_1_CmodCH0__PRTDSI__SYNC_OUT, CYREG_PRT1_SYNC_OUT
+ 376              	.set CapSense_1_CmodCH0__PS, CYREG_PRT1_PS
  377              	.set CapSense_1_CmodCH0__SHIFT, 4
- 378              	.set CapSense_1_CmodCH0__SLW, CYREG_PRT15_SLW
- 379              	.set CapSense_1_CompCH0_ctComp__CLK, CYREG_CMP0_CLK
- 380              	.set CapSense_1_CompCH0_ctComp__CMP_MASK, 0x01
- 381              	.set CapSense_1_CompCH0_ctComp__CMP_NUMBER, 0
- 382              	.set CapSense_1_CompCH0_ctComp__CR, CYREG_CMP0_CR
- 383              	.set CapSense_1_CompCH0_ctComp__LUT__CR, CYREG_LUT0_CR
+ 378              	.set CapSense_1_CmodCH0__SLW, CYREG_PRT1_SLW
+ 379              	.set CapSense_1_CompCH0_ctComp__CLK, CYREG_CMP3_CLK
+ 380              	.set CapSense_1_CompCH0_ctComp__CMP_MASK, 0x08
+ 381              	.set CapSense_1_CompCH0_ctComp__CMP_NUMBER, 3
+ 382              	.set CapSense_1_CompCH0_ctComp__CR, CYREG_CMP3_CR
+ 383              	.set CapSense_1_CompCH0_ctComp__LUT__CR, CYREG_LUT3_CR
  384              	.set CapSense_1_CompCH0_ctComp__LUT__MSK, CYREG_LUT_MSK
- 385              	.set CapSense_1_CompCH0_ctComp__LUT__MSK_MASK, 0x01
+ 385              	.set CapSense_1_CompCH0_ctComp__LUT__MSK_MASK, 0x08
 ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 196
 
 
- 386              	.set CapSense_1_CompCH0_ctComp__LUT__MSK_SHIFT, 0
- 387              	.set CapSense_1_CompCH0_ctComp__LUT__MX, CYREG_LUT0_MX
+ 386              	.set CapSense_1_CompCH0_ctComp__LUT__MSK_SHIFT, 3
+ 387              	.set CapSense_1_CompCH0_ctComp__LUT__MX, CYREG_LUT3_MX
  388              	.set CapSense_1_CompCH0_ctComp__LUT__SR, CYREG_LUT_SR
- 389              	.set CapSense_1_CompCH0_ctComp__LUT__SR_MASK, 0x01
- 390              	.set CapSense_1_CompCH0_ctComp__LUT__SR_SHIFT, 0
+ 389              	.set CapSense_1_CompCH0_ctComp__LUT__SR_MASK, 0x08
+ 390              	.set CapSense_1_CompCH0_ctComp__LUT__SR_SHIFT, 3
  391              	.set CapSense_1_CompCH0_ctComp__PM_ACT_CFG, CYREG_PM_ACT_CFG7
- 392              	.set CapSense_1_CompCH0_ctComp__PM_ACT_MSK, 0x01
+ 392              	.set CapSense_1_CompCH0_ctComp__PM_ACT_MSK, 0x08
  393              	.set CapSense_1_CompCH0_ctComp__PM_STBY_CFG, CYREG_PM_STBY_CFG7
- 394              	.set CapSense_1_CompCH0_ctComp__PM_STBY_MSK, 0x01
- 395              	.set CapSense_1_CompCH0_ctComp__SW0, CYREG_CMP0_SW0
- 396              	.set CapSense_1_CompCH0_ctComp__SW2, CYREG_CMP0_SW2
- 397              	.set CapSense_1_CompCH0_ctComp__SW3, CYREG_CMP0_SW3
- 398              	.set CapSense_1_CompCH0_ctComp__SW4, CYREG_CMP0_SW4
- 399              	.set CapSense_1_CompCH0_ctComp__SW6, CYREG_CMP0_SW6
- 400              	.set CapSense_1_CompCH0_ctComp__TR0, CYREG_CMP0_TR0
- 401              	.set CapSense_1_CompCH0_ctComp__TR1, CYREG_CMP0_TR1
- 402              	.set CapSense_1_CompCH0_ctComp__TRIM__TR0, CYREG_FLSHID_MFG_CFG_CMP0_TR0
- 403              	.set CapSense_1_CompCH0_ctComp__TRIM__TR0_HS, CYREG_FLSHID_CUST_TABLES_CMP0_TR0_HS
- 404              	.set CapSense_1_CompCH0_ctComp__TRIM__TR1, CYREG_FLSHID_MFG_CFG_CMP0_TR1
- 405              	.set CapSense_1_CompCH0_ctComp__TRIM__TR1_HS, CYREG_FLSHID_CUST_TABLES_CMP0_TR1_HS
+ 394              	.set CapSense_1_CompCH0_ctComp__PM_STBY_MSK, 0x08
+ 395              	.set CapSense_1_CompCH0_ctComp__SW0, CYREG_CMP3_SW0
+ 396              	.set CapSense_1_CompCH0_ctComp__SW2, CYREG_CMP3_SW2
+ 397              	.set CapSense_1_CompCH0_ctComp__SW3, CYREG_CMP3_SW3
+ 398              	.set CapSense_1_CompCH0_ctComp__SW4, CYREG_CMP3_SW4
+ 399              	.set CapSense_1_CompCH0_ctComp__SW6, CYREG_CMP3_SW6
+ 400              	.set CapSense_1_CompCH0_ctComp__TR0, CYREG_CMP3_TR0
+ 401              	.set CapSense_1_CompCH0_ctComp__TR1, CYREG_CMP3_TR1
+ 402              	.set CapSense_1_CompCH0_ctComp__TRIM__TR0, CYREG_FLSHID_MFG_CFG_CMP3_TR0
+ 403              	.set CapSense_1_CompCH0_ctComp__TRIM__TR0_HS, CYREG_FLSHID_CUST_TABLES_CMP3_TR0_HS
+ 404              	.set CapSense_1_CompCH0_ctComp__TRIM__TR1, CYREG_FLSHID_MFG_CFG_CMP3_TR1
+ 405              	.set CapSense_1_CompCH0_ctComp__TRIM__TR1_HS, CYREG_FLSHID_CUST_TABLES_CMP3_TR1_HS
  406              	.set CapSense_1_CompCH0_ctComp__WRK, CYREG_CMP_WRK
- 407              	.set CapSense_1_CompCH0_ctComp__WRK_MASK, 0x01
- 408              	.set CapSense_1_CompCH0_ctComp__WRK_SHIFT, 0
- 409              	.set CapSense_1_IdacCH0_viDAC8__CR0, CYREG_DAC2_CR0
- 410              	.set CapSense_1_IdacCH0_viDAC8__CR1, CYREG_DAC2_CR1
- 411              	.set CapSense_1_IdacCH0_viDAC8__D, CYREG_DAC2_D
+ 407              	.set CapSense_1_CompCH0_ctComp__WRK_MASK, 0x08
+ 408              	.set CapSense_1_CompCH0_ctComp__WRK_SHIFT, 3
+ 409              	.set CapSense_1_IdacCH0_viDAC8__CR0, CYREG_DAC1_CR0
+ 410              	.set CapSense_1_IdacCH0_viDAC8__CR1, CYREG_DAC1_CR1
+ 411              	.set CapSense_1_IdacCH0_viDAC8__D, CYREG_DAC1_D
  412              	.set CapSense_1_IdacCH0_viDAC8__PM_ACT_CFG, CYREG_PM_ACT_CFG8
- 413              	.set CapSense_1_IdacCH0_viDAC8__PM_ACT_MSK, 0x04
+ 413              	.set CapSense_1_IdacCH0_viDAC8__PM_ACT_MSK, 0x02
  414              	.set CapSense_1_IdacCH0_viDAC8__PM_STBY_CFG, CYREG_PM_STBY_CFG8
- 415              	.set CapSense_1_IdacCH0_viDAC8__PM_STBY_MSK, 0x04
- 416              	.set CapSense_1_IdacCH0_viDAC8__STROBE, CYREG_DAC2_STROBE
- 417              	.set CapSense_1_IdacCH0_viDAC8__SW0, CYREG_DAC2_SW0
- 418              	.set CapSense_1_IdacCH0_viDAC8__SW2, CYREG_DAC2_SW2
- 419              	.set CapSense_1_IdacCH0_viDAC8__SW3, CYREG_DAC2_SW3
- 420              	.set CapSense_1_IdacCH0_viDAC8__SW4, CYREG_DAC2_SW4
- 421              	.set CapSense_1_IdacCH0_viDAC8__TR, CYREG_DAC2_TR
- 422              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M1, CYREG_FLSHID_CUST_TABLES_DAC2_M1
- 423              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M2, CYREG_FLSHID_CUST_TABLES_DAC2_M2
- 424              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M3, CYREG_FLSHID_CUST_TABLES_DAC2_M3
- 425              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M4, CYREG_FLSHID_CUST_TABLES_DAC2_M4
- 426              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M5, CYREG_FLSHID_CUST_TABLES_DAC2_M5
- 427              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M6, CYREG_FLSHID_CUST_TABLES_DAC2_M6
- 428              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M7, CYREG_FLSHID_CUST_TABLES_DAC2_M7
- 429              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M8, CYREG_FLSHID_CUST_TABLES_DAC2_M8
- 430              	.set CapSense_1_IdacCH0_viDAC8__TST, CYREG_DAC2_TST
+ 415              	.set CapSense_1_IdacCH0_viDAC8__PM_STBY_MSK, 0x02
+ 416              	.set CapSense_1_IdacCH0_viDAC8__STROBE, CYREG_DAC1_STROBE
+ 417              	.set CapSense_1_IdacCH0_viDAC8__SW0, CYREG_DAC1_SW0
+ 418              	.set CapSense_1_IdacCH0_viDAC8__SW2, CYREG_DAC1_SW2
+ 419              	.set CapSense_1_IdacCH0_viDAC8__SW3, CYREG_DAC1_SW3
+ 420              	.set CapSense_1_IdacCH0_viDAC8__SW4, CYREG_DAC1_SW4
+ 421              	.set CapSense_1_IdacCH0_viDAC8__TR, CYREG_DAC1_TR
+ 422              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M1, CYREG_FLSHID_CUST_TABLES_DAC1_M1
+ 423              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M2, CYREG_FLSHID_CUST_TABLES_DAC1_M2
+ 424              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M3, CYREG_FLSHID_CUST_TABLES_DAC1_M3
+ 425              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M4, CYREG_FLSHID_CUST_TABLES_DAC1_M4
+ 426              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M5, CYREG_FLSHID_CUST_TABLES_DAC1_M5
+ 427              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M6, CYREG_FLSHID_CUST_TABLES_DAC1_M6
+ 428              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M7, CYREG_FLSHID_CUST_TABLES_DAC1_M7
+ 429              	.set CapSense_1_IdacCH0_viDAC8__TRIM__M8, CYREG_FLSHID_CUST_TABLES_DAC1_M8
+ 430              	.set CapSense_1_IdacCH0_viDAC8__TST, CYREG_DAC1_TST
  431              	.set CapSense_1_IntClock__CFG0, CYREG_CLKDIST_DCFG0_CFG0
  432              	.set CapSense_1_IntClock__CFG1, CYREG_CLKDIST_DCFG0_CFG1
  433              	.set CapSense_1_IntClock__CFG2, CYREG_CLKDIST_DCFG0_CFG2
@@ -11802,46 +11802,46 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
  481              	.set CapSense_1_MeasureCH0_UDB_Window_u0__F0_F1_REG, CYREG_B1_UDB06_F0_F1
  482              	.set CapSense_1_MeasureCH0_UDB_Window_u0__F0_REG, CYREG_B1_UDB06_F0
  483              	.set CapSense_1_MeasureCH0_UDB_Window_u0__F1_REG, CYREG_B1_UDB06_F1
- 484              	.set CapSense_1_PortCH0__0__INTTYPE, CYREG_PICU2_INTTYPE0
- 485              	.set CapSense_1_PortCH0__0__MASK, 0x01
- 486              	.set CapSense_1_PortCH0__0__PC, CYREG_PRT2_PC0
- 487              	.set CapSense_1_PortCH0__0__PORT, 2
- 488              	.set CapSense_1_PortCH0__0__SHIFT, 0
- 489              	.set CapSense_1_PortCH0__AG, CYREG_PRT2_AG
- 490              	.set CapSense_1_PortCH0__AMUX, CYREG_PRT2_AMUX
- 491              	.set CapSense_1_PortCH0__BIE, CYREG_PRT2_BIE
- 492              	.set CapSense_1_PortCH0__BIT_MASK, CYREG_PRT2_BIT_MASK
- 493              	.set CapSense_1_PortCH0__Button0__BTN__INTTYPE, CYREG_PICU2_INTTYPE0
- 494              	.set CapSense_1_PortCH0__Button0__BTN__MASK, 0x01
- 495              	.set CapSense_1_PortCH0__Button0__BTN__PC, CYREG_PRT2_PC0
- 496              	.set CapSense_1_PortCH0__Button0__BTN__PORT, 2
- 497              	.set CapSense_1_PortCH0__Button0__BTN__SHIFT, 0
- 498              	.set CapSense_1_PortCH0__BYP, CYREG_PRT2_BYP
- 499              	.set CapSense_1_PortCH0__CTL, CYREG_PRT2_CTL
+ 484              	.set CapSense_1_PortCH0__0__INTTYPE, CYREG_PICU1_INTTYPE6
+ 485              	.set CapSense_1_PortCH0__0__MASK, 0x40
+ 486              	.set CapSense_1_PortCH0__0__PC, CYREG_PRT1_PC6
+ 487              	.set CapSense_1_PortCH0__0__PORT, 1
+ 488              	.set CapSense_1_PortCH0__0__SHIFT, 6
+ 489              	.set CapSense_1_PortCH0__AG, CYREG_PRT1_AG
+ 490              	.set CapSense_1_PortCH0__AMUX, CYREG_PRT1_AMUX
+ 491              	.set CapSense_1_PortCH0__BIE, CYREG_PRT1_BIE
+ 492              	.set CapSense_1_PortCH0__BIT_MASK, CYREG_PRT1_BIT_MASK
+ 493              	.set CapSense_1_PortCH0__Button0__BTN__INTTYPE, CYREG_PICU1_INTTYPE6
+ 494              	.set CapSense_1_PortCH0__Button0__BTN__MASK, 0x40
+ 495              	.set CapSense_1_PortCH0__Button0__BTN__PC, CYREG_PRT1_PC6
+ 496              	.set CapSense_1_PortCH0__Button0__BTN__PORT, 1
+ 497              	.set CapSense_1_PortCH0__Button0__BTN__SHIFT, 6
+ 498              	.set CapSense_1_PortCH0__BYP, CYREG_PRT1_BYP
+ 499              	.set CapSense_1_PortCH0__CTL, CYREG_PRT1_CTL
 ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 198
 
 
- 500              	.set CapSense_1_PortCH0__DM0, CYREG_PRT2_DM0
- 501              	.set CapSense_1_PortCH0__DM1, CYREG_PRT2_DM1
- 502              	.set CapSense_1_PortCH0__DM2, CYREG_PRT2_DM2
- 503              	.set CapSense_1_PortCH0__DR, CYREG_PRT2_DR
- 504              	.set CapSense_1_PortCH0__INP_DIS, CYREG_PRT2_INP_DIS
- 505              	.set CapSense_1_PortCH0__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU2_BASE
- 506              	.set CapSense_1_PortCH0__LCD_COM_SEG, CYREG_PRT2_LCD_COM_SEG
- 507              	.set CapSense_1_PortCH0__LCD_EN, CYREG_PRT2_LCD_EN
- 508              	.set CapSense_1_PortCH0__MASK, 0x01
- 509              	.set CapSense_1_PortCH0__PORT, 2
- 510              	.set CapSense_1_PortCH0__PRT, CYREG_PRT2_PRT
- 511              	.set CapSense_1_PortCH0__PRTDSI__CAPS_SEL, CYREG_PRT2_CAPS_SEL
- 512              	.set CapSense_1_PortCH0__PRTDSI__DBL_SYNC_IN, CYREG_PRT2_DBL_SYNC_IN
- 513              	.set CapSense_1_PortCH0__PRTDSI__OE_SEL0, CYREG_PRT2_OE_SEL0
- 514              	.set CapSense_1_PortCH0__PRTDSI__OE_SEL1, CYREG_PRT2_OE_SEL1
- 515              	.set CapSense_1_PortCH0__PRTDSI__OUT_SEL0, CYREG_PRT2_OUT_SEL0
- 516              	.set CapSense_1_PortCH0__PRTDSI__OUT_SEL1, CYREG_PRT2_OUT_SEL1
- 517              	.set CapSense_1_PortCH0__PRTDSI__SYNC_OUT, CYREG_PRT2_SYNC_OUT
- 518              	.set CapSense_1_PortCH0__PS, CYREG_PRT2_PS
- 519              	.set CapSense_1_PortCH0__SHIFT, 0
- 520              	.set CapSense_1_PortCH0__SLW, CYREG_PRT2_SLW
+ 500              	.set CapSense_1_PortCH0__DM0, CYREG_PRT1_DM0
+ 501              	.set CapSense_1_PortCH0__DM1, CYREG_PRT1_DM1
+ 502              	.set CapSense_1_PortCH0__DM2, CYREG_PRT1_DM2
+ 503              	.set CapSense_1_PortCH0__DR, CYREG_PRT1_DR
+ 504              	.set CapSense_1_PortCH0__INP_DIS, CYREG_PRT1_INP_DIS
+ 505              	.set CapSense_1_PortCH0__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU1_BASE
+ 506              	.set CapSense_1_PortCH0__LCD_COM_SEG, CYREG_PRT1_LCD_COM_SEG
+ 507              	.set CapSense_1_PortCH0__LCD_EN, CYREG_PRT1_LCD_EN
+ 508              	.set CapSense_1_PortCH0__MASK, 0x40
+ 509              	.set CapSense_1_PortCH0__PORT, 1
+ 510              	.set CapSense_1_PortCH0__PRT, CYREG_PRT1_PRT
+ 511              	.set CapSense_1_PortCH0__PRTDSI__CAPS_SEL, CYREG_PRT1_CAPS_SEL
+ 512              	.set CapSense_1_PortCH0__PRTDSI__DBL_SYNC_IN, CYREG_PRT1_DBL_SYNC_IN
+ 513              	.set CapSense_1_PortCH0__PRTDSI__OE_SEL0, CYREG_PRT1_OE_SEL0
+ 514              	.set CapSense_1_PortCH0__PRTDSI__OE_SEL1, CYREG_PRT1_OE_SEL1
+ 515              	.set CapSense_1_PortCH0__PRTDSI__OUT_SEL0, CYREG_PRT1_OUT_SEL0
+ 516              	.set CapSense_1_PortCH0__PRTDSI__OUT_SEL1, CYREG_PRT1_OUT_SEL1
+ 517              	.set CapSense_1_PortCH0__PRTDSI__SYNC_OUT, CYREG_PRT1_SYNC_OUT
+ 518              	.set CapSense_1_PortCH0__PS, CYREG_PRT1_PS
+ 519              	.set CapSense_1_PortCH0__SHIFT, 6
+ 520              	.set CapSense_1_PortCH0__SLW, CYREG_PRT1_SLW
  521              	
  522              	/* Miscellaneous */
  523              	.set BCLK__BUS_CLK__HZ, 24000000
