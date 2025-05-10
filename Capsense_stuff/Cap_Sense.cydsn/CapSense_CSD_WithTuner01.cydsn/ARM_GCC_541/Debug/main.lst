@@ -1,0 +1,498 @@
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
+   1:main.c        **** /*******************************************************************************
+   2:main.c        **** * File Name: main.c
+   3:main.c        **** *
+   4:main.c        **** * Version: 1.10
+   5:main.c        **** *
+   6:main.c        **** * Description:
+   7:main.c        **** *  The project explains the usage of CapSense CSD component. The 2 buttons and
+   8:main.c        **** *  linear sliders are used as sensing elements. Tuner GUI displays buttons 
+   9:main.c        **** *  active state and slider position. The defualt parameters of component could 
+  10:main.c        **** *  be changed by using Tuner GUI. For more information about Tuner GUI please 
+  11:main.c        **** *  refer to CapSense CSD data sheet.
+  12:main.c        **** *  The EzI2C component is used to establish communication with Tuner GUI.
+  13:main.c        **** *
+  14:main.c        **** *  Steps to lanch and use Tunner:
+  15:main.c        **** *   1) Select "Launch Tuner" from a CapSense CSD instance context menu to
+  16:main.c        **** *      launch the Tuning GUI.
+  17:main.c        **** *   2) Open the Configuration Communication dialog and set the communication
+  18:main.c        **** *      parameters.
+  19:main.c        **** *   3) Press Start on the Tuning GUI. All of the CapSense elements will start
+  20:main.c        **** *      showing their values.
+  21:main.c        **** *
+  22:main.c        **** * Hardware connections:
+  23:main.c        **** *  CY8CKIT-001 and MiniProg3 GND should be connected.
+  24:main.c        **** *  EzI2C Slave SDA - P12[1] to SDAT on MiniProg3.
+  25:main.c        **** *  EzI2C Slave SCL - P12[0] to SCLK on MiniProg3.
+  26:main.c        **** *  No connection is required for the modulator capacitor Cmod (P2[7] on
+  27:main.c        **** *  CY8C38 Family Processor Module CY8CKIT-009).
+  28:main.c        **** *  NOTE: To use this project with CY8C55 Family Processor Module CY8CKIT-010
+  29:main.c        **** *        reassign the Cmod to P15[5].
+  30:main.c        **** *
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 2
+
+
+  31:main.c        **** ********************************************************************************
+  32:main.c        **** * Copyright 2012, Cypress Semiconductor Corporation. All rights reserved.
+  33:main.c        **** * This software is owned by Cypress Semiconductor Corporation and is protected
+  34:main.c        **** * by and subject to worldwide patent and copyright laws and treaties.
+  35:main.c        **** * Therefore, you may use this software only as provided in the license agreement
+  36:main.c        **** * accompanying the software package from which you obtained this software.
+  37:main.c        **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  38:main.c        **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  39:main.c        **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  40:main.c        **** *******************************************************************************/
+  41:main.c        **** 
+  42:main.c        **** #include <project.h>
+  43:main.c        **** 
+  44:main.c        **** 
+  45:main.c        **** /*******************************************************************************
+  46:main.c        **** * Function Name: main
+  47:main.c        **** ********************************************************************************
+  48:main.c        **** *
+  49:main.c        **** * Summary:
+  50:main.c        **** *  Main function performs following functions:
+  51:main.c        **** *   1. Enable global interrupts.
+  52:main.c        **** *   2. Initialize CapSense CSD and EzI2C Start the sensor scanning loop.
+  53:main.c        **** *   3. Process scanning results and communicates with Tuner GUI.
+  54:main.c        **** *
+  55:main.c        **** * Parameters:
+  56:main.c        **** *  None
+  57:main.c        **** *
+  58:main.c        **** * Return:
+  59:main.c        **** *  None
+  60:main.c        **** *
+  61:main.c        **** *******************************************************************************/
+  62:main.c        **** int main()
+  63:main.c        **** {
+  28              		.loc 1 63 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 00AF     		add	r7, sp, #0
+  37              		.cfi_def_cfa_register 7
+  64:main.c        ****     /* Enable global interrupts */
+  65:main.c        ****     CyGlobalIntEnable;
+  38              		.loc 1 65 0
+  39              		.syntax unified
+  40              	@ 65 "main.c" 1
+  41 0004 62B6     		CPSIE   i
+  42              	@ 0 "" 2
+  66:main.c        **** 
+  67:main.c        ****     /* Initialize CapSense CSD and EzI2C Start the sensor scanning loop */
+  68:main.c        ****     CapSense_CSD_TunerStart();
+  43              		.loc 1 68 0
+  44              		.thumb
+  45              		.syntax unified
+  46 0006 FFF7FEFF 		bl	CapSense_CSD_TunerStart
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 3
+
+
+  47              	.L2:
+  69:main.c        **** 
+  70:main.c        ****     while(1u)
+  71:main.c        ****     {
+  72:main.c        ****         /* Process scanning results and communicates with Tuner GUI */
+  73:main.c        ****         CapSense_CSD_TunerComm();
+  48              		.loc 1 73 0 discriminator 1
+  49 000a FFF7FEFF 		bl	CapSense_CSD_TunerComm
+  74:main.c        ****     }
+  50              		.loc 1 74 0 discriminator 1
+  51 000e FCE7     		b	.L2
+  52              		.cfi_endproc
+  53              	.LFE63:
+  54              		.size	main, .-main
+  55              		.text
+  56              	.Letext0:
+  57              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  58              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  59              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+  60              		.section	.debug_info,"",%progbits
+  61              	.Ldebug_info0:
+  62 0000 C7000000 		.4byte	0xc7
+  63 0004 0400     		.2byte	0x4
+  64 0006 00000000 		.4byte	.Ldebug_abbrev0
+  65 000a 04       		.byte	0x4
+  66 000b 01       		.uleb128 0x1
+  67 000c B8000000 		.4byte	.LASF16
+  68 0010 0C       		.byte	0xc
+  69 0011 70000000 		.4byte	.LASF17
+  70 0015 0E000000 		.4byte	.LASF18
+  71 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  72 001d 00000000 		.4byte	0
+  73 0021 00000000 		.4byte	.Ldebug_line0
+  74 0025 02       		.uleb128 0x2
+  75 0026 01       		.byte	0x1
+  76 0027 06       		.byte	0x6
+  77 0028 76010000 		.4byte	.LASF0
+  78 002c 02       		.uleb128 0x2
+  79 002d 01       		.byte	0x1
+  80 002e 08       		.byte	0x8
+  81 002f 46010000 		.4byte	.LASF1
+  82 0033 02       		.uleb128 0x2
+  83 0034 02       		.byte	0x2
+  84 0035 05       		.byte	0x5
+  85 0036 9E010000 		.4byte	.LASF2
+  86 003a 02       		.uleb128 0x2
+  87 003b 02       		.byte	0x2
+  88 003c 07       		.byte	0x7
+  89 003d A5000000 		.4byte	.LASF3
+  90 0041 03       		.uleb128 0x3
+  91 0042 8E010000 		.4byte	.LASF9
+  92 0046 02       		.byte	0x2
+  93 0047 3F       		.byte	0x3f
+  94 0048 4C000000 		.4byte	0x4c
+  95 004c 02       		.uleb128 0x2
+  96 004d 04       		.byte	0x4
+  97 004e 05       		.byte	0x5
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 4
+
+
+  98 004f 59010000 		.4byte	.LASF4
+  99 0053 02       		.uleb128 0x2
+ 100 0054 04       		.byte	0x4
+ 101 0055 07       		.byte	0x7
+ 102 0056 7C000000 		.4byte	.LASF5
+ 103 005a 02       		.uleb128 0x2
+ 104 005b 08       		.byte	0x8
+ 105 005c 05       		.byte	0x5
+ 106 005d 00000000 		.4byte	.LASF6
+ 107 0061 02       		.uleb128 0x2
+ 108 0062 08       		.byte	0x8
+ 109 0063 07       		.byte	0x7
+ 110 0064 8E000000 		.4byte	.LASF7
+ 111 0068 04       		.uleb128 0x4
+ 112 0069 04       		.byte	0x4
+ 113 006a 05       		.byte	0x5
+ 114 006b 696E7400 		.ascii	"int\000"
+ 115 006f 02       		.uleb128 0x2
+ 116 0070 04       		.byte	0x4
+ 117 0071 07       		.byte	0x7
+ 118 0072 63000000 		.4byte	.LASF8
+ 119 0076 03       		.uleb128 0x3
+ 120 0077 A8010000 		.4byte	.LASF10
+ 121 007b 03       		.byte	0x3
+ 122 007c 2C       		.byte	0x2c
+ 123 007d 41000000 		.4byte	0x41
+ 124 0081 02       		.uleb128 0x2
+ 125 0082 04       		.byte	0x4
+ 126 0083 04       		.byte	0x4
+ 127 0084 98010000 		.4byte	.LASF11
+ 128 0088 02       		.uleb128 0x2
+ 129 0089 08       		.byte	0x8
+ 130 008a 04       		.byte	0x4
+ 131 008b 62010000 		.4byte	.LASF12
+ 132 008f 02       		.uleb128 0x2
+ 133 0090 01       		.byte	0x1
+ 134 0091 08       		.byte	0x8
+ 135 0092 54010000 		.4byte	.LASF13
+ 136 0096 02       		.uleb128 0x2
+ 137 0097 08       		.byte	0x8
+ 138 0098 04       		.byte	0x4
+ 139 0099 82010000 		.4byte	.LASF14
+ 140 009d 02       		.uleb128 0x2
+ 141 009e 04       		.byte	0x4
+ 142 009f 07       		.byte	0x7
+ 143 00a0 B0010000 		.4byte	.LASF15
+ 144 00a4 05       		.uleb128 0x5
+ 145 00a5 77000000 		.4byte	.LASF19
+ 146 00a9 01       		.byte	0x1
+ 147 00aa 3E       		.byte	0x3e
+ 148 00ab 68000000 		.4byte	0x68
+ 149 00af 00000000 		.4byte	.LFB63
+ 150 00b3 10000000 		.4byte	.LFE63-.LFB63
+ 151 00b7 01       		.uleb128 0x1
+ 152 00b8 9C       		.byte	0x9c
+ 153 00b9 06       		.uleb128 0x6
+ 154 00ba 69010000 		.4byte	.LASF20
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 5
+
+
+ 155 00be 04       		.byte	0x4
+ 156 00bf 1207     		.2byte	0x712
+ 157 00c1 C5000000 		.4byte	0xc5
+ 158 00c5 07       		.uleb128 0x7
+ 159 00c6 76000000 		.4byte	0x76
+ 160 00ca 00       		.byte	0
+ 161              		.section	.debug_abbrev,"",%progbits
+ 162              	.Ldebug_abbrev0:
+ 163 0000 01       		.uleb128 0x1
+ 164 0001 11       		.uleb128 0x11
+ 165 0002 01       		.byte	0x1
+ 166 0003 25       		.uleb128 0x25
+ 167 0004 0E       		.uleb128 0xe
+ 168 0005 13       		.uleb128 0x13
+ 169 0006 0B       		.uleb128 0xb
+ 170 0007 03       		.uleb128 0x3
+ 171 0008 0E       		.uleb128 0xe
+ 172 0009 1B       		.uleb128 0x1b
+ 173 000a 0E       		.uleb128 0xe
+ 174 000b 55       		.uleb128 0x55
+ 175 000c 17       		.uleb128 0x17
+ 176 000d 11       		.uleb128 0x11
+ 177 000e 01       		.uleb128 0x1
+ 178 000f 10       		.uleb128 0x10
+ 179 0010 17       		.uleb128 0x17
+ 180 0011 00       		.byte	0
+ 181 0012 00       		.byte	0
+ 182 0013 02       		.uleb128 0x2
+ 183 0014 24       		.uleb128 0x24
+ 184 0015 00       		.byte	0
+ 185 0016 0B       		.uleb128 0xb
+ 186 0017 0B       		.uleb128 0xb
+ 187 0018 3E       		.uleb128 0x3e
+ 188 0019 0B       		.uleb128 0xb
+ 189 001a 03       		.uleb128 0x3
+ 190 001b 0E       		.uleb128 0xe
+ 191 001c 00       		.byte	0
+ 192 001d 00       		.byte	0
+ 193 001e 03       		.uleb128 0x3
+ 194 001f 16       		.uleb128 0x16
+ 195 0020 00       		.byte	0
+ 196 0021 03       		.uleb128 0x3
+ 197 0022 0E       		.uleb128 0xe
+ 198 0023 3A       		.uleb128 0x3a
+ 199 0024 0B       		.uleb128 0xb
+ 200 0025 3B       		.uleb128 0x3b
+ 201 0026 0B       		.uleb128 0xb
+ 202 0027 49       		.uleb128 0x49
+ 203 0028 13       		.uleb128 0x13
+ 204 0029 00       		.byte	0
+ 205 002a 00       		.byte	0
+ 206 002b 04       		.uleb128 0x4
+ 207 002c 24       		.uleb128 0x24
+ 208 002d 00       		.byte	0
+ 209 002e 0B       		.uleb128 0xb
+ 210 002f 0B       		.uleb128 0xb
+ 211 0030 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 6
+
+
+ 212 0031 0B       		.uleb128 0xb
+ 213 0032 03       		.uleb128 0x3
+ 214 0033 08       		.uleb128 0x8
+ 215 0034 00       		.byte	0
+ 216 0035 00       		.byte	0
+ 217 0036 05       		.uleb128 0x5
+ 218 0037 2E       		.uleb128 0x2e
+ 219 0038 00       		.byte	0
+ 220 0039 3F       		.uleb128 0x3f
+ 221 003a 19       		.uleb128 0x19
+ 222 003b 03       		.uleb128 0x3
+ 223 003c 0E       		.uleb128 0xe
+ 224 003d 3A       		.uleb128 0x3a
+ 225 003e 0B       		.uleb128 0xb
+ 226 003f 3B       		.uleb128 0x3b
+ 227 0040 0B       		.uleb128 0xb
+ 228 0041 49       		.uleb128 0x49
+ 229 0042 13       		.uleb128 0x13
+ 230 0043 11       		.uleb128 0x11
+ 231 0044 01       		.uleb128 0x1
+ 232 0045 12       		.uleb128 0x12
+ 233 0046 06       		.uleb128 0x6
+ 234 0047 40       		.uleb128 0x40
+ 235 0048 18       		.uleb128 0x18
+ 236 0049 9642     		.uleb128 0x2116
+ 237 004b 19       		.uleb128 0x19
+ 238 004c 00       		.byte	0
+ 239 004d 00       		.byte	0
+ 240 004e 06       		.uleb128 0x6
+ 241 004f 34       		.uleb128 0x34
+ 242 0050 00       		.byte	0
+ 243 0051 03       		.uleb128 0x3
+ 244 0052 0E       		.uleb128 0xe
+ 245 0053 3A       		.uleb128 0x3a
+ 246 0054 0B       		.uleb128 0xb
+ 247 0055 3B       		.uleb128 0x3b
+ 248 0056 05       		.uleb128 0x5
+ 249 0057 49       		.uleb128 0x49
+ 250 0058 13       		.uleb128 0x13
+ 251 0059 3F       		.uleb128 0x3f
+ 252 005a 19       		.uleb128 0x19
+ 253 005b 3C       		.uleb128 0x3c
+ 254 005c 19       		.uleb128 0x19
+ 255 005d 00       		.byte	0
+ 256 005e 00       		.byte	0
+ 257 005f 07       		.uleb128 0x7
+ 258 0060 35       		.uleb128 0x35
+ 259 0061 00       		.byte	0
+ 260 0062 49       		.uleb128 0x49
+ 261 0063 13       		.uleb128 0x13
+ 262 0064 00       		.byte	0
+ 263 0065 00       		.byte	0
+ 264 0066 00       		.byte	0
+ 265              		.section	.debug_aranges,"",%progbits
+ 266 0000 1C000000 		.4byte	0x1c
+ 267 0004 0200     		.2byte	0x2
+ 268 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 7
+
+
+ 269 000a 04       		.byte	0x4
+ 270 000b 00       		.byte	0
+ 271 000c 0000     		.2byte	0
+ 272 000e 0000     		.2byte	0
+ 273 0010 00000000 		.4byte	.LFB63
+ 274 0014 10000000 		.4byte	.LFE63-.LFB63
+ 275 0018 00000000 		.4byte	0
+ 276 001c 00000000 		.4byte	0
+ 277              		.section	.debug_ranges,"",%progbits
+ 278              	.Ldebug_ranges0:
+ 279 0000 00000000 		.4byte	.LFB63
+ 280 0004 10000000 		.4byte	.LFE63
+ 281 0008 00000000 		.4byte	0
+ 282 000c 00000000 		.4byte	0
+ 283              		.section	.debug_line,"",%progbits
+ 284              	.Ldebug_line0:
+ 285 0000 60010000 		.section	.debug_str,"MS",%progbits,1
+ 285      02003F01 
+ 285      00000201 
+ 285      FB0E0D00 
+ 285      01010101 
+ 286              	.LASF6:
+ 287 0000 6C6F6E67 		.ascii	"long long int\000"
+ 287      206C6F6E 
+ 287      6720696E 
+ 287      7400
+ 288              	.LASF18:
+ 289 000e 483A5C50 		.ascii	"H:\\P4P\\P4P_Project-130\\Capsense_stuff\\Cap_Sense"
+ 289      34505C50 
+ 289      34505F50 
+ 289      726F6A65 
+ 289      63742D31 
+ 290 003d 2E637964 		.ascii	".cydsn\\CapSense_CSD_WithTuner01.cydsn\000"
+ 290      736E5C43 
+ 290      61705365 
+ 290      6E73655F 
+ 290      4353445F 
+ 291              	.LASF8:
+ 292 0063 756E7369 		.ascii	"unsigned int\000"
+ 292      676E6564 
+ 292      20696E74 
+ 292      00
+ 293              	.LASF17:
+ 294 0070 6D61696E 		.ascii	"main.c\000"
+ 294      2E6300
+ 295              	.LASF19:
+ 296 0077 6D61696E 		.ascii	"main\000"
+ 296      00
+ 297              	.LASF5:
+ 298 007c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 298      20756E73 
+ 298      69676E65 
+ 298      6420696E 
+ 298      7400
+ 299              	.LASF7:
+ 300 008e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 300      206C6F6E 
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 8
+
+
+ 300      6720756E 
+ 300      7369676E 
+ 300      65642069 
+ 301              	.LASF3:
+ 302 00a5 73686F72 		.ascii	"short unsigned int\000"
+ 302      7420756E 
+ 302      7369676E 
+ 302      65642069 
+ 302      6E7400
+ 303              	.LASF16:
+ 304 00b8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 304      43313120 
+ 304      352E342E 
+ 304      31203230 
+ 304      31363036 
+ 305 00eb 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 305      20726576 
+ 305      6973696F 
+ 305      6E203233 
+ 305      37373135 
+ 306 011e 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 306      66756E63 
+ 306      74696F6E 
+ 306      2D736563 
+ 306      74696F6E 
+ 307              	.LASF1:
+ 308 0146 756E7369 		.ascii	"unsigned char\000"
+ 308      676E6564 
+ 308      20636861 
+ 308      7200
+ 309              	.LASF13:
+ 310 0154 63686172 		.ascii	"char\000"
+ 310      00
+ 311              	.LASF4:
+ 312 0159 6C6F6E67 		.ascii	"long int\000"
+ 312      20696E74 
+ 312      00
+ 313              	.LASF12:
+ 314 0162 646F7562 		.ascii	"double\000"
+ 314      6C6500
+ 315              	.LASF20:
+ 316 0169 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 316      52784275 
+ 316      66666572 
+ 316      00
+ 317              	.LASF0:
+ 318 0176 7369676E 		.ascii	"signed char\000"
+ 318      65642063 
+ 318      68617200 
+ 319              	.LASF14:
+ 320 0182 6C6F6E67 		.ascii	"long double\000"
+ 320      20646F75 
+ 320      626C6500 
+ 321              	.LASF9:
+ 322 018e 5F5F696E 		.ascii	"__int32_t\000"
+ 322      7433325F 
+ 322      7400
+ARM GAS  C:\Users\ash750\AppData\Local\Temp\ccDeYq93.s 			page 9
+
+
+ 323              	.LASF11:
+ 324 0198 666C6F61 		.ascii	"float\000"
+ 324      7400
+ 325              	.LASF2:
+ 326 019e 73686F72 		.ascii	"short int\000"
+ 326      7420696E 
+ 326      7400
+ 327              	.LASF10:
+ 328 01a8 696E7433 		.ascii	"int32_t\000"
+ 328      325F7400 
+ 329              	.LASF15:
+ 330 01b0 73697A65 		.ascii	"sizetype\000"
+ 330      74797065 
+ 330      00
+ 331              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

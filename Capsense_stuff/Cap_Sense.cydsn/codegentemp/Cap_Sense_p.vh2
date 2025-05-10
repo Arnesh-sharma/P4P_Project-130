@@ -1,5 +1,5 @@
 -- Project:   Cap_Sense
--- Generated: 05/02/2025 13:47:07
+-- Generated: 05/05/2025 13:15:19
 -- PSoC Creator  4.2
 
 ENTITY Cap_Sense IS
@@ -141,7 +141,7 @@ ARCHITECTURE __DEFAULT__ OF Cap_Sense IS
     SIGNAL \CapSense_1:ClockGen:sC16:PRSdp:u1.sor__sig\ : bit;
     SIGNAL \CapSense_1:ClockGen:sC16:PRSdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF \CapSense_1:CmodCH0(0)\ : LABEL IS "iocell1";
-    ATTRIBUTE Location OF \CapSense_1:CmodCH0(0)\ : LABEL IS "P1[4]";
+    ATTRIBUTE Location OF \CapSense_1:CmodCH0(0)\ : LABEL IS "P15[4]";
     ATTRIBUTE lib_model OF \CapSense_1:PortCH0(0)\ : LABEL IS "iocell2";
     ATTRIBUTE Location OF \CapSense_1:PortCH0(0)\ : LABEL IS "P1[6]";
     ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell3";
@@ -162,9 +162,9 @@ ARCHITECTURE __DEFAULT__ OF Cap_Sense IS
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_postpoll\ : LABEL IS "macrocell13";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_4\ : LABEL IS "macrocell14";
     ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_5\ : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF \CapSense_1:BufCH0\ : LABEL IS "F(CsAbuf,1)";
-    ATTRIBUTE Location OF \CapSense_1:CompCH0:ctComp\ : LABEL IS "F(Comparator,3)";
-    ATTRIBUTE Location OF \CapSense_1:IdacCH0:viDAC8\ : LABEL IS "F(VIDAC,1)";
+    ATTRIBUTE Location OF \CapSense_1:BufCH0\ : LABEL IS "F(CsAbuf,0)";
+    ATTRIBUTE Location OF \CapSense_1:CompCH0:ctComp\ : LABEL IS "F(Comparator,1)";
+    ATTRIBUTE Location OF \CapSense_1:IdacCH0:viDAC8\ : LABEL IS "F(VIDAC,3)";
     ATTRIBUTE lib_model OF \CapSense_1:MeasureCH0:UDB:Window:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \CapSense_1:MeasureCH0:UDB:Counter:u0\ : LABEL IS "datapathcell2";
     ATTRIBUTE lib_model OF \CapSense_1:ClockGen:SyncCtrl:CtrlReg\ : LABEL IS "controlcell1";

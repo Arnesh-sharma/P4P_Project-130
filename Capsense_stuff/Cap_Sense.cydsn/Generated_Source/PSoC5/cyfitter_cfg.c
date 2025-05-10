@@ -159,19 +159,19 @@ CYPACKED typedef struct
 #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000060u)
 
 /* UDB_1_1_0_CONFIG Address: CYDEV_UCFG_B1_P3_U1_BASE Size (bytes): 128 */
-#define BS_UDB_1_1_0_CONFIG_VAL ((const uint8 CYFAR *)0x48000540u)
+#define BS_UDB_1_1_0_CONFIG_VAL ((const uint8 CYFAR *)0x4800053Cu)
 
 /* IOPINS0_7 Address: CYREG_PRT12_DR Size (bytes): 10 */
-#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x480005C0u)
+#define BS_IOPINS0_7_VAL ((const uint8 CYFAR *)0x480005BCu)
 
 /* IOPINS0_8 Address: CYREG_PRT15_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x480005CCu)
+#define BS_IOPINS0_8_VAL ((const uint8 CYFAR *)0x480005C8u)
 
 /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480005D4u)
+#define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480005D0u)
 
 /* IOPINS0_2 Address: CYREG_PRT2_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x480005DCu)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x480005D8u)
 
 
 /*******************************************************************************
@@ -296,9 +296,10 @@ static void AnalogSetDefault(void)
 	uint8 bg_xover_inl_trim = CY_GET_XTND_REG8((void CYFAR *)(CYREG_FLSHID_MFG_CFG_BG_XOVER_INL_TRIM + 1u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT0), (bg_xover_inl_trim & 0x07u));
 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_BG_DFT1), ((bg_xover_inl_trim >> 4) & 0x0Fu));
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT1_AG, 0x10u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CAPSR_CFG0, 0x00u);
-	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP3_SW3, 0x20u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_PRT15_AG, 0x10u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CAPSL_CFG0, 0x00u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_CMP1_SW3, 0x20u);
+	CY_SET_XTND_REG8((void CYFAR *)CYREG_BUS_SW3, 0x01u);
 	CY_SET_XTND_REG8((void CYFAR *)CYREG_PUMP_CR0, 0x44u);
 }
 
@@ -340,9 +341,9 @@ void SetAnalogRoutingPumps(uint8 enabled)
    incompatible with other versions of PSoC Creator. */
 uint8 CYXDATA * const CYCODE CapSense_1_AMuxCH0__addrTable[4] = {
 	(uint8 CYXDATA *)CYREG_PRT1_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT1_AMUX, 
-	(uint8 CYXDATA *)CYREG_CMP3_SW3, 
-	(uint8 CYXDATA *)CYREG_DAC1_SW3, 
+	(uint8 CYXDATA *)CYREG_PRT15_AMUX, 
+	(uint8 CYXDATA *)CYREG_CMP1_SW3, 
+	(uint8 CYXDATA *)CYREG_DAC3_SW3, 
 };
 
 /* This is an implementation detail of the AMux. Code that depends on it may be
@@ -480,7 +481,7 @@ void cyfitter_cfg(void)
 
 		/* Perform normal device configuration. Order is not critical for these items. */
 		CY_SET_XTND_REG16((void CYFAR *)(CYREG_CAPSR_CFG0), 0x0300u);
-		CY_SET_XTND_REG16((void CYFAR *)(CYREG_LUT3_CR), 0x0303u);
+		CY_SET_XTND_REG16((void CYFAR *)(CYREG_LUT1_CR), 0x0103u);
 
 		/* B0_P2_U0_CFG24 Starting address: CYDEV_UCFG_B0_P2_U0_CFG24 */
 		CY_SET_XTND_REG32((void CYFAR *)(CYREG_B0_P2_U0_CFG24), 0xC4040404u);
