@@ -1,0 +1,32 @@
+# DO NOT DELETE
+main.o:  \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CS.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CS_aliases.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/Clock_1.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/Comp_1.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CyDmac.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CyLib.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/CySpc.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/IDAC8_1.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/IDAC8_2.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/PGA_Inv_1.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/VDAC8_1.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cmsis_armcc.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cmsis_compiler.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cmsis_gcc.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/core_cm3.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cyPm.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cydevice.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cydisabledsheets.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cypins.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/cytypes.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/project.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/pw.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/Generated_Source/PSoC5/pw_aliases.h \
+   C:/Users/jayti/Dropbox/2025\ 4th\ yr\ engineering/PSOC/Design01.cydsn/main.c

@@ -1,0 +1,29 @@
+--------------- Rebuild Started: 05/10/2025 17:07:01 Project: Design01_Copy_01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+Deleting file ".\Design01_Copy_01.rpt"
+cydsfit.exe -.appdatapath "C:\Users\jpat614\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj -d CY8C5888LTI-LP097 -s C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0012: error: Terminals "VDAC8_1.vOut,vref.y_0" connected to signal "Net_24" have mismatching types.
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_24)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_13.11)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (vOut)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_58.2)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (y_0)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_73)
+ADD: sdb.M0012: error: Terminals "CS.analog_0,IDAC8_2.iOut,IDAC8_1.iOut,vin.oe_0" connected to signal "Net_8" have mismatching types.
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_8)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (iOut)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_1.16)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (iOut)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_2.16)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_22)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_23)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_4)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (oe_0)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_61.1)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_69)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (analog_0)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_7.1)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_70)
+ * C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch (Shape_74)
+Error: fit.M0050: The fitter aborted due to errors, please address all errors and rebuild. (App=cydsfit)
+--------------- Rebuild Failed: 05/10/2025 17:07:10 ---------------
