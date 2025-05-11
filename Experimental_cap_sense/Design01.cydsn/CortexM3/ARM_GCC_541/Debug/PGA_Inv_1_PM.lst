@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
   28:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** * Summary:
   29:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** *  Saves the user configuration registers.
   30:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** * 
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 2
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 2
 
 
   31:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
   53              		.size	PGA_Inv_1_RestoreConfig, .-PGA_Inv_1_RestoreConfig
   54 0002 00BF     		.section	.text.PGA_Inv_1_Sleep,"ax",%progbits
   55              		.align	2
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 3
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 3
 
 
   56              		.global	PGA_Inv_1_Sleep
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
   90:Generated_Source\PSoC5/PGA_Inv_1_PM.c ****         /* Stop the configuration */
   91:Generated_Source\PSoC5/PGA_Inv_1_PM.c ****         PGA_Inv_1_Stop();
   80              		.loc 1 91 0
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 4
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 4
 
 
   81 0012 FFF7FEFF 		bl	PGA_Inv_1_Stop
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  121:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** *******************************************************************************/
  122:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** void PGA_Inv_1_Wakeup(void) 
  123:Generated_Source\PSoC5/PGA_Inv_1_PM.c **** {
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 5
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 5
 
 
  106              		.loc 1 123 0
@@ -298,13 +298,13 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  153 0019 00000000 		.4byte	.Ldebug_ranges0+0
  154 001d 00000000 		.4byte	0
  155 0021 00000000 		.4byte	.Ldebug_line0
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 6
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 6
 
 
  156 0025 02       		.uleb128 0x2
  157 0026 01       		.byte	0x1
  158 0027 06       		.byte	0x6
- 159 0028 41020000 		.4byte	.LASF0
+ 159 0028 59020000 		.4byte	.LASF0
  160 002c 02       		.uleb128 0x2
  161 002d 01       		.byte	0x1
  162 002e 08       		.byte	0x8
@@ -312,7 +312,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  164 0033 02       		.uleb128 0x2
  165 0034 02       		.byte	0x2
  166 0035 05       		.byte	0x5
- 167 0036 05020000 		.4byte	.LASF2
+ 167 0036 1D020000 		.4byte	.LASF2
  168 003a 02       		.uleb128 0x2
  169 003b 02       		.byte	0x2
  170 003c 07       		.byte	0x7
@@ -320,7 +320,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  172 0041 02       		.uleb128 0x2
  173 0042 04       		.byte	0x4
  174 0043 05       		.byte	0x5
- 175 0044 20020000 		.4byte	.LASF4
+ 175 0044 38020000 		.4byte	.LASF4
  176 0048 02       		.uleb128 0x2
  177 0049 04       		.byte	0x4
  178 004a 07       		.byte	0x7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  210 0086 01       		.byte	0x1
  211 0087 08       		.byte	0x8
  212 0088 BD010000 		.4byte	.LASF11
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 7
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 7
 
 
  213 008c 04       		.uleb128 0x4
@@ -371,7 +371,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  220 009d 02       		.uleb128 0x2
  221 009e 08       		.byte	0x8
  222 009f 04       		.byte	0x4
- 223 00a0 35020000 		.4byte	.LASF14
+ 223 00a0 4D020000 		.4byte	.LASF14
  224 00a4 02       		.uleb128 0x2
  225 00a5 04       		.byte	0x4
  226 00a6 07       		.byte	0x7
@@ -382,7 +382,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  231 00ae 2E       		.byte	0x2e
  232 00af E4000000 		.4byte	0xe4
  233 00b3 07       		.uleb128 0x7
- 234 00b4 29020000 		.4byte	.LASF16
+ 234 00b4 41020000 		.4byte	.LASF16
  235 00b8 03       		.byte	0x3
  236 00b9 30       		.byte	0x30
  237 00ba 6B000000 		.4byte	0x6b
@@ -400,7 +400,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  249 00d2 6B000000 		.4byte	0x6b
  250 00d6 02       		.byte	0x2
  251 00d7 07       		.uleb128 0x7
- 252 00d8 4D020000 		.4byte	.LASF19
+ 252 00d8 65020000 		.4byte	.LASF19
  253 00dc 03       		.byte	0x3
  254 00dd 33       		.byte	0x33
  255 00de 6B000000 		.4byte	0x6b
@@ -412,13 +412,13 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  261 00ea 34       		.byte	0x34
  262 00eb AB000000 		.4byte	0xab
  263 00ef 09       		.uleb128 0x9
- 264 00f0 56020000 		.4byte	.LASF21
+ 264 00f0 6E020000 		.4byte	.LASF21
  265 00f4 01       		.byte	0x1
  266 00f5 26       		.byte	0x26
  267 00f6 00000000 		.4byte	.LFB0
  268 00fa 02000000 		.4byte	.LFE0-.LFB0
  269 00fe 01       		.uleb128 0x1
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 8
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 8
 
 
  270 00ff 9C       		.byte	0x9c
@@ -444,7 +444,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  290 012b 60010000 		.4byte	0x160
  291 012f 00       		.byte	0
  292 0130 0A       		.uleb128 0xa
- 293 0131 0F020000 		.4byte	.LASF24
+ 293 0131 27020000 		.4byte	.LASF24
  294 0135 01       		.byte	0x1
  295 0136 7A       		.byte	0x7a
  296 0137 00000000 		.4byte	.LFB3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  324              		.section	.debug_abbrev,"",%progbits
  325              	.Ldebug_abbrev0:
  326 0000 01       		.uleb128 0x1
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 9
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 9
 
 
  327 0001 11       		.uleb128 0x11
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  381 0037 35       		.uleb128 0x35
  382 0038 00       		.byte	0
  383 0039 49       		.uleb128 0x49
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 10
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 10
 
 
  384 003a 13       		.uleb128 0x13
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  438 0070 0B       		.uleb128 0xb
  439 0071 27       		.uleb128 0x27
  440 0072 19       		.uleb128 0x19
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 11
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 11
 
 
  441 0073 11       		.uleb128 0x11
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  495 00ad 13       		.uleb128 0x13
  496 00ae 02       		.uleb128 0x2
  497 00af 18       		.uleb128 0x18
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 12
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 12
 
 
  498 00b0 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  550      00000201 
  550      FB0E0D00 
  550      01010101 
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 13
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 13
 
 
  551              	.LASF25:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  570      00
  571              	.LASF5:
  572 0110 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 14
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 14
 
 
  572      20756E73 
@@ -838,54 +838,54 @@ ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 1
  594      31526567 
  594      00
  595              	.LASF11:
-ARM GAS  C:\Users\jayti\AppData\Local\Temp\ccYhyVQQ.s 			page 15
+ARM GAS  C:\Users\jayti\AppData\Local\Temp\cc4Kghtn.s 			page 15
 
 
  596 01bd 63686172 		.ascii	"char\000"
  596      00
  597              	.LASF29:
- 598 01c2 433A5C55 		.ascii	"C:\\Users\\jayti\\Dropbox\\2025 4th yr engineering\\"
+ 598 01c2 433A5C55 		.ascii	"C:\\Users\\jayti\\Documents\\COMPSYS_723\\P4P_Proje"
  598      73657273 
  598      5C6A6179 
  598      74695C44 
- 598      726F7062 
- 599 01f1 50534F43 		.ascii	"PSOC\\Design01.cydsn\000"
- 599      5C446573 
- 599      69676E30 
- 599      312E6379 
- 599      64736E00 
+ 598      6F63756D 
+ 599 01f0 63742D31 		.ascii	"ct-130\\Experimental_cap_sense\\Design01.cydsn\000"
+ 599      33305C45 
+ 599      78706572 
+ 599      696D656E 
+ 599      74616C5F 
  600              	.LASF2:
- 601 0205 73686F72 		.ascii	"short int\000"
+ 601 021d 73686F72 		.ascii	"short int\000"
  601      7420696E 
  601      7400
  602              	.LASF24:
- 603 020f 5047415F 		.ascii	"PGA_Inv_1_Wakeup\000"
+ 603 0227 5047415F 		.ascii	"PGA_Inv_1_Wakeup\000"
  603      496E765F 
  603      315F5761 
  603      6B657570 
  603      00
  604              	.LASF4:
- 605 0220 6C6F6E67 		.ascii	"long int\000"
+ 605 0238 6C6F6E67 		.ascii	"long int\000"
  605      20696E74 
  605      00
  606              	.LASF16:
- 607 0229 656E6162 		.ascii	"enableState\000"
+ 607 0241 656E6162 		.ascii	"enableState\000"
  607      6C655374 
  607      61746500 
  608              	.LASF14:
- 609 0235 6C6F6E67 		.ascii	"long double\000"
+ 609 024d 6C6F6E67 		.ascii	"long double\000"
  609      20646F75 
  609      626C6500 
  610              	.LASF0:
- 611 0241 7369676E 		.ascii	"signed char\000"
+ 611 0259 7369676E 		.ascii	"signed char\000"
  611      65642063 
  611      68617200 
  612              	.LASF19:
- 613 024d 73634352 		.ascii	"scCR2Reg\000"
+ 613 0265 73634352 		.ascii	"scCR2Reg\000"
  613      32526567 
  613      00
  614              	.LASF21:
- 615 0256 5047415F 		.ascii	"PGA_Inv_1_SaveConfig\000"
+ 615 026e 5047415F 		.ascii	"PGA_Inv_1_SaveConfig\000"
  615      496E765F 
  615      315F5361 
  615      7665436F 

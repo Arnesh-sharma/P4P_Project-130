@@ -11,21 +11,28 @@
 */
 #include "project.h"
 
+CY_ISR(Schmitt_Output_Handler) {
+    // Toggle LED
+    LED_Write(~LED_Read());
+    Schmitt_Output_ClearInterrupt();
+}
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-  
+    isr_schmitt_StartEx(Schmitt_Output_Handler);
     VDAC8_1_Start();
-    VDAC8_1_SetValue(83);
+    //VDAC8_1_SetValue(83);
     
    
-    IDAC8_1_SetValue(8);
-    IDAC8_1_SetValue(16);
+    IDAC8_1_SetValue(80);
+    IDAC8_1_SetValue(160);
     IDAC8_1_Start();
     IDAC8_2_Start();
     
+    Opamp_1_Start();
     
     for(;;)
     {
