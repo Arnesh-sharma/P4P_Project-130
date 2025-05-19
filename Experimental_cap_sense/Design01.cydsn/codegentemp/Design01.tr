@@ -59,7 +59,7 @@ Port Name  Setup to Clk  Clock Name:Phase
 
 Port Name  Clock to Out  Clock Name:Phase           
 ---------  ------------  -------------------------  
-pw(0)_PAD  25309         Clock_1(fixed-function):R  
+pw(0)_PAD  25337         Clock_1(fixed-function):R  
 
 
                          3.3::Pad to Pad

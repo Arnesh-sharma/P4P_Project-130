@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: vcs.c  
+* File Name: Vout_1.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "vcs.h"
+#include "Vout_1.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 vcs__PORT == 15 && ((vcs__MASK & 0xC0) != 0))
+	 Vout_1__PORT == 15 && ((Vout_1__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: vcs_Write
+* Function Name: Vout_1_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet vcs_SUT.c usage_vcs_Write
+*  \snippet Vout_1_SUT.c usage_Vout_1_Write
 *******************************************************************************/
-void vcs_Write(uint8 value)
+void Vout_1_Write(uint8 value)
 {
-    uint8 staticBits = (vcs_DR & (uint8)(~vcs_MASK));
-    vcs_DR = staticBits | ((uint8)(value << vcs_SHIFT) & vcs_MASK);
+    uint8 staticBits = (Vout_1_DR & (uint8)(~Vout_1_MASK));
+    Vout_1_DR = staticBits | ((uint8)(value << Vout_1_SHIFT) & Vout_1_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: vcs_SetDriveMode
+* Function Name: Vout_1_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void vcs_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet vcs_SUT.c usage_vcs_SetDriveMode
+*  \snippet Vout_1_SUT.c usage_Vout_1_SetDriveMode
 *******************************************************************************/
-void vcs_SetDriveMode(uint8 mode)
+void Vout_1_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(vcs_0, mode);
+	CyPins_SetPinDriveMode(Vout_1_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: vcs_Read
+* Function Name: Vout_1_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void vcs_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet vcs_SUT.c usage_vcs_Read  
+*  \snippet Vout_1_SUT.c usage_Vout_1_Read  
 *******************************************************************************/
-uint8 vcs_Read(void)
+uint8 Vout_1_Read(void)
 {
-    return (vcs_PS & vcs_MASK) >> vcs_SHIFT;
+    return (Vout_1_PS & Vout_1_MASK) >> Vout_1_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: vcs_ReadDataReg
+* Function Name: Vout_1_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 vcs_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred vcs_Read() API because the 
-* vcs_ReadDataReg() reads the data register instead of the status 
+* preferred Vout_1_Read() API because the 
+* Vout_1_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 vcs_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet vcs_SUT.c usage_vcs_ReadDataReg 
+*  \snippet Vout_1_SUT.c usage_Vout_1_ReadDataReg 
 *******************************************************************************/
-uint8 vcs_ReadDataReg(void)
+uint8 Vout_1_ReadDataReg(void)
 {
-    return (vcs_DR & vcs_MASK) >> vcs_SHIFT;
+    return (Vout_1_DR & Vout_1_MASK) >> Vout_1_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(vcs_INTSTAT) 
+#if defined(Vout_1_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: vcs_SetInterruptMode
+    * Function Name: Vout_1_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 vcs_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use vcs_INTR_ALL to configure the
+    *  component. Or you may use Vout_1_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - vcs_0_INTR       (First pin in the list)
-    *  - vcs_1_INTR       (Second pin in the list)
+    *  - Vout_1_0_INTR       (First pin in the list)
+    *  - Vout_1_1_INTR       (Second pin in the list)
     *  - ...
-    *  - vcs_INTR_ALL     (All pins in Pins component)
+    *  - Vout_1_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 vcs_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet vcs_SUT.c usage_vcs_SetInterruptMode
+    *  \snippet Vout_1_SUT.c usage_Vout_1_SetInterruptMode
     *******************************************************************************/
-    void vcs_SetInterruptMode(uint16 position, uint16 mode)
+    void Vout_1_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & vcs_0_INTR) != 0u) 
+		if((position & Vout_1_0_INTR) != 0u) 
 		{ 
-			 vcs_0_INTTYPE_REG = (uint8)mode; 
+			 Vout_1_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: vcs_ClearInterrupt
+    * Function Name: Vout_1_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 vcs_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet vcs_SUT.c usage_vcs_ClearInterrupt
+    *  \snippet Vout_1_SUT.c usage_Vout_1_ClearInterrupt
     *******************************************************************************/
-    uint8 vcs_ClearInterrupt(void)
+    uint8 Vout_1_ClearInterrupt(void)
     {
-        return (vcs_INTSTAT & vcs_MASK) >> vcs_SHIFT;
+        return (Vout_1_INTSTAT & Vout_1_MASK) >> Vout_1_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

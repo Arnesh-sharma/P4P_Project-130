@@ -1,10 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2025-05-11T11:39:24Z")
+ (DATE "2025-05-18T22:13:42Z")
  (DESIGN "Design01")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 4.4")
+ (VERSION " 4.2")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL
@@ -12,9 +12,9 @@
   (INSTANCE *)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT \\Comp_1\:ctComp\\.out \\IDAC8_2\:Net_123\\.main_0 (10.327:10.327:10.327))
-    (INTERCONNECT \\Comp_1\:ctComp\\.out pw\(0\).pin_input (8.353:8.353:8.353))
-    (INTERCONNECT \\IDAC8_2\:Net_123\\.q \\IDAC8_2\:viDAC8\\.ioff (9.195:9.195:9.195))
+    (INTERCONNECT \\Comp_1\:ctComp\\.out \\IDAC8_2\:Net_123\\.main_0 (5.464:5.464:5.464))
+    (INTERCONNECT \\Comp_1\:ctComp\\.out pw\(0\).pin_input (8.384:8.384:8.384))
+    (INTERCONNECT \\IDAC8_2\:Net_123\\.q \\IDAC8_2\:viDAC8\\.ioff (6.208:6.208:6.208))
     (INTERCONNECT pw\(0\).pad_out pw\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.aclk_glb_ff_0 \\Comp_1\:ctComp\\.clock (0.000:0.000:0.000))
     (INTERCONNECT pw\(0\).pad_out pw\(0\)_PAD (0.000:0.000:0.000))

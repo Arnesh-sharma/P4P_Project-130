@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: vcs.h  
+* File Name: Vout_1.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_vcs_ALIASES_H) /* Pins vcs_ALIASES_H */
-#define CY_PINS_vcs_ALIASES_H
+#if !defined(CY_PINS_Vout_1_ALIASES_H) /* Pins Vout_1_ALIASES_H */
+#define CY_PINS_Vout_1_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define vcs_0			(vcs__0__PC)
-#define vcs_0_INTR	((uint16)((uint16)0x0001u << vcs__0__SHIFT))
+#define Vout_1_0			(Vout_1__0__PC)
+#define Vout_1_0_INTR	((uint16)((uint16)0x0001u << Vout_1__0__SHIFT))
 
-#define vcs_INTR_ALL	 ((uint16)(vcs_0_INTR))
+#define Vout_1_INTR_ALL	 ((uint16)(Vout_1_0_INTR))
 
-#endif /* End Pins vcs_ALIASES_H */
+#endif /* End Pins Vout_1_ALIASES_H */
 
 
 /* [] END OF FILE */

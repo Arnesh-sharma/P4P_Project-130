@@ -23,8 +23,8 @@ int main(void)
     VDAC8_1_SetValue(127);
     
    
-    IDAC8_1_SetValue(8);
-    IDAC8_1_SetValue(16);
+    IDAC8_1_SetValue(80);
+    IDAC8_1_SetValue(160);
     IDAC8_1_Start();
     IDAC8_2_Start();
     
