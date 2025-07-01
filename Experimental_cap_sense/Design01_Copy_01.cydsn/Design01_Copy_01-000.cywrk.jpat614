@@ -18,27 +18,12 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Design01_Copy_01-000\Design01_Copy_01">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Design01_Copy_01-000\bts_schmitt\TopDesign">
 <ExpandedNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
+<v>Design01_Copy_01-000\bts_schmitt\TopDesign</v>
 <v>Design01_Copy_01-000\Design01\TopDesign</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Pins</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Analog</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Clocks</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Interrupts</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\DMA</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\System</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Directives</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\Flash Security</v>
-<v>Design01_Copy_01-000\Design01\Design01.cydwr\EEPROM</v>
-<v>Design01_Copy_01-000\Design01\Header Files</v>
-<v>Design01_Copy_01-000\Design01\Header Files\cyapicallbacks.h</v>
-<v>Design01_Copy_01-000\Design01\Source Files</v>
-<v>Design01_Copy_01-000\Design01\Source Files\main.c</v>
-<v>Design01_Copy_01-000\Design01\Generated_Source</v>
-<v>Design01_Copy_01-000\Design01\Generated_Source\PSoC5</v>
-<v>Design01_Copy_01-000\Design01_Copy_01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\TopDesign</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Pins</v>
@@ -59,70 +44,27 @@
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
+<v>Design01_Copy_01-000\bts_schmitt\TopDesign</v>
+<v>Design01_Copy_01-000\bts_schmitt\bts_schmitt.cydwr</v>
+<v>Design01_Copy_01-000\bts_schmitt\Header Files</v>
+<v>Design01_Copy_01-000\bts_schmitt\Source Files</v>
+<v>Design01_Copy_01-000\bts_schmitt\Generated_Source</v>
 <v>Design01_Copy_01-000\Design01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\TopDesign</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Pins</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Analog</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Clocks</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Interrupts</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\DMA</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\System</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Directives</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\Flash Security</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Design01_Copy_01.cydwr\EEPROM</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Header Files</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Header Files\cyapicallbacks.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Source Files</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Source Files\main.c</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\Clock_1</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\CS</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cy_boot</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\IDAC8_1</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\IDAC8_2</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\Opamp_1</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\VDAC8_1</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\Vout_1</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\vref</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevice.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\Generated_Source\PSoC5\cyfitterrv.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Design01_Copy_01-000</v>
-<v>Design01_Copy_01-000\Design01</v>
-<v>Design01_Copy_01-000\Design01\TopDesign</v>
-<v>Design01_Copy_01-000\Design01\TopDesign\TopDesign.cysch</v>
 <v>Design01_Copy_01-000\Design01_Copy_01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\TopDesign</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
 <v>Design01_Copy_01-000\Design01</v>
-<v>Design01_Copy_01-000\Design01\TopDesign</v>
-<v>Design01_Copy_01-000\Design01\TopDesign\TopDesign.cysch</v>
 <v>Design01_Copy_01-000\Design01_Copy_01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\TopDesign</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\TopDesign\TopDesign.cysch</v>
@@ -131,6 +73,45 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CS.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_1.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_1_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_2.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_2_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8_1.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8_1_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\Vout_1.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\vref.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_BuffAmp.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_BuffAmp_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_DacClk.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_VDAC8.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_VDAC8_PM.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_Wave1_DMA_dma.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC8_1_Wave2_DMA_dma.lst</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\bts_schmitt.elf</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\bts_schmitt.hex</v>
+<v>Design01_Copy_01-000\bts_schmitt\CortexM3\ARM_GCC_541\Debug\bts_schmitt.map</v>
+<v>Design01_Copy_01-000\bts_schmitt\bts_schmitt.gpdsc</v>
 <v>Design01_Copy_01-000\Design01</v>
 <v>Design01_Copy_01-000\Design01\CortexM3</v>
 <v>Design01_Copy_01-000\Design01\CortexM3\ARM_GCC_541</v>
@@ -166,14 +147,11 @@
 <v>Design01_Copy_01-000\Design01\CortexM3\ARM_GCC_541\Debug\Design01.hex</v>
 <v>Design01_Copy_01-000\Design01\CortexM3\ARM_GCC_541\Debug\Design01.map</v>
 <v>Design01_Copy_01-000\Design01\Design01.gpdsc</v>
-<v>Design01_Copy_01-000\Design01\Design01.rpt</v>
-<v>Design01_Copy_01-000\Design01\Design01_timing.html</v>
 <v>Design01_Copy_01-000\Design01_Copy_01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\CS.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
@@ -193,6 +171,9 @@
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_1.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_1_PM.lst</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_2.lst</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Opamp_2_PM.lst</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\trigger.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8_1.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC8_1_PM.lst</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CortexM3\ARM_GCC_541\Debug\Listing Files\Vout_1.lst</v>
@@ -206,10 +187,10 @@
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
+<v>Design01_Copy_01-000\bts_schmitt\bts_schmitt.rpt</v>
+<v>Design01_Copy_01-000\bts_schmitt\bts_schmitt_timing.html</v>
 <v>Design01_Copy_01-000\Design01</v>
-<v>Design01_Copy_01-000\Design01\Design01.rpt</v>
-<v>Design01_Copy_01-000\Design01\Design01_timing.html</v>
-<v>Design01_Copy_01-000\Design01_Copy_01</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -220,7 +201,17 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Design01_Copy_01-000</v>
-<v>Design01_Copy_01-000\Design01</v>
+<v>Design01_Copy_01-000\bts_schmitt\PSoC 5LP Architecture TRM</v>
+<v>Design01_Copy_01-000\bts_schmitt\CY8C58LP Family Datasheet</v>
+<v>Design01_Copy_01-000\bts_schmitt\System Reference Guides</v>
+<v>Design01_Copy_01-000\bts_schmitt\System Reference Guides\cy_boot_v5_82</v>
+<v>Design01_Copy_01-000\bts_schmitt\cy_constant_v1_0.pdf</v>
+<v>Design01_Copy_01-000\bts_schmitt\cy_pins_v2_20</v>
+<v>Design01_Copy_01-000\bts_schmitt\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Design01_Copy_01-000\bts_schmitt\OpAmp_v1_90</v>
+<v>Design01_Copy_01-000\bts_schmitt\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
+<v>Design01_Copy_01-000\bts_schmitt\VDAC8_v1_90.pdf</v>
+<v>Design01_Copy_01-000\bts_schmitt\WaveDAC8_v2_10.pdf</v>
 <v>Design01_Copy_01-000\Design01\PSoC 5LP Architecture TRM</v>
 <v>Design01_Copy_01-000\Design01\CY8C58LP Family Datasheet</v>
 <v>Design01_Copy_01-000\Design01\System Reference Guides</v>
@@ -238,40 +229,31 @@
 <v>Design01_Copy_01-000\Design01_Copy_01\CY8C58LP Family Datasheet</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\System Reference Guides</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\System Reference Guides\cy_boot_v5_82</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\cy_clock_v2_20.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\cy_pins_v2_20</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\IDAC8_v2_0</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\IDAC8_v2_0\IDAC8_v2_0.pdf</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90.pdf</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\not_v1_0.pdf</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\VDAC8_v1_90.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Design01_Copy_01-000</v>
+<v>Design01_Copy_01-000\bts_schmitt</v>
 <v>Design01_Copy_01-000\Design01</v>
-<v>Design01_Copy_01-000\Design01\PSoC 5LP Architecture TRM</v>
-<v>Design01_Copy_01-000\Design01\CY8C58LP Family Datasheet</v>
-<v>Design01_Copy_01-000\Design01\System Reference Guides</v>
-<v>Design01_Copy_01-000\Design01\System Reference Guides\cy_boot_v5_82</v>
-<v>Design01_Copy_01-000\Design01\Comp_v2_0.pdf</v>
-<v>Design01_Copy_01-000\Design01\cy_clock_v2_20.pdf</v>
-<v>Design01_Copy_01-000\Design01\cy_pins_v2_20</v>
-<v>Design01_Copy_01-000\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Design01_Copy_01-000\Design01\IDAC8_v2_0</v>
-<v>Design01_Copy_01-000\Design01\IDAC8_v2_0\IDAC8_v2_0.pdf</v>
-<v>Design01_Copy_01-000\Design01\PGA_Inv_v2_0.pdf</v>
-<v>Design01_Copy_01-000\Design01\VDAC8_v1_90.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\PSoC 5LP Architecture TRM</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\CY8C58LP Family Datasheet</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\System Reference Guides</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\System Reference Guides\cy_boot_v5_82</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\cy_clock_v2_20.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\cy_pins_v2_20</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\IDAC8_v2_0</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\IDAC8_v2_0\IDAC8_v2_0.pdf</v>
-<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90.pdf</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\not_v1_0.pdf</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90</v>
+<v>Design01_Copy_01-000\Design01_Copy_01\OpAmp_v1_90\OpAmp_v1_90.pdf</v>
 <v>Design01_Copy_01-000\Design01_Copy_01\VDAC8_v1_90.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -282,10 +264,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01_Copy_01.cydwr" />
-<name v="..\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\TopDesign\TopDesign.cysch" />
-<name v="..\Design01.cydsn\main.c" />
+<name v=".\Design01_Copy_01.cydwr" />
+<name v=".\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -293,7 +274,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1506, 703" SelectedTabbedMdiWindow="5ac08659-bd10-4ae2-9c21-58d570699433"><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cydwr" Guid="5ac08659-bd10-4ae2-9c21-58d570699433" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="9d1bf141-c9a0-4c3d-8286-b30c6c504ddb" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch" Guid="0c9c1e37-0993-4ca6-acbc-93dc15f3b31c" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f4c171f3-cdcc-40ed-9f5f-b735efda7b35" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\main.c" Guid="70e8b0dc-3fca-473f-95ad-dcea112e9b2a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1544, 703" SelectedTabbedMdiWindow="d2baa0db-5774-4e89-a50a-d203224dfd0b"><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\TopDesign\TopDesign.cysch" Guid="d2baa0db-5774-4e89-a50a-d203224dfd0b" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cydwr" Guid="252a4aca-a3d5-4baa-a111-94efcf195fe0" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\main.c" Guid="0d8e1ca8-e7df-4421-9a72-aabe76f6b0dc" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f4c171f3-cdcc-40ed-9f5f-b735efda7b35" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

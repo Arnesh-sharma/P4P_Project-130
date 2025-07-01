@@ -24,15 +24,16 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     //isr_schmitt_StartEx(Schmitt_Output_Handler);
     VDAC8_1_Start();
-    VDAC8_1_SetValue(127);
+    //VDAC8_1_SetValue(127);
     
    
-    IDAC8_1_SetValue(80);
-    IDAC8_1_SetValue(160);
+    //IDAC8_1_SetValue(80);
+    //IDAC8_1_SetValue(78);
     IDAC8_1_Start();
     IDAC8_2_Start();
     
     Opamp_1_Start();
+    Opamp_2_Start();
     
     for(;;)
     {

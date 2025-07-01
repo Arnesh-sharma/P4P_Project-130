@@ -1,7 +1,8 @@
-C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj|a786f8f2-3acc-4dca-9190-c33569943029
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e92da2c2-271f-447d-81d1-f8efe608aacd
-C:\Users\jpat614\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|f07cbdae-9226-4157-9c65-e37f0d315972
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2137a8e8-9316-41aa-94d3-bdbf9fd941b5
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|193f0da7-f018-4905-a013-c87ff3362612
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|11cdda70-2a91-4d80-bbee-541a3119a564
-C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\Design01.cyprj|43bdbc45-7312-4434-b731-723be2c8cf68
+C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj|e941e3b5-693d-4470-9166-2f36b1fc2bda
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|caefc27a-8aa8-4bfc-9b76-a727e74493ff
+C:\Users\jpat614\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|e523e578-187b-4561-a450-5dd0fa506c1f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|121b2a1f-fed9-4e76-acec-c47d374d523e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1dd88641-803e-486c-aa93-7b6e1df07b72
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f6748540-9a43-48d4-a5fb-9c24f953523b
+C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\Design01.cyprj|4ed10094-f330-45ea-b94e-f35e0564d7f7
+C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\bts_schmitt.cydsn\bts_schmitt.cyprj|ff9df7c1-c89d-4398-8d58-9a8412ac228f

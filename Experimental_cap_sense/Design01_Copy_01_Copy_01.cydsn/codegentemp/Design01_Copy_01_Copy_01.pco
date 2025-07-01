@@ -1,0 +1,19 @@
+# Design01_Copy_01_Copy_01
+# 2025-07-01 03:25:48Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+set_io "Dedicated_Output" iocell 3 6
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "CS(0)" iocell 3 0
+set_io "vref(0)" iocell 15 4
+set_io "Vout_1(0)" iocell 3 7
+set_io "trigger(0)" iocell 0 0
+set_location "\IDAC8_1:viDAC8\" vidaccell -1 -1 1
+set_location "\IDAC8_2:viDAC8\" vidaccell -1 -1 3
+set_location "\VDAC8_1:viDAC8\" vidaccell -1 -1 2
+set_location "\Opamp_2:ABuf\" abufcell -1 -1 1

@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2025-05-19T01:14:30Z")
+ (DATE "2025-07-01T03:28:23Z")
  (DESIGN "Design01_Copy_01")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -12,8 +12,8 @@
   (INSTANCE *)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT ClockBlock.dclk_0 \\IDAC8_1\:Net_123\\.main_0 (7.304:7.304:7.304))
-    (INTERCONNECT \\IDAC8_1\:Net_123\\.q \\IDAC8_1\:viDAC8\\.ioff (6.208:6.208:6.208))
+    (INTERCONNECT trigger\(0\).fb \\IDAC8_2\:viDAC8\\.ioff (7.811:7.811:7.811))
+    (INTERCONNECT trigger\(0\)_PAD trigger\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

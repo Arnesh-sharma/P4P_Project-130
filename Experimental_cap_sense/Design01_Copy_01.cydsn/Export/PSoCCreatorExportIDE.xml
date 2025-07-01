@@ -67,8 +67,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VDAC8_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VDAC8_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VDAC8_1_PM.c</File>
@@ -114,6 +112,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vout_1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vout_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Vout_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Opamp_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Opamp_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Opamp_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\trigger_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\trigger.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\trigger.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Export\ARM_GCC_Generic">

@@ -1,0 +1,17 @@
+net Net_135
+	term   ":ioport0:pin0.fb"
+	switch ":ioport0:pin0.fb==>Stub-:dsiswitch_bottom@[DSI=(1,4)][side=bottom]:dsihc_bottom:v0+:dsiswitch_bottom@[DSI=(1,4)][side=bottom]:dsihc_bottom:v2"
+	switch "OStub-:dsiswitch_bottom@[DSI=(1,4)][side=bottom]:dsihc_bottom:v0+:dsiswitch_bottom@[DSI=(1,4)][side=bottom]:dsihc_bottom:v2"
+	switch ":dsiswitch_bottom@[DSI=(1,4)][side=bottom]:dsihc_bottom:0,0"
+	switch ":hvswitch@[UDB=(3,3)][side=left]:31,0_f"
+	switch ":hvswitch@[UDB=(2,3)][side=left]:vseg_31_bot_f"
+	switch ":hvswitch@[UDB=(1,3)][side=left]:vseg_31_bot_f"
+	switch ":hvswitch@[UDB=(0,3)][side=left]:vseg_31_bot_f"
+	switch ":hvswitch@[UDB=(0,3)][side=left]:31,21_b"
+	switch ":hvswitch@[UDB=(0,3)][side=left]:hseg_21_b"
+	switch ":hvswitch@[UDB=(0,2)][side=left]:hseg_21_b"
+	switch ":dsiswitch_top@[DSI=(0,2)][side=top]:dsihc_top:56,21_f"
+	switch "IStub-:dsiswitch_top@[DSI=(0,2)][side=top]:dsihc_top:v56+:dsiswitch_top@[DSI=(0,2)][side=top]:dsihc_top:v58"
+	switch "Stub-:dsiswitch_top@[DSI=(0,2)][side=top]:dsihc_top:v56+:dsiswitch_top@[DSI=(0,2)][side=top]:dsihc_top:v58==>:vidaccell_3.ioff"
+	term   ":vidaccell_3.ioff"
+end Net_135

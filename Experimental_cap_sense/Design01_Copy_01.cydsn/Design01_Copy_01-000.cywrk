@@ -9,6 +9,7 @@
 <projects>
 <v>.\Design01_Copy_01.cyprj</v>
 <v>..\Design01.cydsn\Design01.cyprj</v>
+<v>..\bts_schmitt.cydsn\bts_schmitt.cyprj</v>
 </projects>
 <workspace_id v="18721360-246d-4a2d-9bfa-cb2332e9c568" />
 <WriteAppVersionLastSavedWith v="4.2.0.641" />

@@ -36,11 +36,15 @@
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Vout_1_aliases.h" value="HEADER;;;;;Vout_1" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Vout_1.c" value="SOURCE_C;CortexM3;;;;Vout_1" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Vout_1.h" value="HEADER;;;;;Vout_1" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\trigger_aliases.h" value="HEADER;;;;;trigger" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\trigger.c" value="SOURCE_C;CortexM3;;;;trigger" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\trigger.h" value="HEADER;;;;;trigger" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_2.c" value="SOURCE_C;CortexM3;;;;Opamp_2" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_2.h" value="HEADER;;;;;Opamp_2" />
+  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_2_PM.c" value="SOURCE_C;CortexM3;;;;Opamp_2" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_1.c" value="SOURCE_C;CortexM3;;;;Opamp_1" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_1.h" value="HEADER;;;;;Opamp_1" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Opamp_1_PM.c" value="SOURCE_C;CortexM3;;;;Opamp_1" />
-  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM3;;;;Clock_1" />
-  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM3;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
