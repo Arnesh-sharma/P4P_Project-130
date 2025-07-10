@@ -1,5 +1,85 @@
 MWS Result File Version 20150206
-size=i:19
+size=i:29
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_eldens_m3t.tfo
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_eldens_m3t.rex
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_d_m3t.tfo
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_d_m3t.rex
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_e_m3t.tfo
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_e_m3t.rex
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_phi_m3t.tfo
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:field_se_phi_m3t.rex
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:estatic.svd
+
+type=s:HIDDENITEM
+problemclass=s::8:1000
+visibility=s:hidden
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+files=s:estatic.slv
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -27,63 +107,158 @@ treepath=s:1D Results
 
 type=s:XYSIGNAL2
 subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
+problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:Excitation Signals\default
-files=s:signal_default_lf.sig
-xlabel=s:Time / s
-title=s:Excitation: default
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Convergence\Solver\Residual
+files=s:Residual.sig
+xlabel=s:Iteration Step
+ylabel=s:log10(Relative Residual)
+title=s:Convergence
 
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
+type=s:POTENTIAL_TET
+problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:solverstart
-result=s:0
-treepath=s:1D Results\Signals\default (potential,potential1)
-files=s:signal_default (potential,potential1)_lf_res.sig
-xlabel=s:Time / s
-title=s:Excitation: default (potential,potential1)
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\Potential [Es]
+files=s:field_se_phi.m3t
+files=s:field_se_phi_m3t.rex
+ylabel=s:Potential
 
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
+type=s:EFIELD3D_TET
+problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:solverstart
-result=s:0
-treepath=s:1D Results\Signals\default (potential,potential2)
-files=s:signal_default (potential,potential2)_lf_res.sig
-xlabel=s:Time / s
-title=s:Excitation: default (potential,potential2)
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\E-Field [Es]
+files=s:field_se_e.m3t
+files=s:field_se_e_m3t.rex
+ylabel=s:E-Field
 
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
+type=s:DFIELD3D_TET
+problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:solverstart
-result=s:0
-treepath=s:1D Results\Signals\default (potential,potential3)
-files=s:signal_default (potential,potential3)_lf_res.sig
-xlabel=s:Time / s
-title=s:Excitation: default (potential,potential3)
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\D-Field [Es]
+files=s:field_se_d.m3t
+files=s:field_se_d_m3t.rex
+ylabel=s:D-Field
 
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
+type=s:EENERGY3D_TET
+problemclass=s::8:1000
 visibility=s:visible
 creation=s:internal
-lifetime=s:solverstart
-result=s:0
-treepath=s:1D Results\Signals\default (potential,potential4)
-files=s:signal_default (potential,potential4)_lf_res.sig
-xlabel=s:Time / s
-title=s:Excitation: default (potential,potential4)
+lifetime=s:rebuild
+result=s:1
+treepath=s:2D/3D Results\El. Energy Dens. [Es]
+files=s:field_se_eldens.m3t
+files=s:field_se_eldens_m3t.rex
+ylabel=s:Electric Energy Density
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Energy\background
+files=s:EsSolver_Energy_background.0d
+ylabel=s:J
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Energy\Total
+files=s:EsSolver_Energy_Total.0d
+ylabel=s:J
+
+type=s:SOLVERTEXTFILE
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:Electric Field Energy
+files=s:Electric Field Energy.stx
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Charges\Open boundaries
+files=s:EsSolver_Charges_Openboundaries.0d
+ylabel=s:C
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Charges\charge1
+files=s:EsSolver_Charges_charge1.0d
+ylabel=s:C
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Charges\charge2
+files=s:EsSolver_Charges_charge2.0d
+ylabel=s:C
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Charges\potential3
+files=s:EsSolver_Charges_potential3.0d
+ylabel=s:C
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Es Solver\Charges\potential4
+files=s:EsSolver_Charges_potential4.0d
+ylabel=s:C
+
+type=s:SOLVERTEXTFILE
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:Charge Values
+files=s:Charge Values.stx
+
+type=s:RESULT_0D
+problemclass=s::8:1000
+visibility=s:visible
+creation=s:internal
+lifetime=s:rebuild
+result=s:1
+treepath=s:1D Results\Field Values\E-Field [Es]\Max Value
+files=s:FieldValues_E-Field[Es]_MaxValue.0d
+ylabel=s:V/m
 
 type=s:RESULT_0D
 problemclass=s::8:1000
@@ -93,103 +268,4 @@ lifetime=s:rebuild
 result=s:1
 treepath=s:1D Results\AutomaticRunInformation
 files=s:AutomaticRunInformation
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\Time Steps
-files=s:MQSTDtstep.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\Convergence\Solver (TD)\Rel. Residual
-files=s:MQSTDnlplotdata.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\Convergence\Solver (TD)\Linear Steps
-files=s:MQSTDnlplotdatasteps.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\LT Solver\Energy\background
-files=s:MQSTDenergy_background.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\LT Solver\Energy\Total
-files=s:MQSTDenergy_Total.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\LT Solver\Losses\Total
-files=s:MQSTDlosses_Total.sig
-
-type=s:XYSIGNAL2
-subtype=s:time
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:solverstart
-result=s:1
-treepath=s:1D Results\LT Solver\Potential\potential (5.5 10.5 0)
-files=s:MQSTD0d_pot-field_potential (5.5 10.5 0).sig
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\LT Solver\Statistics\Solver Time
-files=s:LTSolver_Statistics_SolverTime.0d
-ylabel=s:s
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\LT Solver\Statistics\Number of DoFs
-files=s:LTSolver_Statistics_NumberofDoFs.0d
-
-type=s:RESULT_0D
-problemclass=s::8:1000
-visibility=s:visible
-creation=s:internal
-lifetime=s:rebuild
-result=s:1
-treepath=s:1D Results\LT Solver\Statistics\Peak Memory usage
-files=s:LTSolver_Statistics_PeakMemoryusage.0d
-ylabel=s:MiB
 

@@ -1,5 +1,5 @@
 Solver type
-LF Time domain solver (MQS)
+Electrostatics solver
 Mesh type
 Tetrahedral
 IsIgnoreLossyMetals

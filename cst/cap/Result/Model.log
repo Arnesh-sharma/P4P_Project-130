@@ -1,4 +1,4 @@
-LF Time Domain Solver (MQS)
+Electrostatic Solver
 
 --------------------------------------------------------------------------------
 Units settings: 
@@ -27,9 +27,9 @@ For an optimal performance, hyper threading is ignored for parallel
 computations.
 
 --------------------------------------------------------------------------------
-Solver started at: 03:36 PM Thursday, 10. July 2025
+Solver started at: 04:54 PM Thursday, 10. July 2025
 
-  Module:  LF Time Domain Solver (MQS) (Win 64)
+  Module:  Electrostatic Solver (Win 64)
   Version: 2018.0 Release from 2017-10-26 (change 556462)
 
   Hardware:
@@ -40,7 +40,7 @@ Solver order = 2
 
 
 --------------------------------------------------------------------------------
-Detected 4 independent conductive sets.
+Detected 5 independent conductive sets.
 Desired accuracy = 1.0e-06
 
 
@@ -49,33 +49,32 @@ Using mesh with curved elements order: 1
 
 
 --------------------------------------------------------------------------------
-Linear solver is running
-Desired linear accuracy = 1.0e-06, max Iter = 1200
+Solver Timing Statistics: (last run)
 
+  Mesh generation:                  0d :  0h :  0m :  4s
+  Assembling process:               0d :  0h :  0m :  1s
+  Linear solver:                    0d :  0h :  0m :  0s
+  Post-processing:                  0d :  0h :  0m :  2s
+                                 --------------------------
+  Total time:                       0d :  0h :  0m :  7s
 
---------------------------------------------------------------------------------
-Linear solver is running
-Desired linear accuracy = 1.0e-06, max Iter = 1200
+  Number of threads used:           96 
+
 
 
 --------------------------------------------------------------------------------
 Solver Size Statistics:
 
-  Number of mesh cells:         6030 
-  Number of unknowns:           7193
+  Number of mesh cells:         19622 
+  Number of unknowns:           23067
 
 --------------------------------------------------------------------------------
-Solver Timing Statistics:
+Linear Solver Results: (last run)
 
-  Meshing time:	           0d :  0h :  0m :  3s
-  Assemble time:           0d :  0h :  0m :  0s
-  Solver time:             0d :  0h :  0m :  2s
-  Postprocessing time:     0d :  0h :  0m :  0s
-                    	--------------------------
-  Total time:              0d :  0h :  0m :  5s
-
-  Number of threads used:  14 
-
+  Accuracy:                     9.158048e-16
+  Desired accuracy:             1.000000e-06
+  Number of iterations:         1
+  Maximum number of iterations: 10000
 
 
 --------------------------------------------------------------------------------
@@ -85,8 +84,8 @@ Memory statistics:
                       Peak memory used (kB)         Free physical memory (kB) 
                                                     At begin     Minimum      
   ----------------------------------------------------------------------------
-  Solver start        15436                         19511052     19511012     
-  Solver run total    41264                         19510980     19486220     
+  Solver start        15432                         18624368     18622676     
+  Solver run total    108508                        18622136     18604660     
   ----------------------------------------------------------------------------
 
 

@@ -1,6 +1,3 @@
-component1:plate 1
-0
-1
 component1:plate 2
 0
 1
@@ -8,5 +5,8 @@ component2:field plate 1
 0
 1
 component2:field plate 2
+0
+1
+component1:plate 1
 0
 1

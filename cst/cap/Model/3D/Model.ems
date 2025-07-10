@@ -378,8 +378,7 @@ End With
 '@ new component: component2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Component.New "component2" 
-
+Component.New "component2"
 
 '@ define brick: component2:field plate 1
 
@@ -395,7 +394,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component2:emf plate 2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -410,11 +408,706 @@ With Brick
      .Create
 End With
 
-
 '@ rename block: component2:emf plate 2 to: component2:field plate 2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Solid.Rename "component2:emf plate 2", "field plate 2"
+
+'@ define potential: potential3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential3"
+     .Value "-50"
+     .Phase "0"
+     .AddFace "component2:field plate 1", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: potential4
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential4"
+     .Value "50"
+     .Phase "0"
+     .AddFace "component2:field plate 2", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF EStatic" 
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 1", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Floating"
+     .Create
+End With
+
+
+'@ define potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 1", "1"
+     .Type "Floating"
+     .Create
+End With
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "-5"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Value "5"
+     .Phase "0"
+     .AddFace "component1:plate 1", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ activate local coordinates
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.ActivateWCS "local"
+
+
+'@ rotate wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.RotateWCS "w", "-90" 
+
+
+'@ move wcs
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.MoveWCS "local", "0.0", "-19", "5.0" 
+
+
+'@ align wcs with face
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.ForceNextPick 
+Pick.PickFaceFromId "component1:plate 1", "1" 
+WCS.AlignWCSWithSelected "Face"
+
+
+'@ transform: rotate component1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "90", "0", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Value "5"
+     .Phase "0"
+     .AddFace "component1:plate 1", "1"
+     .Type "Floating"
+     .Create
+End With
+
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "0"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Floating"
+     .Create
+End With
+
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "20" 
+     .Set "StepsPerBoxFar", "1" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+End With 
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ activate global coordinates
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.ActivateWCS "global"
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ align wcs with face
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.ForceNextPick 
+Pick.PickFaceFromId "component1:plate 2", "2" 
+WCS.AlignWCSWithSelected "Face"
+
+
+'@ activate global coordinates
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.ActivateWCS "global"
+
+
+'@ activate local coordinates
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.ActivateWCS "local"
+
+
+'@ activate global coordinates
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+WCS.ActivateWCS "global"
+
+
+'@ transform: rotate component1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+
+'@ transform: translate component1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Vector "0", "0", "6" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+
+'@ delete potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Potential.Delete "potential1" 
+
+
+'@ delete potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Potential.Delete "potential2" 
+
+
+'@ define charge: charge1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Charge
+     .Reset
+     .Name "charge1"
+     .Value "5"
+     .Face "component1:plate 2", "2"
+     .Type "PEC"
+     .Create
+End With
+
+
+'@ define charge: charge2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Charge
+     .Reset
+     .Name "charge2"
+     .Value "-5"
+     .Face "component1:plate 1", "1"
+     .Type "PEC"
+     .Create
+End With
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
 
 
 '@ define potential: potential3
@@ -443,5 +1136,46 @@ With Potential
      .Type "Fixed"
      .Create
 End With
+
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF EStatic" 
+
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
 
 

@@ -351,28 +351,6 @@
      .Transparency "0" 
      .Create
 [ENDMATERIAL]
-[FACEBASEDOBJECT: POTENTIAL|potential1|component1:plate 2]
-With Potential
-     .Reset
-     .Name "$*potential1*$"
-     .Value "-10"
-     .Phase "0"
-     .AddFace "$#component1:plate 2#$", "2"
-     .Type "Fixed"
-     .Create
-End With
-[ENDFACEBASEDOBJECT]
-[FACEBASEDOBJECT: POTENTIAL|potential2|component1:plate 1]
-With Potential
-     .Reset
-     .Name "$*potential2*$"
-     .Value "10"
-     .Phase "0"
-     .AddFace "$#component1:plate 1#$", "1"
-     .Type "Fixed"
-     .Create
-End With
-[ENDFACEBASEDOBJECT]
 [FACEBASEDOBJECT: POTENTIAL|potential3|component2:field plate 1]
 With Potential
      .Reset
@@ -392,6 +370,26 @@ With Potential
      .Phase "0"
      .AddFace "$#component2:field plate 2#$", "1"
      .Type "Fixed"
+     .Create
+End With
+[ENDFACEBASEDOBJECT]
+[FACEBASEDOBJECT: CHARGE|charge1|component1:plate 2]
+With Charge
+     .Reset
+     .Name "$*charge1*$"
+     .Value "5"
+     .Face "$#component1:plate 2#$", "2"
+     .Type "PEC"
+     .Create
+End With
+[ENDFACEBASEDOBJECT]
+[FACEBASEDOBJECT: CHARGE|charge2|component1:plate 1]
+With Charge
+     .Reset
+     .Name "$*charge2*$"
+     .Value "-5"
+     .Face "$#component1:plate 1#$", "1"
+     .Type "PEC"
      .Create
 End With
 [ENDFACEBASEDOBJECT]

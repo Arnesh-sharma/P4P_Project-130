@@ -25,9 +25,7 @@ Solid.Delete "component1:plate 2"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component2:field plate 1"
-
 [end]content
 [start]recover_picks
 1
@@ -43,15 +41,236 @@ Solid.Delete "component2:field plate 1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component2:emf plate 2"
-
 [end]content
 [start]recover_picks
 1
 [end]recover_picks
 [start]delete_solids
 1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+38
+[end]block_index
+[start]command
+
+'@ activate global coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "global"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+39
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+40
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+42
+[end]block_index
+[start]command
+
+'@ transform: rotate component1
+
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*90", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+49
+[end]block_index
+[start]command
+
+'@ activate local coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+52
+[end]block_index
+[start]command
+
+'@ activate local coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+53
+[end]block_index
+[start]command
+
+'@ activate global coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "global"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+54
+[end]block_index
+[start]command
+
+'@ activate local coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+55
+[end]block_index
+[start]command
+
+'@ transform: rotate component1
+
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*0", "-1*90", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+56
+[end]block_index
+[start]command
+
+'@ transform: translate component1
+
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*6" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Translate" 
+End With 
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
 [end]delete_solids
 [end]undo_item
 [end]history_fast_undo
