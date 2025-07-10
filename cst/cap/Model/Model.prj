@@ -1,0 +1,17 @@
+[Version]
+2
+[Author]
+ash750
+[Mesh Cells]
+6,030
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+Low Frequency TD Solver
+[Last Solver Type]
+LF Time Domain (MQS)
+[Last Solver Type Abb]
+lt
+[Results]
+LF Time Domain Solver (MQS)
+[Comment]

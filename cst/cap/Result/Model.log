@@ -1,0 +1,93 @@
+LF Time Domain Solver (MQS)
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  Hz
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: open
+  Xmax: open
+
+  Ymin: open
+  Ymax: open
+
+  Zmin: open
+  Zmax: open
+
+--------------------------------------------------------------------------------
+For an optimal performance, hyper threading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+Solver started at: 03:36 PM Thursday, 10. July 2025
+
+  Module:  LF Time Domain Solver (MQS) (Win 64)
+  Version: 2018.0 Release from 2017-10-26 (change 556462)
+
+  Hardware:
+     Computer name: EN461010
+
+--------------------------------------------------------------------------------
+Solver order = 2
+
+
+--------------------------------------------------------------------------------
+Detected 4 independent conductive sets.
+Desired accuracy = 1.0e-06
+
+
+--------------------------------------------------------------------------------
+Using mesh with curved elements order: 1
+
+
+--------------------------------------------------------------------------------
+Linear solver is running
+Desired linear accuracy = 1.0e-06, max Iter = 1200
+
+
+--------------------------------------------------------------------------------
+Linear solver is running
+Desired linear accuracy = 1.0e-06, max Iter = 1200
+
+
+--------------------------------------------------------------------------------
+Solver Size Statistics:
+
+  Number of mesh cells:         6030 
+  Number of unknowns:           7193
+
+--------------------------------------------------------------------------------
+Solver Timing Statistics:
+
+  Meshing time:	           0d :  0h :  0m :  3s
+  Assemble time:           0d :  0h :  0m :  0s
+  Solver time:             0d :  0h :  0m :  2s
+  Postprocessing time:     0d :  0h :  0m :  0s
+                    	--------------------------
+  Total time:              0d :  0h :  0m :  5s
+
+  Number of threads used:  14 
+
+
+
+--------------------------------------------------------------------------------
+Memory statistics:
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Solver start        15436                         19511052     19511012     
+  Solver run total    41264                         19510980     19486220     
+  ----------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------

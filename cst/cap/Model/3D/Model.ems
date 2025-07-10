@@ -1,0 +1,447 @@
+'# EMS Version: Version 2018.0 - Oct 26 2017 - ACIS 27.0.2 -
+
+'# length = mm
+'# frequency = Hz
+'# time = s
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2018.0|27.0.2|20171026[/VERSION]
+
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF EStatic"
+
+'@ define units
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Units 
+     .Geometry "mm" 
+     .Frequency "Hz" 
+     .Time "s" 
+     .TemperatureUnit "Celsius" 
+     .Voltage "V" 
+     .Current "A" 
+     .Resistance "Ohm" 
+     .Conductance "Siemens" 
+     .Capacitance "PikoF" 
+     .Inductance "NanoH" 
+End With
+
+'@ define background
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Background 
+     .ResetBackground 
+     .XminSpace "100" 
+     .XmaxSpace "100" 
+     .YminSpace "100" 
+     .YmaxSpace "100" 
+     .ZminSpace "100" 
+     .ZmaxSpace "100" 
+     .ApplyInAllDirections "True" 
+End With 
+With Material 
+     .Reset 
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+     .HeatCapacity "1.005"
+     .DynamicViscosity "1.84e-5"
+     .Emissivity "0.0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .MechanicsType "Unused"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "Kelvin"
+     .Epsilon "1.00059"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstSigma"
+     .EnableUserConstTanDModelOrderEps "False"
+     .ConstTanDModelOrderEps "1"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstSigma"
+     .EnableUserConstTanDModelOrderMu "False"
+     .ConstTanDModelOrderMu "1"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NonlinearMeasurementError "1e-1"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.6", "0.6", "0.6" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeBackgroundMaterial
+End With
+
+'@ switch bounding box
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Plot.DrawBox "True"
+
+'@ new component: component1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Component.New "component1"
+
+'@ define brick: component1:plate 1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "plate 1" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "-0.5", "10.5" 
+     .Yrange "-0.5", "20.5" 
+     .Zrange ".5", "1" 
+     .Create
+End With
+
+'@ define brick: component1:plate 2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "plate 2" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "-0.5", "10.5" 
+     .Yrange "-0.5", "20.5" 
+     .Zrange "-0.5", "-1" 
+     .Create
+End With
+
+'@ define boundaries
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Boundary
+     .Xmin "open"
+     .Xmax "open"
+     .Ymin "open"
+     .Ymax "open"
+     .Zmin "open"
+     .Zmax "open"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+End With
+
+'@ define material colour: Copper (annealed)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Material 
+     .Name "Copper (annealed)"
+     .Folder ""
+     .Colour "0.9", "0.9", "0" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeColour 
+End With
+
+'@ change material: component1:plate 1 to: PEC
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.ChangeMaterial "component1:plate 1", "PEC"
+
+'@ change material: component1:plate 2 to: PEC
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.ChangeMaterial "component1:plate 2", "PEC"
+
+'@ define potential: potential1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Value "-10"
+     .Phase "0"
+     .AddFace "component1:plate 2", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: potential2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Value "10"
+     .Phase "0"
+     .AddFace "component1:plate 1", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "10" 
+     .Set "StepsPerBoxFar", "1" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With EStaticSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+     .TetAdaption "False"
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF Time Domain (MQS)"
+
+'@ define time monitor 0d: potential (5.5 10.5 0)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With TimeMonitor0D
+     .Reset
+     .Name "potential (5.5 10.5 0)"
+     .FieldType "Potential"
+     .Component "X"
+     .UsePickedPoint "False"
+     .Position "5.5", "10.5", "0"
+     .Create
+End With
+
+'@ define mqs excitations
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With MQSTDSolver 
+     .ResetExcitationList 
+     .ExcitationName "potential1" 
+     .ExcitationType "potential" 
+     .ExcitationShift "0.0" 
+     .ExcitationSignal "[Reference]" 
+     .ExcitationActive "True" 
+     .CreateExcitation 
+     .ExcitationName "potential2" 
+     .ExcitationType "potential" 
+     .ExcitationShift "0.0" 
+     .ExcitationSignal "[Reference]" 
+     .ExcitationActive "True" 
+     .CreateExcitation 
+End With
+
+'@ define lf time domain solver (mqs) parameters
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With MQSTDSolver
+     .Reset
+     .Method "Tetrahedral Mesh"
+     .EquationType "Electroquasistatic"
+     .StoreResultsInCache "False"
+     .SystemSolverType "Auto"
+     .MaxNumIter "0"
+     .PECDefault "Grounded"
+     .Accuracy "1e-06"
+     .SimulationDuration "500"
+     .MeshAdaption "False"
+     .TimeIntegrationMethod "Low order"
+     .TimeHarmonicMethod "Non Harmonic"
+     .TimeAdaption "False"
+     .TimeStepWidthActive "False"
+     .TimeStepWidth "1e-2"
+     .TimeStepSamples "40"
+     .TimeStepMin "1e-6"
+     .TimeStepMax "1e-1"
+     .TimeStepInit "1e-2"
+     .TimeStepTolerance "1e-4"
+     .TetSolverOrder "2"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "96"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+
+'@ new component: component2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Component.New "component2" 
+
+
+'@ define brick: component2:field plate 1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "field plate 1" 
+     .Component "component2" 
+     .Material "PEC" 
+     .Xrange "-40", "40" 
+     .Yrange "-30", "40" 
+     .Zrange "20", "21" 
+     .Create
+End With
+
+
+'@ define brick: component2:emf plate 2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Brick
+     .Reset 
+     .Name "emf plate 2" 
+     .Component "component2" 
+     .Material "PEC" 
+     .Xrange "-40", "40" 
+     .Yrange "-30", "40" 
+     .Zrange "-20", "-21" 
+     .Create
+End With
+
+
+'@ rename block: component2:emf plate 2 to: component2:field plate 2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Solid.Rename "component2:emf plate 2", "field plate 2"
+
+
+'@ define potential: potential3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential3"
+     .Value "-50"
+     .Phase "0"
+     .AddFace "component2:field plate 1", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+
+'@ define potential: potential4
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Potential
+     .Reset
+     .Name "potential4"
+     .Value "50"
+     .Phase "0"
+     .AddFace "component2:field plate 2", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+
