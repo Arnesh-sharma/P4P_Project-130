@@ -55,13 +55,10 @@ Solid.Delete "component2:emf plate 2"
 38
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -105,9 +102,7 @@ WCS.ActivateWCS "global"
 42
 [end]block_index
 [start]command
-
 '@ transform: rotate component1
-
 [end]command
 [start]content
 With Transform 
@@ -122,7 +117,6 @@ With Transform
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
 End With 
-
 [end]content
 [start]recover_picks
 1
@@ -136,13 +130,10 @@ End With
 49
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -156,13 +147,10 @@ WCS.ActivateWCS "local"
 52
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -176,13 +164,10 @@ WCS.ActivateWCS "local"
 53
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -196,13 +181,10 @@ WCS.ActivateWCS "global"
 54
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -216,9 +198,7 @@ WCS.ActivateWCS "local"
 55
 [end]block_index
 [start]command
-
 '@ transform: rotate component1
-
 [end]command
 [start]content
 With Transform 
@@ -233,7 +213,6 @@ With Transform
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
 End With 
-
 [end]content
 [start]recover_picks
 1
@@ -247,9 +226,7 @@ End With
 56
 [end]block_index
 [start]command
-
 '@ transform: translate component1
-
 [end]command
 [start]content
 With Transform 
@@ -264,7 +241,6 @@ With Transform
      .MultipleSelection "False" 
      .Transform "Shape", "Translate" 
 End With 
-
 [end]content
 [start]recover_picks
 1

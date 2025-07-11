@@ -3,15 +3,15 @@
 [Author]
 ash750
 [Mesh Cells]
-19,418
+
 [Mesh Type]
 Tetrahedral
 [Last Problem Type]
-E-Static Solver
+Low Frequency TD Solver
 [Last Solver Type]
-LF EStatic
+LF Time Domain (MQS)
 [Last Solver Type Abb]
-es
+lt
 [Results]
-Electrostatic Solver
+Unavailable
 [Comment]
