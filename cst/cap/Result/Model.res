@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:3
+size=i:2
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -16,16 +16,4 @@ creation=s:internal
 lifetime=s:persistent
 result=s:0
 treepath=s:1D Results
-
-type=s:XYSIGNAL2
-subtype=s:user
-problemclass=s:Low Frequency TD Solver:17:1001
-visibility=s:visible
-creation=s:internal
-lifetime=s:persistent
-result=s:0
-treepath=s:Excitation Signals\default
-files=s:signal_default_lf.sig
-xlabel=s:Time / s
-title=s:Excitation: default
 

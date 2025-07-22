@@ -1,0 +1,24 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$component1:plate 1")
+          .SetMeshType "All" 
+          .Set "Transform", "1.22465e-16", "0", "1", "0", "1", "0", "-1", "0", "1.22465e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component1:plate 2")
+          .SetMeshType "All" 
+          .Set "Transform", "1.22465e-16", "0", "1", "0", "1", "0", "-1", "0", "1.22465e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component2:field plate 1")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "0", "1", "0", "1", "0", "-1", "0", "6.12323e-17" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component2:field plate 2")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "0", "1", "0", "1", "0", "-1", "0", "6.12323e-17" 
+     End With
+End With

@@ -7,11 +7,11 @@ ash750
 [Mesh Type]
 Tetrahedral
 [Last Problem Type]
-Low Frequency TD Solver
+Low Frequency FD Solver
 [Last Solver Type]
-LF Time Domain (MQS)
+LF Frequency Domain
 [Last Solver Type Abb]
-lt
+lf
 [Results]
 Unavailable
 [Comment]

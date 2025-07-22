@@ -1199,8 +1199,7 @@ UseDistributedComputingSharedDirectory "False"
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Time Domain (MQS)" 
-
+ChangeSolverType "LF Time Domain (MQS)"
 
 '@ define time monitor 0d: b-field (X; -0.5 10.5 0.0)
 
@@ -1215,7 +1214,6 @@ With TimeMonitor0D
      .Create
 End With
 
-
 '@ define time monitor 0d: b-field (X; 0.5 10.5 0.0)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1228,7 +1226,6 @@ With TimeMonitor0D
      .Position "0.5", "10.5", "0.0"
      .Create
 End With
-
 
 '@ define time monitor 0d: b-field (X; 1 10.5 0.0)
 
@@ -1243,7 +1240,6 @@ With TimeMonitor0D
      .Create
 End With
 
-
 '@ define time monitor 0d: b-field (X; 1 10.5 1)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1256,7 +1252,6 @@ With TimeMonitor0D
      .Position "1", "10.5", "1"
      .Create
 End With
-
 
 '@ define time monitor 0d: b-field (X; 1 0.0 -1)
 
@@ -1271,7 +1266,6 @@ With TimeMonitor0D
      .Create
 End With
 
-
 '@ define time monitor 0d: b-field (X; 1 0.0 -0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1285,24 +1279,20 @@ With TimeMonitor0D
      .Create
 End With
 
-
 '@ delete time monitor 0d: b-field (X; -0.5 10.5 0.0)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Delete "b-field (X; -0.5 10.5 0.0)" 
-
+TimeMonitor0D.Delete "b-field (X; -0.5 10.5 0.0)"
 
 '@ delete time monitor 0d: b-field (X; 1 10.5 0.0)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Delete "b-field (X; 1 10.5 0.0)" 
-
+TimeMonitor0D.Delete "b-field (X; 1 10.5 0.0)"
 
 '@ delete time monitor 0d: potential (5.5 10.5 0)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Delete "potential (5.5 10.5 0)" 
-
+TimeMonitor0D.Delete "potential (5.5 10.5 0)"
 
 '@ modify time monitor 0d: b-field (X; 1 10.5 1)
 
@@ -1317,12 +1307,10 @@ With TimeMonitor0D
      .Modify
 End With
 
-
 '@ rename time monitor 0d: b-field (X; 1 10.5 1) to: b-field (X; 1 10.5 0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Rename  "b-field (X; 1 10.5 1)", "b-field (X; 1 10.5 0.6)" 
-
+TimeMonitor0D.Rename  "b-field (X; 1 10.5 1)", "b-field (X; 1 10.5 0.6)"
 
 '@ define lf time domain solver (mqs) parameters
 
@@ -1355,12 +1343,10 @@ With MQSTDSolver
      .UseDistributedComputing "False"
 End With
 
-
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Time Domain (MQS)" 
-
+ChangeSolverType "LF Time Domain (MQS)"
 
 '@ modify time monitor 0d: b-field (X; 1 0.0 -0.6)
 
@@ -1375,12 +1361,10 @@ With TimeMonitor0D
      .Modify
 End With
 
-
 '@ rename time monitor 0d: b-field (X; 1 0.0 -0.6) to: potential (1 0.0 -0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Rename  "b-field (X; 1 0.0 -0.6)", "potential (1 0.0 -0.6)" 
-
+TimeMonitor0D.Rename  "b-field (X; 1 0.0 -0.6)", "potential (1 0.0 -0.6)"
 
 '@ modify time monitor 0d: b-field (X; 1 10.5 0.6)
 
@@ -1395,24 +1379,20 @@ With TimeMonitor0D
      .Modify
 End With
 
-
 '@ rename time monitor 0d: b-field (X; 1 10.5 0.6) to: potential (1 10.5 0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Rename  "b-field (X; 1 10.5 0.6)", "potential (1 10.5 0.6)" 
-
+TimeMonitor0D.Rename  "b-field (X; 1 10.5 0.6)", "potential (1 10.5 0.6)"
 
 '@ delete time monitor 0d: b-field (X; 0.5 10.5 0.0)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Delete "b-field (X; 0.5 10.5 0.0)" 
-
+TimeMonitor0D.Delete "b-field (X; 0.5 10.5 0.0)"
 
 '@ delete time monitor 0d: b-field (X; 1 0.0 -1)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Delete "b-field (X; 1 0.0 -1)" 
-
+TimeMonitor0D.Delete "b-field (X; 1 0.0 -1)"
 
 '@ modify time monitor 0d: potential (1 0.0 -0.6)
 
@@ -1427,12 +1407,10 @@ With TimeMonitor0D
      .Modify
 End With
 
-
 '@ rename time monitor 0d: potential (1 0.0 -0.6) to: e-field (X; 1 0.0 -0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Rename  "potential (1 0.0 -0.6)", "e-field (X; 1 0.0 -0.6)" 
-
+TimeMonitor0D.Rename  "potential (1 0.0 -0.6)", "e-field (X; 1 0.0 -0.6)"
 
 '@ modify time monitor 0d: potential (1 10.5 0.6)
 
@@ -1447,16 +1425,109 @@ With TimeMonitor0D
      .Modify
 End With
 
-
 '@ rename time monitor 0d: potential (1 10.5 0.6) to: e-field (X; 1 10.5 0.6)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-TimeMonitor0D.Rename  "potential (1 10.5 0.6)", "e-field (X; 1 10.5 0.6)" 
-
+TimeMonitor0D.Rename  "potential (1 10.5 0.6)", "e-field (X; 1 10.5 0.6)"
 
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 ChangeSolverType "LF Time Domain (MQS)" 
+
+
+'@ store picked point: 1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.NextPickToDatabase "1" 
+Pick.PickMidpointFromId "component1:plate 1", "5" 
+
+
+'@ store picked point: 2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.NextPickToDatabase "2" 
+Pick.PickMidpointFromId "component1:plate 2", "1" 
+
+
+'@ transform: rotate component1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+
+'@ transform: rotate component2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component2" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+
+'@ store picked point: 3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.NextPickToDatabase "3" 
+Pick.PickMidpointFromId "component1:plate 2", "3" 
+
+
+'@ store picked point: 4
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.NextPickToDatabase "4" 
+Pick.PickMidpointFromId "component1:plate 1", "7" 
+
+
+'@ define curve polygon: curve1:polygon1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Polygon 
+     .Reset 
+     .Name "polygon1" 
+     .Curve "curve1" 
+     .Point "xp(3)", "yp(3)" 
+     .LineTo "xp(4)", "yp(4)" 
+     .Create 
+End With 
+
+
+'@ define time monitor 1d: voltage (curves; 01)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With TimeMonitor1D
+     .Reset
+     .Name "voltage (curves; 01)"
+     .FieldType "voltage"
+     .InvertOrientation "False"
+     .UseSelectedCurves "True"
+     .UseCurve "curve1:polygon1"
+     .Create
+End With
+
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF Frequency Domain" 
 
 

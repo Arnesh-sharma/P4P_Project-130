@@ -3,8 +3,8 @@
 [PCB_BODIES: False]
 [PCB_IMPORT: False]
 [DISABLE_FAST_LOAD: False]
-[BBOX:-140 140 -130 140 -121 121]
-[BBOX_STRUCTURE:-40 40 -30 40 -21 21]
+[BBOX:-121 121 -130 140 -140 140]
+[BBOX_STRUCTURE:-21.000000000000004 21.000000000000004 -30 40 -40 40]
 [UNITS]
      .Geometry "mm" 
      .Frequency "Hz" 
@@ -54,6 +54,32 @@
      .WallFlow "Zmin", "NoSlip"
      .WallFlow "Zmax", "NoSlip"
 [ENDBOUNDARY]
+[LOCALMESHPROPS]
+With MeshSettings
+     With .ItemMeshSettings ("solid$component1:plate 1")
+          .SetMeshType "All" 
+          .Set "Transform", "1.22465e-16", "0", "1", "0", "1", "0", "-1", "0", "1.22465e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component1:plate 2")
+          .SetMeshType "All" 
+          .Set "Transform", "1.22465e-16", "0", "1", "0", "1", "0", "-1", "0", "1.22465e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component2:field plate 1")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "0", "1", "0", "1", "0", "-1", "0", "6.12323e-17" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$component2:field plate 2")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "0", "1", "0", "1", "0", "-1", "0", "6.12323e-17" 
+     End With
+End With
+[ENDLOCALMESHPROPS]
 [MATERIAL: $CoilMaterial$]
      .Rho "0.0"
      .ThermalType "Normal"
