@@ -1433,22 +1433,19 @@ TimeMonitor0D.Rename  "potential (1 10.5 0.6)", "e-field (X; 1 10.5 0.6)"
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Time Domain (MQS)" 
-
+ChangeSolverType "LF Time Domain (MQS)"
 
 '@ store picked point: 1
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Pick.NextPickToDatabase "1" 
-Pick.PickMidpointFromId "component1:plate 1", "5" 
-
+Pick.PickMidpointFromId "component1:plate 1", "5"
 
 '@ store picked point: 2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Pick.NextPickToDatabase "2" 
-Pick.PickMidpointFromId "component1:plate 2", "1" 
-
+Pick.PickMidpointFromId "component1:plate 2", "1"
 
 '@ transform: rotate component1
 
@@ -1464,8 +1461,7 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "True" 
      .Transform "Shape", "Rotate" 
-End With 
-
+End With
 
 '@ transform: rotate component2
 
@@ -1481,22 +1477,19 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
-End With 
-
+End With
 
 '@ store picked point: 3
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Pick.NextPickToDatabase "3" 
-Pick.PickMidpointFromId "component1:plate 2", "3" 
-
+Pick.PickMidpointFromId "component1:plate 2", "3"
 
 '@ store picked point: 4
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
 Pick.NextPickToDatabase "4" 
-Pick.PickMidpointFromId "component1:plate 1", "7" 
-
+Pick.PickMidpointFromId "component1:plate 1", "7"
 
 '@ define curve polygon: curve1:polygon1
 
@@ -1508,8 +1501,7 @@ With Polygon
      .Point "xp(3)", "yp(3)" 
      .LineTo "xp(4)", "yp(4)" 
      .Create 
-End With 
-
+End With
 
 '@ define time monitor 1d: voltage (curves; 01)
 
@@ -1524,10 +1516,144 @@ With TimeMonitor1D
      .Create
 End With
 
-
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Frequency Domain" 
+ChangeSolverType "LF Time Domain (MQS)" 
+
+
+'@ define time monitor: potential (t=0.0..end(10))
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With TimeMonitor
+     .Reset 
+     .Name  "potential (t=0.0..end(10))"
+     .FieldType  "Potential"
+     .Tstart "0.0"
+     .Tstep "10"
+     .Tend  "0.0"
+     .UseTend "False"
+     .Create
+End With
+
+
+'@ modify time monitor 1d: voltage (curves; 01)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With TimeMonitor1D
+     .Reset
+     .Name "voltage (curves; 01)"
+     .FieldType "voltage"
+     .InvertOrientation "False"
+     .UseSelectedCurves "True"
+     .UseCurve "curve1:polygon1"
+     .Modify
+End With
+
+
+'@ define curve polygon: curve2:polygon2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Polygon 
+     .Reset 
+     .Name "polygon2" 
+     .Curve "curve2" 
+     .Point "0.9", "15" 
+     .LineTo "2.3", "15" 
+     .LineTo "3.6", "15" 
+     .Create 
+End With 
+
+
+'@ define curve polygon: curve3:polygon3
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Polygon 
+     .Reset 
+     .Name "polygon3" 
+     .Curve "curve3" 
+     .Point "-1", "15" 
+     .LineTo "-4.4", "15" 
+     .Create 
+End With 
+
+
+'@ define current path: path1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With CurrentPath
+     .Reset
+     .Name "path1"
+     .Type "CurvePath"
+     .Current "0.001"
+     .Phase "0.0"
+     .PathCurve "curve3:polygon3"
+     .Add
+End With
+
+
+'@ define current path: path2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With CurrentPath
+     .Reset
+     .Name "path2"
+     .Type "CurvePath"
+     .Current "0.001"
+     .Phase "0.0"
+     .PathCurve "curve2:polygon2"
+     .Add
+End With
+
+
+'@ transform current path: rotate path1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "path1" 
+     .Origin "ShapeCenter" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "CurrentPath", "Rotate" 
+End With 
+
+
+'@ transform current path: rotate path1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "path1" 
+     .Origin "ShapeCenter" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "CurrentPath", "Rotate" 
+End With 
+
+
+'@ transform current path: rotate path2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "path2" 
+     .Origin "ShapeCenter" 
+     .Center "0", "0", "0" 
+     .Angle "0", "180", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "CurrentPath", "Rotate" 
+End With 
 
 

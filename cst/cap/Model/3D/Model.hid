@@ -284,9 +284,7 @@ End With
 97
 [end]block_index
 [start]command
-
 '@ transform: rotate component1
-
 [end]command
 [start]content
 With Transform 
@@ -301,7 +299,6 @@ With Transform
      .MultipleSelection "True" 
      .Transform "Shape", "Rotate" 
 End With 
-
 [end]content
 [start]recover_picks
 1
@@ -315,9 +312,7 @@ End With
 98
 [end]block_index
 [start]command
-
 '@ transform: rotate component2
-
 [end]command
 [start]content
 With Transform 
@@ -332,7 +327,6 @@ With Transform
      .MultipleSelection "False" 
      .Transform "Shape", "Rotate" 
 End With 
-
 [end]content
 [start]recover_picks
 1

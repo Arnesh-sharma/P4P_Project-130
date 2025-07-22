@@ -419,3 +419,23 @@ With Charge
      .Create
 End With
 [ENDFACEBASEDOBJECT]
+[ACISBASEDOBJECT: CURRENT_WIRE|path2]
+With CurrentPath
+     .Reset
+     .Name "$*path2*$"
+     .Type "CurvePath"
+     .Current "0.001"
+     .Phase "0.0"
+     .Import
+End With
+[ENDACISBASEDOBJECT]
+[ACISBASEDOBJECT: CURRENT_WIRE|path1]
+With CurrentPath
+     .Reset
+     .Name "$*path1*$"
+     .Type "CurvePath"
+     .Current "0.001"
+     .Phase "0.0"
+     .Import
+End With
+[ENDACISBASEDOBJECT]

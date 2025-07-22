@@ -4,7 +4,7 @@ Number of ports: 0
 Portnames:
 Modenumbers:
 Portlabels:
-StaticSources: "potential:potential3" "potential:potential4"
+StaticSources: "potential:potential3" "potential:potential4" "current:path2" "current:path1"
 ThermalSources:
 FloquetPortNames:
 FloquetPortModes:
