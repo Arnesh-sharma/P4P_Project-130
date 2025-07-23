@@ -1519,8 +1519,7 @@ End With
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Time Domain (MQS)" 
-
+ChangeSolverType "LF Time Domain (MQS)"
 
 '@ define time monitor: potential (t=0.0..end(10))
 
@@ -1536,7 +1535,6 @@ With TimeMonitor
      .Create
 End With
 
-
 '@ modify time monitor 1d: voltage (curves; 01)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1550,7 +1548,6 @@ With TimeMonitor1D
      .Modify
 End With
 
-
 '@ define curve polygon: curve2:polygon2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1562,8 +1559,7 @@ With Polygon
      .LineTo "2.3", "15" 
      .LineTo "3.6", "15" 
      .Create 
-End With 
-
+End With
 
 '@ define curve polygon: curve3:polygon3
 
@@ -1575,8 +1571,7 @@ With Polygon
      .Point "-1", "15" 
      .LineTo "-4.4", "15" 
      .Create 
-End With 
-
+End With
 
 '@ define current path: path1
 
@@ -1591,7 +1586,6 @@ With CurrentPath
      .Add
 End With
 
-
 '@ define current path: path2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1605,6 +1599,21 @@ With CurrentPath
      .Add
 End With
 
+'@ transform current path: rotate path1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Transform 
+     .Reset 
+     .Name "path1" 
+     .Origin "ShapeCenter" 
+     .Center "0", "0", "0" 
+     .Angle "0", "90", "0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "CurrentPath", "Rotate" 
+End With
 
 '@ transform current path: rotate path1
 
@@ -1620,25 +1629,7 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "CurrentPath", "Rotate" 
-End With 
-
-
-'@ transform current path: rotate path1
-
-'[VERSION]2018.0|27.0.2|20171026[/VERSION]
-With Transform 
-     .Reset 
-     .Name "path1" 
-     .Origin "ShapeCenter" 
-     .Center "0", "0", "0" 
-     .Angle "0", "90", "0" 
-     .MultipleObjects "False" 
-     .GroupObjects "False" 
-     .Repetitions "1" 
-     .MultipleSelection "False" 
-     .Transform "CurrentPath", "Rotate" 
-End With 
-
+End With
 
 '@ transform current path: rotate path2
 
@@ -1654,6 +1645,219 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "CurrentPath", "Rotate" 
+End With
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF Time Domain (MQS)" 
+
+'@ define curve circle: curve1:circle1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Circle
+     .Reset 
+     .Name "circle1" 
+     .Curve "curve1" 
+     .Radius "5" 
+     .Xcenter "1" 
+     .Ycenter "10.5" 
+     .Segments "0" 
+     .Create
+End With
+
+
+'@ define time monitor 1d: voltage (curves; 02)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With TimeMonitor1D
+     .Reset
+     .Name "voltage (curves; 02)"
+     .FieldType "voltage"
+     .InvertOrientation "False"
+     .UseSelectedCurves "True"
+     .UseCurve "curve1:circle1"
+     .Create
+End With
+
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "40" 
+     .Set "StepsPerBoxFar", "1" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+End With 
+
+
+'@ define current port: currentport1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport1"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceInverted"
+     .Face "component1:plate 1", "5"
+     .Create
+End With
+
+
+'@ define current port: currentport2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With CurrentPort
+     .Reset
+     .Name "currentport2"
+     .Value "1"
+     .Phase "0"
+     .ValueType "Current"
+     .CurrentDirection "FaceNormal"
+     .Face "component1:plate 2", "5"
+     .Create
+End With
+
+
+'@ delete current port: currentport1
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+CurrentPort.Delete "currentport1" 
+
+
+'@ delete current port: currentport2
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+CurrentPort.Delete "currentport2" 
+
+
+'@ pick face
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+Pick.PickFaceFromId "component1:plate 2", "2" 
+
+
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF EStatic" 
+
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "20" 
+     .Set "StepsPerBoxFar", "1" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
 End With 
 
 

@@ -1,0 +1,70 @@
+Electrostatic Solver
+
+--------------------------------------------------------------------------------
+For an optimal performance, hyper threading is ignored for parallel
+computations.
+
+--------------------------------------------------------------------------------
+Solver started at: 03:12 PM Wednesday, 23. July 2025
+
+  Module:  Electrostatic Solver (Win 64)
+  Version: 2018.0 Release from 2017-10-26 (change 556462)
+
+  Hardware:
+     Computer name: EN461005
+
+--------------------------------------------------------------------------------
+Solver order = 2
+
+
+--------------------------------------------------------------------------------
+Detected 5 independent conductive sets.
+Desired accuracy = 1.0e-06
+
+
+--------------------------------------------------------------------------------
+Using mesh with curved elements order: 1
+
+
+--------------------------------------------------------------------------------
+Solver Timing Statistics: (last run)
+
+  Mesh generation:                  0d :  0h :  0m :  4s
+  Assembling process:               0d :  0h :  0m :  0s
+  Linear solver:                    0d :  0h :  0m :  0s
+  Post-processing:                  0d :  0h :  0m :  1s
+                                 --------------------------
+  Total time:                       0d :  0h :  0m :  5s
+
+  Number of threads used:           96 
+
+
+
+--------------------------------------------------------------------------------
+Solver Size Statistics:
+
+  Number of mesh cells:         19573 
+  Number of unknowns:           23004
+
+--------------------------------------------------------------------------------
+Linear Solver Results: (last run)
+
+  Accuracy:                     7.553568e-16
+  Desired accuracy:             1.000000e-06
+  Number of iterations:         1
+  Maximum number of iterations: 10000
+
+
+--------------------------------------------------------------------------------
+Memory statistics:
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Solver start        16636                         20291068     20291068     
+  Solver run total    112516                        20289860     20247012     
+  ----------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------

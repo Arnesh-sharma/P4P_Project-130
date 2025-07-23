@@ -1,0 +1,17 @@
+Build version: 2018.0 Release from 2017-10-26 (change 556462)
+
+ Task: OP1
+----------------------------------------------------------------------
+ERROR: Unable to update the block EMSSCHEM1 using solver LF Time Domain Solver (MQS).
+
+ERROR: Unable to retrieve net list parameters for block EMSSCHEM1.
+
+
+  ***Error***:
+  Unable to retrieve net list parameters for block EMSSCHEM1.
+
+
+
+======================================================================
+
+ Total time:                        0 sec
