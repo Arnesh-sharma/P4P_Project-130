@@ -1,3 +1,4 @@
+% 1kHz with 8Vpp, 6cm spacing
 files = dir('C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Raw_Data\BeeSpy_Electret_Sensors\*.csv');
 figure;
 hold on;
