@@ -7,11 +7,12 @@ for i = 1:length(files)
     electret = readmatrix(files(i).name);
     time = electret(3:end, 1);
     voltage = electret(3:end,2);
-    plot(time, voltage, 'DisplayName', files(i).name);
+    plot(time, voltage, 'DisplayName', files(i).name, 'LineWidth', 2);
 end
 
-xlabel('Time (s)');
-ylabel('Voltage (V)');
-title('Electret BeeSpy');
-legend();
 grid on;
+xlabel('Time (s)', 'Interpreter', 'latex');
+ylabel('Voltage (V)', 'Interpreter', 'latex');
+title('Electret BeeSpy');
+legend('Interpreter', 'latex');
+set(gca, 'FontSize', 24, 'FontName', 'Times');
