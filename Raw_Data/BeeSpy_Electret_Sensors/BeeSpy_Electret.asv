@@ -6,7 +6,7 @@ for i = 1:length(files)
     electret = readmatrix(files(i).name);
     time = electret(3:end, 1);
     voltage = electret(3:end,2);
-    plot(time, voltage, 'DisplayName', files(i).name);
+    plot(time, voltage, 'DisplayName', f);
 end
 
 xlabel('Time (s)');
