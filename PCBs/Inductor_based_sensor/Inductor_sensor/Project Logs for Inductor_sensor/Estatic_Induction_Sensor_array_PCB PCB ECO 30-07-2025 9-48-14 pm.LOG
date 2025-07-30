@@ -1,0 +1,66 @@
+Added Component: Designator=P1(Display)
+Added Component: Designator=S1(PCBComponent_1)
+Added Component: Designator=S2(PCBComponent_1)
+Added Component: Designator=S3(PCBComponent_1)
+Added Component: Designator=S4(PCBComponent_1)
+Added Component: Designator=S5(PCBComponent_1)
+Added Component: Designator=S6(PCBComponent_1)
+Added Component: Designator=S7(PCBComponent_1)
+Added Component: Designator=S8(PCBComponent_1)
+Added Component: Designator=S9(PCBComponent_1)
+Added Component: Designator=S10(PCBComponent_1)
+Added Component: Designator=S11(PCBComponent_1)
+Added Component: Designator=S12(PCBComponent_1)
+Added Component: Designator=S13(PCBComponent_1)
+Added Component: Designator=S14(PCBComponent_1)
+Added Component: Designator=S15(PCBComponent_1)
+Added Component: Designator=S16(PCBComponent_1)
+Added Pin To Net: NetName=S1 Pin=P1-1
+Added Pin To Net: NetName=S1 Pin=S1-sensor
+Added Net: Name=S1
+Added Pin To Net: NetName=S2 Pin=P1-3
+Added Pin To Net: NetName=S2 Pin=S2-sensor
+Added Net: Name=S2
+Added Pin To Net: NetName=S3 Pin=P1-5
+Added Pin To Net: NetName=S3 Pin=S3-sensor
+Added Net: Name=S3
+Added Pin To Net: NetName=S4 Pin=P1-7
+Added Pin To Net: NetName=S4 Pin=S4-sensor
+Added Net: Name=S4
+Added Pin To Net: NetName=S5 Pin=P1-9
+Added Pin To Net: NetName=S5 Pin=S5-sensor
+Added Net: Name=S5
+Added Pin To Net: NetName=S6 Pin=P1-11
+Added Pin To Net: NetName=S6 Pin=S6-sensor
+Added Net: Name=S6
+Added Pin To Net: NetName=S7 Pin=P1-13
+Added Pin To Net: NetName=S7 Pin=S7-sensor
+Added Net: Name=S7
+Added Pin To Net: NetName=S8 Pin=P1-15
+Added Pin To Net: NetName=S8 Pin=S8-sensor
+Added Net: Name=S8
+Added Pin To Net: NetName=S9 Pin=P1-17
+Added Pin To Net: NetName=S9 Pin=S9-sensor
+Added Net: Name=S9
+Added Pin To Net: NetName=S10 Pin=P1-19
+Added Pin To Net: NetName=S10 Pin=S10-sensor
+Added Net: Name=S10
+Added Pin To Net: NetName=S11 Pin=P1-21
+Added Pin To Net: NetName=S11 Pin=S11-sensor
+Added Net: Name=S11
+Added Pin To Net: NetName=S12 Pin=P1-23
+Added Pin To Net: NetName=S12 Pin=S12-sensor
+Added Net: Name=S12
+Added Pin To Net: NetName=S13 Pin=P1-25
+Added Pin To Net: NetName=S13 Pin=S13-sensor
+Added Net: Name=S13
+Added Pin To Net: NetName=S14 Pin=P1-27
+Added Pin To Net: NetName=S14 Pin=S14-sensor
+Added Net: Name=S14
+Added Pin To Net: NetName=S15 Pin=P1-29
+Added Pin To Net: NetName=S15 Pin=S15-sensor
+Added Net: Name=S15
+Added Pin To Net: NetName=S16 Pin=P1-31
+Added Pin To Net: NetName=S16 Pin=S16-sensor
+Added Net: Name=S16
+Added Class: Name=Sheet1
