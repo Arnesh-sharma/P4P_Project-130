@@ -1650,7 +1650,7 @@ End With
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF Time Domain (MQS)" 
+ChangeSolverType "LF Time Domain (MQS)"
 
 '@ define curve circle: curve1:circle1
 
@@ -1666,7 +1666,6 @@ With Circle
      .Create
 End With
 
-
 '@ define time monitor 1d: voltage (curves; 02)
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1679,7 +1678,6 @@ With TimeMonitor1D
      .UseCurve "curve1:circle1"
      .Create
 End With
-
 
 '@ set mesh properties (Tetrahedral)
 
@@ -1741,8 +1739,7 @@ End With
 With Mesh 
      .SetParallelMesherMode "Tet", "maximum" 
      .SetMaxParallelMesherThreads "Tet", "1" 
-End With 
-
+End With
 
 '@ define current port: currentport1
 
@@ -1758,7 +1755,6 @@ With CurrentPort
      .Create
 End With
 
-
 '@ define current port: currentport2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
@@ -1773,30 +1769,25 @@ With CurrentPort
      .Create
 End With
 
-
 '@ delete current port: currentport1
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-CurrentPort.Delete "currentport1" 
-
+CurrentPort.Delete "currentport1"
 
 '@ delete current port: currentport2
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-CurrentPort.Delete "currentport2" 
-
+CurrentPort.Delete "currentport2"
 
 '@ pick face
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-Pick.PickFaceFromId "component1:plate 2", "2" 
-
+Pick.PickFaceFromId "component1:plate 2", "2"
 
 '@ change solver type
 
 '[VERSION]2018.0|27.0.2|20171026[/VERSION]
-ChangeSolverType "LF EStatic" 
-
+ChangeSolverType "LF EStatic"
 
 '@ set mesh properties (Tetrahedral)
 
@@ -1858,6 +1849,10 @@ End With
 With Mesh 
      .SetParallelMesherMode "Tet", "maximum" 
      .SetMaxParallelMesherThreads "Tet", "1" 
-End With 
+End With
 
+'@ change solver type
+
+'[VERSION]2018.0|27.0.2|20171026[/VERSION]
+ChangeSolverType "LF Time Domain (MQS)" 
 

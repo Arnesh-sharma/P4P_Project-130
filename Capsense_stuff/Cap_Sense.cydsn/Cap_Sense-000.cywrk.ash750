@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cap_Sense-000\CapSense_2T">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cap_Sense-000\CapSense_CSD_WithTuner01">
 <ExpandedNodeIds>
 <v>Cap_Sense-000</v>
 <v>Cap_Sense-000\Cap_Sense\TopDesign</v>
@@ -37,25 +37,7 @@
 <v>Cap_Sense-000\Cap_Sense\Source Files</v>
 <v>Cap_Sense-000\Cap_Sense\Source Files\main.c</v>
 <v>Cap_Sense-000\Cap_Sense\Generated_Source\PSoC5</v>
-<v>Cap_Sense-000\CapSense_2T\TopDesign</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Pins</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Analog</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Clocks</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Interrupts</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\DMA</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\System</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Directives</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\Flash Security</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cydwr\EEPROM</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.cyre</v>
-<v>Cap_Sense-000\CapSense_2T\Header Files</v>
-<v>Cap_Sense-000\CapSense_2T\Header Files\cyapicallbacks.h</v>
-<v>Cap_Sense-000\CapSense_2T\Source Files</v>
-<v>Cap_Sense-000\CapSense_2T\Source Files\main.c</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_CSD_WithTuner.pdf</v>
-<v>Cap_Sense-000\CapSense_2T\Generated_Source</v>
-<v>Cap_Sense-000\CapSense_2T\Generated_Source\PSoC5</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Pins</v>
@@ -78,8 +60,25 @@
 <VisibleNodeIds>
 <v>Cap_Sense-000</v>
 <v>Cap_Sense-000\Cap_Sense</v>
-<v>Cap_Sense-000\CapSense_2T</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Pins</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Analog</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Clocks</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Interrupts</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\DMA</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\System</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Directives</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\Flash Security</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cydwr\EEPROM</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner01.cyre</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\Header Files</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\Header Files\cyapicallbacks.h</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\Source Files</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\Source Files\main.c</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_WithTuner.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -88,9 +87,6 @@
 <v>Cap_Sense-000\Cap_Sense</v>
 <v>Cap_Sense-000\Cap_Sense\TopDesign</v>
 <v>Cap_Sense-000\Cap_Sense\TopDesign\TopDesign.cysch</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\TopDesign</v>
-<v>Cap_Sense-000\CapSense_2T\TopDesign\TopDesign.cysch</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign\TopDesign.cysch</v>
@@ -100,9 +96,6 @@
 <v>Cap_Sense-000\Cap_Sense</v>
 <v>Cap_Sense-000\Cap_Sense\TopDesign</v>
 <v>Cap_Sense-000\Cap_Sense\TopDesign\TopDesign.cysch</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\TopDesign</v>
-<v>Cap_Sense-000\CapSense_2T\TopDesign\TopDesign.cysch</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\TopDesign\TopDesign.cysch</v>
@@ -153,16 +146,6 @@
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense.gpdsc</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense.rpt</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense_timing.html</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541\Debug</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541\Debug\CapSense_2T.elf</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541\Debug\CapSense_2T.hex</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541\Debug\CapSense_2T.map</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.gpdsc</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T.rpt</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_2T_timing.html</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541</v>
@@ -182,6 +165,7 @@
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_PM.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_SMS_Wrapper.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_TunerHelper.lst</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -196,8 +180,11 @@
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\EzI2C.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\EzI2C_INT.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\EzI2C_PM.lst</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\Pins.lst</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.elf</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.hex</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.map</v>
@@ -249,10 +236,10 @@
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense.gpdsc</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense.rpt</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense_timing.html</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541</v>
-<v>Cap_Sense-000\CapSense_2T\CortexM3\ARM_GCC_541\Debug</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -272,22 +259,17 @@
 <v>Cap_Sense-000\Cap_Sense\cy_pins_v2_20</v>
 <v>Cap_Sense-000\Cap_Sense\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Cap_Sense-000\Cap_Sense\UART_v2_50.pdf</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\PSoC 5LP Architecture TRM</v>
-<v>Cap_Sense-000\CapSense_2T\CY8C58LP Family Datasheet</v>
-<v>Cap_Sense-000\CapSense_2T\System Reference Guides</v>
-<v>Cap_Sense-000\CapSense_2T\System Reference Guides\cy_boot_v5_60</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_CSD_v3_50.pdf</v>
-<v>Cap_Sense-000\CapSense_2T\cy_pins_v2_20.pdf</v>
-<v>Cap_Sense-000\CapSense_2T\EZI2C_v2_0.pdf</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\PSoC 5LP Architecture TRM</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CY8C58LP Family Datasheet</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\System Reference Guides</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\System Reference Guides\cy_boot_v5_60</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_v3_50.pdf</v>
-<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_clock_v2_20.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\EZI2C_v2_0.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\PWM_v3_30.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Cap_Sense-000</v>
@@ -300,22 +282,17 @@
 <v>Cap_Sense-000\Cap_Sense\cy_pins_v2_20</v>
 <v>Cap_Sense-000\Cap_Sense\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Cap_Sense-000\Cap_Sense\UART_v2_50.pdf</v>
-<v>Cap_Sense-000\CapSense_2T</v>
-<v>Cap_Sense-000\CapSense_2T\PSoC 5LP Architecture TRM</v>
-<v>Cap_Sense-000\CapSense_2T\CY8C58LP Family Datasheet</v>
-<v>Cap_Sense-000\CapSense_2T\System Reference Guides</v>
-<v>Cap_Sense-000\CapSense_2T\System Reference Guides\cy_boot_v5_60</v>
-<v>Cap_Sense-000\CapSense_2T\CapSense_CSD_v3_50.pdf</v>
-<v>Cap_Sense-000\CapSense_2T\cy_pins_v2_20.pdf</v>
-<v>Cap_Sense-000\CapSense_2T\EZI2C_v2_0.pdf</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\PSoC 5LP Architecture TRM</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CY8C58LP Family Datasheet</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\System Reference Guides</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\System Reference Guides\cy_boot_v5_60</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\CapSense_CSD_v3_50.pdf</v>
-<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_clock_v2_20.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01\EZI2C_v2_0.pdf</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\PWM_v3_30.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -325,10 +302,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\main.c" />
-<name v=".\TopDesign\TopDesign.cysch" />
-<name v=".\Cap_Sense.cydwr" />
-<name v=".\Generated_Source\PSoC5\CapSense_1.h" />
+<name v=".\CapSense_CSD_WithTuner01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cydwr" />
+<name v=".\CapSense_CSD_WithTuner01.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -336,7 +312,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1500, 703" SelectedTabbedMdiWindow="4136ff9e-6bde-4a27-aa2a-019a203e9ea7"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be5bc56b-13be-4ac4-a7c5-e8ae8a90cee2" /><DocumentWindow Key="H:\P4P\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\main.c" Guid="4136ff9e-6bde-4a27-aa2a-019a203e9ea7" /><DocumentWindow Key="H:\P4P\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\TopDesign\TopDesign.cysch" Guid="90350354-2243-46fd-986b-d204c86add5a" /><DocumentWindow Key="H:\P4P\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\Cap_Sense.cydwr" Guid="516fcaf3-880f-4928-8981-4db11763fb19" /><DocumentWindow Key="H:\P4P\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\Generated_Source\PSoC5\CapSense_1.h" Guid="999190a7-82d8-4ab9-b45d-f8ea917284f3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 703" SelectedTabbedMdiWindow="ec9fe771-c9dd-4b1f-8a8e-534834438e7d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="be5bc56b-13be-4ac4-a7c5-e8ae8a90cee2" /><DocumentWindow Key="H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\TopDesign\TopDesign.cysch" Guid="ec9fe771-c9dd-4b1f-8a8e-534834438e7d" /><DocumentWindow Key="H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cydwr" Guid="146c143f-f2e4-42c0-a027-52ff6fc20a41" /><DocumentWindow Key="H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\main.c" Guid="ee959965-7763-4cba-a442-70290f34f8b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

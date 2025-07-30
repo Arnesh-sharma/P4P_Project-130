@@ -67,10 +67,14 @@ int main()
     /* Initialize CapSense CSD and EzI2C Start the sensor scanning loop */
     CapSense_CSD_TunerStart();
 
+    PWM_1_Start();
+    
     while(1u)
     {
         /* Process scanning results and communicates with Tuner GUI */
         CapSense_CSD_TunerComm();
+        
+     
     }
 }
 

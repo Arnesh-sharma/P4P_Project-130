@@ -1,5 +1,5 @@
 MWS Result File Version 20150206
-size=i:29
+size=i:30
 
 type=s:HIDDENITEM
 problemclass=s::8:1000
@@ -268,4 +268,16 @@ result=s:1
 treepath=s:1D Results\Field Values\E-Field [Es]\Max Value
 files=s:FieldValues_E-Field[Es]_MaxValue.0d
 ylabel=s:V/m
+
+type=s:XYSIGNAL2
+subtype=s:user
+problemclass=s:Low Frequency TD Solver:17:1001
+visibility=s:visible
+creation=s:internal
+lifetime=s:persistent
+result=s:0
+treepath=s:Excitation Signals\default
+files=s:signal_default_lf.sig
+xlabel=s:Time / s
+title=s:Excitation: default
 
