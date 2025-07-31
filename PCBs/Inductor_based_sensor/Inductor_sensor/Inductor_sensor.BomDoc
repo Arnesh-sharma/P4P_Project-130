@@ -1,0 +1,21 @@
+|RECORD=BOM|VERSION=3|FILENAME=H:\P4P\New\P4P_Project-130\PCBs\Inductor_based_sensor\Inductor_sensor\Inductor_sensor.BomDoc|KIND=ALTIUM_DESIGNER_LIVEBOM|DATE=30.07.2025|TIME=21:23:01|CURRENCY=USD|PRODUCTIONQUANTITY=1|PERUNITTARGETPRICE=0|PERUNITACTUALPRICE=0
+|RECORD=GeneralOptions|OPENEXPORTED=False|ADDTOPROJECT=False|FORCEFIT=False|NOTFITTED=False|TEMPLATEFILENAME=|BATCHMODE=0|SUPPLIERPRODQTY=0|SUPPLIERAUTOQTY=False|SUPPLIERUSECACHEDPRICING=False|SUPPLIERCURRENCY=|SOLUTIONSPERITEM=1|SUPPLIERSPERSOLUTION=1|DISPLAYTOTALROW=False|DISPLAYSUBTOTALSFORGROUPS=False|INCLUDEPCBPARAMETERS=False|INCLUDEDBPARAMETERS=False|INCLUDEVAULTPARAMETERS=False|INCLUDECLOUDPARAMETERS=False|INCLUDEDOCUMENTPARAMETERS=False|FILTEROUTRISKYSOLUTIONS=True|DESIGNATORGROUPING=No
+|RECORD=SortOrderOptions|SORTORDER=
+|RECORD=GroupOrderOptions|GROUPORDER=
+|RECORD=VisibleOrderOptions|VISIBLEORDER=Line #=54!Comment=62!Description=100!Designator=100!Quantity=67!Manufacturer 1=102!Manufacturer Part Number 1=169!Manufacturer Lifecycle 1=147!Supplier 1=75!Supplier Part Number 1=142!Supplier Unit Price 1=127!Supplier Subtotal 1=122
+|RECORD=VisibleOrderOptions2|BASEVIEW=Line #=54!Comment=62!Description=-1!Designator=-1!Quantity=67!Manufacturer 1=102!Manufacturer Part Number 1=169!Manufacturer Lifecycle 1=147!Supplier 1=75!Supplier Part Number 1=142!Supplier Unit Price 1=127!Supplier Subtotal 1=122|FLATVIEW=Line #=-1!Comment=-1!Description=-1!Designator=-1!Manufacturer 1=102!Manufacturer Part Number 1=169!Manufacturer Lifecycle 1=147!Supplier 1=75!Supplier Part Number 1=142!Supplier Unit Price 1=127!Supplier Subtotal 1=122|CONSOLIDATEDVIEW=Line #=-1!Comment=-1!Description=-1!Designator=-1!Quantity=-1!Manufacturer 1=102!Manufacturer Part Number 1=169!Manufacturer Lifecycle 1=147!Supplier 1=75!Supplier Part Number 1=142!Supplier Unit Price 1=127!Supplier Subtotal 1=122
+|RECORD=CustomColumns|CUSTOMCOLUMNS=
+|RECORD=ColumnsAliases|COLUMNSALIASES=Comment=Name
+|RECORD=FilterOptions|FILTER=
+|RECORD=CheckGroupCompParamsOptions|CHECKGROUPCOMPPARAMS=Comment=0,Description=0,Value=0,Footprint=1
+|RECORD=ManufacturerLinkOptions|MANUFACTURERLINKPARAMETERS=
+|RECORD=FavoriteSuppliers|PARTSOURCES=|SUPPLIERS=|USESUPPLIERORDER=False
+|RECORD=CheckOptions|CHECKLEVELS=
+|RECORD=LineNumberingOptions|STARTVALUE=|INCREMENT=
+|RECORD=Catalog|DBLINKFILEPATH=
+|RECORD=CatalogItem|ITEMTYPE=Automatic-NonVault|UNIQUEID=EE209_SchLib.SchLib\Display|DESIGNITEMID=Display|ITEMSOURCE=EE209_SchLib.SchLib|STATUS=Unknown|DESCRIPTION=16-Pin Header Connecting Display|USERCOMMENTS=Display|NOTE=|LINENUMBER=|SELECTEDPARAMETERSHASH="16-Pin Header Connecting Display",Display|COMPONENTPARAMETERS=Comment=Display,"Component Kind=Standard","Description=16-Pin Header Connecting Display",Footprint=Display,"Ibis Model=","Library Name=EE209_SchLib.SchLib","Library Reference=Display",PCB3D=,"Pin Info=","Signal Integrity=",Simulation=|CUSTOMPARAMETERS=
+|RECORD=PartChoiceGroups|GROUPBYFIELDCOUNT=0
+|RECORD=CatalogItem|ITEMTYPE=Automatic-NonVault|UNIQUEID=EE209_SchLib.SchLib\Res_SMT_0805|DESIGNITEMID=Res_SMT_0805|ITEMSOURCE=EE209_SchLib.SchLib|STATUS=Unknown|DESCRIPTION=0805 resistor|USERCOMMENTS=*|NOTE=|LINENUMBER=|SELECTEDPARAMETERSHASH=,"0805 resistor"|COMPONENTPARAMETERS=Comment=,"Component Kind=Standard",ComponentLink1Description=https://nz.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf,"Description=0805 resistor","Footprint=0805 RES","Ibis Model=",LatestRevisionDate=17-Jul-2002,"LatestRevisionNote=Re-released for DXP Platform.","Library Name=EE209_SchLib.SchLib","Library Reference=Res_SMT_0805",PackageReference=AXIAL-0.4,PCB3D=,"Pin Info=",Published=8-Jun-2000,"Publisher=Altium Limited","Signal Integrity=",Simulation=,Value=|CUSTOMPARAMETERS=
+|RECORD=PartChoiceGroups|GROUPBYFIELDCOUNT=0
+|RECORD=CatalogItem|ITEMTYPE=Automatic-NonVault|UNIQUEID=sensor.SchLib\sensor|DESIGNITEMID=sensor|ITEMSOURCE=sensor.SchLib|STATUS=Unknown|DESCRIPTION=The inductive sensors|USERCOMMENTS=sensor|NOTE=|LINENUMBER=|SELECTEDPARAMETERSHASH=sensor,"The inductive sensors"|COMPONENTPARAMETERS=Comment=sensor,"Component Kind=Standard","Description=The inductive sensors",Footprint=PCBComponent_1,"Ibis Model=","Library Name=sensor.SchLib","Library Reference=sensor",PCB3D=,"Pin Info=","Signal Integrity=",Simulation=|CUSTOMPARAMETERS=
+|RECORD=PartChoiceGroups|GROUPBYFIELDCOUNT=0
