@@ -46,41 +46,33 @@ uint8 CapSense_CSD_sensorOnMask[(((CapSense_CSD_TOTAL_SENSOR_COUNT - 1u) / 8u) +
 uint8 CapSense_CSD_lowBaselineResetCnt[CapSense_CSD_TOTAL_SENSOR_COUNT];
 
 uint16 CapSense_CSD_fingerThreshold[] = {
-    84u, 124u, 66u, 
+    100u, 
 };
 
 uint16 CapSense_CSD_noiseThreshold[] = {
-    42u, 45u, 33u, 
+    20u, 
 };
 
 uint16 CapSense_CSD_hysteresis[] = {
-    0u, 18u, 9u, 
+    10u, 
 };
 
 uint8 CapSense_CSD_debounce[] = {
-    1u, 5u, 5u, 
+    5u, 
 };
 
 uint8 CapSense_CSD_debounceCounter[] = {
-    0u, 0u, 0u, 
+    0u, 0u, 
 };
 
 const uint8 CYCODE CapSense_CSD_rawDataIndex[] = {
-    2u, /* LinearSlider0__LS */
     0u, /* Button0__BTN */
-    1u, /* Button1__BTN */
 
 };
 
 const uint8 CYCODE CapSense_CSD_numberOfSensors[] = {
-    5u, /* LinearSlider0__LS */
     1u, /* Button0__BTN */
-    1u, /* Button1__BTN */
 
-};
-
-const uint16 CYCODE CapSense_CSD_centroidMult[] = {
-    6400u, 
 };
 
 
@@ -148,10 +140,7 @@ void CapSense_CSD_BaseInit(uint8 sensor)
     CapSense_CSD_sensorBaselineLow[sensor] = 0u;
     CapSense_CSD_sensorSignal[sensor] = 0u;
         
-    if(widget > CapSense_CSD_END_OF_TOUCH_PAD_INDEX)
-    {
-        CapSense_CSD_debounceCounter[widget - (CapSense_CSD_END_OF_TOUCH_PAD_INDEX + 1)] =  CapSense_CSD_debounce[widget];
-    }
+    CapSense_CSD_debounceCounter[widget] =  CapSense_CSD_debounce[widget];
 
     
     #if ((CapSense_CSD_RAW_FILTER_MASK & CapSense_CSD_MEDIAN_FILTER) |\
@@ -598,15 +587,7 @@ uint8 CapSense_CSD_CheckIsSensorActive(uint8 sensor)
     uint16 hysteresis = CapSense_CSD_hysteresis[widget];
     uint8 debounce = CapSense_CSD_debounce[widget];
     
-    if (widget < CapSense_CSD_TOTAL_CENTROIDS_COUNT)
-    {
-        debounceIndex = CapSense_CSD_UNUSED_DEBOUNCE_COUNTER_INDEX;
-        CapSense_CSD_debounceCounter[debounceIndex] = 1u;
-    }
-    else
-    {
-        debounceIndex = widget - (CapSense_CSD_END_OF_TOUCH_PAD_INDEX + 1);
-    }
+    debounceIndex = widget;
 
     
     /* Was on */

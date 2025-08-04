@@ -46,13 +46,13 @@
 
 #define CapSense_CSD_DESIGN_TYPE                (1u)
 
-#define CapSense_CSD_CONNECT_INACTIVE_SNS       (0u)
+#define CapSense_CSD_CONNECT_INACTIVE_SNS       (1u)
 #define CapSense_CSD_IS_COMPLEX_SCANSLOTS       (0u)
 
 #define CapSense_CSD_CLOCK_SOURCE               (0u)
 
 #define CapSense_CSD_CURRENT_SOURCE             (1u)
-#define CapSense_CSD_IDAC_RANGE_VALUE           (4u)
+#define CapSense_CSD_IDAC_RANGE_VALUE           (8u)
 
 #define CapSense_CSD_PRESCALER_OPTIONS          (1u)
 #define CapSense_CSD_MULTIPLE_PRESCALER_ENABLED (1u)
@@ -179,23 +179,17 @@ CY_ISR_PROTO(CapSense_CSD_IsrCH0_ISR);
 *           API Constants
 ***************************************/
 
-#define CapSense_CSD_TOTAL_SENSOR_COUNT            (7u)
-#define CapSense_CSD_TOTAL_SCANSLOT_COUNT            (7u)
+#define CapSense_CSD_TOTAL_SENSOR_COUNT            (1u)
+#define CapSense_CSD_TOTAL_SCANSLOT_COUNT            (1u)
 #define CapSense_CSD_TOTAL_RB_NUMBER            (1u)
 #define CapSense_CSD_TOTAL_RB_NUMBER__CH0            (1u)
 
 /* Define Sensors */
 #define CapSense_CSD_SENSOR_BUTTON0__BTN    (0u)
-#define CapSense_CSD_SENSOR_BUTTON1__BTN    (1u)
-#define CapSense_CSD_SENSOR_LINEARSLIDER0_E0__LS    (2u)
-#define CapSense_CSD_SENSOR_LINEARSLIDER0_E1__LS    (3u)
-#define CapSense_CSD_SENSOR_LINEARSLIDER0_E2__LS    (4u)
-#define CapSense_CSD_SENSOR_LINEARSLIDER0_E3__LS    (5u)
-#define CapSense_CSD_SENSOR_LINEARSLIDER0_E4__LS    (6u)
 /* AMux Cmod, Comparator and Idac Channels definitions */
-#define CapSense_CSD_AMuxCH0_CMOD_CHANNEL          (7u)
-#define CapSense_CSD_AMuxCH0_CMP_VP_CHANNEL        (8u)
-#define CapSense_CSD_AMuxCH0_IDAC_CHANNEL          (9u)
+#define CapSense_CSD_AMuxCH0_CMOD_CHANNEL          (1u)
+#define CapSense_CSD_AMuxCH0_CMP_VP_CHANNEL        (2u)
+#define CapSense_CSD_AMuxCH0_IDAC_CHANNEL          (3u)
 
 
 

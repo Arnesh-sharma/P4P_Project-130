@@ -41,36 +41,18 @@ volatile uint8 CapSense_CSD_sensorIndex;    /* Index of scannig sensor */
 uint16 CapSense_CSD_sensorRaw[CapSense_CSD_TOTAL_SENSOR_COUNT]; 
 
 uint8 CapSense_CSD_sensorEnableMask[(((CapSense_CSD_TOTAL_SENSOR_COUNT - 1u) / 8u) + 1u)] = {
-0x7Fu, };
+0x1u, };
 
 uint8 CYXDATA * const CYCODE CapSense_CSD_pcTable[] = {
     (uint8 CYXDATA *)CapSense_CSD_PortCH0__Button0__BTN__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__Button1__BTN__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__LinearSlider0_e0__LS__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__LinearSlider0_e1__LS__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__LinearSlider0_e2__LS__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__LinearSlider0_e3__LS__PC, 
-    (uint8 CYXDATA *)CapSense_CSD_PortCH0__LinearSlider0_e4__LS__PC, 
 };
 
 const uint8 CYCODE CapSense_CSD_portTable[] = {
     CapSense_CSD_PortCH0__Button0__BTN__PORT, 
-    CapSense_CSD_PortCH0__Button1__BTN__PORT, 
-    CapSense_CSD_PortCH0__LinearSlider0_e0__LS__PORT, 
-    CapSense_CSD_PortCH0__LinearSlider0_e1__LS__PORT, 
-    CapSense_CSD_PortCH0__LinearSlider0_e2__LS__PORT, 
-    CapSense_CSD_PortCH0__LinearSlider0_e3__LS__PORT, 
-    CapSense_CSD_PortCH0__LinearSlider0_e4__LS__PORT, 
 };
 
 const uint8 CYCODE CapSense_CSD_maskTable[] = {
     CapSense_CSD_PortCH0__Button0__BTN__MASK,
-    CapSense_CSD_PortCH0__Button1__BTN__MASK,
-    CapSense_CSD_PortCH0__LinearSlider0_e0__LS__MASK,
-    CapSense_CSD_PortCH0__LinearSlider0_e1__LS__MASK,
-    CapSense_CSD_PortCH0__LinearSlider0_e2__LS__MASK,
-    CapSense_CSD_PortCH0__LinearSlider0_e3__LS__MASK,
-    CapSense_CSD_PortCH0__LinearSlider0_e4__LS__MASK,
 };
 
 uint8 CYXDATA * const CYCODE CapSense_CSD_csTable[] = {
@@ -80,23 +62,19 @@ uint8 CYXDATA * const CYCODE CapSense_CSD_csTable[] = {
 };
 
 uint8 CapSense_CSD_idacSettings[] = {
-    43u,41u,48u,49u,41u,38u,34u,
+    200u,
 };
 
 uint8 CapSense_CSD_widgetResolution[] = {
-    CapSense_CSD_PWM_RESOLUTION_14_BITS,
-    CapSense_CSD_PWM_RESOLUTION_14_BITS,
-    CapSense_CSD_PWM_RESOLUTION_13_BITS,
+    CapSense_CSD_PWM_RESOLUTION_16_BITS,
 };
 
 uint8 CapSense_CSD_analogSwitchDivider[CapSense_CSD_TOTAL_SCANSLOT_COUNT] = {
-    2u, 2u, 3u, 3u, 3u, 3u, 3u, 
+    11u, 
 };
 
 const uint8 CYCODE CapSense_CSD_widgetNumber[] = {
-    1u, /* Button0__BTN */
-    2u, /* Button1__BTN */
-    0u, 0u, 0u, 0u, 0u, /* LinearSlider0__LS */
+    0u, /* Button0__BTN */
     
 };
 

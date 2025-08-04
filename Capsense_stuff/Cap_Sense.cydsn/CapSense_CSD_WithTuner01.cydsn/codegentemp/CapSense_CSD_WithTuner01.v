@@ -1,6 +1,6 @@
 // ======================================================================
 // CapSense_CSD_WithTuner01.v generated from TopDesign.cysch
-// 07/29/2025 at 17:12
+// 08/01/2025 at 14:36
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -421,7 +421,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v"
 `endif
 
-// CapSense_CSD_v3_50(AnalogSwitchDivider=7, ClockSource=0, ConnectInactiveSensors=0, CtlModeReplacementString=SyncCtrl, CurrentSource=1, EnableTuneHelper=true, EzI2CInstanceName=EzI2C, GuardSensorEnable=false, IdacRange=4, Implementation_CH0=1, Implementation_CH1=1, IntClockFrequency=12, LowBaselineReset=5, MaximumSensors=62, MultipleAnalogSwitchDivider=true, NegativeNoiseThreshold=20, NumberOfChannels=1, PrechargePolarity=3, PrescalerOptions=1, PrsOptions=0, RawDataFilterType=0, RbNumber_CH0=0, RbNumber_CH1=0, RemoveCH1=true, RemoveVrefTerm=false, ScanSpeed=7, SensorAutoReset=false, SensorNumber_CH0=7, SensorNumber_CH1=0, SensorNumberChannel0=7, SensorNumberChannel1=0, ShieldEnable=false, SizeReplacementString=uint16, SnsAlias_CH0=<?xml version='1.0'?><PinAliases Version='1'><pin0>Button0__BTN</pin0><pin1>Button1__BTN</pin1><pin2>LinearSlider0_e0__LS</pin2><pin3>LinearSlider0_e1__LS</pin3><pin4>LinearSlider0_e2__LS</pin4><pin5>LinearSlider0_e3__LS</pin5><pin6>LinearSlider0_e4__LS</pin6></PinAliases>, SnsAlias_CH1=<?xml version="1.0" ?><PinAliases Version="1"><pin0>pin1_ch1</pin0></PinAliases>, TunerProperties=<?xml version="1.0" encoding="utf-16"?> <CyTunerProperties xmlns:version="v1.00">   <OptimalSnrValue>7</OptimalSnrValue>   <SufficientSnrValue>5</SufficientSnrValue>   <CrosstalkThresholdPercentage>20</CrosstalkThresholdPercentage>   <WorstCaseCrosstalkThresholdPercentage>30</WorstCaseCrosstalkThresholdPercentage>   <WorstCaseCrosstalkSensorCount>2</WorstCaseCrosstalkSensorCount>   <LoggingDuration>10</LoggingDuration>   <LogFileName />   <LogFileAppend>false</LogFileAppend>   <LogValFileName />   <LogValEnabled>false</LogValEnabled>   <LogValFileAutoAppend>true</LogValFileAutoAppend>   <ShowSensorsSNR>true</ShowSensorsSNR>   <ShowSensorsSNRWarnings>true</ShowSensorsSNRWarnings>   <ShowCrosstalkWarnings>true</ShowCrosstalkWarnings>   <ShowFlashinglineWarnings>true</ShowFlashinglineWarnings> </CyTunerProperties>, TuningMethod=1, VrefOptions=0, VrefValue=64, WaterProofingEnabled=false, WidgetResolution=16, WidgetsData=<?xml version="1.0" encoding="utf-16"?> <CyWidgetsList xmlns:version="v1.00">   <ListMainTerminal>     <CyTerminal NameIndex="0" WidgetName="Button0__BTN" />     <CyTerminal NameIndex="0" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="1" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="2" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="3" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="4" WidgetName="LinearSlider0__LS" />     <CyTerminal NameIndex="0" WidgetName="Button1__BTN" />   </ListMainTerminal>   <ListButtons>     <CyButton Name="Button0" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">       <Location>         <X>0</X>         <Y>0</Y>       </Location>       <Properties>         <Hysteresis>18</Hysteresis>         <Debounce>5</Debounce>         <FingerThreshold>124</FingerThreshold>         <NoiseThreshold>45</NoiseThreshold>         <ScanResolution>_14</ScanResolution>       </Properties>     </CyButton>     <CyButton Name="Button1" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">       <Location>         <X>61</X>         <Y>0</Y>       </Location>       <Properties>         <Hysteresis>9</Hysteresis>         <Debounce>5</Debounce>         <FingerThreshold>66</FingerThreshold>         <NoiseThreshold>33</NoiseThreshold>         <ScanResolution>_13</ScanResolution>       </Properties>     </CyButton>   </ListButtons>   <ListMatrixButtons />   <ListTouchPads />   <ListSliders>     <CySlider Name="LinearSlider0" Type="SliderLinear" Channel="First" Count="5" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1" Diplexing="false" Resolution="100" FilterPropertiesPos="None">       <Location>         <X>122</X>         <Y>0</Y>       </Location>       <Properties>         <Hysteresis>0</Hysteresis>         <Debounce>1</Debounce>         <FingerThreshold>84</FingerThreshold>         <NoiseThreshold>42</NoiseThreshold>         <ScanResolution>_14</ScanResolution>       </Properties>     </CySlider>   </ListSliders>   <GuardSensor Name="GuardSensor" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">     <Location>       <X>2147483647</X>       <Y>2147483647</Y>     </Location>     <Properties>       <Hysteresis>10</Hysteresis>       <Debounce>5</Debounce>       <FingerThreshold>100</FingerThreshold>       <NoiseThreshold>20</NoiseThreshold>       <ScanResolution>_10</ScanResolution>     </Properties>   </GuardSensor>   <GuardSensorTerminal NameIndex="0" WidgetName="GuardSensor__GRD" />   <CyScanSlotsList>     <ListScanSlots>       <CyScanSlot IDACSettings="43" Sensitivity="4" AnalogSwitchDivider="2" WidgetName="Button0__BTN">         <ListTerminalsNames>           <string>Button0__BTN</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="41" Sensitivity="4" AnalogSwitchDivider="2" WidgetName="Button1__BTN">         <ListTerminalsNames>           <string>Button1__BTN</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="48" Sensitivity="4" AnalogSwitchDivider="3" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e0__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="49" Sensitivity="4" AnalogSwitchDivider="3" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e1__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="41" Sensitivity="4" AnalogSwitchDivider="3" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e2__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="38" Sensitivity="4" AnalogSwitchDivider="3" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e3__LS</string>         </ListTerminalsNames>       </CyScanSlot>       <CyScanSlot IDACSettings="34" Sensitivity="4" AnalogSwitchDivider="3" WidgetName="LinearSlider0__LS">         <ListTerminalsNames>           <string>LinearSlider0_e4__LS</string>         </ListTerminalsNames>       </CyScanSlot>     </ListScanSlots>     <GuardSensorScanSlot IDACSettings="200" Sensitivity="4" AnalogSwitchDivider="11" WidgetName="GuardSensor__GRD">       <ListTerminalsNames>         <string>GuardSensor__GRD</string>       </ListTerminalsNames>     </GuardSensorScanSlot>   </CyScanSlotsList> </CyWidgetsList>, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=CapSense_CSD_v3_50, CY_CONFIG_TITLE=CapSense_CSD, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=CapSense_CSD, CY_INSTANCE_SHORT_NAME=CapSense_CSD, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=50, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=CapSense_CSD, )
+// CapSense_CSD_v3_50(AnalogSwitchDivider=7, ClockSource=0, ConnectInactiveSensors=1, CtlModeReplacementString=SyncCtrl, CurrentSource=1, EnableTuneHelper=true, EzI2CInstanceName=EzI2C, GuardSensorEnable=false, IdacRange=8, Implementation_CH0=1, Implementation_CH1=1, IntClockFrequency=12, LowBaselineReset=5, MaximumSensors=62, MultipleAnalogSwitchDivider=true, NegativeNoiseThreshold=20, NumberOfChannels=1, PrechargePolarity=3, PrescalerOptions=1, PrsOptions=0, RawDataFilterType=0, RbNumber_CH0=0, RbNumber_CH1=0, RemoveCH1=true, RemoveVrefTerm=false, ScanSpeed=7, SensorAutoReset=false, SensorNumber_CH0=1, SensorNumber_CH1=0, SensorNumberChannel0=1, SensorNumberChannel1=0, ShieldEnable=false, SizeReplacementString=uint16, SnsAlias_CH0=<?xml version='1.0'?><PinAliases Version='1'><pin0>Button0__BTN</pin0></PinAliases>, SnsAlias_CH1=<?xml version="1.0" ?><PinAliases Version="1"><pin0>pin1_ch1</pin0></PinAliases>, TunerProperties=<?xml version="1.0" encoding="utf-16"?> <CyTunerProperties xmlns:version="v1.00">   <OptimalSnrValue>7</OptimalSnrValue>   <SufficientSnrValue>5</SufficientSnrValue>   <CrosstalkThresholdPercentage>20</CrosstalkThresholdPercentage>   <WorstCaseCrosstalkThresholdPercentage>30</WorstCaseCrosstalkThresholdPercentage>   <WorstCaseCrosstalkSensorCount>2</WorstCaseCrosstalkSensorCount>   <LoggingDuration>10</LoggingDuration>   <LogFileName />   <LogFileAppend>false</LogFileAppend>   <LogValFileName />   <LogValEnabled>false</LogValEnabled>   <LogValFileAutoAppend>true</LogValFileAutoAppend>   <ShowSensorsSNR>true</ShowSensorsSNR>   <ShowSensorsSNRWarnings>true</ShowSensorsSNRWarnings>   <ShowCrosstalkWarnings>true</ShowCrosstalkWarnings>   <ShowFlashinglineWarnings>true</ShowFlashinglineWarnings> </CyTunerProperties>, TuningMethod=1, VrefOptions=0, VrefValue=64, WaterProofingEnabled=false, WidgetResolution=16, WidgetsData=<?xml version="1.0" encoding="utf-16"?> <CyWidgetsList xmlns:version="v1.00">   <ListMainTerminal>     <CyTerminal NameIndex="0" WidgetName="Button0__BTN" />   </ListMainTerminal>   <ListButtons>     <CyButton Name="Button0" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">       <Location>         <X>2147483647</X>         <Y>2147483647</Y>       </Location>       <Properties>         <Hysteresis>10</Hysteresis>         <Debounce>5</Debounce>         <FingerThreshold>100</FingerThreshold>         <NoiseThreshold>20</NoiseThreshold>         <ScanResolution>_16</ScanResolution>       </Properties>     </CyButton>   </ListButtons>   <ListMatrixButtons />   <ListTouchPads />   <ListSliders />   <GuardSensor Name="GuardSensor" Type="Button" Channel="First" Count="1" Angle="0" Fliped="false" Fliped2D="false" ScaleFactor="1">     <Location>       <X>2147483647</X>       <Y>2147483647</Y>     </Location>     <Properties>       <Hysteresis>10</Hysteresis>       <Debounce>5</Debounce>       <FingerThreshold>100</FingerThreshold>       <NoiseThreshold>20</NoiseThreshold>       <ScanResolution>_10</ScanResolution>     </Properties>   </GuardSensor>   <GuardSensorTerminal NameIndex="0" WidgetName="GuardSensor__GRD" />   <CyScanSlotsList>     <ListScanSlots>       <CyScanSlot IDACSettings="200" Sensitivity="2" AnalogSwitchDivider="11" WidgetName="Button0__BTN">         <ListTerminalsNames>           <string>Button0__BTN</string>         </ListTerminalsNames>       </CyScanSlot>     </ListScanSlots>     <GuardSensorScanSlot IDACSettings="200" Sensitivity="4" AnalogSwitchDivider="11" WidgetName="GuardSensor__GRD">       <ListTerminalsNames>         <string>GuardSensor__GRD</string>       </ListTerminalsNames>     </GuardSensorScanSlot>   </CyScanSlotsList> </CyWidgetsList>, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=CapSense_CSD_v3_50, CY_CONFIG_TITLE=CapSense_CSD, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=CapSense_CSD, CY_INSTANCE_SHORT_NAME=CapSense_CSD, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=50, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=CapSense_CSD, )
 module CapSense_CSD_v3_50_3 (
     clock,
     shield,
@@ -489,7 +489,7 @@ module CapSense_CSD_v3_50_3 (
     electrical  Net_1433;
     electrical  Net_2164;
     electrical  Net_1438;
-    electrical [6:0] Net_1410;
+    electrical  Net_1410;
     electrical  Net_1983;
     electrical  Net_1425;
     electrical  Net_1917;
@@ -594,22 +594,22 @@ module CapSense_CSD_v3_50_3 (
 	wire [0:0] tmpOE__PortCH0_net;
 
 	cy_psoc3_port_v1_0
-		#(.width(7),
-		  .siorefwidth(4),
+		#(.width(1),
+		  .siorefwidth(1),
 		  .id("16217ef9-ca05-4fe1-bfd0-d31f25ca3321/dd9c1af8-be5a-4b9e-b10c-b2d9f11dc9fc"),
-		  .pin_aliases({"Button0__BTN,But","ton1__BTN,Linear","Slider0_e0__LS,L","inearSlider0_e1_","_LS,LinearSlider","0_e2__LS,LinearS","lider0_e3__LS,Li","nearSlider0_e4__","LS"}),
+		  .pin_aliases("Button0__BTN"),
 		  .access_mode("HW_ONLY"),
 		  .layout_mode("NONCONTIGUOUS"),
 		  .port_mode("ANALOG"),
-		  .intr_mode(14'b00000000000000),
-		  .drive_mode(21'b100100100100100100100),
+		  .intr_mode(2'b00),
+		  .drive_mode(3'b100),
 		  .por_state(0),
-		  .enable_shielding(7'b0000000),
+		  .enable_shielding(1'b0),
 		  .cs_mode(2'b11))
 		PortCH0
 		 (.oe(tmpOE__PortCH0_net),
-		  .y(7'b0),
-		  .analog(Net_1410[6:0]),
+		  .y(1'b0),
+		  .analog(Net_1410),
 		  .precharge(PreChargeClk));
 
 	assign tmpOE__PortCH0_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? 1'b1 : 1'b0;
@@ -631,19 +631,13 @@ module CapSense_CSD_v3_50_3 (
             Net_1425,
             Net_282,
             Net_1917,
-            Net_1410[6],
-            Net_1410[5],
-            Net_1410[4],
-            Net_1410[3],
-            Net_1410[2],
-            Net_1410[1],
-            Net_1410[0]
+            Net_1410
             }),
         .vout(Net_2072)
         );
     
-    defparam AMuxCH0.muxin_width = 10;
-    defparam AMuxCH0.init_mux_sel = 10'h0;
+    defparam AMuxCH0.muxin_width = 4;
+    defparam AMuxCH0.init_mux_sel = 4'h0;
     defparam AMuxCH0.one_active = 0;
     
     // -- AMux AMuxCH0 end --

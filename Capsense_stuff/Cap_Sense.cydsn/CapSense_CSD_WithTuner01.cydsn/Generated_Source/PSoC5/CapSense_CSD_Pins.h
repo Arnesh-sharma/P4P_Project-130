@@ -51,12 +51,6 @@ void CapSense_CSD_SetAllCmodsDriveMode(uint8 mode) ;
 
 /* PC registers defines for sensors */
 #define CapSense_CSD_PortCH0__Button0__BTN  CapSense_CSD_PortCH0__Button0__BTN__PC
-#define CapSense_CSD_PortCH0__LinearSlider0_e0__LS  CapSense_CSD_PortCH0__LinearSlider0_e0__LS__PC
-#define CapSense_CSD_PortCH0__LinearSlider0_e1__LS  CapSense_CSD_PortCH0__LinearSlider0_e1__LS__PC
-#define CapSense_CSD_PortCH0__LinearSlider0_e2__LS  CapSense_CSD_PortCH0__LinearSlider0_e2__LS__PC
-#define CapSense_CSD_PortCH0__LinearSlider0_e3__LS  CapSense_CSD_PortCH0__LinearSlider0_e3__LS__PC
-#define CapSense_CSD_PortCH0__LinearSlider0_e4__LS  CapSense_CSD_PortCH0__LinearSlider0_e4__LS__PC
-#define CapSense_CSD_PortCH0__Button1__BTN  CapSense_CSD_PortCH0__Button1__BTN__PC
 /* For Cmods*/
 #define CapSense_CSD_CmodCH0_Cmod_CH0       CapSense_CSD_CmodCH0__Cmod_CH0__PC
 

@@ -2,7 +2,7 @@
 --	Conversion of CapSense_CSD_WithTuner01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jul 29 17:12:05 2025
+--	Fri Aug 01 14:36:49 2025
 --
 
 USE cypress.cypress.all;
@@ -57,13 +57,7 @@ SIGNAL \CapSense_CSD:tmpIO_0__CmodCH0_net_0\ : bit;
 TERMINAL \CapSense_CSD:tmpSIOVREF__CmodCH0_net_0\ : bit;
 SIGNAL \CapSense_CSD:tmpINTERRUPT_0__CmodCH0_net_0\ : bit;
 SIGNAL \CapSense_CSD:tmpOE__PortCH0_net_0\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_6\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_5\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_4\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_3\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_2\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_1\ : bit;
-TERMINAL \CapSense_CSD:Net_1410_0\ : bit;
+TERMINAL \CapSense_CSD:Net_1410\ : bit;
 SIGNAL \CapSense_CSD:PreChargeClk\ : bit;
 TERMINAL \CapSense_CSD:Net_2038\ : bit;
 SIGNAL \CapSense_CSD:Net_375\ : bit;
@@ -1041,22 +1035,22 @@ Pins:cy_psoc3_pins_v1_10
 		out_reset=>zero,
 		interrupt=>\CapSense_CSD:tmpINTERRUPT_0__CmodCH0_net_0\);
 \CapSense_CSD:PortCH0\:cy_psoc3_port_v1_0
-	GENERIC MAP(width=>7,
-		siorefwidth=>4,
-		pin_aliases=>"Button0__BTN,Button1__BTN,LinearSlider0_e0__LS,LinearSlider0_e1__LS,LinearSlider0_e2__LS,LinearSlider0_e3__LS,LinearSlider0_e4__LS",
+	GENERIC MAP(width=>1,
+		siorefwidth=>1,
+		pin_aliases=>"Button0__BTN",
 		id=>"16217ef9-ca05-4fe1-bfd0-d31f25ca3321/dd9c1af8-be5a-4b9e-b10c-b2d9f11dc9fc",
 		access_mode=>"HW_ONLY",
 		layout_mode=>"NONCONTIGUOUS",
 		port_mode=>"ANALOG",
 		vtrip=>'0',
 		slew_rate=>"",
-		intr_mode=>"00000000000000",
-		drive_mode=>"100100100100100100100",
+		intr_mode=>"00",
+		drive_mode=>"100",
 		lcd_sw_drive=>'0',
 		lcd_com_seg=>"",
 		por_state=>0,
 		emif_mode=>"",
-		enable_shielding=>"0000000",
+		enable_shielding=>"0",
 		cs_mode=>"11",
 		sio_obuf=>"",
 		sio_ibuf=>"",
@@ -1067,14 +1061,11 @@ Pins:cy_psoc3_pins_v1_10
 		port_alias_required=>'0',
 		port_alias_group=>"")
 	PORT MAP(oe=>zero,
-		y=>(zero, zero, zero, zero,
-			zero, zero, zero),
+		y=>(zero),
 		fb=>open,
-		analog=>(\CapSense_CSD:Net_1410_6\, \CapSense_CSD:Net_1410_5\, \CapSense_CSD:Net_1410_4\, \CapSense_CSD:Net_1410_3\,
-			\CapSense_CSD:Net_1410_2\, \CapSense_CSD:Net_1410_1\, \CapSense_CSD:Net_1410_0\),
-		io=>(open, open, open, open,
-			open, open, open),
-		siovref=>(open, open, open, open),
+		analog=>\CapSense_CSD:Net_1410\,
+		io=>(open),
+		siovref=>(open),
 		interrupt=>open,
 		precharge=>\CapSense_CSD:PreChargeClk\);
 \CapSense_CSD:VrefRefCH0\:cy_vref_v1_0
@@ -1085,15 +1076,13 @@ Pins:cy_psoc3_pins_v1_10
 	PORT MAP(vout=>\CapSense_CSD:Net_2038\);
 \CapSense_CSD:AMuxCH0\:cy_psoc3_amux_v1_0
 	GENERIC MAP(cy_registers=>"",
-		muxin_width=>10,
+		muxin_width=>4,
 		hw_control=>'0',
 		one_active=>'0',
-		init_mux_sel=>"0000000000",
+		init_mux_sel=>"0000",
 		api_type=>0,
 		connect_mode=>1)
-	PORT MAP(muxin=>(\CapSense_CSD:Net_1425\, \CapSense_CSD:Net_282\, \CapSense_CSD:Net_1917\, \CapSense_CSD:Net_1410_6\,
-			\CapSense_CSD:Net_1410_5\, \CapSense_CSD:Net_1410_4\, \CapSense_CSD:Net_1410_3\, \CapSense_CSD:Net_1410_2\,
-			\CapSense_CSD:Net_1410_1\, \CapSense_CSD:Net_1410_0\),
+	PORT MAP(muxin=>(\CapSense_CSD:Net_1425\, \CapSense_CSD:Net_282\, \CapSense_CSD:Net_1917\, \CapSense_CSD:Net_1410\),
 		hw_ctrl_en=>(others => zero),
 		vout=>\CapSense_CSD:Net_2072\);
 \CapSense_CSD:Select_VrefCH0_connect\:cy_connect_v1_0

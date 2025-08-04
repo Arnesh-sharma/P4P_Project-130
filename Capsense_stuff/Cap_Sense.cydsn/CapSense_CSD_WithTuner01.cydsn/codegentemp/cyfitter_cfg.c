@@ -339,13 +339,7 @@ void SetAnalogRoutingPumps(uint8 enabled)
 #define CY_AMUX_UNUSED CYREG_BOOST_SR
 /* This is an implementation detail of the AMux. Code that depends on it may be
    incompatible with other versions of PSoC Creator. */
-uint8 CYXDATA * const CYCODE CapSense_CSD_AMuxCH0__addrTable[10] = {
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
-	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
+uint8 CYXDATA * const CYCODE CapSense_CSD_AMuxCH0__addrTable[4] = {
 	(uint8 CYXDATA *)CYREG_PRT0_AMUX, 
 	(uint8 CYXDATA *)CYREG_DSM0_SW3, 
 	(uint8 CYXDATA *)CYREG_CMP2_SW3, 
@@ -354,14 +348,8 @@ uint8 CYXDATA * const CYCODE CapSense_CSD_AMuxCH0__addrTable[10] = {
 
 /* This is an implementation detail of the AMux. Code that depends on it may be
    incompatible with other versions of PSoC Creator. */
-const uint8 CYCODE CapSense_CSD_AMuxCH0__maskTable[10] = {
+const uint8 CYCODE CapSense_CSD_AMuxCH0__maskTable[4] = {
 	0x20u, 
-	0x40u, 
-	0x01u, 
-	0x02u, 
-	0x04u, 
-	0x08u, 
-	0x10u, 
 	0x01u, 
 	0x01u, 
 	0x10u, 
@@ -382,7 +370,7 @@ const uint8 CYCODE CapSense_CSD_AMuxCH0__maskTable[10] = {
 *******************************************************************************/
 void CapSense_CSD_AMuxCH0_Set(uint8 channel) CYREENTRANT
 {
-	if (channel < 10)
+	if (channel < 4)
 	{
 		*CapSense_CSD_AMuxCH0__addrTable[channel] |= CapSense_CSD_AMuxCH0__maskTable[channel];
 	}
@@ -404,7 +392,7 @@ void CapSense_CSD_AMuxCH0_Set(uint8 channel) CYREENTRANT
 *******************************************************************************/
 void CapSense_CSD_AMuxCH0_Unset(uint8 channel) CYREENTRANT
 {
-	if (channel < 10)
+	if (channel < 4)
 	{
 		*CapSense_CSD_AMuxCH0__addrTable[channel] &= (uint8)~CapSense_CSD_AMuxCH0__maskTable[channel];
 	}
