@@ -1,5 +1,5 @@
 -- Project:   CapSense_CSD_WithTuner01
--- Generated: 08/01/2025 14:37:04
+-- Generated: 08/05/2025 14:03:06
 -- PSoC Creator  4.2
 
 ENTITY CapSense_CSD_WithTuner01 IS
@@ -83,6 +83,7 @@ ARCHITECTURE __DEFAULT__ OF CapSense_CSD_WithTuner01 IS
     SIGNAL \CapSense_CSD:Net_1603\ : bit;
     ATTRIBUTE placement_force OF \CapSense_CSD:Net_1603\ : SIGNAL IS "U(1,2,B)3";
     SIGNAL \\\CapSense_CSD:PortCH0(0)\\__PA\ : bit;
+    SIGNAL \\\CapSense_CSD:PortCH0(1)\\__PA\ : bit;
     SIGNAL \CapSense_CSD:PreChargeClk\ : bit;
     ATTRIBUTE placement_force OF \CapSense_CSD:PreChargeClk\ : SIGNAL IS "U(0,2,A)0";
     SIGNAL \CapSense_CSD:clk\ : bit;
@@ -145,8 +146,10 @@ ARCHITECTURE __DEFAULT__ OF CapSense_CSD_WithTuner01 IS
     ATTRIBUTE Location OF \CapSense_CSD:CmodCH0(0)\ : LABEL IS "P2[7]";
     ATTRIBUTE lib_model OF \CapSense_CSD:PortCH0(0)\ : LABEL IS "iocell4";
     ATTRIBUTE Location OF \CapSense_CSD:PortCH0(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE lib_model OF \CapSense_CSD:PortCH0(1)\ : LABEL IS "iocell5";
+    ATTRIBUTE Location OF \CapSense_CSD:PortCH0(1)\ : LABEL IS "P0[6]";
     ATTRIBUTE Location OF CapSense : LABEL IS "F(CapSense,0)";
-    ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell5";
+    ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF LED(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:cs_addr_win_2\ : LABEL IS "macrocell1";
     ATTRIBUTE Location OF \CapSense_CSD:MeasureCH0:cs_addr_win_2\ : LABEL IS "U(1,3)";
@@ -793,27 +796,27 @@ BEGIN
         GENERIC MAP(
             access_mode => "HW_ONLY",
             cs_mode => "11",
-            drive_mode => "100",
+            drive_mode => "100100",
             emif_mode => "",
-            enable_shielding => "0",
-            ibuf_enabled => "1",
+            enable_shielding => "00",
+            ibuf_enabled => "11",
             id => "16217ef9-ca05-4fe1-bfd0-d31f25ca3321/dd9c1af8-be5a-4b9e-b10c-b2d9f11dc9fc",
-            init_dr_st => "0",
-            input_sync => "0",
-            input_sync_mode => "0",
-            intr_mode => "00",
-            io_voltage => "0.00",
+            init_dr_st => "00",
+            input_sync => "00",
+            input_sync_mode => "00",
+            intr_mode => "0000",
+            io_voltage => "0.00,0.00",
             layout_mode => "NONCONTIGUOUS",
             lcd_com_seg => "",
             lcd_sw_drive => 0,
-            oe_conn => "0",
+            oe_conn => "00",
             oe_sync => "",
-            out_conn => "0",
-            output_clock_mode => "0",
-            output_mode => "0",
-            output_sync => "0",
-            pin_aliases => "Button0__BTN",
-            pin_mode => "A",
+            out_conn => "00",
+            output_clock_mode => "00",
+            output_mode => "00",
+            output_sync => "00",
+            pin_aliases => "Button0__BTN,ProximitySensor0_0__PROX",
+            pin_mode => "AA",
             por_state => 0,
             port_alias_group => "",
             port_alias_required => 0,
@@ -822,15 +825,15 @@ BEGIN
             sio_hifreq => "",
             sio_hyst => "",
             sio_ibuf => "",
-            sio_info => "00",
+            sio_info => "0000",
             sio_obuf => "",
             sio_refsel => "",
             sio_vtrip => "",
             siorefwidth => 1,
             slew_rate => "",
             spanning => 1,
-            vtrip => "00",
-            width => 1,
+            vtrip => "0000",
+            width => 2,
             in_clk_inv => 0,
             in_clken_inv => 0,
             in_clken_mode => 1,
@@ -852,6 +855,25 @@ BEGIN
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000010")
         PORT MAP(
             pa_out => \\\CapSense_CSD:PortCH0(0)\\__PA\,
+            in_clock => open,
+            pin_input => open,
+            oe => open,
+            in_clock_en => open,
+            in_reset => open,
+            out_clock => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    \CapSense_CSD:PortCH0(1)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\CapSense_CSD:PortCH0\",
+            logicalport_pin_id => 1,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000010")
+        PORT MAP(
+            pa_out => \\\CapSense_CSD:PortCH0(1)\\__PA\,
             in_clock => open,
             pin_input => open,
             oe => open,

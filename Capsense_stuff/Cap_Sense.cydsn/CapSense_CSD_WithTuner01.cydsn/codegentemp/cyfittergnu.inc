@@ -424,6 +424,11 @@
 .set CapSense_CSD_PortCH0__0__PC, CYREG_PRT0_PC5
 .set CapSense_CSD_PortCH0__0__PORT, 0
 .set CapSense_CSD_PortCH0__0__SHIFT, 5
+.set CapSense_CSD_PortCH0__1__INTTYPE, CYREG_PICU0_INTTYPE6
+.set CapSense_CSD_PortCH0__1__MASK, 0x40
+.set CapSense_CSD_PortCH0__1__PC, CYREG_PRT0_PC6
+.set CapSense_CSD_PortCH0__1__PORT, 0
+.set CapSense_CSD_PortCH0__1__SHIFT, 6
 .set CapSense_CSD_PortCH0__AG, CYREG_PRT0_AG
 .set CapSense_CSD_PortCH0__AMUX, CYREG_PRT0_AMUX
 .set CapSense_CSD_PortCH0__BIE, CYREG_PRT0_BIE
@@ -443,8 +448,12 @@
 .set CapSense_CSD_PortCH0__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU0_BASE
 .set CapSense_CSD_PortCH0__LCD_COM_SEG, CYREG_PRT0_LCD_COM_SEG
 .set CapSense_CSD_PortCH0__LCD_EN, CYREG_PRT0_LCD_EN
-.set CapSense_CSD_PortCH0__MASK, 0x20
 .set CapSense_CSD_PortCH0__PORT, 0
+.set CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__INTTYPE, CYREG_PICU0_INTTYPE6
+.set CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__MASK, 0x40
+.set CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__PC, CYREG_PRT0_PC6
+.set CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__PORT, 0
+.set CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__SHIFT, 6
 .set CapSense_CSD_PortCH0__PRT, CYREG_PRT0_PRT
 .set CapSense_CSD_PortCH0__PRTDSI__CAPS_SEL, CYREG_PRT0_CAPS_SEL
 .set CapSense_CSD_PortCH0__PRTDSI__DBL_SYNC_IN, CYREG_PRT0_DBL_SYNC_IN
@@ -454,7 +463,6 @@
 .set CapSense_CSD_PortCH0__PRTDSI__OUT_SEL1, CYREG_PRT0_OUT_SEL1
 .set CapSense_CSD_PortCH0__PRTDSI__SYNC_OUT, CYREG_PRT0_SYNC_OUT
 .set CapSense_CSD_PortCH0__PS, CYREG_PRT0_PS
-.set CapSense_CSD_PortCH0__SHIFT, 5
 .set CapSense_CSD_PortCH0__SLW, CYREG_PRT0_SLW
 
 /* Miscellaneous */

@@ -51,6 +51,7 @@ void CapSense_CSD_SetAllCmodsDriveMode(uint8 mode) ;
 
 /* PC registers defines for sensors */
 #define CapSense_CSD_PortCH0__Button0__BTN  CapSense_CSD_PortCH0__Button0__BTN__PC
+#define CapSense_CSD_PortCH0__ProximitySensor0_0__PROX  CapSense_CSD_PortCH0__ProximitySensor0_0__PROX__PC
 /* For Cmods*/
 #define CapSense_CSD_CmodCH0_Cmod_CH0       CapSense_CSD_CmodCH0__Cmod_CH0__PC
 

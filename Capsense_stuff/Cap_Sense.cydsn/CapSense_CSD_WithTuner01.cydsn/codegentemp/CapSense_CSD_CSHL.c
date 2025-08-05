@@ -46,32 +46,34 @@ uint8 CapSense_CSD_sensorOnMask[(((CapSense_CSD_TOTAL_SENSOR_COUNT - 1u) / 8u) +
 uint8 CapSense_CSD_lowBaselineResetCnt[CapSense_CSD_TOTAL_SENSOR_COUNT];
 
 uint16 CapSense_CSD_fingerThreshold[] = {
-    100u, 
+    100u, 50u, 
 };
 
 uint16 CapSense_CSD_noiseThreshold[] = {
-    20u, 
+    20u, 20u, 
 };
 
 uint16 CapSense_CSD_hysteresis[] = {
-    10u, 
+    10u, 10u, 
 };
 
 uint8 CapSense_CSD_debounce[] = {
-    5u, 
+    5u, 5u, 
 };
 
 uint8 CapSense_CSD_debounceCounter[] = {
-    0u, 0u, 
+    0u, 0u, 0u, 
 };
 
 const uint8 CYCODE CapSense_CSD_rawDataIndex[] = {
     0u, /* Button0__BTN */
+    1u, /* ProximitySensor0__PROX */
 
 };
 
 const uint8 CYCODE CapSense_CSD_numberOfSensors[] = {
     1u, /* Button0__BTN */
+    1u, /* ProximitySensor0__PROX */
 
 };
 

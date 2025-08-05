@@ -27,7 +27,7 @@
 ***************************************/
 
 /* Check Sum to identify data */
-#define CapSense_CSD_CHECK_SUM      (17u)
+#define CapSense_CSD_CHECK_SUM      (43u)
 
 #define CapSense_CSD_TOTAL_SENSOR_MASK_COUNT     (((CapSense_CSD_TOTAL_SENSOR_COUNT - 1u) / 8u) + 1u)
 
