@@ -58,7 +58,7 @@
 #define CapSense_CSD_MULTIPLE_PRESCALER_ENABLED (1u)
 
 #define CapSense_CSD_PRS_OPTIONS                (0u)
-#define CapSense_CSD_SCANSPEED_VALUE            (7u)
+#define CapSense_CSD_SCANSPEED_VALUE            (1u)
 
 #define CapSense_CSD_VREF_OPTIONS               (0u)
 
@@ -195,7 +195,7 @@ CY_ISR_PROTO(CapSense_CSD_IsrCH0_ISR);
 
 
 /* Vdac value for Vref = Vdac */
-#define CapSense_CSD_VREF_VDAC_VALUE            (32u)
+#define CapSense_CSD_VREF_VDAC_VALUE            (46u)
 
 /* Scan Speed Type */
 #define CapSense_CSD_SCAN_SPEED_ULTRA_FAST      (0x01u)

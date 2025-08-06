@@ -1,4 +1,4 @@
---------------- Build Started: 08/06/2025 12:14:48 Project: CapSense_CSD_WithTuner01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 08/06/2025 15:27:42 Project: CapSense_CSD_WithTuner01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\ash750\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj -d CY8C5888LTI-LP097 -s H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
@@ -61,4 +61,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.elf
 Flash used: 7862 of 262144 bytes (3.0%).
 SRAM used: 2629 of 65536 bytes (4.0%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 08/06/2025 12:15:35 ---------------
+--------------- Build Succeeded: 08/06/2025 15:28:28 ---------------

@@ -90,7 +90,7 @@ void CapSense_CSD_VdacRefCH0_Wakeup(void)          ;
 /* Default Strobe mode */
 #define CapSense_CSD_VdacRefCH0_DEFAULT_STRB     0u
  /* Initial DAC value */
-#define CapSense_CSD_VdacRefCH0_DEFAULT_DATA     32u
+#define CapSense_CSD_VdacRefCH0_DEFAULT_DATA     46u
  /* Default Data Source */
 #define CapSense_CSD_VdacRefCH0_DEFAULT_DATA_SRC 0u
 
