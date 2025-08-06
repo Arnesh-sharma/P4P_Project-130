@@ -1,8 +1,8 @@
-H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\Cap_Sense.cyprj|74371bf2-480c-44c3-81dd-246f13096a34
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d9107430-9efb-4e28-864f-bebde97e5b03
-C:\Users\ash750\OneDrive - The University of Auckland\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|96626822-0ad3-48b9-b02e-fb3c98c7ccd2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7746e26e-7c0b-40f5-b42a-854afe58da65
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|3114ce00-291c-4ec8-9c53-da7925d19175
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4d2e666c-e432-47a9-9d58-7426e5e39e7f
-H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj|bdff9862-8f52-49e8-92c4-8577da74405b
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|5dfe00af-3692-4af6-a3d8-63109dfbe0e7
+H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\Cap_Sense.cyprj|7cd4aa75-04c2-4b47-b3d4-90919bde3351
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|947c990b-0c81-4bf8-b8be-4418e0b09383
+C:\Users\ash750\OneDrive - The University of Auckland\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|2c616cc9-a929-4290-b8a1-53cc383c280b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|4946e88e-6d76-4c71-a05e-5d1a838accee
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|511e0544-37e2-47c5-aa4c-85f757598542
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7a575249-0eb6-4b44-9e5e-d753d0e04342
+H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj|8637a886-b3a4-4c78-85e3-46071a153987
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|91962587-57ba-44dc-b450-603432045325

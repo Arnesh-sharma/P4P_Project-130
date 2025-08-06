@@ -1,5 +1,5 @@
 -- Project:   CapSense_CSD_WithTuner01
--- Generated: 08/05/2025 14:02:56
+-- Generated: 08/06/2025 12:15:05
 -- PSoC Creator  4.2
 
 ENTITY CapSense_CSD_WithTuner01 IS
@@ -55,6 +55,7 @@ ARCHITECTURE __DEFAULT__ OF CapSense_CSD_WithTuner01 IS
     SIGNAL \CapSense_CSD:Cmp_CH0\ : bit;
     SIGNAL \CapSense_CSD:DigitalClk\ : bit;
     SIGNAL \CapSense_CSD:IdacCH0:Net_123\ : bit;
+    SIGNAL \CapSense_CSD:MeasureCH0:cmp_in_inv\ : bit;
     SIGNAL \CapSense_CSD:MeasureCH0:cs_addr_cnt_0\ : bit;
     SIGNAL \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ : bit;
     SIGNAL \CapSense_CSD:MeasureCH0:cs_addr_cnt_2\ : bit;
@@ -136,7 +137,8 @@ ARCHITECTURE __DEFAULT__ OF CapSense_CSD_WithTuner01 IS
     ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:cs_addr_cnt_2\ : LABEL IS "macrocell4";
     ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ : LABEL IS "macrocell5";
     ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:cs_addr_cnt_0\ : LABEL IS "macrocell6";
-    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_2\ : LABEL IS "macrocell7";
+    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:cmp_in_inv\ : LABEL IS "macrocell7";
+    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_2\ : LABEL IS "macrocell8";
     ATTRIBUTE Location OF \CapSense_CSD:BufCH0\ : LABEL IS "F(CsAbuf,0)";
     ATTRIBUTE Location OF \CapSense_CSD:CompCH0:ctComp\ : LABEL IS "F(Comparator,2)";
     ATTRIBUTE Location OF \CapSense_CSD:IdacCH0:viDAC8\ : LABEL IS "F(VIDAC,2)";
@@ -148,18 +150,18 @@ ARCHITECTURE __DEFAULT__ OF CapSense_CSD_WithTuner01 IS
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell4";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell5";
-    ATTRIBUTE lib_model OF \CapSense_CSD:Net_1603\ : LABEL IS "macrocell8";
-    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_2\ : LABEL IS "macrocell9";
-    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_1\ : LABEL IS "macrocell10";
-    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_0\ : LABEL IS "macrocell11";
-    ATTRIBUTE lib_model OF \CapSense_CSD:PreChargeClk\ : LABEL IS "macrocell12";
-    ATTRIBUTE lib_model OF \CapSense_CSD:ClockGen:cstate_2\ : LABEL IS "macrocell13";
-    ATTRIBUTE lib_model OF \CapSense_CSD:mrst\ : LABEL IS "macrocell14";
-    ATTRIBUTE lib_model OF \CapSense_CSD:ClockGen:inter_reset\ : LABEL IS "macrocell15";
-    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:runmode_enable\ : LABEL IS "macrocell16";
-    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:prevCompare1\ : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_0\ : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF Net_170 : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF \CapSense_CSD:Net_1603\ : LABEL IS "macrocell9";
+    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_2\ : LABEL IS "macrocell10";
+    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_1\ : LABEL IS "macrocell11";
+    ATTRIBUTE lib_model OF \CapSense_CSD:MeasureCH0:wndState_0\ : LABEL IS "macrocell12";
+    ATTRIBUTE lib_model OF \CapSense_CSD:PreChargeClk\ : LABEL IS "macrocell13";
+    ATTRIBUTE lib_model OF \CapSense_CSD:ClockGen:cstate_2\ : LABEL IS "macrocell14";
+    ATTRIBUTE lib_model OF \CapSense_CSD:mrst\ : LABEL IS "macrocell15";
+    ATTRIBUTE lib_model OF \CapSense_CSD:ClockGen:inter_reset\ : LABEL IS "macrocell16";
+    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:runmode_enable\ : LABEL IS "macrocell17";
+    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:prevCompare1\ : LABEL IS "macrocell18";
+    ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_0\ : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF Net_170 : LABEL IS "macrocell20";
     COMPONENT capsensecell
         PORT (
             lft : IN std_ulogic;
@@ -766,7 +768,7 @@ BEGIN
     \CapSense_CSD:PortCH0\:logicalport
         GENERIC MAP(
             access_mode => "HW_ONLY",
-            cs_mode => "11",
+            cs_mode => "01",
             drive_mode => "100100",
             emif_mode => "",
             enable_shielding => "00",
@@ -1025,6 +1027,15 @@ BEGIN
             main_4 => \CapSense_CSD:MeasureCH0:wndState_2\,
             main_5 => \CapSense_CSD:MeasureCH0:wndState_0\);
 
+    \CapSense_CSD:MeasureCH0:cmp_in_inv\:macrocell
+        GENERIC MAP(
+            eqn_main => "(!main_0)",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => \CapSense_CSD:MeasureCH0:cmp_in_inv\,
+            main_0 => \CapSense_CSD:Cmp_CH0\);
+
     \PWM_1:PWMUDB:status_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
@@ -1081,7 +1092,7 @@ BEGIN
             clken_mode => 3)
         PORT MAP(
             clock => \CapSense_CSD:clk\,
-            in => \CapSense_CSD:Cmp_CH0\,
+            in => \CapSense_CSD:MeasureCH0:cmp_in_inv\,
             out => \CapSense_CSD:IdacCH0:Net_123\,
             clk_en => \CapSense_CSD:DigitalClk\);
 

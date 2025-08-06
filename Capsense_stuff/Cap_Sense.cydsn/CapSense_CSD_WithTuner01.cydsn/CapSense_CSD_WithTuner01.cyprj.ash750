@@ -45,6 +45,16 @@
 <file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\cyapicallbacks.h" />
+<file name=".\ARM_GCC_541\Debug\CapSense_CSD_AMuxCH0.o">
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.c" />
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.c" />
 <file name=".\ARM_GCC_541\Debug\CapSense_CSD_CSHL.o">
 <dep name=".\Generated_Source\PSoC5\CapSense_CSD.h" />
 <dep name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.h" />
@@ -65,16 +75,6 @@
 </file>
 <file name=".\Generated_Source\PSoC5\CapSense_CSD_CSHL.c" />
 <file name=".\Generated_Source\PSoC5\CapSense_CSD_CSHL.h" />
-<file name=".\ARM_GCC_541\Debug\CapSense_CSD_AMuxCH0.o">
-<dep name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.c" />
-<dep name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\CapSense_CSD_AMuxCH0.c" />
 <file name=".\ARM_GCC_541\Debug\CapSense_CSD_CompCH0.o">
 <dep name=".\Generated_Source\PSoC5\CapSense_CSD_CompCH0.c" />
 <dep name=".\Generated_Source\PSoC5\CapSense_CSD_CompCH0.h" />
@@ -537,6 +537,29 @@
 <file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
 <file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.h" />
+<file name=".\ARM_GCC_541\Debug\CapSense_CSD_VdacRefCH0.o">
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.c" />
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.c" />
+<file name=".\ARM_GCC_541\Debug\CapSense_CSD_VdacRefCH0_PM.o">
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.h" />
+<dep name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0_PM.c" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -629,6 +652,8 @@
 <name_val_pair name="Generated_Source\PSoC5\Clock_1.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -ffat-lto-objects -O0" />
 <name_val_pair name="Generated_Source\PSoC5\PWM_1.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -ffat-lto-objects -O0" />
 <name_val_pair name="Generated_Source\PSoC5\PWM_1_PM.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -ffat-lto-objects -O0" />
+<name_val_pair name="Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -ffat-lto-objects -O0" />
+<name_val_pair name="Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0_PM.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -ffunction-sections -ffat-lto-objects -O0" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\ash750\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj -d CY8C5888LTI-LP097 -s H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -1039,6 +1064,9 @@
 <v>Generated_Source\PSoC5\PWM_1.c</v>
 <v>Generated_Source\PSoC5\PWM_1.h</v>
 <v>Generated_Source\PSoC5\PWM_1_PM.c</v>
+<v>Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.c</v>
+<v>Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0.h</v>
+<v>Generated_Source\PSoC5\CapSense_CSD_VdacRefCH0_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -1048,7 +1076,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="133988329983798807" />
+<deps_time v="133989129222436987" />
 <top_block v="TopDesign" />
 <last_generation v="3" />
 <pdl_path v="" />
@@ -1058,7 +1086,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133988330026866970" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133989129344435359" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -1072,8 +1100,6 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Analog">
 <ExpandedNodeIds>
 <v>Cypress Component Catalog</v>
-<v>Cypress Component Catalog\Digital</v>
-<v>Cypress Component Catalog\System</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Cypress Component Catalog</v>
@@ -1081,29 +1107,11 @@
 <v>Cypress Component Catalog\CapSense</v>
 <v>Cypress Component Catalog\Communications</v>
 <v>Cypress Component Catalog\Digital</v>
-<v>Cypress Component Catalog\Digital\Functions</v>
-<v>Cypress Component Catalog\Digital\Logic</v>
-<v>Cypress Component Catalog\Digital\Registers</v>
-<v>Cypress Component Catalog\Digital\Utility</v>
 <v>Cypress Component Catalog\Display</v>
 <v>Cypress Component Catalog\Filters</v>
 <v>Cypress Component Catalog\Ports and Pins</v>
 <v>Cypress Component Catalog\Power Supervision</v>
 <v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\System\Boost Converter [v5.0]</v>
-<v>Cypress Component Catalog\System\Bootloadable [v1.60]</v>
-<v>Cypress Component Catalog\System\Bootloader [v1.60]</v>
-<v>Cypress Component Catalog\System\Clock [v2.20]</v>
-<v>Cypress Component Catalog\System\Die Temperature [v2.10]</v>
-<v>Cypress Component Catalog\System\DMA [v1.70]</v>
-<v>Cypress Component Catalog\System\EEPROM [v3.0]</v>
-<v>Cypress Component Catalog\System\Emulated EEPROM [v2.0]</v>
-<v>Cypress Component Catalog\System\External Memory Interface</v>
-<v>Cypress Component Catalog\System\Global Signal Reference [v2.10]</v>
-<v>Cypress Component Catalog\System\ILO Trim [v2.0]</v>
-<v>Cypress Component Catalog\System\Interrupt [v1.71]</v>
-<v>Cypress Component Catalog\System\RTC [v2.0]</v>
-<v>Cypress Component Catalog\System\SleepTimer [v3.20]</v>
 <v>Cypress Component Catalog\Thermal Management</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>

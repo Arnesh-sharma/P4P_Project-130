@@ -195,9 +195,51 @@
 <VisibleNodeIds>
 <v>Cap_Sense-000</v>
 <v>Cap_Sense-000\Cap_Sense</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_AMuxCH0.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_CompCH0.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_CompCH0_PM.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_CSHL.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_IdacCH0.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_IdacCH0_PM.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_INT.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_IntClock.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_Pins.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_PM.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_SMS_Wrapper.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_1_TunerHelper.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Cap_Sense.elf</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Cap_Sense.hex</v>
+<v>Cap_Sense-000\Cap_Sense\CortexM3\ARM_GCC_541\Debug\Cap_Sense.map</v>
+<v>Cap_Sense-000\Cap_Sense\Cap_Sense.gpdsc</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense.rpt</v>
 <v>Cap_Sense-000\Cap_Sense\Cap_Sense_timing.html</v>
 <v>Cap_Sense-000\CapSense_CSD_WithTuner01</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541</v>
+<v>Cap_Sense-000\CapSense_CSD_WithTuner01\CortexM3\ARM_GCC_541\Debug</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
