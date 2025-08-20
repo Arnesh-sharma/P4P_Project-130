@@ -63,6 +63,8 @@ EzI2C_rwOffsetS1    0x2               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner
 CapSense_CSD_sensorSignal
                     0x4               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
 EzI2C_bufSizeS1     0x2               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C.o)
+CapSense_CSD_rawFilterData1
+                    0x4               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
 EzI2C_curState      0x1               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C.o)
 EzI2C_wrProtectS1   0x2               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C.o)
 CapSense_CSD_sensorBaseline
@@ -77,6 +79,8 @@ CapSense_CSD_sensorOnMask
 CapSense_CSD_lowBaselineResetCnt
                     0x2               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
 dieTemperature      0x2               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+CapSense_CSD_rawFilterData2
+                    0x4               .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
 
 Discarded input sections
 
@@ -571,7 +575,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00000000     0x1d6a
+.text           0x00000000     0x1e12
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -722,198 +726,201 @@ END GROUP
                 0x00001148       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
                 0x00001148                CapSense_CSD_DisableSensor
  .text.CapSense_CSD_PreScan
-                0x000011b8       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
+                0x000011b8       0x5c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
                 0x000011b8                CapSense_CSD_PreScan
  .text.CapSense_CSD_PostScan
-                0x00001218       0xa0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
-                0x00001218                CapSense_CSD_PostScan
+                0x00001214       0x98 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
+                0x00001214                CapSense_CSD_PostScan
  .text.CapSense_CSD_SetPrescaler
-                0x000012b8       0x2c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
-                0x000012b8                CapSense_CSD_SetPrescaler
+                0x000012ac       0x2c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
+                0x000012ac                CapSense_CSD_SetPrescaler
  .text.CapSense_CSD_BaseInit
-                0x000012e4       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x000012e4                CapSense_CSD_BaseInit
+                0x000012d8       0x90 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x000012d8                CapSense_CSD_BaseInit
  .text.CapSense_CSD_InitializeSensorBaseline
-                0x0000134c       0x30 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x0000134c                CapSense_CSD_InitializeSensorBaseline
+                0x00001368       0x30 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001368                CapSense_CSD_InitializeSensorBaseline
  .text.CapSense_CSD_InitializeAllBaselines
-                0x0000137c       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x0000137c                CapSense_CSD_InitializeAllBaselines
+                0x00001398       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001398                CapSense_CSD_InitializeAllBaselines
  .text.CapSense_CSD_UpdateSensorBaseline
-                0x000013a4      0x140 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x000013a4                CapSense_CSD_UpdateSensorBaseline
+                0x000013c0      0x184 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x000013c0                CapSense_CSD_UpdateSensorBaseline
  .text.CapSense_CSD_UpdateEnabledBaselines
-                0x000014e4       0x50 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x000014e4                CapSense_CSD_UpdateEnabledBaselines
+                0x00001544       0x50 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001544                CapSense_CSD_UpdateEnabledBaselines
  .text.CapSense_CSD_CheckIsSensorActive
-                0x00001534      0x110 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x00001534                CapSense_CSD_CheckIsSensorActive
+                0x00001594      0x110 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001594                CapSense_CSD_CheckIsSensorActive
  .text.CapSense_CSD_CheckIsWidgetActive
-                0x00001644       0x54 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x00001644                CapSense_CSD_CheckIsWidgetActive
+                0x000016a4       0x54 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x000016a4                CapSense_CSD_CheckIsWidgetActive
  .text.CapSense_CSD_CheckIsAnyWidgetActive
-                0x00001698       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x00001698                CapSense_CSD_CheckIsAnyWidgetActive
+                0x000016f8       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x000016f8                CapSense_CSD_CheckIsAnyWidgetActive
+ .text.CapSense_CSD_MedianFilter
+                0x00001730       0x48 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001730                CapSense_CSD_MedianFilter
  .text.CapSense_CSD_IsrCH0_ISR
-                0x000016d0       0x78 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
-                0x000016d0                CapSense_CSD_IsrCH0_ISR
+                0x00001778       0x78 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+                0x00001778                CapSense_CSD_IsrCH0_ISR
  .text.CapSense_CSD_InitParams
-                0x00001748       0xf8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+                0x000017f0       0xf8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
  .text.CapSense_CSD_InitMailbox
-                0x00001840       0x44 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
-                0x00001840                CapSense_CSD_InitMailbox
+                0x000018e8       0x44 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+                0x000018e8                CapSense_CSD_InitMailbox
  .text.CapSense_CSD_PostMessage
-                0x00001884       0xd0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
-                0x00001884                CapSense_CSD_PostMessage
+                0x0000192c       0xd0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+                0x0000192c                CapSense_CSD_PostMessage
  .text.CapSense_CSD_ReadMessage
-                0x00001954       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
-                0x00001954                CapSense_CSD_ReadMessage
+                0x000019fc       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+                0x000019fc                CapSense_CSD_ReadMessage
  .text.CapSense_CSD_CompCH0_Init
-                0x000019b4       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
-                0x000019b4                CapSense_CSD_CompCH0_Init
+                0x00001a5c       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+                0x00001a5c                CapSense_CSD_CompCH0_Init
  .text.CapSense_CSD_CompCH0_Enable
-                0x00001a1c       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
-                0x00001a1c                CapSense_CSD_CompCH0_Enable
+                0x00001ac4       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+                0x00001ac4                CapSense_CSD_CompCH0_Enable
  .text.CapSense_CSD_CompCH0_SetSpeed
-                0x00001a50       0x84 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
-                0x00001a50                CapSense_CSD_CompCH0_SetSpeed
+                0x00001af8       0x84 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+                0x00001af8                CapSense_CSD_CompCH0_SetSpeed
  .text.CapSense_CSD_IdacCH0_Init
-                0x00001ad4       0x48 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001ad4                CapSense_CSD_IdacCH0_Init
+                0x00001b7c       0x48 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001b7c                CapSense_CSD_IdacCH0_Init
  .text.CapSense_CSD_IdacCH0_Enable
-                0x00001b1c       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001b1c                CapSense_CSD_IdacCH0_Enable
+                0x00001bc4       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001bc4                CapSense_CSD_IdacCH0_Enable
  .text.CapSense_CSD_IdacCH0_SetSpeed
-                0x00001b50       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001b50                CapSense_CSD_IdacCH0_SetSpeed
+                0x00001bf8       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001bf8                CapSense_CSD_IdacCH0_SetSpeed
  .text.CapSense_CSD_IdacCH0_SetPolarity
-                0x00001b90       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001b90                CapSense_CSD_IdacCH0_SetPolarity
+                0x00001c38       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001c38                CapSense_CSD_IdacCH0_SetPolarity
  .text.CapSense_CSD_IdacCH0_SetRange
-                0x00001bd0       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001bd0                CapSense_CSD_IdacCH0_SetRange
+                0x00001c78       0x40 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001c78                CapSense_CSD_IdacCH0_SetRange
  .text.CapSense_CSD_IdacCH0_SetValue
-                0x00001c10       0x20 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001c10                CapSense_CSD_IdacCH0_SetValue
+                0x00001cb8       0x20 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001cb8                CapSense_CSD_IdacCH0_SetValue
  .text.CapSense_CSD_IdacCH0_DacTrim
-                0x00001c30       0x54 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
-                0x00001c30                CapSense_CSD_IdacCH0_DacTrim
+                0x00001cd8       0x54 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x00001cd8                CapSense_CSD_IdacCH0_DacTrim
  .text.CapSense_CSD_AMuxCH0_Init
-                0x00001c84        0xc .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
-                0x00001c84                CapSense_CSD_AMuxCH0_Init
+                0x00001d2c        0xc .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+                0x00001d2c                CapSense_CSD_AMuxCH0_Init
  .text.CapSense_CSD_AMuxCH0_DisconnectAll
-                0x00001c90       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
-                0x00001c90                CapSense_CSD_AMuxCH0_DisconnectAll
+                0x00001d38       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+                0x00001d38                CapSense_CSD_AMuxCH0_DisconnectAll
  .text.CapSense_CSD_IntClock_Start
-                0x00001cb8       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
-                0x00001cb8                CapSense_CSD_IntClock_Start
- .text.__errno  0x00001cec        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x00001cec                __errno
+                0x00001d60       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+                0x00001d60                CapSense_CSD_IntClock_Start
+ .text.__errno  0x00001d94        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00001d94                __errno
  .text.__libc_init_array
-                0x00001cf8       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x00001cf8                __libc_init_array
- .text.memcpy   0x00001d44       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00001d44                memcpy
- .text.memset   0x00001d5a       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x00001d5a                memset
+                0x00001da0       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001da0                __libc_init_array
+ .text.memcpy   0x00001dec       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00001dec                memcpy
+ .text.memset   0x00001e02       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00001e02                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x00001d6a        0x0 linker stubs
+ .glue_7t       0x00001e12        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001d6a        0x0 linker stubs
+ .glue_7        0x00001e12        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x00001d6a        0x0 linker stubs
+ .vfp11_veneer  0x00001e12        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00001d6c        0x0
- .v4_bx         0x00001d6c        0x0 linker stubs
+.v4_bx          0x00001e14        0x0
+ .v4_bx         0x00001e14        0x0 linker stubs
 
-.iplt           0x00001d6c        0x0
- .iplt          0x00001d6c        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x00001e14        0x0
+ .iplt          0x00001e14        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00001d6c        0x4
+.eh_frame       0x00001e14        0x4
  *(.eh_frame)
- .eh_frame      0x00001d6c        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .eh_frame      0x00001d6c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .eh_frame      0x00001e14        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00001e14        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001d70                __exidx_end = .
+                0x00001e18                __exidx_end = .
 
-.rodata         0x00001d70       0xc0
+.rodata         0x00001e18       0xc0
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00001d70       0x4c .\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00001d70                CapSense_CSD_AMuxCH0__addrTable
-                0x00001d84                CapSense_CSD_AMuxCH0__maskTable
- .rodata        0x00001dbc       0x32 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
-                0x00001dbc                CapSense_CSD_pcTable
-                0x00001dc4                CapSense_CSD_portTable
-                0x00001dc8                CapSense_CSD_maskTable
-                0x00001dcc                CapSense_CSD_csTable
-                0x00001dec                CapSense_CSD_widgetNumber
- *fill*         0x00001dee        0x2 
- .rodata        0x00001df0        0x6 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                0x00001df0                CapSense_CSD_rawDataIndex
-                0x00001df4                CapSense_CSD_numberOfSensors
+ .rodata        0x00001e18       0x4c .\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00001e18                CapSense_CSD_AMuxCH0__addrTable
+                0x00001e2c                CapSense_CSD_AMuxCH0__maskTable
+ .rodata        0x00001e64       0x32 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
+                0x00001e64                CapSense_CSD_pcTable
+                0x00001e6c                CapSense_CSD_portTable
+                0x00001e70                CapSense_CSD_maskTable
+                0x00001e74                CapSense_CSD_csTable
+                0x00001e94                CapSense_CSD_widgetNumber
+ *fill*         0x00001e96        0x2 
+ .rodata        0x00001e98        0x6 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00001e98                CapSense_CSD_rawDataIndex
+                0x00001e9c                CapSense_CSD_numberOfSensors
  .rodata.str1.1
-                0x00001df6        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x00001df8                . = ALIGN (0x4)
+                0x00001e9e        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00001ea0                . = ALIGN (0x4)
  *(.init)
- .init          0x00001df8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001df8                _init
- .init          0x00001dfc        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00001e04                . = ALIGN (0x4)
-                0x00001e04                __preinit_array_start = .
+ .init          0x00001ea0        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001ea0                _init
+ .init          0x00001ea4        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001eac                . = ALIGN (0x4)
+                0x00001eac                __preinit_array_start = .
  *(.preinit_array)
-                0x00001e04                __preinit_array_end = .
-                0x00001e04                . = ALIGN (0x4)
-                0x00001e04                __init_array_start = .
+                0x00001eac                __preinit_array_end = .
+                0x00001eac                . = ALIGN (0x4)
+                0x00001eac                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00001e04        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x00001e08        0x4 .\ARM_GCC_541\Debug\Cm3Start.o
-                0x00001e0c                __init_array_end = .
-                0x00001e0c                . = ALIGN (0x4)
+ .init_array    0x00001eac        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x00001eb0        0x4 .\ARM_GCC_541\Debug\Cm3Start.o
+                0x00001eb4                __init_array_end = .
+                0x00001eb4                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00001e0c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001e0c                _fini
- .fini          0x00001e10        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00001e18                . = ALIGN (0x4)
-                0x00001e18                __fini_array_start = .
+ .fini          0x00001eb4        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001eb4                _fini
+ .fini          0x00001eb8        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001ec0                . = ALIGN (0x4)
+                0x00001ec0                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00001e18        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x00001ec0        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00001e1c                __fini_array_end = .
-                0x00001e1c                . = ALIGN (0x4)
+                0x00001ec4                __fini_array_end = .
+                0x00001ec4                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00001e1c                . = ALIGN (0x4)
+                0x00001ec4                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00001e1c                . = ALIGN (0x4)
-                0x00001e1c                __cy_regions = .
-                0x00001e1c        0x4 LONG 0x1e30 __cy_region_init_ram
-                0x00001e20        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x00001e24        0x4 LONG 0x88 __cy_region_init_size_ram
-                0x00001e28        0x4 LONG 0x78 __cy_region_zero_size_ram
-                0x00001e2c                __cy_regions_end = .
-                0x00001e30                . = ALIGN (0x8)
- *fill*         0x00001e2c        0x4 
-                0x00001e30                _etext = .
+                0x00001ec4                . = ALIGN (0x4)
+                0x00001ec4                __cy_regions = .
+                0x00001ec4        0x4 LONG 0x1ed8 __cy_region_init_ram
+                0x00001ec8        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00001ecc        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x00001ed0        0x4 LONG 0x80 __cy_region_zero_size_ram
+                0x00001ed4                __cy_regions_end = .
+                0x00001ed8                . = ALIGN (0x8)
+ *fill*         0x00001ed4        0x4 
+                0x00001ed8                _etext = .
 
 .cy_checksum_exclude
-                0x00001e30        0x0
+                0x00001ed8        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x1fff8000       0xc0
@@ -928,7 +935,7 @@ END GROUP
  .noinit        0x1fff80c4        0x1 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyLib.o)
                 0x1fff80c4                CyResetStatus
 
-.data           0x1fff80c8       0x88 load address 0x00001e30
+.data           0x1fff80c8       0x88 load address 0x00001ed8
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -958,10 +965,10 @@ END GROUP
  *(.ram)
                 0x1fff8150                _edata = .
 
-.igot.plt       0x1fff8150        0x0 load address 0x00001eb8
+.igot.plt       0x1fff8150        0x0 load address 0x00001f60
  .igot.plt      0x1fff8150        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8150       0x78 load address 0x00001eb8
+.bss            0x1fff8150       0x80 load address 0x00001f60
                 0x1fff8150                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -991,28 +998,30 @@ END GROUP
                 0x1fff81a8                CapSense_CSD_sensorIndex
                 0x1fff81a9                CapSense_CSD_csv
                 0x1fff81ac                CapSense_CSD_sensorRaw
- COMMON         0x1fff81b0       0x12 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ COMMON         0x1fff81b0       0x1c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
                 0x1fff81b0                CapSense_CSD_sensorSignal
-                0x1fff81b4                CapSense_CSD_sensorBaseline
-                0x1fff81b8                CapSense_CSD_sensorBaselineLow
-                0x1fff81bc                CapSense_CSD_sensorOnMask
-                0x1fff81c0                CapSense_CSD_lowBaselineResetCnt
-                0x1fff81c8                . = ALIGN (0x8)
- *fill*         0x1fff81c2        0x6 
+                0x1fff81b4                CapSense_CSD_rawFilterData1
+                0x1fff81b8                CapSense_CSD_sensorBaseline
+                0x1fff81bc                CapSense_CSD_sensorBaselineLow
+                0x1fff81c0                CapSense_CSD_sensorOnMask
+                0x1fff81c4                CapSense_CSD_lowBaselineResetCnt
+                0x1fff81c8                CapSense_CSD_rawFilterData2
+                0x1fff81d0                . = ALIGN (0x8)
+ *fill*         0x1fff81cc        0x4 
  *(.ram.b)
-                0x1fff81c8                _end = .
-                0x1fff81c8                __end = .
-                0x1fff81c8                PROVIDE (end, .)
-                0x1fff81c8                PROVIDE (__bss_end__, .)
-                0x00001e30                __cy_region_init_ram = LOADADDR (.data)
+                0x1fff81d0                _end = .
+                0x1fff81d0                __end = .
+                0x1fff81d0                PROVIDE (end, .)
+                0x1fff81d0                PROVIDE (__bss_end__, .)
+                0x00001ed8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x00000078                __cy_region_zero_size_ram = (_end - _edata)
+                0x00000080                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fff81c8       0x80 load address 0x00001eb8
-                0x1fff81c8                . = _end
-                0x1fff8248                . = (. + 0x80)
- *fill*         0x1fff81c8       0x80 
-                0x1fff8248                __cy_heap_limit = .
+.heap           0x1fff81d0       0x80 load address 0x00001f60
+                0x1fff81d0                . = _end
+                0x1fff8250                . = (. + 0x80)
+ *fill*         0x1fff81d0       0x80 
+                0x1fff8250                __cy_heap_limit = .
 
 .stack          0x20007800      0x800
                 0x20007800                __cy_stack_limit = .
@@ -1028,9 +1037,9 @@ END GROUP
 .cyloadablemeta
  *(.cyloadablemeta)
 
-.cyconfigecc    0x80000000      0x3d8
+.cyconfigecc    0x80000000      0x408
  *(.cyconfigecc)
- .cyconfigecc   0x80000000      0x3d8 .\ARM_GCC_541\Debug\cymetadata.o
+ .cyconfigecc   0x80000000      0x408 .\ARM_GCC_541\Debug\cymetadata.o
                 0x80000000                cy_meta_configecc
 
 .cycustnvl      0x90000000        0x4
@@ -1059,8 +1068,8 @@ END GROUP
  .cymeta        0x90500000        0xc .\ARM_GCC_541\Debug\cymetadata.o
                 0x90500000                cy_metadata
 
-.rel.dyn        0x00001eb8        0x0 load address 0x9050000c
- .rel.iplt      0x00001eb8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x00001f60        0x0 load address 0x9050000c
+ .rel.iplt      0x00001f60        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .stab
  *(.stab)
@@ -1080,7 +1089,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x9b0
+.debug_aranges  0x00000000      0x9b8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 .\ARM_GCC_541\Debug\main.o
@@ -1109,28 +1118,28 @@ END GROUP
  .debug_aranges
                 0x000005c0       0xa8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
  .debug_aranges
-                0x00000668       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                0x00000668       0x78 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
  .debug_aranges
-                0x000006d8       0x20 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+                0x000006e0       0x20 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
  .debug_aranges
-                0x000006f8       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+                0x00000700       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
  .debug_aranges
-                0x00000730       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+                0x00000738       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
  .debug_aranges
-                0x000007a0       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+                0x000007a8       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
  .debug_aranges
-                0x00000800       0x48 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+                0x00000808       0x48 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
  .debug_aranges
-                0x00000848       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+                0x00000850       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
  .debug_aranges
-                0x000008b8       0x80 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+                0x000008c0       0x80 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
  .debug_aranges
-                0x00000938       0x78 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+                0x00000940       0x78 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x4733
+.debug_info     0x00000000     0x47a9
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000       0xcb .\ARM_GCC_541\Debug\main.o
  .debug_info    0x000000cb      0x459 .\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1145,17 +1154,17 @@ END GROUP
  .debug_info    0x00002631      0x189 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_PM.o)
  .debug_info    0x000027ba      0x159 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_INT.o)
  .debug_info    0x00002913      0x50c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
- .debug_info    0x00002e1f      0x559 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
- .debug_info    0x00003378       0xc9 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
- .debug_info    0x00003441      0x389 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
- .debug_info    0x000037ca      0x246 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
- .debug_info    0x00003a10      0x1ad .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
- .debug_info    0x00003bbd      0x14e .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
- .debug_info    0x00003d0b      0x25d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
- .debug_info    0x00003f68      0x371 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
- .debug_info    0x000042d9      0x45a .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_info    0x00002e1f      0x5cf .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ .debug_info    0x000033ee       0xc9 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_info    0x000034b7      0x389 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_info    0x00003840      0x246 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_info    0x00003a86      0x1ad .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_info    0x00003c33      0x14e .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_info    0x00003d81      0x25d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_info    0x00003fde      0x371 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_info    0x0000434f      0x45a .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x17ee
+.debug_abbrev   0x00000000     0x17fd
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x67 .\ARM_GCC_541\Debug\main.o
  .debug_abbrev  0x00000067      0x1b0 .\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1170,17 +1179,17 @@ END GROUP
  .debug_abbrev  0x00000b51       0xf8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_PM.o)
  .debug_abbrev  0x00000c49       0x81 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_INT.o)
  .debug_abbrev  0x00000cca      0x149 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
- .debug_abbrev  0x00000e13      0x16c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
- .debug_abbrev  0x00000f7f       0x67 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
- .debug_abbrev  0x00000fe6      0x151 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
- .debug_abbrev  0x00001137      0x146 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
- .debug_abbrev  0x0000127d      0x114 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
- .debug_abbrev  0x00001391       0x98 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
- .debug_abbrev  0x00001429      0x11d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
- .debug_abbrev  0x00001546      0x13c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
- .debug_abbrev  0x00001682      0x16c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_abbrev  0x00000e13      0x17b .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ .debug_abbrev  0x00000f8e       0x67 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_abbrev  0x00000ff5      0x151 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_abbrev  0x00001146      0x146 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_abbrev  0x0000128c      0x114 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_abbrev  0x000013a0       0x98 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_abbrev  0x00001438      0x11d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_abbrev  0x00001555      0x13c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_abbrev  0x00001691      0x16c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
 
-.debug_line     0x00000000     0x27aa
+.debug_line     0x00000000     0x27c4
  *(.debug_line)
  .debug_line    0x00000000      0x165 .\ARM_GCC_541\Debug\main.o
  .debug_line    0x00000165      0x222 .\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1194,18 +1203,18 @@ END GROUP
  .debug_line    0x0000159b      0x128 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C.o)
  .debug_line    0x000016c3       0xba .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_PM.o)
  .debug_line    0x0000177d       0xc2 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_INT.o)
- .debug_line    0x0000183f      0x23e .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
- .debug_line    0x00001a7d      0x245 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
- .debug_line    0x00001cc2       0x8e .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
- .debug_line    0x00001d50      0x120 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
- .debug_line    0x00001e70      0x17c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
- .debug_line    0x00001fec      0x115 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
- .debug_line    0x00002101       0xde .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
- .debug_line    0x000021df      0x1b4 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
- .debug_line    0x00002393      0x205 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
- .debug_line    0x00002598      0x212 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_line    0x0000183f      0x23a .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
+ .debug_line    0x00001a79      0x263 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ .debug_line    0x00001cdc       0x8e .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_line    0x00001d6a      0x120 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_line    0x00001e8a      0x17c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_line    0x00002006      0x115 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_line    0x0000211b       0xde .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_line    0x000021f9      0x1b4 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_line    0x000023ad      0x205 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_line    0x000025b2      0x212 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
 
-.debug_frame    0x00000000     0x256c
+.debug_frame    0x00000000     0x2594
  *(.debug_frame)
  .debug_frame   0x00000000       0x2c .\ARM_GCC_541\Debug\main.o
  .debug_frame   0x0000002c      0x1bc .\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1218,22 +1227,22 @@ END GROUP
  .debug_frame   0x00001500       0x94 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_PM.o)
  .debug_frame   0x00001594       0x34 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_INT.o)
  .debug_frame   0x000015c8      0x2b8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
- .debug_frame   0x00001880      0x1c8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
- .debug_frame   0x00001a48       0x2c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
- .debug_frame   0x00001a74       0xb0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
- .debug_frame   0x00001b24      0x19c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
- .debug_frame   0x00001cc0      0x158 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
- .debug_frame   0x00001e18       0xdc .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
- .debug_frame   0x00001ef4      0x1b4 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
- .debug_frame   0x000020a8      0x210 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
- .debug_frame   0x000022b8      0x1f8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
- .debug_frame   0x000024b0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x000024d0       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x000024f8       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00002524       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000254c       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001880      0x1f0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ .debug_frame   0x00001a70       0x2c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_frame   0x00001a9c       0xb0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_frame   0x00001b4c      0x19c .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_frame   0x00001ce8      0x158 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_frame   0x00001e40       0xdc .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_frame   0x00001f1c      0x1b4 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_frame   0x000020d0      0x210 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_frame   0x000022e0      0x1f8 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_frame   0x000024d8       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000024f8       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00002520       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x0000254c       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00002574       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x25c3
+.debug_str      0x00000000     0x2615
  *(.debug_str)
  .debug_str     0x00000000      0x175 .\ARM_GCC_541\Debug\main.o
                                 0x1bd (size before relaxing)
@@ -1259,23 +1268,23 @@ END GROUP
                                 0x255 (size before relaxing)
  .debug_str     0x000015a6      0x369 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
                                 0x51f (size before relaxing)
- .debug_str     0x0000190f      0x2f9 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
-                                0x56d (size before relaxing)
- .debug_str     0x00001c08       0x42 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_str     0x0000190f      0x34b .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+                                0x5bf (size before relaxing)
+ .debug_str     0x00001c5a       0x42 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
                                 0x204 (size before relaxing)
- .debug_str     0x00001c4a       0x9f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_str     0x00001c9c       0x9f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
                                 0x463 (size before relaxing)
- .debug_str     0x00001ce9      0x1f0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_str     0x00001d3b      0x1f0 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
                                 0x39b (size before relaxing)
- .debug_str     0x00001ed9      0x15d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_str     0x00001f2b      0x15d .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
                                 0x2f6 (size before relaxing)
- .debug_str     0x00002036      0x11f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_str     0x00002088      0x11f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
                                 0x2aa (size before relaxing)
- .debug_str     0x00002155      0x20a .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_str     0x000021a7      0x20a .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
                                 0x3ad (size before relaxing)
- .debug_str     0x0000235f      0x145 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_str     0x000023b1      0x145 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
                                 0x30d (size before relaxing)
- .debug_str     0x000024a4      0x11f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_str     0x000024f6      0x11f .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
                                 0x30a (size before relaxing)
 
 .debug_loc
@@ -1284,7 +1293,7 @@ END GROUP
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0x838
+.debug_ranges   0x00000000      0x840
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x10 .\ARM_GCC_541\Debug\main.o
  .debug_ranges  0x00000010       0x60 .\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1297,15 +1306,15 @@ END GROUP
  .debug_ranges  0x000004b0       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_PM.o)
  .debug_ranges  0x000004d8       0x10 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(EzI2C_INT.o)
  .debug_ranges  0x000004e8       0x98 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD.o)
- .debug_ranges  0x00000580       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
- .debug_ranges  0x000005e0       0x10 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
- .debug_ranges  0x000005f0       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
- .debug_ranges  0x00000618       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
- .debug_ranges  0x00000678       0x50 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
- .debug_ranges  0x000006c8       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
- .debug_ranges  0x00000700       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
- .debug_ranges  0x00000760       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
- .debug_ranges  0x000007d0       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
+ .debug_ranges  0x00000580       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CSHL.o)
+ .debug_ranges  0x000005e8       0x10 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_INT.o)
+ .debug_ranges  0x000005f8       0x28 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_MBX.o)
+ .debug_ranges  0x00000620       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_CompCH0.o)
+ .debug_ranges  0x00000680       0x50 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IdacCH0.o)
+ .debug_ranges  0x000006d0       0x38 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_AMuxCH0.o)
+ .debug_ranges  0x00000708       0x60 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CapSense_CSD_IntClock.o)
+ .debug_ranges  0x00000768       0x70 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CyFlash.o)
+ .debug_ranges  0x000007d8       0x68 .\ARM_GCC_541\Debug\CapSense_CSD_WithTuner01.a(CySpc.o)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e .\ARM_GCC_541\Debug\main.o

@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.150ms
+Loading plugins phase: Elapsed time ==> 1s.883ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj -d CY8C5888LTI-LP097 -s H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.117ms
+Elaboration phase: Elapsed time ==> 10s.550ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.077ms
+HDL generation phase: Elapsed time ==> 0s.129ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=H:\P4P\New\P4P
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Aug 06 15:27:46 2025
+Fri Aug 08 15:58:03 2025
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 CapSense_CSD_WithTuner01.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Aug 06 15:27:46 2025
+Fri Aug 08 15:58:03 2025
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -100,7 +100,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=H:\P4P\New\P4P
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Aug 06 15:27:47 2025
+Fri Aug 08 15:58:05 2025
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -140,7 +140,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=H:\P4P\New\P4P
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Aug 06 15:27:47 2025
+Fri Aug 08 15:58:05 2025
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -177,6 +177,7 @@ Detecting unused logic.
     User names
 	\CapSense_CSD:CompCH0:Net_9\
 	\CapSense_CSD:IdacCH0:Net_194\
+	\CapSense_CSD:MeasureCH0:cmp_in_inv\
 	\CapSense_CSD:ShieldSignal\
 	\CapSense_CSD:Net_1358\
 	\CapSense_CSD:ClockGen:ch1en\
@@ -351,7 +352,7 @@ Detecting unused logic.
 	\PWM_1:PWMUDB:add_vi_vv_MODGEN_1_3\
 	\PWM_1:PWMUDB:add_vi_vv_MODGEN_1_2\
 
-Deleted 143 User equations/components.
+Deleted 144 User equations/components.
 Deleted 30 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -451,9 +452,9 @@ Removing Lhs of wire \CapSense_CSD:Net_375\[63] = zero[3]
 Removing Rhs of wire \CapSense_CSD:clk\[65] = \CapSense_CSD:Net_1644\[233]
 Removing Lhs of wire \CapSense_CSD:Net_373\[66] = tmpOE__Pins_net_1[1]
 Removing Rhs of wire \CapSense_CSD:DigitalClk\[69] = \CapSense_CSD:ClockGen:tmp_dpulse\[176]
-Removing Rhs of wire \CapSense_CSD:mrst\[147] = \CapSense_CSD:ClockGen:cstate_1\[219]
-Removing Lhs of wire \CapSense_CSD:MeasureCH0:load_enable\[153] = \CapSense_CSD:MeasureCH0:wndState_0\[150]
-Removing Rhs of wire \CapSense_CSD:Net_1603\[156] = \CapSense_CSD:MeasureCH0:wndState_3\[146]
+Removing Rhs of wire \CapSense_CSD:mrst\[146] = \CapSense_CSD:ClockGen:cstate_1\[219]
+Removing Lhs of wire \CapSense_CSD:MeasureCH0:load_enable\[152] = \CapSense_CSD:MeasureCH0:wndState_0\[149]
+Removing Rhs of wire \CapSense_CSD:Net_1603\[156] = \CapSense_CSD:MeasureCH0:wndState_3\[145]
 Removing Lhs of wire \CapSense_CSD:Net_371\[158] = tmpOE__Pins_net_1[1]
 Removing Rhs of wire \CapSense_CSD:ClockGen:inter_reset\[175] = \CapSense_CSD:ClockGen:cstate_0\[220]
 Removing Lhs of wire \CapSense_CSD:ClockGen:cs_addr_2\[178] = zero[3]
@@ -693,7 +694,7 @@ Aliasing \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_24\ to zero
 Aliasing \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_16\ to zero
 Aliasing \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_8\ to zero
 Aliasing \PWM_1:PWMUDB:final_kill_reg\\D\ to zero
-Removing Rhs of wire \CapSense_CSD:IdacCH0:Net_123\[39] = \CapSense_CSD:MeasureCH0:cmp_in_reg\[73]
+Removing Rhs of wire \CapSense_CSD:IdacCH0:Net_123\[39] = \CapSense_CSD:MeasureCH0:cmp_in_reg\[72]
 Removing Lhs of wire \PWM_1:PWMUDB:final_capture\[358] = zero[3]
 Removing Lhs of wire \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_24\[619] = zero[3]
 Removing Lhs of wire \PWM_1:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_16\[629] = zero[3]
@@ -732,14 +733,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj -dcpsoc3 CapSense_CSD_WithTuner01.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 2s.328ms
+Warp synthesis phase: Elapsed time ==> 3s.676ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 06 August 2025 15:27:48
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 08 August 2025 15:58:07
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=H:\P4P\New\P4P_Project-130\Capsense_stuff\Cap_Sense.cydsn\CapSense_CSD_WithTuner01.cydsn\CapSense_CSD_WithTuner01.cyprj -d CY8C5888LTI-LP097 CapSense_CSD_WithTuner01.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.074ms
+Design parsing phase: Elapsed time ==> 0s.141ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -950,7 +951,7 @@ Design Equations
             POR State: INP_DIS_HI_Z
             LCD Mode: COMMON
             Register Mode: RegComb
-            CaSense Mode: PULLUP
+            CaSense Mode: PULLDOWN
             Treat as pin: True
             Is OE Registered: False
             Uses Analog: True
@@ -991,7 +992,7 @@ Design Equations
             POR State: INP_DIS_HI_Z
             LCD Mode: COMMON
             Register Mode: RegComb
-            CaSense Mode: PULLUP
+            CaSense Mode: PULLDOWN
             Treat as pin: True
             Is OE Registered: False
             Uses Analog: True
@@ -1149,16 +1150,6 @@ Design Equations
             + \CapSense_CSD:MeasureCH0:wndState_0\
         );
         Output = \CapSense_CSD:MeasureCH0:cs_addr_cnt_0\ (fanout=1)
-
-    MacroCell: Name=\CapSense_CSD:MeasureCH0:cmp_in_inv\, Mode=(Combinatorial)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\CapSense_CSD:Cmp_CH0\
-        );
-        Output = \CapSense_CSD:MeasureCH0:cmp_in_inv\ (fanout=1)
 
     MacroCell: Name=\PWM_1:PWMUDB:status_2\, Mode=(Combinatorial)
         Total # of inputs        : 2
@@ -1574,7 +1565,7 @@ Design Equations
     synccell: Name =\CapSense_CSD:MeasureCH0:genblk1:SyncCMPR\
         PORT MAP (
             clock => \CapSense_CSD:clk\ ,
-            in => \CapSense_CSD:MeasureCH0:cmp_in_inv\ ,
+            in => \CapSense_CSD:Cmp_CH0\ ,
             out => \CapSense_CSD:IdacCH0:Net_123\ ,
             clk_en => \CapSense_CSD:DigitalClk\ );
         Clock Polarity: Active High
@@ -1700,9 +1691,9 @@ USB                           :    0 :    1 :    1 :  0.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
 Timer                         :    0 :    4 :    4 :  0.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :   20 :  172 :  192 : 10.42 %
-  Unique P-terms              :   31 :  353 :  384 :  8.07 %
-  Total P-terms               :   32 :      :      :        
+  Macrocells                  :   19 :  173 :  192 :  9.90 %
+  Unique P-terms              :   30 :  354 :  384 :  7.81 %
+  Total P-terms               :   31 :      :      :        
   Datapath Cells              :    5 :   19 :   24 : 20.83 %
   Status Cells                :    2 :   22 :   24 :  8.33 %
     StatusI Registers         :    1 :      :      :        
@@ -1719,8 +1710,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    1 :    3 :    4 : 25.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 6s.250ms
-Tech Mapping phase: Elapsed time ==> 6s.351ms
+Technology Mapping: Elapsed time ==> 8s.161ms
+Tech Mapping phase: Elapsed time ==> 8s.266ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
@@ -1750,10 +1741,10 @@ Comparator[2]@[FFB(Comparator,2)] : \CapSense_CSD:CompCH0:ctComp\
 VIDAC[2]@[FFB(VIDAC,2)] : \CapSense_CSD:IdacCH0:viDAC8\
 Vref[3]@[FFB(Vref,3)] : \CapSense_CSD:VrefRefCH0\
 
-Analog Placement phase: Elapsed time ==> 1s.323ms
+Analog Placement phase: Elapsed time ==> 1s.520ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.006ms
+Analog Routing phase: Elapsed time ==> 0s.011ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1901,11 +1892,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.267ms
+Analog Code Generation phase: Elapsed time ==> 0s.423ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 0.8 sec.
+I2076: Total run-time: 1.1 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1916,27 +1907,27 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :    7 :   41 :   48 :  14.58%
+                     PLDs :    9 :   39 :   48 :  18.75%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            6.71
-                   Pterms :            4.57
-               Macrocells :            2.86
+                   Inputs :            6.11
+                   Pterms :            3.44
+               Macrocells :            2.11
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.086ms
+PLD Packing: Elapsed time ==> 0s.108ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.081ms
+Partitioning: Elapsed time ==> 0s.099ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1946,7 +1937,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          5 :       6.80 :       4.00
+                 UDB :          6 :       7.50 :       3.17
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -1955,11 +1946,10 @@ Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] is empty.
 UDB [UDB=(0,1)] is empty.
-UDB [UDB=(0,2)] is empty.
-UDB [UDB=(0,3)] contents:
-LAB@[UDB=(0,3)][LB=0] #macrocells=2, #inputs=3, #pterms=2
+UDB [UDB=(0,2)] contents:
+LAB@[UDB=(0,2)][LB=0] #macrocells=1, #inputs=2, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\CapSense_CSD:PreChargeClk\, Mode=(D-Register) @ [UDB=(0,3)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\CapSense_CSD:PreChargeClk\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=0]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -1975,15 +1965,42 @@ LAB@[UDB=(0,3)][LB=0] #macrocells=2, #inputs=3, #pterms=2
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:cmp_in_inv\, Mode=(Combinatorial) @ [UDB=(0,3)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,2)][LB=1] #macrocells=1, #inputs=8, #pterms=4
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_1\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\CapSense_CSD:clk\) => Global
             Clock Enable: True
-        Main Equation            : 1 pterm
+        Main Equation            : 4 pterms
         (
-              !\CapSense_CSD:Cmp_CH0\
+              !\CapSense_CSD:DigitalClk\ * !\CapSense_CSD:mrst\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_2\ * 
+              \CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
+              !\CapSense_CSD:Net_1603\
+            + !\CapSense_CSD:MeasureCH0:zw0\ * !\CapSense_CSD:mrst\ * 
+              \CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
+              !\CapSense_CSD:Net_1603\
+            + !\CapSense_CSD:MeasureCH0:zw1\ * !\CapSense_CSD:mrst\ * 
+              \CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
+              !\CapSense_CSD:Net_1603\
+            + !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
+              \CapSense_CSD:MeasureCH0:wndState_0\ * !\CapSense_CSD:Net_1603\
         );
-        Output = \CapSense_CSD:MeasureCH0:cmp_in_inv\ (fanout=1)
+        Output = \CapSense_CSD:MeasureCH0:wndState_1\ (fanout=4)
         Properties               : 
         {
         }
@@ -2027,10 +2044,72 @@ datapathcell: Name =\CapSense_CSD:ClockGen:UDB:PrescalerDp:u0\
     Clock Polarity: Active High
     Clock Enable: True
 
+UDB [UDB=(0,3)] contents:
+LAB@[UDB=(0,3)][LB=1] #macrocells=1, #inputs=6, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_2\, Mode=(D-Register) @ [UDB=(0,3)][LB=1][MC=1]
+        Total # of inputs        : 6
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\CapSense_CSD:clk\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \CapSense_CSD:DigitalClk\ * !\CapSense_CSD:mrst\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_2\ * 
+              \CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
+              !\CapSense_CSD:Net_1603\
+        );
+        Output = \CapSense_CSD:MeasureCH0:wndState_2\ (fanout=10)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\CapSense_CSD:MeasureCH0:UDB:Window:u0\
+    PORT MAP (
+        clock => \CapSense_CSD:clk\ ,
+        cs_addr_2 => \CapSense_CSD:MeasureCH0:cs_addr_win_2\ ,
+        cs_addr_1 => \CapSense_CSD:MeasureCH0:cs_addr_win_1\ ,
+        cs_addr_0 => \CapSense_CSD:MeasureCH0:cs_addr_win_0\ ,
+        z0_comb => \CapSense_CSD:MeasureCH0:zw0\ ,
+        z1_comb => \CapSense_CSD:MeasureCH0:zw1\ );
+    Properties:
+    {
+        a0_init = "11111111"
+        a1_init = "11111111"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000110000000000000011001111000000001100000000000000110000000000010011000100000001001100010000000101100010010000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        d0_init = "11111111"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 synccell: Name =\CapSense_CSD:MeasureCH0:genblk1:SyncCMPR\
     PORT MAP (
         clock => \CapSense_CSD:clk\ ,
-        in => \CapSense_CSD:MeasureCH0:cmp_in_inv\ ,
+        in => \CapSense_CSD:Cmp_CH0\ ,
         out => \CapSense_CSD:IdacCH0:Net_123\ ,
         clk_en => \CapSense_CSD:DigitalClk\ );
     Properties:
@@ -2201,32 +2280,9 @@ UDB [UDB=(0,5)] is empty.
 UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] is empty.
 UDB [UDB=(1,2)] contents:
-LAB@[UDB=(1,2)][LB=0] #macrocells=3, #inputs=12, #pterms=6
+LAB@[UDB=(1,2)][LB=0] #macrocells=2, #inputs=5, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\CapSense_CSD:Net_1603\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=0]
-        Total # of inputs        : 9
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\CapSense_CSD:clk\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \CapSense_CSD:MeasureCH0:zw0\ * \CapSense_CSD:MeasureCH0:zw1\ * 
-              !\CapSense_CSD:mrst\ * \CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\
-            + !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * \CapSense_CSD:Net_1603\ * 
-              \CapSense_CSD:ClockGen:control_2\ * 
-              \CapSense_CSD:ClockGen:cstate_2\
-        );
-        Output = \CapSense_CSD:Net_1603\ (fanout=5)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=0]: (empty)
     [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:mrst\, Mode=(D-Register) @ [UDB=(1,2)][LB=0][MC=1]
         Total # of inputs        : 4
         Total # of product terms : 2
@@ -2269,28 +2325,9 @@ LAB@[UDB=(1,2)][LB=0] #macrocells=3, #inputs=12, #pterms=6
     [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(1,2)][LB=1] #macrocells=2, #inputs=10, #pterms=3
+LAB@[UDB=(1,2)][LB=1] #macrocells=2, #inputs=11, #pterms=3
 {
-    [McSlotId=0]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:cs_addr_cnt_1\, Mode=(Combinatorial) @ [UDB=(1,2)][LB=1][MC=0]
-        Total # of inputs        : 6
-        Total # of product terms : 2
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\CapSense_CSD:IdacCH0:Net_123\ * 
-              !\CapSense_CSD:MeasureCH0:zw0\ * \CapSense_CSD:MeasureCH0:zc0\ * 
-              \CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\
-            + !\CapSense_CSD:IdacCH0:Net_123\ * 
-              !\CapSense_CSD:MeasureCH0:zw1\ * \CapSense_CSD:MeasureCH0:zc0\ * 
-              \CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\
-        );
-        Output = \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=0]: (empty)
     [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:ClockGen:inter_reset\, Mode=(D-Register) @ [UDB=(1,2)][LB=1][MC=1]
         Total # of inputs        : 4
         Total # of product terms : 1
@@ -2309,43 +2346,30 @@ LAB@[UDB=(1,2)][LB=1] #macrocells=2, #inputs=10, #pterms=3
         }
 
     [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\CapSense_CSD:Net_1603\, Mode=(D-Register) @ [UDB=(1,2)][LB=1][MC=3]
+        Total # of inputs        : 9
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\CapSense_CSD:clk\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \CapSense_CSD:MeasureCH0:zw0\ * \CapSense_CSD:MeasureCH0:zw1\ * 
+              !\CapSense_CSD:mrst\ * \CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
+              !\CapSense_CSD:Net_1603\
+            + !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\ * \CapSense_CSD:Net_1603\ * 
+              \CapSense_CSD:ClockGen:control_2\ * 
+              \CapSense_CSD:ClockGen:cstate_2\
+        );
+        Output = \CapSense_CSD:Net_1603\ (fanout=5)
+        Properties               : 
+        {
+        }
 }
-
-datapathcell: Name =\CapSense_CSD:MeasureCH0:UDB:Counter:u0\
-    PORT MAP (
-        clock => \CapSense_CSD:clk\ ,
-        cs_addr_2 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_2\ ,
-        cs_addr_1 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ ,
-        cs_addr_0 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_0\ ,
-        z0_comb => \CapSense_CSD:MeasureCH0:zc0\ ,
-        z1_comb => \CapSense_CSD:MeasureCH0:zc1\ );
-    Properties:
-    {
-        a0_init = "11111111"
-        a1_init = "11111111"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000110000000000000011001111000000001100000000000000110000000000010011000100000001001100010000000101100010010000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-        d0_init = "11111111"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
 
 controlcell: Name =\CapSense_CSD:ClockGen:SyncCtrl:CtrlReg\
     PORT MAP (
@@ -2370,60 +2394,10 @@ controlcell: Name =\CapSense_CSD:ClockGen:SyncCtrl:CtrlReg\
     Clock Enable: True
 
 UDB [UDB=(1,3)] contents:
-LAB@[UDB=(1,3)][LB=0] #macrocells=4, #inputs=10, #pterms=8
+LAB@[UDB=(1,3)][LB=0] #macrocells=3, #inputs=11, #pterms=5
 {
-    [McSlotId=0]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_1\, Mode=(D-Register) @ [UDB=(1,3)][LB=0][MC=0]
-        Total # of inputs        : 8
-        Total # of product terms : 4
-        List of special equations: 
-            Clock  = (\CapSense_CSD:clk\) => Global
-            Clock Enable: True
-        Main Equation            : 4 pterms
-        (
-              !\CapSense_CSD:DigitalClk\ * !\CapSense_CSD:mrst\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_2\ * 
-              \CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\
-            + !\CapSense_CSD:MeasureCH0:zw0\ * !\CapSense_CSD:mrst\ * 
-              \CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\
-            + !\CapSense_CSD:MeasureCH0:zw1\ * !\CapSense_CSD:mrst\ * 
-              \CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\
-            + !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              \CapSense_CSD:MeasureCH0:wndState_0\ * !\CapSense_CSD:Net_1603\
-        );
-        Output = \CapSense_CSD:MeasureCH0:wndState_1\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_0\, Mode=(D-Register) @ [UDB=(1,3)][LB=0][MC=1]
-        Total # of inputs        : 7
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\CapSense_CSD:clk\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\ * \CapSense_CSD:ClockGen:control_2\ * 
-              \CapSense_CSD:ClockGen:cstate_2\
-        );
-        Output = \CapSense_CSD:MeasureCH0:wndState_0\ (fanout=10)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:cs_addr_win_0\, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=2]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:cs_addr_win_0\, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=1]
         Total # of inputs        : 4
         Total # of product terms : 2
             Clock Enable: True
@@ -2438,21 +2412,41 @@ LAB@[UDB=(1,3)][LB=0] #macrocells=4, #inputs=10, #pterms=8
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_2\, Mode=(D-Register) @ [UDB=(1,3)][LB=0][MC=3]
+    [McSlotId=2]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:cs_addr_cnt_1\, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=2]
         Total # of inputs        : 6
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\CapSense_CSD:IdacCH0:Net_123\ * 
+              !\CapSense_CSD:MeasureCH0:zw0\ * \CapSense_CSD:MeasureCH0:zc0\ * 
+              \CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\
+            + !\CapSense_CSD:IdacCH0:Net_123\ * 
+              !\CapSense_CSD:MeasureCH0:zw1\ * \CapSense_CSD:MeasureCH0:zc0\ * 
+              \CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_0\
+        );
+        Output = \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\CapSense_CSD:MeasureCH0:wndState_0\, Mode=(D-Register) @ [UDB=(1,3)][LB=0][MC=3]
+        Total # of inputs        : 7
         Total # of product terms : 1
         List of special equations: 
             Clock  = (\CapSense_CSD:clk\) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \CapSense_CSD:DigitalClk\ * !\CapSense_CSD:mrst\ * 
-              !\CapSense_CSD:MeasureCH0:wndState_2\ * 
-              \CapSense_CSD:MeasureCH0:wndState_1\ * 
+              !\CapSense_CSD:mrst\ * !\CapSense_CSD:MeasureCH0:wndState_2\ * 
+              !\CapSense_CSD:MeasureCH0:wndState_1\ * 
               !\CapSense_CSD:MeasureCH0:wndState_0\ * 
-              !\CapSense_CSD:Net_1603\
+              !\CapSense_CSD:Net_1603\ * \CapSense_CSD:ClockGen:control_2\ * 
+              \CapSense_CSD:ClockGen:cstate_2\
         );
-        Output = \CapSense_CSD:MeasureCH0:wndState_2\ (fanout=10)
+        Output = \CapSense_CSD:MeasureCH0:wndState_0\ (fanout=10)
         Properties               : 
         {
         }
@@ -2533,14 +2527,14 @@ LAB@[UDB=(1,3)][LB=1] #macrocells=4, #inputs=6, #pterms=8
         }
 }
 
-datapathcell: Name =\CapSense_CSD:MeasureCH0:UDB:Window:u0\
+datapathcell: Name =\CapSense_CSD:MeasureCH0:UDB:Counter:u0\
     PORT MAP (
         clock => \CapSense_CSD:clk\ ,
-        cs_addr_2 => \CapSense_CSD:MeasureCH0:cs_addr_win_2\ ,
-        cs_addr_1 => \CapSense_CSD:MeasureCH0:cs_addr_win_1\ ,
-        cs_addr_0 => \CapSense_CSD:MeasureCH0:cs_addr_win_0\ ,
-        z0_comb => \CapSense_CSD:MeasureCH0:zw0\ ,
-        z1_comb => \CapSense_CSD:MeasureCH0:zw1\ );
+        cs_addr_2 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_2\ ,
+        cs_addr_1 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_1\ ,
+        cs_addr_0 => \CapSense_CSD:MeasureCH0:cs_addr_cnt_0\ ,
+        z0_comb => \CapSense_CSD:MeasureCH0:zc0\ ,
+        z1_comb => \CapSense_CSD:MeasureCH0:zc1\ );
     Properties:
     {
         a0_init = "11111111"
@@ -2671,7 +2665,7 @@ Pin : Name = \CapSense_CSD:PortCH0(0)\
         POR State: INP_DIS_HI_Z
         LCD Mode: COMMON
         Register Mode: RegComb
-        CaSense Mode: PULLUP
+        CaSense Mode: PULLDOWN
         Treat as pin: True
         Is OE Registered: False
         Uses Analog: True
@@ -2713,7 +2707,7 @@ Pin : Name = \CapSense_CSD:PortCH0(1)\
         POR State: INP_DIS_HI_Z
         LCD Mode: COMMON
         Register Mode: RegComb
-        CaSense Mode: PULLUP
+        CaSense Mode: PULLDOWN
         Treat as pin: True
         Is OE Registered: False
         Uses Analog: True
@@ -3064,33 +3058,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                      Name | 
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 5s.980ms
-Digital Placement phase: Elapsed time ==> 7s.301ms
+Digital component placer commit/Report: Elapsed time ==> 7s.478ms
+Digital Placement phase: Elapsed time ==> 9s.666ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "CapSense_CSD_WithTuner01_r.vh2" --pcf-path "CapSense_CSD_WithTuner01.pco" --des-name "CapSense_CSD_WithTuner01" --dsf-path "CapSense_CSD_WithTuner01.dsf" --sdc-path "CapSense_CSD_WithTuner01.sdc" --lib-path "CapSense_CSD_WithTuner01_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.827ms
+Digital Routing phase: Elapsed time ==> 2s.406ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.813ms
+Bitstream Generation phase: Elapsed time ==> 1s.125ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.054ms
+Bitstream Verification phase: Elapsed time ==> 0s.069ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in CapSense_CSD_WithTuner01_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.537ms
+Static timing analysis phase: Elapsed time ==> 0s.764ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.004ms
+Data reporting phase: Elapsed time ==> 0s.011ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.241ms
+Design database save phase: Elapsed time ==> 0s.310ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 18s.996ms
+cydsfit: Elapsed time ==> 25s.142ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 19s.005ms
-API generation phase: Elapsed time ==> 3s.015ms
-Dependency generation phase: Elapsed time ==> 0s.040ms
-Cleanup phase: Elapsed time ==> 0s.079ms
+Fitter phase: Elapsed time ==> 25s.153ms
+API generation phase: Elapsed time ==> 4s.792ms
+Dependency generation phase: Elapsed time ==> 0s.080ms
+Cleanup phase: Elapsed time ==> 0s.143ms

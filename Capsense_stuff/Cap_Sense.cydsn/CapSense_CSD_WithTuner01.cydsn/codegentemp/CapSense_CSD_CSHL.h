@@ -27,7 +27,7 @@
 
 #define CapSense_CSD_SIGNAL_SIZE                (16u)
 #define CapSense_CSD_AUTO_RESET                 (0u)
-#define CapSense_CSD_RAW_FILTER_MASK            (0u)
+#define CapSense_CSD_RAW_FILTER_MASK            (1u)
 
 /* Signal size definition */
 #define CapSense_CSD_SIGNAL_SIZE_UINT8          (8u)

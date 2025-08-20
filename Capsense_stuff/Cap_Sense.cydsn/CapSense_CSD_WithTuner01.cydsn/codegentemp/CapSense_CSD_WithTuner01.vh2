@@ -2,7 +2,7 @@
 --	Conversion of CapSense_CSD_WithTuner01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Aug 06 15:27:48 2025
+--	Fri Aug 08 15:58:06 2025
 --
 
 USE cypress.cypress.all;
@@ -67,7 +67,6 @@ SIGNAL \CapSense_CSD:Net_373\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:op_clock\ : bit;
 SIGNAL \CapSense_CSD:DigitalClk\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:trig_clock\ : bit;
-SIGNAL \CapSense_CSD:MeasureCH0:cmp_in_inv\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:cmp_in_reg\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:cs_addr_win_2\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:cs_addr_win_1\ : bit;
@@ -209,6 +208,7 @@ SIGNAL \CapSense_CSD:Net_1350\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:load_enable\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:win_enable\ : bit;
 SIGNAL \CapSense_CSD:MeasureCH0:cnt_enable\ : bit;
+SIGNAL \CapSense_CSD:MeasureCH0:cmp_in_inv\ : bit;
 SIGNAL \CapSense_CSD:Net_1603\ : bit;
 SIGNAL \CapSense_CSD:Net_371\ : bit;
 SIGNAL \CapSense_CSD:ClockGen:op_clock\ : bit;
@@ -816,8 +816,6 @@ tmpOE__Pins_net_1 <=  ('1') ;
 	OR (not \CapSense_CSD:IdacCH0:Net_123\ and not \CapSense_CSD:MeasureCH0:zw0\ and \CapSense_CSD:MeasureCH0:zc1\ and \CapSense_CSD:MeasureCH0:wndState_2\)
 	OR \CapSense_CSD:MeasureCH0:wndState_0\);
 
-\CapSense_CSD:MeasureCH0:cmp_in_inv\ <= (not \CapSense_CSD:Cmp_CH0\);
-
 \CapSense_CSD:ClockGen:cstate_2\\D\ <= ((not \CapSense_CSD:ClockGen:inter_reset\ and not \CapSense_CSD:ClockGen:cstate_2\ and \CapSense_CSD:mrst\ and \CapSense_CSD:ClockGen:control_1\)
 	OR (not \CapSense_CSD:mrst\ and not \CapSense_CSD:ClockGen:inter_reset\ and \CapSense_CSD:ClockGen:control_0\ and \CapSense_CSD:ClockGen:cstate_2\));
 
@@ -1054,7 +1052,7 @@ Pins:cy_psoc3_pins_v1_10
 		por_state=>0,
 		emif_mode=>"",
 		enable_shielding=>"00",
-		cs_mode=>"01",
+		cs_mode=>"11",
 		sio_obuf=>"",
 		sio_ibuf=>"",
 		sio_hyst=>"",
@@ -1106,7 +1104,7 @@ Pins:cy_psoc3_pins_v1_10
 		clock_out=>\CapSense_CSD:MeasureCH0:trig_clock\);
 \CapSense_CSD:MeasureCH0:genblk1:SyncCMPR\:cy_psoc3_sync
 	PORT MAP(clock=>\CapSense_CSD:MeasureCH0:trig_clock\,
-		sc_in=>\CapSense_CSD:MeasureCH0:cmp_in_inv\,
+		sc_in=>\CapSense_CSD:Cmp_CH0\,
 		sc_out=>\CapSense_CSD:IdacCH0:Net_123\);
 \CapSense_CSD:MeasureCH0:UDB:Window:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000110000000000000011001111000000001100000000000000110000000000010011000100000001001100010000000101100010010000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",

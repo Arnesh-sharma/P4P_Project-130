@@ -51,7 +51,7 @@
 
 #define CapSense_CSD_CLOCK_SOURCE               (0u)
 
-#define CapSense_CSD_CURRENT_SOURCE             (2u)
+#define CapSense_CSD_CURRENT_SOURCE             (1u)
 #define CapSense_CSD_IDAC_RANGE_VALUE           (8u)
 
 #define CapSense_CSD_PRESCALER_OPTIONS          (1u)

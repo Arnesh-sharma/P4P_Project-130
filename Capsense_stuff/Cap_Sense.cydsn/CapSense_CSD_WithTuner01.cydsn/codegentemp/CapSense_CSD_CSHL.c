@@ -58,7 +58,7 @@ uint16 CapSense_CSD_hysteresis[] = {
 };
 
 uint8 CapSense_CSD_debounce[] = {
-    5u, 5u, 
+    1u, 5u, 
 };
 
 uint8 CapSense_CSD_debounceCounter[] = {
