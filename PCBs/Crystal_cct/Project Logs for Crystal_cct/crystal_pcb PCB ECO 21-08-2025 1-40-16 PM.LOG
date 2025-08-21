@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=S1 Pin=P1-1
+Removed Pin From Net: NetName=S4 Pin=P1-4
+Added Pin To Net: NetName=S4 Pin=P1-6
+Added Pin To Net: NetName=S1 Pin=P1-7
+Added Member To Class: ClassName=schematic_crystal Member=Component U1 CD4011BE
