@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetC3_1 Pin=U1-1
+Removed Pin From Net: NetName=NetC3_1 Pin=U1-2
+Removed Pin From Net: NetName=S2 Pin=U1-3
+Removed Pin From Net: NetName=S1 Pin=U1-4
+Removed Pin From Net: NetName=NetC1_1 Pin=U1-5
+Removed Pin From Net: NetName=NetC1_1 Pin=U1-6
+Change Component Footprint: Designator=Y1 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y2 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y3 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y4 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y5 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y6 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Added Pin To Net: NetName=NetC1_1 Pin=U1-1
+Added Pin To Net: NetName=NetC1_1 Pin=U1-2
+Added Pin To Net: NetName=S1 Pin=U1-3
+Added Pin To Net: NetName=S2 Pin=U1-4
+Added Pin To Net: NetName=NetC3_1 Pin=U1-5
+Added Pin To Net: NetName=NetC3_1 Pin=U1-6
+Added Member To Class: ClassName=schematic_crystal Member=Component U1 CD4011BE
