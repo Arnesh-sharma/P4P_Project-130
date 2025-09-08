@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=S1 Pin=P1-6
+Removed Pin From Net: NetName=S2 Pin=P1-7
+Added Pin To Net: NetName=S2 Pin=P1-6
+Added Pin To Net: NetName=S1 Pin=P1-7
