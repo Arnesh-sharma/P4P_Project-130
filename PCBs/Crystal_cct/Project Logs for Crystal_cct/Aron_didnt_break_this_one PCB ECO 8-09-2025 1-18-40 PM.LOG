@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=In3 Pin=U1-9
+Added Pin To Net: NetName=S3 Pin=U1-9
+Change Net Name : Old Net Name=In3 New Net Name=S3
+Change Net Name : Old Net Name=S3 New Net Name=In3
+Added Member To Class: ClassName=schematic_crystal Member=Component C3 *
+Added Member To Class: ClassName=schematic_crystal Member=Component U1 CD4011BE

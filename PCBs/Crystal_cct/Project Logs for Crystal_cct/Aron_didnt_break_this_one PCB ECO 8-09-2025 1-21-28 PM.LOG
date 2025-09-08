@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=In3 Pin=P1-9
+Added Pin To Net: NetName=S3 Pin=P1-9
+Change Net Name : Old Net Name=In3 New Net Name=S3
+Change Net Name : Old Net Name=S3 New Net Name=In3

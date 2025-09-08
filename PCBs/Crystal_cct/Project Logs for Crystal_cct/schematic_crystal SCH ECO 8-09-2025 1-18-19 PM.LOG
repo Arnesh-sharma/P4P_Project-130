@@ -1,0 +1,4 @@
+Remove Pin=P1-9 From Net=S3
+Add Pin To Net: Pin=P1-9 Old Net=S3 New Net=In3
+Change Pin Designator/Name:  Old Designator=U1C-8 Old Name=E New Designator =L New Name=10
+Change Pin Designator/Name:  Old Designator=U1C-10 Old Name=L New Designator =E New Name=8

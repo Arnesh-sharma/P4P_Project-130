@@ -1,0 +1,15 @@
+Change Component Footprint: Designator=P1 Old Footprint=61301011121 New Footprint=61301011121
+Change Component Footprint: Designator=Y1 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y2 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y3 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y4 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y5 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Component Footprint: Designator=Y6 Old Footprint=WE-XTAL_HC49 New Footprint=WE-XTAL_HC49
+Change Net Name : Old Net Name=NetC1_1 New Net Name=In1
+Change Net Name : Old Net Name=NetC3_1 New Net Name=In2
+Change Net Name : Old Net Name=NetC5_1 New Net Name=In3
+Change Net Name : Old Net Name=NetC7_1 New Net Name=In6
+Change Net Name : Old Net Name=NetC9_1 New Net Name=In5
+Change Net Name : Old Net Name=NetC11_1 New Net Name=In4
+Change Net Name : Old Net Name=NetC13_1 New Net Name=In7
+Change Net Name : Old Net Name=NetC15_1 New Net Name=In8
