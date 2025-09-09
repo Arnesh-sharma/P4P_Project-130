@@ -1,0 +1,22 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[Aron_didnt_break_this_one_Copper_Signal_Top.gbr]
+   Generated File[Aron_didnt_break_this_one_Copper_Signal_Bot.gbr]
+   Generated File[Aron_didnt_break_this_one_Legend_Top.gbr]
+   Generated File[Aron_didnt_break_this_one_Legend_Bot.gbr]
+   Generated File[Aron_didnt_break_this_one_Soldermask_Top.gbr]
+   Generated File[Aron_didnt_break_this_one_Soldermask_Bot.gbr]
+   Generated File[Aron_didnt_break_this_one_Paste_Top.gbr]
+   Generated File[Aron_didnt_break_this_one_Paste_Bot.gbr]
+   Generated File[Aron_didnt_break_this_one_Profile.gbr]
+   Generated File[Aron_didnt_break_this_one_NPTH_Drill.gbr]
+   Generated File[Aron_didnt_break_this_one_PTH_Drill.gbr]
+   Generated File[Aron_didnt_break_this_one.EXTREP]
+   Generated File[Aron_didnt_break_this_one.REP]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 3:04:19 pm On 9/09/2025
