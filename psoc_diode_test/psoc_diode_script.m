@@ -39,6 +39,7 @@ try
         line = readline(s);
         
         vals = sscanf(line, 'IDAC Val: %f, Pin Val: %f');
+        %vals = sscanf(line, '%f, %f');
 
         if numel(vals) == 2
             idac_val = vals(1);

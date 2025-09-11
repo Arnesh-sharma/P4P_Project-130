@@ -28,6 +28,7 @@ void handle_usb();
 //* ========================================
 
 char buffer[64];
+uint8_t idac_val = 100;
 
 int main()
 {
@@ -41,12 +42,15 @@ int main()
 #endif        
         
     RF_BT_SELECT_Write(0);
-    ADC_SAR_1_Start();
+    Opamp_1_Start();
     IDAC8_1_Start();
+    IDAC8_1_SetValue(idac_val);
+    ADC_SAR_1_Start();
+    ADC_SAR_1_StartConvert();
     for(;;)
     {
         /* Place your application code here. */
-        ADC_SAR_1_StartConvert();
+        //usbPutString(displaystring);
         handle_usb();
         if (flag_KB_string == 1)
         {
@@ -55,8 +59,8 @@ int main()
         }      
         
         // Get ADC value and transmit to screen
-        uint16_t data = ADC_SAR_1_GetResult16(); 
-        sprintf(buffer, "IDAC Val: %u, Pin Val: %u \r\n", 50, data);
+        int16_t data = ADC_SAR_1_GetResult16(); 
+        sprintf(buffer, "IDAC Val: %u, Pin Val: %d \r\n", idac_val, data);
         usbPutString(buffer);
     }   
 }

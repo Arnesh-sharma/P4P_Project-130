@@ -280,7 +280,18 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\main.c" />
+<name v=".\CS301_Class.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 703" SelectedTabbedMdiWindow="0c6313b4-9225-4de2-81a6-4d020f2e0e40"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="79a316e9-0a56-4bd3-8223-d9adf3f1b9a1" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\TopDesign\TopDesign.cysch" Guid="d46c9982-f234-4812-aec8-d1b5c18b1d20" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\main.c" Guid="0c6313b4-9225-4de2-81a6-4d020f2e0e40" /><DocumentWindow Key="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\CS301_Class.cydwr" Guid="fdb1cf39-40f3-4859-bc21-7acc4d68e5c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
