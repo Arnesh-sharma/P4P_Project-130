@@ -78,7 +78,7 @@ void IDAC8_1_Wakeup(void)                   ;
 *       Paramater Initial Values
 ***************************************/
 
-#define IDAC8_1_DEFAULT_RANGE     4u                                   /* Default DAC range */
+#define IDAC8_1_DEFAULT_RANGE     0u                                   /* Default DAC range */
 #define IDAC8_1_DEFAULT_SPEED     ((uint8)(((2u != 0u) ? 1u : 0u) << 1u))   /* Default DAC speed */
 #define IDAC8_1_DEFAULT_CNTL      0x00u                                            /* Default Control */
 #define IDAC8_1_DEFAULT_STRB     0u                                   /* Default Strobe mode */

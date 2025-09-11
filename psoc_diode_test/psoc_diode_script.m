@@ -17,8 +17,8 @@ figure('Color', 'w', 'Name', 'PSoC Live Data');
 ax = gca; % Get current axes handle
 grid on;
 box on;
-xlabel('IDAC Value (counts)');
-ylabel('ADC Value (counts)');
+xlabel('ADC Value (counts)');
+ylabel('IDAC Val');
 title('Live ADC vs. IDAC Response');
 
 % Create an animated line object for efficient live plotting
@@ -46,7 +46,7 @@ try
             adc_val  = vals(2);
             
             % Add the new, raw data point to the animated line
-            addpoints(h, idac_val, adc_val);
+            addpoints(h, adc_val, idac_val);
             
             % Update the plot window to show the new point
             drawnow limitrate; % 'limitrate' prevents it from trying to draw too fast
