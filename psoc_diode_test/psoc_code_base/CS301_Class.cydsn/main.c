@@ -46,6 +46,7 @@ int main()
     for(;;)
     {
         /* Place your application code here. */
+        ADC_SAR_1_StartConvert();
         handle_usb();
         if (flag_KB_string == 1)
         {
@@ -54,8 +55,8 @@ int main()
         }      
         
         // Get ADC value and transmit to screen
-        int16_t data = ADC_SAR_1_GetResult16(); 
-        sprintf(buffer, "IDAC Val: %u, Pin Val: %d \r\n", 120, data);
+        uint16_t data = ADC_SAR_1_GetResult16(); 
+        sprintf(buffer, "IDAC Val: %u, Pin Val: %u \r\n", 50, data);
         usbPutString(buffer);
     }   
 }

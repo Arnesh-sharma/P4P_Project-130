@@ -97,9 +97,6 @@
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_IRQ.h" value="HEADER;;;;;ADC_SAR_1_IRQ" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_theACLK.c" value="SOURCE_C;CortexM3;;;;ADC_SAR_1_theACLK" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_theACLK.h" value="HEADER;;;;;ADC_SAR_1_theACLK" />
-  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_ExtVref_aliases.h" value="HEADER;;;;;ADC_SAR_1_ExtVref" />
-  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_ExtVref.c" value="SOURCE_C;CortexM3;;;;ADC_SAR_1_ExtVref" />
-  <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\ADC_SAR_1_ExtVref.h" value="HEADER;;;;;ADC_SAR_1_ExtVref" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />
