@@ -1,0 +1,6 @@
+C:\Users\jpat614\Documents\GitHub\P4P_Project-130\psoc_diode_test\psoc_code_base\CS301_Class.cydsn\CS301_Class.cyprj|f5c21961-5231-481c-a147-4d37ec8e4e63
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c97ccc1d-eed1-418e-af33-873debd01f51
+C:\Users\jpat614\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|aacf891a-daef-49ff-85f4-28134409205f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|18f99ad0-3ba5-40ce-8994-cbf06f1842ed
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|87f700e3-4982-46aa-9d27-e30676fe9d32
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|098124d8-2be3-4814-903f-abf814009053
