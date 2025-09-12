@@ -64,7 +64,9 @@ int main()
             int16_t data = ADC_SAR_1_GetResult16(); 
             sprintf(buffer, "IDAC Val: %u, Pin Val: %d \r\n", i, data);
             usbPutString(buffer);
+       
         }
+        CyDelay(5000);
     }   
 }
 //* ========================================
