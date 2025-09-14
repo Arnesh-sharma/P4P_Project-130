@@ -28,6 +28,7 @@ void handle_usb();
 //* ========================================
 
 char buffer[64];
+int16_t average = 0;
 uint8_t idac_val = 100;
 
 int main()
@@ -61,10 +62,15 @@ int main()
         for (int i = 0; i < 256; i++) {
             IDAC8_1_SetValue(i);
             // Get ADC value and transmit to screen
-            int16_t data = ADC_SAR_1_GetResult16(); 
-            sprintf(buffer, "IDAC Val: %u, Pin Val: %d \r\n", i, data);
+            int16_t result = 0;
+            for (int j=0; j <= 10; j++) {
+                 int16_t data = ADC_SAR_1_GetResult16(); 
+                average += data;   
+            }
+            result = average/10;
+            sprintf(buffer, "IDAC Val: %u, Pin Val: %d \r\n", i, result);
             usbPutString(buffer);
-       
+            average = 0;
         }
         CyDelay(5000);
     }   

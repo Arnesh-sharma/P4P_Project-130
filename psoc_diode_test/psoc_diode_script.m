@@ -1,5 +1,6 @@
-%% PSoC UART -> MATLAB LIVE plot (ADC vs IDAC)
-% This script reads serial data and updates a plot in real-time.
+%% PSoC UART -> MATLAB Plot of ADC Step Differences
+% This script collects a sweep of raw ADC data, calculates the difference
+% between each consecutive reading, and plots the result.
 
 % --- Clean slate ---
 clear; clc; close all;
@@ -12,54 +13,65 @@ port = "COM9";      % <-- IMPORTANT: Change to your PSoC's COM port
 baud = 115200;      % <-- IMPORTANT: Match your PSoC's UART baud rate
 term = "CR/LF";     % Terminator for \r\n from PSoC
 
-% --- Plotting Setup ---
-figure('Color', 'w', 'Name', 'PSoC Live Data');
-ax = gca; % Get current axes handle
-grid on;
-box on;
-xlabel('ADC Value (counts)');
-ylabel('IDAC Val');
-title('Live ADC vs. IDAC Response');
+% --- Data Collection Parameters ---
+IDAC_MAX_VALUE = 255; % The max IDAC value to test (0-255 for 8-bit)
+NUM_STEPS = IDAC_MAX_VALUE + 1;
 
-% Create an animated line object for efficient live plotting
-h = animatedline(ax, 'Marker', 'o', 'LineStyle', 'none', 'Color', [0 0.4470 0.7410]);
-legend('Live Data');
+% --- Preallocate array for the raw data ---
+raw_adc_results = zeros(NUM_STEPS, 1);
 
-% --- Setup Serial Port Communication ---
+% --- Setup Serial Port and Collect Data ---
 try
     fprintf('Opening serial port %s...\n', port);
     s = serialport(port, baud);
     configureTerminator(s, term);
     flush(s);
 
-    disp('Starting live plot. Press Ctrl+C in the Command Window to stop.');
+    fprintf('Collecting one full sweep of data (0 to %d)...\n', IDAC_MAX_VALUE);
     
-    % Loop indefinitely until stopped by the user
-    while ishandle(h) % Loop while the plot figure is open
-        line = readline(s);
+    for idac_step = 0:IDAC_MAX_VALUE
         
-        vals = sscanf(line, 'IDAC Val: %f, Pin Val: %f');
-        %vals = sscanf(line, '%f, %f');
+        received_correct_step = false;
+        while ~received_correct_step
+            line = readline(s); % Read from PSoC
+            vals = sscanf(line, 'IDAC Val: %f, Pin Val: %f');
+    
+            if numel(vals) == 2
+                idac_val = round(vals(1));
+                adc_val  = vals(2);
 
-        if numel(vals) == 2
-            idac_val = vals(1);
-            adc_val  = vals(2);
-            
-            % Add the new, raw data point to the animated line
-            addpoints(h, adc_val, idac_val);
-            
-            % Update the plot window to show the new point
-            drawnow limitrate; % 'limitrate' prevents it from trying to draw too fast
-        else
-            fprintf('Warning: Could not parse line: "%s"\n', strtrim(line));
+                % Check if this is the data point we're waiting for
+                if idac_val == idac_step
+                    raw_adc_results(idac_step + 1) = adc_val;
+                    received_correct_step = true; % Exit inner loop and move to next step
+                end
+            else
+                fprintf('Warning: Could not parse line: "%s"\n', strtrim(line));
+            end
+        end % End of while loop for a single step
+        
+        % Give live feedback to the user
+        if mod(idac_step, 20) == 0
+            fprintf('Collected data for IDAC value: %d/%d\n', idac_step, IDAC_MAX_VALUE);
         end
-    end
 
-    disp('Plot window closed. Stopping data collection.');
+    end % End of for loop for the full sweep
+
+    disp('Data collection complete.');
     clear s;
-
 catch ME
     disp('Error or script cancelled. Closing serial port.');
     clear s;
     rethrow(ME);
 end
+
+% --- Analysis and Plotting Section ---
+
+% 1. Calculate the difference between ADC values
+
+
+% 2. Create the corresponding X-axis for the plot
+
+
+% 3. Plot the calculated differences
+
