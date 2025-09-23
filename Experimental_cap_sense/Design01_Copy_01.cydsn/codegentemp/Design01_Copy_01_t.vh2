@@ -1,6 +1,6 @@
--- Project:   C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj
--- Generated: 07/01/2025 15:28:23
--- PSoC Creator  4.2
+-- Project:   C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj
+-- Generated: 08/12/2025 19:21:26
+-- PSoC Creator  4.4
 
 ENTITY Design01_Copy_01 IS
     PORT(

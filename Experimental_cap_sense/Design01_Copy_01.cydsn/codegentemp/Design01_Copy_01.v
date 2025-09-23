@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01_Copy_01.v generated from TopDesign.cysch
-// 07/01/2025 at 15:28
+// 08/12/2025 at 19:21
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -72,56 +72,74 @@
 `define CYDEV_CHIP_MEMBER_4E 6
 `define CYDEV_CHIP_REVISION_4E_PRODUCTION 0
 `define CYDEV_CHIP_REVISION_4E_CCG2_NO_USBPD 0
-`define CYDEV_CHIP_MEMBER_4O 7
+`define CYDEV_CHIP_MEMBER_4X 7
+`define CYDEV_CHIP_REVISION_4X_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4O 8
 `define CYDEV_CHIP_REVISION_4O_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4R 8
+`define CYDEV_CHIP_MEMBER_4R 9
 `define CYDEV_CHIP_REVISION_4R_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4T 9
+`define CYDEV_CHIP_MEMBER_4T 10
 `define CYDEV_CHIP_REVISION_4T_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4N 10
+`define CYDEV_CHIP_MEMBER_4N 11
 `define CYDEV_CHIP_REVISION_4N_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4S 11
+`define CYDEV_CHIP_MEMBER_4S 12
 `define CYDEV_CHIP_REVISION_4S_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4Q 12
+`define CYDEV_CHIP_MEMBER_4W 13
+`define CYDEV_CHIP_REVISION_4W_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4AC 14
+`define CYDEV_CHIP_REVISION_4AC_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4AD 15
+`define CYDEV_CHIP_REVISION_4AD_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4AE 16
+`define CYDEV_CHIP_REVISION_4AE_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4Q 17
 `define CYDEV_CHIP_REVISION_4Q_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4D 13
+`define CYDEV_CHIP_MEMBER_4Y 18
+`define CYDEV_CHIP_REVISION_4Y_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4Z 19
+`define CYDEV_CHIP_REVISION_4Z_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4D 20
 `define CYDEV_CHIP_REVISION_4D_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4J 14
+`define CYDEV_CHIP_MEMBER_4J 21
 `define CYDEV_CHIP_REVISION_4J_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4K 15
+`define CYDEV_CHIP_MEMBER_4K 22
 `define CYDEV_CHIP_REVISION_4K_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4V 16
+`define CYDEV_CHIP_MEMBER_4V 23
 `define CYDEV_CHIP_REVISION_4V_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4H 17
+`define CYDEV_CHIP_MEMBER_4H 24
 `define CYDEV_CHIP_REVISION_4H_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4A 18
+`define CYDEV_CHIP_MEMBER_4AA 25
+`define CYDEV_CHIP_REVISION_4AA_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4A 26
 `define CYDEV_CHIP_REVISION_4A_PRODUCTION 17
 `define CYDEV_CHIP_REVISION_4A_ES0 17
-`define CYDEV_CHIP_MEMBER_4F 19
+`define CYDEV_CHIP_MEMBER_4F 27
 `define CYDEV_CHIP_REVISION_4F_PRODUCTION 0
 `define CYDEV_CHIP_REVISION_4F_PRODUCTION_256K 0
 `define CYDEV_CHIP_REVISION_4F_PRODUCTION_256DMA 0
-`define CYDEV_CHIP_MEMBER_4P 20
+`define CYDEV_CHIP_MEMBER_4P 28
 `define CYDEV_CHIP_REVISION_4P_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4M 21
+`define CYDEV_CHIP_MEMBER_4M 29
 `define CYDEV_CHIP_REVISION_4M_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4L 22
+`define CYDEV_CHIP_MEMBER_4AB 30
+`define CYDEV_CHIP_REVISION_4AB_PRODUCTION 0
+`define CYDEV_CHIP_MEMBER_4L 31
 `define CYDEV_CHIP_REVISION_4L_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_4I 23
+`define CYDEV_CHIP_MEMBER_4I 32
 `define CYDEV_CHIP_REVISION_4I_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_6A 24
+`define CYDEV_CHIP_MEMBER_6A 33
 `define CYDEV_CHIP_REVISION_6A_ES 17
 `define CYDEV_CHIP_REVISION_6A_PRODUCTION 33
 `define CYDEV_CHIP_REVISION_6A_NO_UDB 33
-`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE1 25
+`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE1 34
 `define CYDEV_CHIP_REVISION_PDL_FM0P_TYPE1_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE2 26
+`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE2 35
 `define CYDEV_CHIP_REVISION_PDL_FM0P_TYPE2_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE3 27
+`define CYDEV_CHIP_MEMBER_PDL_FM0P_TYPE3 36
 `define CYDEV_CHIP_REVISION_PDL_FM0P_TYPE3_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_FM3 28
+`define CYDEV_CHIP_MEMBER_FM3 37
 `define CYDEV_CHIP_REVISION_FM3_PRODUCTION 0
-`define CYDEV_CHIP_MEMBER_FM4 29
+`define CYDEV_CHIP_MEMBER_FM4 38
 `define CYDEV_CHIP_REVISION_FM4_PRODUCTION 0
 `define CYDEV_CHIP_FAMILY_USED 3
 `define CYDEV_CHIP_MEMBER_USED 2
@@ -132,11 +150,11 @@
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
 `endif
 
 // Component: ZeroTerminal
@@ -145,11 +163,11 @@
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
 `endif
 
 // Component: cy_virtualmux_v1_0
@@ -158,26 +176,26 @@
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v"
 `endif
 
-// IDAC8_v2_0(Current=15, Data_Source=0, Hardware_Enable=false, IDAC_Range=0, IDAC_Speed=2, Initial_Value=120, Polarity=0, Strobe_Mode=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IDAC8_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=IDAC8_1, CY_INSTANCE_SHORT_NAME=IDAC8_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=IDAC8_1, )
+// IDAC8_v2_0(Current=15, Data_Source=0, Hardware_Enable=false, IDAC_Range=0, IDAC_Speed=2, Initial_Value=120, Polarity=0, Strobe_Mode=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IDAC8_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=IDAC8_1, CY_INSTANCE_SHORT_NAME=IDAC8_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=IDAC8_1, )
 module IDAC8_v2_0_0 (
-    strobe,
     data,
-    iOut,
     en,
-    ipolarity);
-    input       strobe;
+    iOut,
+    ipolarity,
+    strobe);
     input      [7:0] data;
+    input       en;
     inout       iOut;
     electrical  iOut;
-    input       en;
     input       ipolarity;
+    input       strobe;
 
     parameter Data_Source = 0;
     parameter Initial_Value = 120;
@@ -192,14 +210,14 @@ module IDAC8_v2_0_0 (
           wire  Net_125;
 
     cy_psoc3_vidac8_v1_0 viDAC8 (
-        .reset(Net_125),
-        .idir(Net_158),
         .data(data[7:0]),
-        .strobe(strobe),
-        .vout(Net_124),
-        .iout(iOut),
+        .idir(Net_158),
         .ioff(Net_123),
-        .strobe_udb(strobe));
+        .iout(iOut),
+        .reset(Net_125),
+        .strobe(strobe),
+        .strobe_udb(strobe),
+        .vout(Net_124));
     defparam viDAC8.is_all_if_any = 0;
     defparam viDAC8.reg_data = 0;
 
@@ -228,19 +246,19 @@ module IDAC8_v2_0_0 (
 
 endmodule
 
-// IDAC8_v2_0(Current=30, Data_Source=0, Hardware_Enable=true, IDAC_Range=0, IDAC_Speed=2, Initial_Value=240, Polarity=4, Strobe_Mode=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IDAC8_2, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=IDAC8_2, CY_INSTANCE_SHORT_NAME=IDAC8_2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=IDAC8_2, )
+// IDAC8_v2_0(Current=30, Data_Source=0, Hardware_Enable=true, IDAC_Range=0, IDAC_Speed=2, Initial_Value=240, Polarity=4, Strobe_Mode=0, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=IDAC8_v2_0, CY_CONFIG_TITLE=IDAC8_2, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=IDAC8_2, CY_INSTANCE_SHORT_NAME=IDAC8_2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=IDAC8_2, )
 module IDAC8_v2_0_1 (
-    strobe,
     data,
-    iOut,
     en,
-    ipolarity);
-    input       strobe;
+    iOut,
+    ipolarity,
+    strobe);
     input      [7:0] data;
+    input       en;
     inout       iOut;
     electrical  iOut;
-    input       en;
     input       ipolarity;
+    input       strobe;
 
     parameter Data_Source = 0;
     parameter Initial_Value = 240;
@@ -255,14 +273,14 @@ module IDAC8_v2_0_1 (
           wire  Net_125;
 
     cy_psoc3_vidac8_v1_0 viDAC8 (
-        .reset(Net_125),
-        .idir(Net_158),
         .data(data[7:0]),
-        .strobe(strobe),
-        .vout(Net_124),
-        .iout(iOut),
+        .idir(Net_158),
         .ioff(Net_123),
-        .strobe_udb(strobe));
+        .iout(iOut),
+        .reset(Net_125),
+        .strobe(strobe),
+        .strobe_udb(strobe),
+        .vout(Net_124));
     defparam viDAC8.is_all_if_any = 0;
     defparam viDAC8.reg_data = 0;
 
@@ -291,18 +309,18 @@ module IDAC8_v2_0_1 (
 
 endmodule
 
-// VDAC8_v1_90(Data_Source=0, Initial_Value=125, Strobe_Mode=0, VDAC_Range=4, VDAC_Speed=2, Voltage=2000, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC8_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC8_1, CY_INSTANCE_SHORT_NAME=VDAC8_1, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=VDAC8_1, )
+// VDAC8_v1_90(Data_Source=0, Initial_Value=218, Strobe_Mode=0, VDAC_Range=4, VDAC_Speed=2, Voltage=3488, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC8_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC8_1, CY_INSTANCE_SHORT_NAME=VDAC8_1, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC8_1, )
 module VDAC8_v1_90_2 (
-    strobe,
     data,
+    strobe,
     vOut);
-    input       strobe;
     input      [7:0] data;
+    input       strobe;
     inout       vOut;
     electrical  vOut;
 
     parameter Data_Source = 0;
-    parameter Initial_Value = 125;
+    parameter Initial_Value = 218;
     parameter Strobe_Mode = 0;
 
     electrical  Net_77;
@@ -311,14 +329,14 @@ module VDAC8_v1_90_2 (
           wire  Net_81;
 
     cy_psoc3_vidac8_v1_0 viDAC8 (
-        .reset(Net_83),
-        .idir(Net_81),
         .data(data[7:0]),
-        .strobe(strobe),
-        .vout(vOut),
-        .iout(Net_77),
+        .idir(Net_81),
         .ioff(Net_82),
-        .strobe_udb(strobe));
+        .iout(Net_77),
+        .reset(Net_83),
+        .strobe(strobe),
+        .strobe_udb(strobe),
+        .vout(vOut));
     defparam viDAC8.is_all_if_any = 0;
     defparam viDAC8.reg_data = 0;
 
@@ -344,62 +362,62 @@ endmodule
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
 `endif
 
-// OpAmp_v1_90(Mode=0, Power=1, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=OpAmp_v1_90, CY_CONFIG_TITLE=Opamp_2, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp_2, CY_INSTANCE_SHORT_NAME=Opamp_2, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=Opamp_2, )
+// OpAmp_v1_90(Mode=1, Power=3, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=OpAmp_v1_90, CY_CONFIG_TITLE=Opamp_2, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp_2, CY_INSTANCE_SHORT_NAME=Opamp_2, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=Opamp_2, )
 module OpAmp_v1_90_3 (
-    Vplus,
+    Vminus,
     Vout,
-    Vminus);
-    inout       Vplus;
-    electrical  Vplus;
-    inout       Vout;
-    electrical  Vout;
+    Vplus);
     inout       Vminus;
     electrical  Vminus;
+    inout       Vout;
+    electrical  Vout;
+    inout       Vplus;
+    electrical  Vplus;
 
-    parameter Mode = 0;
+    parameter Mode = 1;
 
     electrical  Net_29;
 
     cy_psoc3_abuf_v1_0 ABuf (
-        .vplus(Vplus),
         .vminus(Net_29),
-        .vout(Vout));
+        .vout(Vout),
+        .vplus(Vplus));
 
 	// abuf_negInput_mux (cy_analog_virtualmux_v1_0)
-	cy_connect_v1_0 abuf_negInput_mux_connect(Net_29, Vminus);
+	cy_connect_v1_0 abuf_negInput_mux_connect(Net_29, Vout);
 	defparam abuf_negInput_mux_connect.sig_width = 1;
 
 
 
 endmodule
 
-// OpAmp_v1_90(Mode=0, Power=1, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=OpAmp_v1_90, CY_CONFIG_TITLE=Opamp_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp_1, CY_INSTANCE_SHORT_NAME=Opamp_1, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=Opamp_1, )
+// OpAmp_v1_90(Mode=0, Power=1, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=OpAmp_v1_90, CY_CONFIG_TITLE=Opamp_1, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp_1, CY_INSTANCE_SHORT_NAME=Opamp_1, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=Opamp_1, )
 module OpAmp_v1_90_4 (
-    Vplus,
+    Vminus,
     Vout,
-    Vminus);
-    inout       Vplus;
-    electrical  Vplus;
-    inout       Vout;
-    electrical  Vout;
+    Vplus);
     inout       Vminus;
     electrical  Vminus;
+    inout       Vout;
+    electrical  Vout;
+    inout       Vplus;
+    electrical  Vplus;
 
     parameter Mode = 0;
 
     electrical  Net_29;
 
     cy_psoc3_abuf_v1_0 ABuf (
-        .vplus(Vplus),
         .vminus(Net_29),
-        .vout(Vout));
+        .vout(Vout),
+        .vplus(Vplus));
 
 	// abuf_negInput_mux (cy_analog_virtualmux_v1_0)
 	cy_connect_v1_0 abuf_negInput_mux_connect(Net_29, Vminus);
@@ -412,38 +430,39 @@ endmodule
 // top
 module top ;
 
-          wire [7:0] Net_122;
+    electrical  Net_185;
           wire  Net_121;
+          wire [7:0] Net_122;
+          wire  Net_6;
           wire  Net_10;
           wire [7:0] Net_7;
-          wire  Net_6;
+          wire  Net_1;
           wire  Net_5;
           wire  Net_91;
           wire [7:0] Net_2;
-          wire  Net_1;
-    electrical  Net_143;
+    electrical  Net_186;
+    electrical  Net_126;
           wire  Net_135;
           wire  Net_137;
-    electrical  Net_126;
-    electrical  Net_127;
+    electrical  Net_143;
     electrical  Net_101;
 
     IDAC8_v2_0_0 IDAC8_1 (
-        .strobe(1'b0),
         .data(8'b00000000),
-        .iOut(Net_101),
         .en(1'b0),
-        .ipolarity(1'b0));
+        .iOut(Net_101),
+        .ipolarity(1'b0),
+        .strobe(1'b0));
     defparam IDAC8_1.Data_Source = 0;
     defparam IDAC8_1.Initial_Value = 120;
     defparam IDAC8_1.Strobe_Mode = 0;
 
     IDAC8_v2_0_1 IDAC8_2 (
-        .strobe(1'b0),
         .data(8'b00000000),
-        .iOut(Net_101),
         .en(Net_137),
-        .ipolarity(1'b0));
+        .iOut(Net_101),
+        .ipolarity(1'b0),
+        .strobe(1'b0));
     defparam IDAC8_2.Data_Source = 0;
     defparam IDAC8_2.Initial_Value = 240;
     defparam IDAC8_2.Strobe_Mode = 0;
@@ -587,7 +606,7 @@ module top ;
 		 (.oe(tmpOE__vref_net),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__vref_net[0:0]}),
-		  .analog({Net_127}),
+		  .analog({Net_186}),
 		  .io({tmpIO_0__vref_net[0:0]}),
 		  .siovref(tmpSIOVREF__vref_net),
 		  .interrupt({tmpINTERRUPT_0__vref_net[0:0]}),
@@ -601,11 +620,11 @@ module top ;
 	assign tmpOE__vref_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
     VDAC8_v1_90_2 VDAC8_1 (
-        .strobe(1'b0),
         .data(8'b00000000),
+        .strobe(1'b0),
         .vOut(Net_126));
     defparam VDAC8_1.Data_Source = 0;
-    defparam VDAC8_1.Initial_Value = 125;
+    defparam VDAC8_1.Initial_Value = 218;
     defparam VDAC8_1.Strobe_Mode = 0;
 
 	wire [0:0] tmpOE__Vout_1_net;
@@ -759,18 +778,18 @@ module top ;
 	assign tmpOE__trigger_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
     OpAmp_v1_90_3 Opamp_2 (
-        .Vplus(Net_126),
-        .Vout(Net_127),
-        .Vminus(Net_127));
-    defparam Opamp_2.Mode = 0;
+        .Vminus(Net_185),
+        .Vout(Net_186),
+        .Vplus(Net_126));
+    defparam Opamp_2.Mode = 1;
 
 
     assign Net_137 = ~Net_135;
 
     OpAmp_v1_90_4 Opamp_1 (
-        .Vplus(Net_101),
+        .Vminus(Net_143),
         .Vout(Net_143),
-        .Vminus(Net_143));
+        .Vplus(Net_101));
     defparam Opamp_1.Mode = 0;
 
 

@@ -1,8 +1,7 @@
-C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj|e941e3b5-693d-4470-9166-2f36b1fc2bda
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|caefc27a-8aa8-4bfc-9b76-a727e74493ff
-C:\Users\jpat614\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|e523e578-187b-4561-a450-5dd0fa506c1f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|121b2a1f-fed9-4e76-acec-c47d374d523e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1dd88641-803e-486c-aa93-7b6e1df07b72
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f6748540-9a43-48d4-a5fb-9c24f953523b
-C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\Design01.cyprj|4ed10094-f330-45ea-b94e-f35e0564d7f7
-C:\Users\jpat614\Documents\GitHub\P4P_Project-130\Experimental_cap_sense\bts_schmitt.cydsn\bts_schmitt.cyprj|ff9df7c1-c89d-4398-8d58-9a8412ac228f
+C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\Experimental_cap_sense\Design01.cydsn\Design01.cyprj|33301f66-6312-4d64-81a4-57615d093664
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0f89953f-35a5-4a0e-920c-ef01608af88e
+C:\Users\jayti\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|3025ee25-bc38-4818-8a5d-1338c9421738
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ecb97774-dfd6-4edc-9394-eef768c4d4e2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|982d0402-efd3-4b37-abc5-ac74cd2b699e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|b062c72a-2c44-45ba-9197-5341b8d906a1
+C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\Experimental_cap_sense\Design01_Copy_01.cydsn\Design01_Copy_01.cyprj|cac76c3c-be71-4c7d-bb35-ddeb4949668e

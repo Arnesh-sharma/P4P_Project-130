@@ -1,6 +1,6 @@
 -- Project:   Design01_Copy_01
--- Generated: 07/01/2025 15:28:22
--- PSoC Creator  4.2
+-- Generated: 08/12/2025 19:21:26
+-- PSoC Creator  4.4
 
 ENTITY Design01_Copy_01 IS
     PORT(

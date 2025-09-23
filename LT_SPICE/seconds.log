@@ -1,0 +1,15 @@
+LTspice 24.1.8 for Windows
+Circuit: C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\LT_SPICE\seconds.net
+Start Time: Tue Aug 19 20:36:29 2025
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.121 seconds.
+
+Files loaded:
+C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\LT_SPICE\seconds.net
+C:\Users\jayti\Documents\COMPSYS_723\P4P_Project-130\LT_SPICE\TL082.lib
+
