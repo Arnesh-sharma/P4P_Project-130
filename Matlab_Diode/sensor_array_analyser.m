@@ -1,152 +1,161 @@
-%% PSoC 5x5 SENSOR ARRAY VISUALIZER AND FREQUENCY ANALYZER
-% This script reads data from a 5x5 sensor array connected to a PSoC via
-% UART. It displays the live signal strength on a 5x5 heatmap and
-% calculates the dominant frequency of the signal from the sensor that is
-% detecting the strongest signal.
+%% PSoC 5x5 SENSOR ARRAY VISUALIZER AND FREQUENCY ANALYZER - For Demo Day
+% Script reads each sensor data from psoc, generates a heat map for
+% intensity of signal and fft of the most intense signal
+% Note: This will need to be updated to match the sensor array 
 
 clear; clc; close all;
 
-% --- Configuration ---
 disp("Available serial ports:");
 disp(serialportlist("available"));
+port = "COM9";      
+baud = 115200;    
+terminator = "CR/LF";
 
-port = "COM7";      % <-- IMPORTANT: Change to your PSoC's COM port
-baud = 115200;      % <-- IMPORTANT: Match your PSoC's UART baud rate
-terminator = "CR/LF"; 
-% output_filename = 'baseline_data.mat'; % Name of the file to save
+GRID_SIZE = 5;
+NUM_PINS = GRID_SIZE^2;
+BUFFER_SIZE = 10; % samples for FFT analysis (increase this later)
+data_buffer = zeros(BUFFER_SIZE, NUM_PINS); % FFT history
+time_buffer = zeros(BUFFER_SIZE, 1); % Stores timestamps for Fs calculation
+buffer_index = 1; 
 
-% --- Sensor Array ---
-GRID_SIZE = 5; % 5x5 grid
-NUM_PINS = GRID_SIZE^2; % Total number of sensors/pins
-BUFFER_SIZE = 512; % Number of samples to store for FFT analysis, make this larger for better res
-
-% --- Data Buffers ---
-% Preallocate a buffer to store a history of readings for frequency analysis
-data_buffer = zeros(BUFFER_SIZE, NUM_PINS);
-time_buffer = zeros(BUFFER_SIZE, 1); % To calculate sampling rate
-buffer_index = 1; % Current position in the buffer
-
-% --- Setup the Figure and Plots ---
+%% Plots
 fig = figure('Name', 'PSoC Sensor Array Analyzer', 'NumberTitle', 'off');
-set(fig, 'Position', [100, 100, 1000, 600]); % Set figure size
+set(fig, 'Position', [100, 100, 1200, 600]); 
 
-% --- PLOT 1: Live Heatmap for Signal Strength ---
+% Heatmap Plot
 subplot(2, 2, [1, 3]);
 h_heatmap = imagesc(zeros(GRID_SIZE, GRID_SIZE));
-title('Live Sensor Array Signal Strength');
+title('Live Sensor Array Signal Strength', 'FontSize', 14);
 xlabel('Column');
 ylabel('Row');
-colorbar; 
-axis square; 
-set(gca, 'XTick', 1:GRID_SIZE, 'YTick', 1:GRID_SIZE);
+colorbar;
+axis square;
+set(gca, 'XTick', 1:GRID_SIZE, 'YTick', 1:GRID_SIZE, 'FontSize', 10);
 
-% --- PLOT 2: Frequency Spectrum (FFT) ---
-subplot(2, 2, 2); % Top right
-h_fft_plot = plot(0, 0);
-title('Frequency Spectrum of Strongest Signal');
+% FFT Plot
+subplot(2, 2, 2); 
+h_fft_plot = plot(0, 0, 'LineWidth', 1.5);
+title('Frequency Spectrum of Strongest Signal', 'FontSize', 14);
 xlabel('Frequency (Hz)');
-ylabel('Magnitude');
+ylabel('Amplitude');
 grid on;
+xlim([0, 1]); 
 
-subplot(2, 2, 4); % Bottom right
-axis off; % Turn off axes for text display
-h_text = text(0.5, 0.5, 'Peak Frequency: -- Hz', 'FontSize', 16, 'HorizontalAlignment', 'center');
+% peak freq & sampling freq
+subplot(2, 2, 4); 
+axis off; 
+h_text = text(0.5, 0.5, 'Waiting for data...', 'FontSize', 16, 'HorizontalAlignment', 'center');
 xlim([0 1]);
 ylim([0 1]);
 
-disp('Starting live analysis. Press Ctrl+C in the Command Window to stop.');
-fprintf('Expecting comma-separated data for %d pins, e.g., "val1,val2,...,val25\\r\\n"\n', NUM_PINS); %adjust the psoc uart code for this
+disp('Starting live analysis. Close the figure to stop.');
 
 try
     fprintf('Opening serial port %s...\n', port);
     s = serialport(port, baud);
-    configureTerminator(s, term);
-    flush(s);
+    configureTerminator(s, terminator);
+    
+    tic; 
 
-    tic; % time tracking
     while ishandle(fig)
-        line = readline(s);
-        try
-            % sscanf reads the comma-separated string into a column vector
-            sensor_values = sscanf(line, '%f,');
-            
-            if numel(sensor_values) == NUM_PINS
-                
-                % Store data in buffer
-                current_time = toc; % time of sample
-                data_buffer(buffer_index, :) = sensor_values';
-                time_buffer(buffer_index) = current_time;
-                
-                % Update Heat Map
-                % Reshape the 1x25 vector into a 5x5 matrix for the
-                % heatmap, I need to double check is the match up 
-                heatmap_data = reshape(sensor_values, GRID_SIZE, GRID_SIZE)';
-                set(h_heatmap, 'CData', heatmap_data);
-                
-                % Update colour axis
-                % caxis(h_heatmap.Parent, [min(sensor_values), max(sensor_values)]);
-                
-                % Analyse Freq
-                if buffer_index == BUFFER_SIZE
-                    
-                    % calculate sampling freq
-                    % Average time difference between samples
-                    avg_time_diff = mean(diff(time_buffer));
-                    Fs = 1 / avg_time_diff;
-                    
-                    % find sensor with strongest signal, 
-                    % use the one with the highest standard deviation
-                    [~, strongest_pin_idx] = max(std(data_buffer));
-                    strongest_signal = data_buffer(:, strongest_pin_idx);
-                    
-                    % FFT
-                    %remove DC component by subtracting mean
-                    signal_no_dc = strongest_signal - mean(strongest_signal);
-                    Y = fft(signal_no_dc);
-                    
-                    % Calculate the two-sided spectrum P2, then the single-sided spectrum P1
-                    P2 = abs(Y / BUFFER_SIZE);
-                    P1 = P2(1:BUFFER_SIZE/2+1);
-                    P1(2:end-1) = 2*P1(2:end-1);
-                    
-                    % Define the frequency domain f
-                    f = Fs * (0:(BUFFER_SIZE/2)) / BUFFER_SIZE;
-                    
-                    % Update FFT Plot
-                    set(h_fft_plot, 'XData', f, 'YData', P1);
-                    xlim(h_fft_plot.Parent, [0, Fs/2]); % Display up to Nyquist frequency
-                    
-                    % Display Peak Freq
-                    [max_magnitude, idx] = max(P1);
-                    peak_frequency = f(idx);
-                    
-                    set(h_text, 'String', sprintf('Peak Frequency: %.2f Hz\n(Fs: %.2f Hz)', peak_frequency, Fs));
-                    
-                end
-                
-                % update buffer index
-                buffer_index = mod(buffer_index, BUFFER_SIZE) + 1;
-                
-                % update plots
-                drawnow limitrate;
-            else
-                fprintf('Warning: Expected %d values, but received %d. Line: "%s"\n', NUM_PINS, numel(sensor_values), strtrim(line));
+        is_synced = false;
+        line = "";
+        while ~is_synced && ishandle(fig)
+            line = readline(s);
+            if (isstring(line) || ischar(line)) && startsWith(strtrim(line), "d0:")
+                is_synced = true; 
             end
-        catch parse_err
-             fprintf('Error parsing line: "%s". Error: %s\n', strtrim(line), parse_err.message);
+        end
+
+        if ~ishandle(fig)
+            break; 
+        end 
+
+        sensor_values = zeros(NUM_PINS, 1);
+        read_count = 0;
+
+        vals = sscanf(line, 'd%d:%f');
+        if numel(vals) == 2 && vals(1) == 0
+            sensor_values(1) = vals(2);
+            read_count = 1;
+        end
+
+        for i = 2:NUM_PINS
+            line = readline(s);
+            if ~isstring(line) && ~ischar(line) || strlength(line) == 0
+                fprintf('Warning: Readline timed out mid-frame.\n');
+                break; 
+            end
+            
+            vals = sscanf(line, 'd%d:%f');
+            if numel(vals) == 2
+                pin_idx = vals(1);
+                pin_val = vals(2);
+                if pin_idx > 0 && pin_idx < NUM_PINS % Expecting d1 to d24 (d25 is extra)
+                    sensor_values(pin_idx + 1) = pin_val;
+                    read_count = read_count + 1;
+                else
+                    fprintf('Warning: Unexpected pin index %d found mid-frame. Re-syncing.\n', pin_idx);
+                    break; 
+                end
+            end
+        end
+        
+        % process data once a full frame was recieved
+        if read_count == NUM_PINS
+            current_time = toc;
+            data_buffer(buffer_index, :) = sensor_values';
+            time_buffer(buffer_index) = current_time;
+            
+            % update heatmap
+            heatmap_data = reshape(sensor_values, GRID_SIZE, GRID_SIZE)';
+            set(h_heatmap, 'CData', heatmap_data);
+            clim(h_heatmap.Parent, 'auto'); 
+            
+            % Do FFT once the buffer is full
+            if buffer_index == BUFFER_SIZE
+                avg_time_diff = mean(diff(time_buffer));
+                Fs = 1 / avg_time_diff;
+                
+                % Find the sensor with the most dynamic signal (highest standard deviation)
+                [~, strongest_pin_idx] = max(std(data_buffer));
+                strongest_signal = data_buffer(:, strongest_pin_idx);
+                
+                % Remove DC offset before FFT
+                signal_no_dc = strongest_signal - mean(strongest_signal);
+                
+                % FFT Calculation
+                Y = fft(signal_no_dc);
+                P2 = abs(Y / BUFFER_SIZE);
+                P1 = P2(1:BUFFER_SIZE/2+1);
+                P1(2:end-1) = 2*P1(2:end-1);
+                f = Fs * (0:(BUFFER_SIZE/2)) / BUFFER_SIZE;
+
+                set(h_fft_plot, 'XData', f, 'YData', P1);
+                xlim(h_fft_plot.Parent, [0, Fs/2]); 
+                
+                % Find and display the peak frequency
+                [~, idx] = max(P1);
+                peak_frequency = f(idx);
+                set(h_text, 'String', sprintf('Peak Frequency: %.2f Hz\n(Fs: %.1f Hz)', peak_frequency, Fs));
+            end
+
+            buffer_index = mod(buffer_index, BUFFER_SIZE) + 1;
+            drawnow;
+            
+        else
+            fprintf('Warning: Incomplete frame received (%d/%d values). Re-syncing...\n', read_count, NUM_PINS);
         end
     end
+    
 catch ME
     disp('Error or script cancelled. Closing serial port.');
     clear s;
-    if isvalid(fig)
+    if ishandle(fig)
        close(fig);
     end
-    % Rethrow error if it wasn't a manual stop
-    if ~strcmp(ME.identifier, 'MATLAB:serialport:readline:OperationTerminated') && ...
-       ~strcmp(ME.identifier, 'MATLAB:class:InvalidHandle')
-        rethrow(ME);
-    end
+    rethrow(ME);
 end
 
+disp('Serial port closed.');
 
