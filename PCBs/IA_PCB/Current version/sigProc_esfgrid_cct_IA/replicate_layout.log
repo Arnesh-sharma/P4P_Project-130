@@ -1,0 +1,36 @@
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 409:Plugin executed on: 'darwin'
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 410:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 411:KiCad build version: 9.0.4
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 412:Plugin version: 4.0.3
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 413:Frame repr: <wx._core.Frame object at 0x16f6b34c0>
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 437:Preparing replicator with U3 as a reference
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 485:source anchor footprint is 'U3'
+Located on: ['/instrumentationAmp/']
+With filenames: ['ia.kicad_sch']
+With sheet_id:['/instrumentationAmp/']
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 492:Corresponding footprints are 
+[('U3', ['/instrumentationAmp/']), ('U16', ['/instrumentationAmp13/']), ('U4', ['/instrumentationAmp1/']), ('U5', ['/instrumentationAmp2/']), ('U6', ['/instrumentationAmp3/']), ('U7', ['/instrumentationAmp4/']), ('U22', ['/instrumentationAmp19/']), ('U21', ['/instrumentationAmp18/']), ('U10', ['/instrumentationAmp7/']), ('U19', ['/instrumentationAmp16/']), ('U15', ['/instrumentationAmp12/']), ('U23', ['/instrumentationAmp20/']), ('U9', ['/instrumentationAmp6/']), ('U26', ['/instrumentationAmp23/']), ('U27', ['/instrumentationAmp24/']), ('U8', ['/instrumentationAmp5/']), ('U14', ['/instrumentationAmp11/']), ('U25', ['/instrumentationAmp22/']), ('U24', ['/instrumentationAmp21/']), ('U20', ['/instrumentationAmp17/']), ('U17', ['/instrumentationAmp14/']), ('U13', ['/instrumentationAmp10/']), ('U11', ['/instrumentationAmp8/']), ('U18', ['/instrumentationAmp15/']), ('U12', ['/instrumentationAmp9/'])]
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 504:Showing dialog
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 472:constructing a list of sheets suitable for replication on level:'/instrumentationAmp/', file:'ia.kicad_sch'
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 509:suitable sheets are:[['/instrumentationAmp1/'], ['/instrumentationAmp10/'], ['/instrumentationAmp11/'], ['/instrumentationAmp12/'], ['/instrumentationAmp13/'], ['/instrumentationAmp14/'], ['/instrumentationAmp15/'], ['/instrumentationAmp16/'], ['/instrumentationAmp17/'], ['/instrumentationAmp18/'], ['/instrumentationAmp19/'], ['/instrumentationAmp2/'], ['/instrumentationAmp20/'], ['/instrumentationAmp21/'], ['/instrumentationAmp22/'], ['/instrumentationAmp23/'], ['/instrumentationAmp24/'], ['/instrumentationAmp3/'], ['/instrumentationAmp4/'], ['/instrumentationAmp5/'], ['/instrumentationAmp6/'], ['/instrumentationAmp7/'], ['/instrumentationAmp8/'], ['/instrumentationAmp9/']]
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1512:Level selected: ['/instrumentationAmp/']
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1336:Filtering list of tracks
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 510:Toolbar position: wx.Point(1478, 134)
+08-27 00:45:55 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 515:Dialog position: wx.Point(1039, 134)
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 472:constructing a list of sheets suitable for replication on level:'/instrumentationAmp/', file:'ia.kicad_sch'
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 509:suitable sheets are:[['/instrumentationAmp1/'], ['/instrumentationAmp10/'], ['/instrumentationAmp11/'], ['/instrumentationAmp12/'], ['/instrumentationAmp13/'], ['/instrumentationAmp14/'], ['/instrumentationAmp15/'], ['/instrumentationAmp16/'], ['/instrumentationAmp17/'], ['/instrumentationAmp18/'], ['/instrumentationAmp19/'], ['/instrumentationAmp2/'], ['/instrumentationAmp20/'], ['/instrumentationAmp21/'], ['/instrumentationAmp22/'], ['/instrumentationAmp23/'], ['/instrumentationAmp24/'], ['/instrumentationAmp3/'], ['/instrumentationAmp4/'], ['/instrumentationAmp5/'], ['/instrumentationAmp6/'], ['/instrumentationAmp7/'], ['/instrumentationAmp8/'], ['/instrumentationAmp9/']]
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 248:Replicating layout
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 288:Starting replication of sheets: [['/instrumentationAmp1/'], ['/instrumentationAmp10/'], ['/instrumentationAmp11/'], ['/instrumentationAmp12/'], ['/instrumentationAmp13/'], ['/instrumentationAmp14/'], ['/instrumentationAmp15/'], ['/instrumentationAmp16/'], ['/instrumentationAmp17/'], ['/instrumentationAmp18/'], ['/instrumentationAmp19/'], ['/instrumentationAmp2/'], ['/instrumentationAmp20/'], ['/instrumentationAmp21/'], ['/instrumentationAmp22/'], ['/instrumentationAmp23/'], ['/instrumentationAmp24/'], ['/instrumentationAmp3/'], ['/instrumentationAmp4/'], ['/instrumentationAmp5/'], ['/instrumentationAmp6/'], ['/instrumentationAmp7/'], ['/instrumentationAmp8/'], ['/instrumentationAmp9/']]
+on level: ['/instrumentationAmp/']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+08-27 00:46:11 root 340:updating GUI message: 'Preparing for replication'
+08-27 00:46:11 root 345:updating GUI with: 0
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 358:Getting the list of source footprints
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 368:Getting the list of all the remaining footprints
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 375:Getting source tracks
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1336:Filtering list of tracks
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 379:Getting source zones
+08-27 00:46:11 root 345:updating GUI with: 50
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 383:Getting source text items
+08-27 00:46:11 com_github_MitjaNemec_ReplicateLayout.replicate_layout 387:Getting source drawing items
