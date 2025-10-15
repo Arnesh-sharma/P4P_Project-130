@@ -1,0 +1,6 @@
+WFM08 - FET 10Hz - 10kHz
+WFM09 - FET 10Hz- 10kHz 
+WFM10 - FET 10Hz- 10kHz 
+WFM11 - FET 10Hz- 200kHz 
+
+Same setup as before just different channel
