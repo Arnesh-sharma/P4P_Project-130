@@ -1,0 +1,27 @@
+Each sensor data in placed into files, each containing raw data, images of sensor and testing setup.
+The distance for sensor placement and the positive capacitor is (around 1.5cm)
+
+WFM01 - Beespy FET CH1 10Hz-200kHz
+WFM02 - Beespy FET CH1 10Hz-10kHz
+
+WFM03 - Beespy FET CH2 10Hz-10kHz
+WFM04 - Beespy FET CH2 10Hz-200kHz
+
+WFM05 - Beespy FET CH3 10Hz-200kHz
+WFM06 - Beespy FET CH3 10Hz-10kHz
+
+WFM07 - Beespy FET CH4 10Hz-10kHz
+WFM08 - Beespy FET CH4 10Hz-200kHz
+
+WFM09 - Beespy FET CH5 10Hz-200kHz
+WFM10 - Beespy FET CH5 10Hz-10kHz
+
+WFM11 - Beespy FET CH6 10Hz-10kHz
+WFM12 - Beespy FET CH6 10Hz-200kHz
+
+WFM13 - Beespy Electret CH1 10Hz-10kHz
+WFM14 - Beespy Electret CH2 10Hz-10kHz
+WFM15 - Beespy Electret CH3 10Hz-10kHz
+WFM16 - Beespy Electret CH4 10Hz-10kHz
+WFM17 - Beespy Electret CH5 10Hz-10kHz
+WFM18 - Beespy Electret CH6 10Hz-10kHz

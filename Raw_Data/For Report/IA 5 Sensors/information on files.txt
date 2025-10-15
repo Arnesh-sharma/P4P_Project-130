@@ -1,0 +1,5 @@
+WFM03 - IA CH1 10Meg 10Hz - 10kHz
+WFM04 - IA CH2 1Meg 1uF Capacitors Shorted 10Hz - 10kHz
+WFM05 - IA CH3 1Meg 10Hz - 10kHz
+WFM06 - IA CH4 1Meg 10Hz - 10kHz
+WFM07 - IA CH5 1Meg 10Hz - 10kHz
