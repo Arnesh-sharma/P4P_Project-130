@@ -1,0 +1,26 @@
+Anlg Ch State  Units/Div  Position  Coupling  BW Limit  Invert  Impedance 
+ Ch 1:    On     100mV/     0.0V       AC        Off      Off     1M Ohm  
+ Ch 2:    On     100mV/     0.0V       AC        Off      Off     1M Ohm  
+
+Anlg Ch   Probe  
+ Ch 1:  10.0 : 1 
+ Ch 2:  10.0 : 1 
+
+Trigger Mode  Coupling  Noise Rej  HF Reject  Holdoff 
+  Edge  Auto     DC        Off        Off       60ns  
+
+Trigger Source   Slope   Level  
+  Edge   Ch 2   Rising  +30.0mV 
+
+ Time  Zoom  Time Ref  Main s/div  Delay 
+Normal  Off   Center    100.0ms/    0.0s 
+
+Acquisition Realtime  Vectors  Inf Persist 
+   Normal      On        On        Off     
+
+   Measure    Current     Mean     Min      Max      Std Dev    Count 
+Rise Time(1)   <3.0ms    700us     0.0s    19.0ms     1.3ms    4.507k 
+Amplitude(1)   69mV       60mV     6mV     344mV       25mV    20.99k 
+Frequency(2)   9.0Hz   1.4094kHz  9.0Hz  11.000kHz  1.7267kHz  19.56k 
+Frequency(1) No edges  1.3434kHz  2.8Hz  11.000kHz  2.0410kHz  5.997k 
+
