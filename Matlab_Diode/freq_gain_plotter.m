@@ -8,7 +8,7 @@ if data_folder == 0
     return;
 end
 
-csv_files   = dir(fullfile(data_folder, 'CH*.csv'));
+csv_files   = dir(fullfile(data_folder, 'WFM*.csv'));
 
 figure('Color','w'); hold on;
 title('Bode Magnitude Plot');
