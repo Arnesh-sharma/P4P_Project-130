@@ -1,0 +1,4 @@
+file contain bode plot data for 25 IA sensor board, on three of the bottom ones are collected, from bottom right
+65 - ch1 (bott bottom)
+66 - ch2
+67 - ch3 bottom row centre
