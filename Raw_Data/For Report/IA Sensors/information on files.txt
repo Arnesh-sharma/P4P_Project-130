@@ -1,0 +1,2 @@
+WFM50 - Bottom right corner sensor | uniform plate
+WFM51 - Bottom right corner sensor | uniform plate
