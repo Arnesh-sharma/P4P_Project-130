@@ -1,0 +1,8 @@
+Beetest_5 - BeeSpy FET test
+Beetest_6 - BeeSpy Electret test
+WFM059 - CH1 (Centre)
+WFM60 - CH1 (Centre) & Ch2 (Top Left)
+WFM54 - CH1 (Bottom Left) & CH2 (Top Right)
+WFM55 - CH1 (Bottom Left) & CH2 (Top Right)
+WFM56 - CH1 (Bottom Right) & CH2 (Centre) % CH1 has an offset of -608mV
+WFM57 - CH1 (Bottom Right) & CH2 (Centre)
