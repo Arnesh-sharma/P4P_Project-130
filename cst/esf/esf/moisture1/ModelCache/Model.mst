@@ -1,0 +1,12 @@
+component1:ppreg1
+0
+1
+moisture_s1_0(PCB1)/Nets/NONE:MOISTURE_S1.GBR
+0
+1
+moisture_s2(PCB2)/Nets/NONE:MOISTURE_S2.GBR
+0
+1
+moisture_gnd_hatched(PCB3)/Nets/NONE:MOISTURE_GND_HATCHED.GBR
+0
+1

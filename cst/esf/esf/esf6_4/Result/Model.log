@@ -1,0 +1,128 @@
+2025-07-28 08:20:43   Electrostatic Solver
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:43   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  MHz
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:43   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: electric
+                        Xmax: electric
+
+                        Ymin: electric
+                        Ymax: electric
+
+                        Zmin: electric
+                        Zmax: electric
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:43   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:43   The length ratio between the shortest and the longest model edges is 1:1143.
+                      Short model edges can be highlighted via Mesh:Mesh Control->Check Mesh->Check
+                      Model Edge Length.... (It may be advantageous to model the metallizations as
+                      infinitely thin sheets.) More...
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:43   --- Material prioritization table with "ElectricConductivity" scheme was used
+                      ---
+                       - PEC
+                       - esf6_gnd(PCB3)/PEC Sheets
+                       - esf6_s1(PCB1)/PEC Sheets
+                       - esf6_s2(PCB2)/PEC Sheets
+                       - esf6_source(PCB4)/PEC Sheets
+                       - Copper (annealed)
+                       - esf6_gnd(PCB3)/Copper
+                       - esf6_gnd(PCB3)/VIAS_MATERIAL
+                       - esf6_s1(PCB1)/Copper
+                       - esf6_s1(PCB1)/VIAS_MATERIAL
+                       - esf6_s2(PCB2)/Copper
+                       - esf6_s2(PCB2)/VIAS_MATERIAL
+                       - esf6_source(PCB4)/Copper
+                       - esf6_source(PCB4)/VIAS_MATERIAL
+                       - $CoilMaterial$
+                       - $NFSMaterial$
+                       - Air
+                       - FR-4 (loss free)
+                       - air_0
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:47   Solver started at: 2025-07-28 08:20:47 +1200
+
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:47   Solver order = 2
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:47   Detected 8 independent conductive sets.
+2025-07-28 08:20:47   Desired accuracy = 1.0e-062025-07-28 08:20:47   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:47   Using mesh with curved elements order: 3
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:49   Capacitance computation
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:52   Solver Timing Statistics: (last run)
+
+                        Mesh generation:                  0d :  0h :  0m :  3s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                        Post-processing:                  0d :  0h :  0m :  3s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  6s
+
+                        Number of threads used:           1024 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:52   Solver Size Statistics:
+
+                        Number of mesh cells:         84194 
+                        Number of unknowns:           101761
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:52   Linear Solver Results: (last run)
+
+                        Accuracy:                     4.745241e-07
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         15
+                        Maximum number of iterations: 10000
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:52   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        15224                         12733412     12733220     
+                        Solver run total    166672                        12726800     12629660     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-28 08:20:52   Creating parametric 1D results for Run ID 11
+
+                      ------------------------------------------------------------------------------

@@ -1,0 +1,104 @@
+2025-07-08 15:53:07   LF Time Domain Solver (MQS)
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Units settings: 
+
+                        Dimensions: m
+                        Frequency:  Hz
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: magnetic
+                        Xmax: magnetic
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: magnetic
+                        Zmax: magnetic
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Solver started at: 2025-07-08 15:53:07 +1200
+
+                        Module:  LF Time Domain Solver (MQS) (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Solver order = 2
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Detected 4 independent conductive sets.
+2025-07-08 15:53:07   Desired accuracy = 1.0e-062025-07-08 15:53:07   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Using mesh with curved elements order: 1
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Linear solver is running
+                      Desired linear accuracy = 1.0e-06, max Iter = 1200
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Linear solver is running
+                      Desired linear accuracy = 1.0e-06, max Iter = 1200
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   *** Warning ***
+
+2025-07-08 15:53:07   3D field monitor 'b-field (t=0.0..0.01(0.00001))' is currently not supported and will be ignored in the simulation.
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   *** Warning ***
+
+2025-07-08 15:53:07   3D field monitor 'b-field (t=0.0..1(0.01))' is currently not supported and will be ignored in the simulation.
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Solver Size Statistics:
+
+                        Number of mesh cells:         5753 
+                        Number of unknowns:           7035
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   
+                        Number of threads used:  8 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        14988                         14564844     14563276     
+                        Solver run total    45076                         14561524     14521888     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:07   Created export files in C:\Users\npat025\OneDrive - The University of
+                      Auckland\mystuff\cst\esf\esf2_TD\Export\FieldPlots\E-Field (50) (Arrows Plot)\
+
+                      ------------------------------------------------------------------------------
+2025-07-08 15:53:08   Created export files in C:\Users\npat025\OneDrive - The University of
+                      Auckland\mystuff\cst\esf\esf2_TD\Export\FieldPlots\E-Field (Js) (Contour Plot)\
+
+                      ------------------------------------------------------------------------------

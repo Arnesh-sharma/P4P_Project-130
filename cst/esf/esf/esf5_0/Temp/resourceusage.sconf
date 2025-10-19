@@ -1,0 +1,19 @@
+FeatureKeywords:string:block:type:saved:EMSSCHEM, modeler:construction_info:object_names, visualization:mesh_view:legacy_engine, mesh::background::boolean, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, mesh:workflow:cadsurf, modeler:hidfile:diagnostics, visualization:mesh_view:default_engine, DELETERESULTS:M000, DELETERESULTS:0SP0, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:magnetic:xmax, boundary:magnetic:xmin, boundary:magnetic:ymax, boundary:magnetic:ymin, boundary:magnetic:zmax, boundary:magnetic:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:MHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, modeler:hidfile:unique_ids, la:direct, la:precond:pdss7, DELETERESULTS:00P0, source:potential:floating, la:iterative, DELETERESULTS:0000, modeler:history:header_not_parsed, modeler:load:fastloading, DELETERESULTS:M0P0, modeler:variables:rebuild, modeler:variables:fullrebuild, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, acisinterface:removebboxcache:modeler:applytransform
+LastWorkflowState:string:tetmesh:success
+pcbconverter/InitialFreePhysicalInMB:int:17344
+pcbconverter/MaxResidentSizeInMB:int:31
+pcbconverter/MaxResidentSizeMiB:int:17
+pcbconverter/MinFreePhysicalInMB:int:17322
+solver_pp/InitialFreePhysicalInMB:int:15485
+solver_pp/MaxResidentSizeInMB:int:23
+solver_pp/MaxResidentSizeMiB:int:5
+solver_pp/MinFreePhysicalInMB:int:15470
+solver_se_tet/InitialFreePhysicalInMB:int:15406
+solver_se_tet/MaxResidentSizeInMB:int:119
+solver_se_tet/MaxResidentSizeMiB:int:155
+solver_se_tet/MinFreePhysicalInMB:int:15371
+tetmesh/InitialFreePhysicalInMB:int:15502
+tetmesh/MaxResidentSizeInMB:int:74
+tetmesh/MaxResidentSizeMiB:int:66
+tetmesh/MinFreePhysicalInMB:int:15458
+---

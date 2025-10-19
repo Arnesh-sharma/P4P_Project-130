@@ -1,0 +1,35 @@
+*** File Version: 21.00
+
+Number of ports: 0
+Portnames:
+Modenumbers:
+Porttypes:
+Portlabels:
+StaticSources: "potential:Bee" "potential:s11_1" "potential:s11_2" "potential:s12_1" "potential:s12_2" "potential:s13_1" "potential:s13_2" "potential:s14_1" "potential:s14_2" "potential:s21_1" "potential:s21_2" "potential:s22_1" "potential:s22_2" "potential:s23_1" "potential:s23_2" "potential:s24_1" "potential:s24_2" "potential:s31_1" "potential:s31_2" "potential:s32_1" "potential:s32_2" "potential:s33_1" "potential:s33_2" "potential:s34_1" "potential:s34_2" "potential:s41_1" "potential:s41_2" "potential:s42_1" "potential:s42_2" "potential:s43_1" "potential:s43_2" "potential:s44_1" "potential:s44_2"
+ThermalSources:
+FloquetPortNames:
+FloquetPortModes:
+SchematicPortNames:
+SchematicPortLabels:
+Terminals:
+StaticToReferenceTable:
+ThermalToReferenceTable:
+TerminalToReferenceTable:
+PortToReferenceTable:
+FloquetToReferenceTable:
+SchematicToReferenceTable:
+StaticSourceGroups:
+ThermalSourceGroups:
+TerminalSourceGroups:
+PortSourceGroups:
+FloquetPortSourceGroups:
+SchematicPortSourceGroups:
+Number of frequency-points: 0
+Fmin: 0.000000e+00
+Fmax: 0.000000e+00
+Fscale: 1.000000e+06
+
+
+
+
+

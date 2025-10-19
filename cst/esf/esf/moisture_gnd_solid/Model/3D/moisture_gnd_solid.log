@@ -1,0 +1,20 @@
+*** STARTING PCB CONVERSION ***
+
+Importing C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\moisture_gnd_solid.cst... [Sun Jul 13 10:58:23 2025]
+============================================================
+Reading Gerber files ...
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\pcbimportstart.py", line 143, in Run
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\pcbimportstart.py", line 93, in do_import
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\pcbimportstart.py", line 41, in runner
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\gerber2\import_gerber.py", line 260, in Run
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\gerber2\import_gerber.py", line 233, in to_LayoutDB
+  File "C:\WS\R20\Source_Code/Projects/Tools/EDA/imports\gerber2\import_gerber.py", line 27, in read_gerber
+  File "C:\Program Files (x86)\CST Studio Suite 2024\AMD64\python\thirdparty\gerber\common.py", line 40, in read
+    data = f.read()
+  File "C:\Program Files (x86)\CST Studio Suite 2024\Opera\code\bin\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 61: character maps to <undefined>
+*** ENDING PCB CONVERSION with FAILURE***

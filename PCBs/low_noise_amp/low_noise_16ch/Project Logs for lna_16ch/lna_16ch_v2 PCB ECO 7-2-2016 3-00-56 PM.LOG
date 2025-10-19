@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=+V5 Pin=C14_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=GND_A Pin=C14_amplifier.SchDoc1-2
+Removed Pin From Net: NetName=+V5 Pin=C14_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=GND_A Pin=C14_amplifier.SchDoc2-2
+Removed Pin From Net: NetName=+V5 Pin=C14_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=GND_A Pin=C14_amplifier.SchDoc3-2
+Removed Pin From Net: NetName=+V5 Pin=C14_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=GND_A Pin=C14_amplifier.SchDoc4-2
+Removed Member From Class: ClassName=amplifier.SchDoc1 Member=C14_amplifier.SchDoc1
+Removed Member From Class: ClassName=amplifier.SchDoc1 Member=C14_amplifier.SchDoc1
+Removed Member From Class: ClassName=amplifier.SchDoc2 Member=C14_amplifier.SchDoc2
+Removed Member From Class: ClassName=amplifier.SchDoc2 Member=C14_amplifier.SchDoc2
+Removed Member From Class: ClassName=amplifier.SchDoc3 Member=C14_amplifier.SchDoc3
+Removed Member From Class: ClassName=amplifier.SchDoc3 Member=C14_amplifier.SchDoc3
+Removed Member From Class: ClassName=amplifier.SchDoc4 Member=C14_amplifier.SchDoc4
+Removed Member From Class: ClassName=amplifier.SchDoc4 Member=C14_amplifier.SchDoc4

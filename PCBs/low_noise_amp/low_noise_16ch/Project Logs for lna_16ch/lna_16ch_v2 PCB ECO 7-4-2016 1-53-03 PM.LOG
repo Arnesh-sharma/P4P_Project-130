@@ -1,0 +1,24 @@
+Change Component DesignItemId : Designator=C1_amplifier.SchDoc1 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C1_amplifier.SchDoc2 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C1_amplifier.SchDoc3 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C1_amplifier.SchDoc4 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C4_amplifier.SchDoc1 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C4_amplifier.SchDoc2 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C4_amplifier.SchDoc3 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component DesignItemId : Designator=C4_amplifier.SchDoc4 Old DesignItemId=CAP000618 New DesignItemId=CAP000606
+Change Component Comment : Designator=C1_amplifier.SchDoc1 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C1_amplifier.SchDoc2 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C1_amplifier.SchDoc3 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C1_amplifier.SchDoc4 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C4_amplifier.SchDoc1 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C4_amplifier.SchDoc2 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C4_amplifier.SchDoc3 Old Comment=1nF New Comment=100pF
+Change Component Comment : Designator=C4_amplifier.SchDoc4 Old Comment=1nF New Comment=100pF
+Change Component Description : Designator=C1_amplifier.SchDoc1 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C1_amplifier.SchDoc2 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C1_amplifier.SchDoc3 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C1_amplifier.SchDoc4 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C4_amplifier.SchDoc1 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C4_amplifier.SchDoc2 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C4_amplifier.SchDoc3 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603
+Change Component Description : Designator=C4_amplifier.SchDoc4 Old Description=CAP CER 10nF 50V X7R SM0603 New Description=CAP CER 100pF 50V NPO SM0603

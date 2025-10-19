@@ -1,0 +1,24 @@
+Added Component: Designator=Din_amplifier.SchDoc1(PIN1)
+Added Component: Designator=Din_amplifier.SchDoc2(PIN1)
+Added Component: Designator=Din_amplifier.SchDoc3(PIN1)
+Added Component: Designator=Din_amplifier.SchDoc4(PIN1)
+Added Component: Designator=Dout_amplifier.SchDoc1(PIN1)
+Added Component: Designator=Dout_amplifier.SchDoc2(PIN1)
+Added Component: Designator=Dout_amplifier.SchDoc3(PIN1)
+Added Component: Designator=Dout_amplifier.SchDoc4(PIN1)
+Added Pin To Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc1-1
+Added Pin To Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc2-1
+Added Pin To Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc3-1
+Added Pin To Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc4-1
+Added Pin To Net: NetName=DOUT_amplifier.SchDoc1 Pin=Dout_amplifier.SchDoc1-1
+Added Pin To Net: NetName=DOUT_amplifier.SchDoc1 Pin=Dout_amplifier.SchDoc2-1
+Added Pin To Net: NetName=DOUT_amplifier.SchDoc1 Pin=Dout_amplifier.SchDoc3-1
+Added Pin To Net: NetName=DOUT_amplifier.SchDoc1 Pin=Dout_amplifier.SchDoc4-1
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component Din_amplifier.SchDoc1 (Din) Socket
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component Din_amplifier.SchDoc2 (Din) Socket
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component Din_amplifier.SchDoc3 (Din) Socket
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component Din_amplifier.SchDoc4 (Din) Socket
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component Dout_amplifier.SchDoc1 (Dout) Socket
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component Dout_amplifier.SchDoc2 (Dout) Socket
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component Dout_amplifier.SchDoc3 (Dout) Socket
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component Dout_amplifier.SchDoc4 (Dout) Socket

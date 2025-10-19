@@ -1,0 +1,16 @@
+*** STARTING PCB CONVERSION ***
+
+Importing C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\moisture_s1.gbr... [Sun Jul 13 10:33:56 2025]
+============================================================
+Reading Gerber files ...
+
+Finished reading Gerber database.
+============================================================
+*** ENDING PCB CONVERSION with SUCCESS***
+
+========== Starting Layout Check ==========
+Checking geometry
+Looking for geometry artifacts
+Looking for healed shape problems
+
+========== End Layout Check ==========

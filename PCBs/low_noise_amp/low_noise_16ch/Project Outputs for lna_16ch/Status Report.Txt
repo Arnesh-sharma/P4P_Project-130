@@ -1,0 +1,13 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [lna_16ch.PrjPcb]
+   Generated File[lna_16ch_v2.GTP]
+   Generated File[lna_16ch_v2.RUL]
+   Generated File[lna_16ch_v2.EXTREP]
+   Generated File[lna_16ch_v2.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 9:31:56 AM On 8/4/2016

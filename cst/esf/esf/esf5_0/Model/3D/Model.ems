@@ -1,0 +1,960 @@
+'# EMS Version: Version 2024.5 - Jun 14 2024 - ACIS 33.0.1 -
+
+'# length = mm
+'# frequency = MHz
+'# time = ns
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2024.5|33.0.1|20240614[/VERSION]
+
+
+'@ use template: Capacitive Sensors.cfg
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+'set the units
+With Units
+    .SetUnit "Length", "mm"
+    .SetUnit "Frequency", "MHz"
+    .SetUnit "Voltage", "V"
+    .SetUnit "Resistance", "Ohm"
+    .SetUnit "Inductance", "nH"
+    .SetUnit "Temperature",  "degC"
+    .SetUnit "Time", "ns"
+    .SetUnit "Current", "A"
+    .SetUnit "Conductance", "S"
+    .SetUnit "Capacitance", "pF"
+End With
+
+ThermalSolver.AmbientTemperature "0"
+
+'----------------------------------------------------------------------------
+
+Plot.DrawBox True
+
+With Background
+     .ResetBackground
+     .Type "Normal"
+     .Epsilon "1.0"
+     .Mu "1.0"
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+      .SpecificHeat "1005", "J/K/kg"
+     .XminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .XmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .YminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .YmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ZminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ZmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ApplyInAllDirections "True"
+End With
+
+With Boundary
+     .Xmin "electric"
+     .Xmax "electric"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "electric"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+End With
+
+With Mesh
+     .MeshType "Tetrahedral"
+     .RatioLimit "50"
+     .MinimumStepNumber "20"
+     .MinimumStepNumberTet "5"
+     .SetAutomeshRefineDielectricsType "None"
+     .DensityTransitions "0.8"
+End With
+
+With MeshSettings
+     .SetMeshType "Hex"
+     .Set "StepsPerBoxNear", "20"
+     .Set "StepsPerBoxFar", "10"
+     .SetMeshType "Tet"
+     .Set "StepsPerBoxFar", "5"
+     .SetMeshType "Plane"
+     .Set "StepsPerBoxFar", "5"
+End With
+
+With MeshAdaption3D
+     .SetLFAdaptionStrategy "Energy"
+End With
+
+'----------------------------------------------------------------------------
+
+'set the solver type
+ChangeSolverType("LF EStatic")
+
+'----------------------------------------------------------------------------
+
+'@ import gerber file: C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf1-F_Cu.gbr
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf1-F_Cu.gbr" 
+     .LdbFileName "*esf1-F_Cu_0.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ import gerber file: C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf1-B_Cu.gbr
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf1-B_Cu.gbr" 
+     .LdbFileName "*esf1-B_Cu_0.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ transform: translate esf1-F_Cu_0(PCB1)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf1-F_Cu_0(PCB1)" 
+     .Vector "0", "0", "0.4" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf1-B_Cu_0(PCB2)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf1-B_Cu_0(PCB2)" 
+     .Vector "0", "0", "-0.4" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ define background
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Background 
+     .ResetBackground 
+     .XminSpace "0" 
+     .XmaxSpace "0" 
+     .YminSpace "0" 
+     .YmaxSpace "0" 
+     .ZminSpace "0" 
+     .ZmaxSpace "0" 
+     .ApplyInAllDirections "True" 
+End With 
+
+With Material 
+     .Reset 
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+     .SpecificHeat "1005", "J/K/kg"
+     .DynamicViscosity "1.84e-5"
+     .UseEmissivity "True"
+     .Emissivity "0.0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .Absorptance "0"
+     .MechanicsType "Unused"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "Hz"
+     .MaterialUnit "Geometry", "m"
+     .MaterialUnit "Time", "s"
+     .MaterialUnit "Temperature", "K"
+     .Epsilon "1.0"
+     .Mu "1.0"
+     .Sigma "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstSigma"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstSigma"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0.6", "0.6", "0.6" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .ChangeBackgroundMaterial
+End With
+
+'@ define boundaries
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Boundary
+     .Xmin "magnetic"
+     .Xmax "magnetic"
+     .Ymin "magnetic"
+     .Ymax "magnetic"
+     .Zmin "magnetic"
+     .Zmax "magnetic"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+     .ApplyInAllDirections "True"
+End With
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "30" 
+     .Set "StepsPerBoxFar", "5" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ change material: esf1-B_Cu_0(PCB2)/Nets/NONE:ESF1-B_CU.GBR to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "esf1-B_Cu_0(PCB2)/Nets/NONE:ESF1-B_CU.GBR", "PEC"
+
+'@ change material: esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "PEC"
+
+'@ define potential: potential1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Folder ""
+     .Value "0"
+     .Phase "0"
+     .AddFace "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: potential2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Folder ""
+     .Value "0"
+     .Phase "0"
+     .AddFace "esf1-B_Cu_0(PCB2)/Nets/NONE:ESF1-B_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Folder ""
+     .Value "1"
+     .Phase "0"
+     .AddFace "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "True"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Folder ""
+     .Value "0"
+     .Phase "0"
+     .AddFace "esf1-B_Cu_0(PCB2)/Nets/NONE:ESF1-B_CU.GBR", "2"
+     .Type "Floating"
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Folder ""
+     .Value "10"
+     .Phase "0"
+     .AddFace "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define e-static solver mesh adaption properties
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .TetAdaptionMinCycles "2"
+     .TetAdaptionMaxCycles "6"
+     .TetAdaptionAccuracy "0.01"
+     .TetAdaptionRefinementPercentage "10"
+     .SnapToGeometry "True"
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential2"
+     .Folder ""
+     .Value "0"
+     .Phase "0"
+     .AddFace "esf1-B_Cu_0(PCB2)/Nets/NONE:ESF1-B_CU.GBR", "2"
+     .Type "Floating"
+     .Create
+End With
+
+'@ define e-static solver special parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ delete potential: potential2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Delete "potential2"
+
+'@ define e-static solver special parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .MaxLinIter "0"
+     .Preconditioner "ILU"
+     .PECDefault "Grounded"
+     .OpenBCChargeFree "False"
+     .OpenBCPotential "0.0"
+     .LSESolverType "Auto"
+     .TetSolverOrder "2"
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Folder ""
+     .Value "100"
+     .Phase "0"
+     .AddFace "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define material: Folder1/material1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Material 
+     .Reset 
+     .Name "material1"
+     .Folder "Folder1"
+     .Rho "0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0"
+     .SpecificHeat "0", "J/K/kg"
+     .DynamicViscosity "0"
+     .UseEmissivity "True"
+     .Emissivity "0"
+     .MetabolicRate "0.0"
+     .VoxelConvection "0.0"
+     .BloodFlow "0"
+     .Absorptance "0"
+     .MechanicsType "Unused"
+     .IntrinsicCarrierDensity "0"
+     .FrqType "all"
+     .Type "Normal"
+     .MaterialUnit "Frequency", "MHz"
+     .MaterialUnit "Geometry", "mm"
+     .MaterialUnit "Time", "ns"
+     .MaterialUnit "Temperature", "degC"
+     .Epsilon "1"
+     .Mu "4"
+     .Sigma "0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .SetConstTanDStrategyEps "AutomaticOrder"
+     .ConstTanDModelOrderEps "3"
+     .DjordjevicSarkarUpperFreqEps "0"
+     .SetElParametricConductivity "False"
+     .ReferenceCoordSystem "Global"
+     .CoordSystemType "Cartesian"
+     .SigmaM "0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstTanD"
+     .SetConstTanDStrategyMu "AutomaticOrder"
+     .ConstTanDModelOrderMu "3"
+     .DjordjevicSarkarUpperFreqMu "0"
+     .SetMagParametricConductivity "False"
+     .DispModelEps  "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "Nth Order"
+     .MaximalOrderNthModelFitEps "10"
+     .ErrorLimitNthModelFitEps "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelEps "False"
+     .DispersiveFittingSchemeMu "Nth Order"
+     .MaximalOrderNthModelFitMu "10"
+     .ErrorLimitNthModelFitMu "0.1"
+     .UseOnlyDataInSimFreqRangeNthModelMu "False"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .NLAnisotropy "False"
+     .NLAStackingFactor "1"
+     .NLADirectionX "1"
+     .NLADirectionY "0"
+     .NLADirectionZ "0"
+     .Colour "0", "1", "1" 
+     .Wireframe "False" 
+     .Reflection "False" 
+     .Allowoutline "True" 
+     .Transparentoutline "False" 
+     .Transparency "0" 
+     .Create
+End With
+
+'@ define brick: esf1-B_Cu_0(PCB2):solid1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "esf1-B_Cu_0(PCB2)" 
+     .Material "Folder1/material1" 
+     .Xrange "15.2002", "25.6" 
+     .Yrange "-26.2", "-14.6002" 
+     .Zrange "-0.4", "0.4" 
+     .Create
+End With
+
+'@ delete shape: esf1-B_Cu_0(PCB2):solid1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.Delete "esf1-B_Cu_0(PCB2):solid1"
+
+'@ define material: FR-4 (lossy)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Material
+     .Reset
+     .Name "FR-4 (lossy)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "4.3"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.025"
+     .TanDFreq "10.0"
+     .TanDGiven "True"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.3"
+     .SetActiveMaterial "all"
+     .Colour "0.94", "0.82", "0.76"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+
+'@ new component: component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.New "component1"
+
+'@ define brick: component1:solid1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "FR-4 (lossy)" 
+     .Xrange "15.2", "25.6" 
+     .Yrange "-26.2", "-14.6" 
+     .Zrange "-0.4", "0.4" 
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ paste structure data: 1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With SAT 
+     .Reset 
+     .FileName "*1.cby" 
+     .SubProjectScaleFactor "0.001" 
+     .ImportToActiveCoordinateSystem "True" 
+     .ScaleToUnit "True" 
+     .Curves "False" 
+     .Read 
+End With
+
+'@ transform: translate component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Vector "-20.4", "+20.4", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf1-B_Cu_0(PCB2)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf1-B_Cu_0(PCB2)" 
+     .Vector "-20.4", "+20.4", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf1-F_Cu_0(PCB1)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf1-F_Cu_0(PCB1)" 
+     .Vector "-20.4", "+20.4", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ delete component: component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.Delete "component1"
+
+'@ delete component: component3
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.Delete "component3"
+
+'@ paste structure data: 2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With SAT 
+     .Reset 
+     .FileName "*2.cby" 
+     .SubProjectScaleFactor "0.001" 
+     .ImportToActiveCoordinateSystem "True" 
+     .ScaleToUnit "True" 
+     .Curves "False" 
+     .Read 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ define potential: potential1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "potential1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf1-F_Cu_0(PCB1)/Nets/NONE:ESF1-F_CU.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+

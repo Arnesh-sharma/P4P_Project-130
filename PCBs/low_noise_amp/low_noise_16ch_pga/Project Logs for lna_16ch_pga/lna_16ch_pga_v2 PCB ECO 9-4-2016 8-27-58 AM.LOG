@@ -1,0 +1,15 @@
+Added Component: Designator=U7(dfn14)
+Added Pin To Net: NetName=+V5 Pin=U7-1
+Added Pin To Net: NetName=NetC20_2 Pin=U7-3
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=GND Pin=U7-5
+Added Pin To Net: NetName=-VCC Pin=U7-6
+Added Pin To Net: NetName=-V5 Pin=U7-7
+Added Pin To Net: NetName=-VCC Pin=U7-9
+Added Pin To Net: NetName=VCC Pin=U7-10
+Added Pin To Net: NetName=NetC22_1 Pin=U7-11
+Added Pin To Net: NetName=VCC Pin=U7-12
+Added Pin To Net: NetName=VCC Pin=U7-14
+Added Pin To Net: NetName=GND Pin=U7-15
+Added Pin To Net: NetName=-VCC Pin=U7-16
+Added Member To Class: ClassName=U_power Member=Component U7 LT3032

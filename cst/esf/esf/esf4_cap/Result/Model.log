@@ -1,0 +1,110 @@
+2025-07-12 15:14:55   Electrostatic Solver
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:55   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  kHz
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:55   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: magnetic
+                        Xmax: magnetic
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: magnetic
+                        Zmax: magnetic
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:55   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:55   The length ratio between the shortest and the longest model edges is 1:3333.
+                      Short model edges can be highlighted via Mesh:Mesh Control->Check Mesh->Check
+                      Model Edge Length.... (It may be advantageous to model the metallizations as
+                      infinitely thin sheets.) More...
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:58   Solver started at: 2025-07-12 15:14:58 +1200
+
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:58   Solver order = 3
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:58   Detected 4 independent conductive sets.
+2025-07-12 15:14:58   Desired accuracy = 1.0e-062025-07-12 15:14:58   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:14:58   Using mesh with curved elements order: 1
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:00   Capacitance computation
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:03   Solver Timing Statistics: (last run)
+
+                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                        Post-processing:                  0d :  0h :  0m :  4s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  7s
+
+                        Number of threads used:           1024 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:03   Solver Size Statistics:
+
+                        Number of mesh cells:         38949 
+                        Number of unknowns:           164460
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:03   Linear Solver Results: (last run)
+
+                        Accuracy:                     7.415965e-07
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         33
+                        Maximum number of iterations: 10000
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:03   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        14560                         15269520     15268816     
+                        Solver run total    196252                        15268728     15162164     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:03   Created export files in C:\Users\npat025\OneDrive - The University of
+                      Auckland\mystuff\cst\esf\esf4_cap\Export\FieldPlots\Potential (Es) (Contour
+                      Plot)\
+
+                      ------------------------------------------------------------------------------
+2025-07-12 15:15:06   Creating parametric 1D results for Run ID 15
+
+                      ------------------------------------------------------------------------------

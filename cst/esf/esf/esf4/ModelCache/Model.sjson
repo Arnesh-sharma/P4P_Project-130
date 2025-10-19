@@ -1,0 +1,24 @@
+{
+    "SENSITIVITY_ANALYSIS_USER_PARAMETER": {
+        "items": []
+    },
+    "SUPPORT_MANAGEMENT": {
+        "items": [],
+        "number_of_items": 0,
+        "version": 202001
+    },
+    "TIMEMONITOR_0D_POSITION": [
+        {
+            "Name": "potential (0 0 -0.8)",
+            "PosX": "0",
+            "PosY": "0",
+            "PosZ": "-0.8"
+        },
+        {
+            "Name": "potential (3 0 0.83)",
+            "PosX": "3",
+            "PosY": "0",
+            "PosZ": "0.82999999999999985"
+        }
+    ]
+}

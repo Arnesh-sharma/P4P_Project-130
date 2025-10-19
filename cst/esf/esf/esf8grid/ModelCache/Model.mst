@@ -1,0 +1,15 @@
+esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR
+0
+1
+esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR
+0
+1
+esf8grid-gnd(PCB3)/Nets/NONE:ESF8GRID-GND.GBR
+0
+1
+Substrate:PPREG
+0
+1
+bee:bee
+0
+1

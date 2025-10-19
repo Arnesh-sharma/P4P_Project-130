@@ -1,0 +1,18 @@
+{
+    "SENSITIVITY_ANALYSIS_USER_PARAMETER": {
+        "items": []
+    },
+    "SUPPORT_MANAGEMENT": {
+        "items": [],
+        "number_of_items": 0,
+        "version": 202001
+    },
+    "TIMEMONITOR_0D_POSITION": [
+        {
+            "Name": "b-field (X; 0 0.001 -0.0006)",
+            "PosX": "0",
+            "PosY": "0.001",
+            "PosZ": "-0.0006"
+        }
+    ]
+}

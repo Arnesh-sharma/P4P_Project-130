@@ -1,0 +1,4 @@
+Change Component Comment : Designator=C1 Old Comment=10nF New Comment=1nF
+Change Component Comment : Designator=C4 Old Comment=10nF New Comment=1nF
+Added Room: Name=main
+Added Room: Name=power

@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "expr": "30e-3",
+            "name": "th",
+            "value": "30e-3"
+        },
+        {
+            "expr": "1.6",
+            "name": "d",
+            "value": "1.6"
+        },
+        {
+            "expr": "100",
+            "name": "dFrame",
+            "value": "100"
+        },
+        {
+            "expr": "100",
+            "name": "wFrame",
+            "value": "100"
+        },
+        {
+            "expr": "100",
+            "name": "hFrame",
+            "value": "100"
+        },
+        {
+            "expr": "50",
+            "name": "VFrame",
+            "value": "50"
+        }
+    ],
+    "version": 1
+}

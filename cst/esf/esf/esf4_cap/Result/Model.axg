@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928" creator="modeler">
+  <Objects>
+    <Object name="Monitors\Monitors at Points\potential (0 0 -0.8)" id="5">
+      <PointSet points="0 0 -0.800000012" material="$LFMonitorMaterial$"/>
+    </Object>
+    <Object name="Monitors\Monitors at Points\potential (3 0 0.83)" id="6">
+      <PointSet points="3 0 0.829999983" material="$LFMonitorMaterial$"/>
+    </Object>
+  </Objects>
+  <Materials/>
+  <Groups/>
+</CSTAuxiliaryGeometry>

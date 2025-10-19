@@ -1,0 +1,19 @@
+FeatureKeywords:string:modeler:construction_info:object_names, modeler:history:header_not_parsed, modeler:load:fastloading, meshloading:problem_class_only, modeler:hidfile:diagnostics, block:type:saved:EMSSCHEM, mesh::background::boolean, visualization:mesh_view:legacy_engine, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, modeler:hidfile:unique_ids, mesh:workflow:cadsurf, visualization:mesh_view:default_engine, DELETERESULTS:0SP0, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:magnetic:xmax, boundary:magnetic:xmin, boundary:magnetic:ymax, boundary:magnetic:ymin, boundary:magnetic:zmax, boundary:magnetic:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:MHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, la:direct, la:precond:pdss7, DELETERESULTS:0000, la:iterative, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, acisinterface:removebboxcache:modeler:applytransform, DELETERESULTS:M000
+LastWorkflowState:string:tetmesh:success
+pcbconverter/InitialFreePhysicalInMB:int:15925
+pcbconverter/MaxResidentSizeInMB:int:32
+pcbconverter/MaxResidentSizeMiB:int:17
+pcbconverter/MinFreePhysicalInMB:int:15912
+solver_pp/InitialFreePhysicalInMB:int:15615
+solver_pp/MaxResidentSizeInMB:int:25
+solver_pp/MaxResidentSizeMiB:int:6
+solver_pp/MinFreePhysicalInMB:int:15606
+solver_se_tet/InitialFreePhysicalInMB:int:15664
+solver_se_tet/MaxResidentSizeInMB:int:94
+solver_se_tet/MaxResidentSizeMiB:int:326
+solver_se_tet/MinFreePhysicalInMB:int:15577
+tetmesh/InitialFreePhysicalInMB:int:15673
+tetmesh/MaxResidentSizeInMB:int:83
+tetmesh/MaxResidentSizeMiB:int:209
+tetmesh/MinFreePhysicalInMB:int:15619
+---

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc1_2 Pin=J1_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc2_2 Pin=J1_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc3_2 Pin=J1_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc4_2 Pin=J1_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc1_2 Pin=J2_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc2_2 Pin=J2_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc3_2 Pin=J2_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc4_2 Pin=J2_amplifier.SchDoc4-1
+Removed Member From Class: ClassName=amplifier.SchDoc1 Member=J1_amplifier.SchDoc1
+Removed Member From Class: ClassName=amplifier.SchDoc2 Member=J1_amplifier.SchDoc2
+Removed Member From Class: ClassName=amplifier.SchDoc3 Member=J1_amplifier.SchDoc3
+Removed Member From Class: ClassName=amplifier.SchDoc4 Member=J1_amplifier.SchDoc4
+Removed Member From Class: ClassName=amplifier.SchDoc1 Member=J2_amplifier.SchDoc1
+Removed Member From Class: ClassName=amplifier.SchDoc2 Member=J2_amplifier.SchDoc2
+Removed Member From Class: ClassName=amplifier.SchDoc3 Member=J2_amplifier.SchDoc3
+Removed Member From Class: ClassName=amplifier.SchDoc4 Member=J2_amplifier.SchDoc4

@@ -1,0 +1,16 @@
+*** STARTING PCB CONVERSION ***
+
+Importing C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf7_gnd.gbr... [Fri Jul 18 11:40:55 2025]
+============================================================
+Reading Gerber files ...
+
+Finished reading Gerber database.
+============================================================
+*** ENDING PCB CONVERSION with SUCCESS***
+
+========== Starting Layout Check ==========
+Checking geometry
+Looking for geometry artifacts
+Looking for healed shape problems
+
+========== End Layout Check ==========

@@ -1,0 +1,19 @@
+FeatureKeywords:string:modeler:construction_info:object_names, block:type:saved:EMSSCHEM, modeler:history:header_not_parsed, modeler:load:fastloading, meshloading:problem_class_only, modeler:hidfile:history_expert, modeler:hidfile:diagnostics, modeler:hidfile:unique_ids, DELETERESULTS:M000, mesh::background::boolean, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, mesh:workflow:cadsurf, modeler:variables:rebuild, modeler:variables:fullrebuild, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, DELETERESULTS:0SP0, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:electric:xmax, boundary:electric:xmin, boundary:electric:ymax, boundary:electric:ymin, boundary:electric:zmax, boundary:electric:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:MHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, la:iterative, la:precond:pdss7, visualization:mesh_view:default_engine, DELETERESULTS:0000, DELETERESULTS:M0P0, modeler:variables:fastrebuild, visualization:field_plot:default_engine, DELETERESULTS:00P0
+LastWorkflowState:string:tetmesh:success
+pcbconverter/InitialFreePhysicalInMB:int:13900
+pcbconverter/MaxResidentSizeInMB:int:29
+pcbconverter/MaxResidentSizeMiB:int:14
+pcbconverter/MinFreePhysicalInMB:int:13891
+solver_pp/InitialFreePhysicalInMB:int:14600
+solver_pp/MaxResidentSizeInMB:int:25
+solver_pp/MaxResidentSizeMiB:int:6
+solver_pp/MinFreePhysicalInMB:int:14583
+solver_se_tet/InitialFreePhysicalInMB:int:14538
+solver_se_tet/MaxResidentSizeInMB:int:169
+solver_se_tet/MaxResidentSizeMiB:int:362
+solver_se_tet/MinFreePhysicalInMB:int:14366
+tetmesh/InitialFreePhysicalInMB:int:14575
+tetmesh/MaxResidentSizeInMB:int:112
+tetmesh/MaxResidentSizeMiB:int:292
+tetmesh/MinFreePhysicalInMB:int:14502
+---

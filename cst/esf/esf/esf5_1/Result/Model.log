@@ -1,0 +1,123 @@
+2025-07-12 17:55:14   Electrostatic Solver
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:14   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  MHz
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:14   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: magnetic
+                        Xmax: magnetic
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: magnetic
+                        Zmax: magnetic
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:14   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:14   The length ratio between the shortest and the longest model edges is 1:3333.
+                      Short model edges can be highlighted via Mesh:Mesh Control->Check Mesh->Check
+                      Model Edge Length.... (It may be advantageous to model the metallizations as
+                      infinitely thin sheets.) More...
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:14   --- Material prioritization table with "ElectricConductivity" scheme was used
+                      ---
+                       - PEC
+                       - esf1-B_Cu_0(PCB2)/PEC Sheets
+                       - esf1-F_Cu_0(PCB1)/PEC Sheets
+                       - Copper (annealed)
+                       - esf1-B_Cu_0(PCB2)/Copper
+                       - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+                       - esf1-F_Cu_0(PCB1)/Copper
+                       - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+                       - $CoilMaterial$
+                       - $NFSMaterial$
+                       - Air
+                       - FR-4 (lossy)
+                       - Folder1/material1
+                       - air_0
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:17   Solver started at: 2025-07-12 17:55:17 +1200
+
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:17   Solver order = 2
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:17   Detected 4 independent conductive sets.
+2025-07-12 17:55:17   Desired accuracy = 1.0e-062025-07-12 17:55:17   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:17   Using mesh with curved elements order: 3
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:17   Capacitance computation
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:18   Solver Timing Statistics: (last run)
+
+                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                        Post-processing:                  0d :  0h :  0m :  1s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  3s
+
+                        Number of threads used:           1024 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:18   Solver Size Statistics:
+
+                        Number of mesh cells:         38154 
+                        Number of unknowns:           44724
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:18   Linear Solver Results: (last run)
+
+                        Accuracy:                     6.663965e-07
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         17
+                        Maximum number of iterations: 10000
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:18   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        14828                         15265452     15263732     
+                        Solver run total    89784                         15249360     15188692     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:55:18   Creating parametric 1D results for Run ID 7
+
+                      ------------------------------------------------------------------------------

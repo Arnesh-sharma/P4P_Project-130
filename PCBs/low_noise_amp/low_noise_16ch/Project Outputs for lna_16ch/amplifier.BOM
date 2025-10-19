@@ -1,0 +1,158 @@
+Bill of Material for 
+On 8/3/2016 at 6:56:00 PM
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 1000pF              ECE-CAPC1608-0603SM    8    C16_amplifier.SchDoc1        CAP CER 1000pF 50V X7R SM0603 
+                                           C16_amplifier.SchDoc2
+                                           C16_amplifier.SchDoc3
+                                           C16_amplifier.SchDoc4
+                                           C17_amplifier.SchDoc1
+                                           C17_amplifier.SchDoc2
+                                           C17_amplifier.SchDoc3
+                                           C17_amplifier.SchDoc4
+ 100K                ECE-RESC1608-0603SM   10    R1_amplifier.SchDoc1         RES CER 100K 1608 SM 
+                                           R1_amplifier.SchDoc2
+                                           R1_amplifier.SchDoc3
+                                           R1_amplifier.SchDoc4
+                                           R6_amplifier.SchDoc1
+                                           R6_amplifier.SchDoc2
+                                           R6_amplifier.SchDoc3
+                                           R6_amplifier.SchDoc4, R12
+                                           R13
+ 100nF               ECE-CAPC1608-0603SM   13    C9_amplifier.SchDoc1         CAP CER 100nF 25V X7R SM0603 
+                                           C9_amplifier.SchDoc2
+                                           C9_amplifier.SchDoc3
+                                           C9_amplifier.SchDoc4
+                                           C10_amplifier.SchDoc1
+                                           C10_amplifier.SchDoc2
+                                           C10_amplifier.SchDoc3
+                                           C10_amplifier.SchDoc4
+                                           C15_amplifier.SchDoc1
+                                           C15_amplifier.SchDoc2
+                                           C15_amplifier.SchDoc3
+                                           C15_amplifier.SchDoc4, C19
+ 100pF               ECE-CAPC1608-0603SM    8    C1_amplifier.SchDoc1         CAP CER 100pF 50V NPO SM0603 
+                                           C1_amplifier.SchDoc2
+                                           C1_amplifier.SchDoc3
+                                           C1_amplifier.SchDoc4
+                                           C4_amplifier.SchDoc1
+                                           C4_amplifier.SchDoc2
+                                           C4_amplifier.SchDoc3
+                                           C4_amplifier.SchDoc4
+ 10K                 ECE-RESC1608-0603SM    8    R19_amplifier.SchDoc1        RES CER 10K 1608 SM  
+                                           R19_amplifier.SchDoc2
+                                           R19_amplifier.SchDoc3
+                                           R19_amplifier.SchDoc4
+                                           R20_amplifier.SchDoc1
+                                           R20_amplifier.SchDoc2
+                                           R20_amplifier.SchDoc3
+                                           R20_amplifier.SchDoc4
+ 10uF                ECE-CAPAE4X5.4SM    1    C8                           CAP 10uF 16V ELE SM  
+ 1K                  ECE-RESC1608-0603SM    8    R3_amplifier.SchDoc1         RES CER 1K 1608 SM   
+                                           R3_amplifier.SchDoc2
+                                           R3_amplifier.SchDoc3
+                                           R3_amplifier.SchDoc4
+                                           R8_amplifier.SchDoc1
+                                           R8_amplifier.SchDoc2
+                                           R8_amplifier.SchDoc3
+                                           R8_amplifier.SchDoc4
+ 1uF                 ECE-CAPC1608-0603SM   18    C2_amplifier.SchDoc1         CAP CER 1uF 50V X7R SM0603 
+                                           C2_amplifier.SchDoc2
+                                           C2_amplifier.SchDoc3
+                                           C2_amplifier.SchDoc4
+                                           C3_amplifier.SchDoc1
+                                           C3_amplifier.SchDoc2
+                                           C3_amplifier.SchDoc3
+                                           C3_amplifier.SchDoc4
+                                           C5_amplifier.SchDoc1
+                                           C5_amplifier.SchDoc2
+                                           C5_amplifier.SchDoc3
+                                           C5_amplifier.SchDoc4
+                                           C6_amplifier.SchDoc1
+                                           C6_amplifier.SchDoc2
+                                           C6_amplifier.SchDoc3
+                                           C6_amplifier.SchDoc4, C7, C22
+ 1uF                 ECE-CAPC2012-0805SM    1    C12                          CAP CER 1uF 50V X7R SM0805 
+ 220K                ECE-RESC1608-0603SM   17    R4_amplifier.SchDoc1         RES CER 220K 1608 SM 
+                                           R4_amplifier.SchDoc2
+                                           R4_amplifier.SchDoc3
+                                           R4_amplifier.SchDoc4
+                                           R5_amplifier.SchDoc1
+                                           R5_amplifier.SchDoc2
+                                           R5_amplifier.SchDoc3
+                                           R5_amplifier.SchDoc4
+                                           R9_amplifier.SchDoc1
+                                           R9_amplifier.SchDoc2
+                                           R9_amplifier.SchDoc3
+                                           R9_amplifier.SchDoc4
+                                           R10_amplifier.SchDoc1
+                                           R10_amplifier.SchDoc2
+                                           R10_amplifier.SchDoc3
+                                           R10_amplifier.SchDoc4, R11
+ 4.7uF               CAP 1206         7    C11, C13, C18                CAP CER 1uF 50V X7R SM0805 
+                                           C20_amplifier.SchDoc1
+                                           C20_amplifier.SchDoc2
+                                           C20_amplifier.SchDoc3
+                                           C20_amplifier.SchDoc4
+ 470K                ECE-RESC1608-0603SM    1    R15                          RES CER 470K 1608 SM 
+ 470R                ECE-RESC1608-0603SM    1    R14                          RES CER 470R 1608 SM 
+ 47K                 ECE-RESC1608-0603SM    1    R16                          RES CER 47K 1608 SM  
+ 47R                 ECE-RESC1608-0603SM    8    R2_amplifier.SchDoc1         RES CER 47R 1608 SM  
+                                           R2_amplifier.SchDoc2
+                                           R2_amplifier.SchDoc3
+                                           R2_amplifier.SchDoc4
+                                           R7_amplifier.SchDoc1
+                                           R7_amplifier.SchDoc2
+                                           R7_amplifier.SchDoc3
+                                           R7_amplifier.SchDoc4
+ Channel 1           HDR1X2          16    P4_amplifier.SchDoc1         Header, 2-Pin        
+                                           P4_amplifier.SchDoc2
+                                           P4_amplifier.SchDoc3
+                                           P4_amplifier.SchDoc4
+                                           P7_amplifier.SchDoc1
+                                           P7_amplifier.SchDoc2
+                                           P7_amplifier.SchDoc3
+                                           P7_amplifier.SchDoc4
+                                           P8_amplifier.SchDoc1
+                                           P8_amplifier.SchDoc2
+                                           P8_amplifier.SchDoc3
+                                           P8_amplifier.SchDoc4
+                                           P11_amplifier.SchDoc1
+                                           P11_amplifier.SchDoc2
+                                           P11_amplifier.SchDoc3
+                                           P11_amplifier.SchDoc4
+ DC IN + 6V          HDR1X4           1    P3                           Header, 4-Pin        
+ LT1167              S8_N             8    U1_amplifier.SchDoc1         Instrumentation amplifier, Low noise 
+                                           U1_amplifier.SchDoc2
+                                           U1_amplifier.SchDoc3
+                                           U1_amplifier.SchDoc4
+                                           U2_amplifier.SchDoc1
+                                           U2_amplifier.SchDoc2
+                                           U2_amplifier.SchDoc3
+                                           U2_amplifier.SchDoc4
+ LT1678              S8_N             4    U4_amplifier.SchDoc1         45MHz, 45V/µs, Dual Rail-to-Rail Input and Output Precision Operational Amplifier 
+                                           U4_amplifier.SchDoc2
+                                           U4_amplifier.SchDoc3
+                                           U4_amplifier.SchDoc4
+ LT3042              DFN10            1    U1                           LowNoise Vreg        
+ Ref                 UFL              1    P1                           Header, 2-Pin        
+ Ref2                HDR1X2           1    P2                           Header, 2-Pin        
+ REF5025             S8_N             1    U3                           Refrence voltage source 
+ SigInA              UFL              4    I1_amplifier.SchDoc1         Header, 2-Pin        
+                                           I1_amplifier.SchDoc2
+                                           I1_amplifier.SchDoc3
+                                           I1_amplifier.SchDoc4
+ SigInB              UFL              4    I2_amplifier.SchDoc1         Header, 2-Pin        
+                                           I2_amplifier.SchDoc2
+                                           I2_amplifier.SchDoc3
+                                           I2_amplifier.SchDoc4
+ Socket              PIN1            10    OA_amplifier.SchDoc1         Socket               
+                                           OA_amplifier.SchDoc2
+                                           OA_amplifier.SchDoc3
+                                           OA_amplifier.SchDoc4
+                                           OB_amplifier.SchDoc1
+                                           OB_amplifier.SchDoc2
+                                           OB_amplifier.SchDoc3
+                                           OB_amplifier.SchDoc4, V5
+                                           Vref

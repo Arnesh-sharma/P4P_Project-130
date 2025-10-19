@@ -1,0 +1,15 @@
+FeatureKeywords:string:block:type:saved:EMSSCHEM, modeler:boolean:add, modeler:construction_info:object_names, modeler:hidfile:unique_ids, modeler:hidfile:diagnostics, mesh::background::boolean, DELETERESULTS:0SP0, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, mesh:workflow:cadsurf, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:magnetic:xmax, boundary:magnetic:xmin, boundary:magnetic:ymax, boundary:magnetic:ymin, boundary:magnetic:zmax, boundary:magnetic:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:MHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, la:direct, la:precond:pdss7, visualization:field_plot:default_engine, DELETERESULTS:00P0, CSolverControl:progress:nullptr, DELETERESULTS:M000, source:charge:pec, modeler:Plot:Send3DViewerCommand, DELETERESULTS:0000, visualization:mesh_view:legacy_engine, visualization:mesh_view:default_engine, block:type:saved:CURR, units:Frequency:kHz, units:Time:ms
+LastWorkflowState:string:tetmesh:success
+solver_pp/InitialFreePhysicalInMB:int:16407
+solver_pp/MaxResidentSizeInMB:int:23
+solver_pp/MaxResidentSizeMiB:int:4
+solver_pp/MinFreePhysicalInMB:int:16404
+solver_se_tet/InitialFreePhysicalInMB:int:16449
+solver_se_tet/MaxResidentSizeInMB:int:85
+solver_se_tet/MaxResidentSizeMiB:int:73
+solver_se_tet/MinFreePhysicalInMB:int:16396
+tetmesh/InitialFreePhysicalInMB:int:16242
+tetmesh/MaxResidentSizeInMB:int:41
+tetmesh/MaxResidentSizeMiB:int:52
+tetmesh/MinFreePhysicalInMB:int:16239
+---

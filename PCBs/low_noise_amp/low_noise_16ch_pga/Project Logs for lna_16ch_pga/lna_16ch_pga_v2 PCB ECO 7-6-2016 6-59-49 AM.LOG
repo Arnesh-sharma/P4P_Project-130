@@ -1,0 +1,11 @@
+Change Component DesignItemId : Designator=C19 Old DesignItemId=CAP000303 New DesignItemId=CAP000530
+Change Component DesignItemId : Designator=C21 Old DesignItemId=CAP000303 New DesignItemId=CAP000530
+Change Component Footprint: Designator=C19 Old Footprint=ECE-CAPAE4X5.4SM New Footprint=CAP 1206
+Change Component Footprint: Designator=C21 Old Footprint=ECE-CAPAE4X5.4SM New Footprint=CAP 1206
+Change Component Comment : Designator=C19 Old Comment=10uF New Comment=4.7uF
+Change Component Comment : Designator=C21 Old Comment=10uF New Comment=4.7uF
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=GND Pin=U7-9
+Added Pin To Net: NetName=GND Pin=U7-9
+Change Net Name : Old Net Name=GND New Net Name=-VCC

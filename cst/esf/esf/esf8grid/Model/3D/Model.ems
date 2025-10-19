@@ -1,0 +1,1520 @@
+'# EMS Version: Version 2024.5 - Jun 14 2024 - ACIS 33.0.1 -
+
+'# length = mm
+'# frequency = MHz
+'# time = ns
+'# frequency range: fmin = 0.0 fmax = 0.0
+'# created = '[VERSION]2024.5|33.0.1|20240614[/VERSION]
+
+
+'@ use template: Capacitive Sensors.cfg
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+'set the units
+With Units
+    .SetUnit "Length", "mm"
+    .SetUnit "Frequency", "MHz"
+    .SetUnit "Voltage", "V"
+    .SetUnit "Resistance", "Ohm"
+    .SetUnit "Inductance", "nH"
+    .SetUnit "Temperature",  "degC"
+    .SetUnit "Time", "ns"
+    .SetUnit "Current", "A"
+    .SetUnit "Conductance", "S"
+    .SetUnit "Capacitance", "pF"
+End With
+
+ThermalSolver.AmbientTemperature "0"
+
+'----------------------------------------------------------------------------
+
+Plot.DrawBox True
+
+With Background
+     .ResetBackground
+     .Type "Normal"
+     .Epsilon "1.0"
+     .Mu "1.0"
+     .Rho "1.204"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.026"
+      .SpecificHeat "1005", "J/K/kg"
+     .XminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .XmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .YminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .YmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ZminSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ZmaxSpace 10e-3 * Units.GetGeometrySIToUnit()
+     .ApplyInAllDirections "True"
+End With
+
+With Boundary
+     .Xmin "electric"
+     .Xmax "electric"
+     .Ymin "electric"
+     .Ymax "electric"
+     .Zmin "electric"
+     .Zmax "electric"
+     .Xsymmetry "none"
+     .Ysymmetry "none"
+     .Zsymmetry "none"
+End With
+
+With Mesh
+     .MeshType "Tetrahedral"
+     .RatioLimit "50"
+     .MinimumStepNumber "20"
+     .MinimumStepNumberTet "5"
+     .SetAutomeshRefineDielectricsType "None"
+     .DensityTransitions "0.8"
+End With
+
+With MeshSettings
+     .SetMeshType "Hex"
+     .Set "StepsPerBoxNear", "20"
+     .Set "StepsPerBoxFar", "10"
+     .SetMeshType "Tet"
+     .Set "StepsPerBoxFar", "5"
+     .SetMeshType "Plane"
+     .Set "StepsPerBoxFar", "5"
+End With
+
+With MeshAdaption3D
+     .SetLFAdaptionStrategy "Energy"
+End With
+
+'----------------------------------------------------------------------------
+
+'set the solver type
+ChangeSolverType("LF EStatic")
+
+'----------------------------------------------------------------------------
+
+'@ import gerber file: C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid_s1.gbr
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid_s1.gbr" 
+     .LdbFileName "*esf8grid_s1.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ import gerber file: C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid_s2.gbr
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid_s2.gbr" 
+     .LdbFileName "*esf8grid_s2.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ import gerber file: C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid-gnd.gbr
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With LayoutDB
+     .Reset 
+     .SourceFileName "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid-gnd.gbr" 
+     .LdbFileName "*esf8grid-gnd.ldb" 
+     .PcbType "gerber" 
+     .KeepSynchronized "True" 
+     .CreateDB 
+     .LoadDB 
+End With
+
+'@ new component: component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.New "component1"
+
+'@ transform: translate component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1" 
+     .Vector "-123.948", "61.275", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf8grid-gnd(PCB3)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid-gnd(PCB3)" 
+     .Vector "-123.948", "61.275", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf8grid_s1(PCB1)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid_s1(PCB1)" 
+     .Vector "-123.948", "61.275", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf8grid_s2(PCB2)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid_s2(PCB2)" 
+     .Vector "-123.948", "61.275", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf8grid_s1(PCB1)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid_s1(PCB1)" 
+     .Vector "0", "0", "0.7" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ define material: FR-4 (loss free)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Material
+     .Reset
+     .Name "FR-4 (loss free)"
+     .Folder ""
+     .FrqType "all"
+     .Type "Normal"
+     .SetMaterialUnit "GHz", "mm"
+     .Epsilon "4.3"
+     .Mu "1.0"
+     .Kappa "0.0"
+     .TanD "0.0"
+     .TanDFreq "0.0"
+     .TanDGiven "False"
+     .TanDModel "ConstTanD"
+     .KappaM "0.0"
+     .TanDM "0.0"
+     .TanDMFreq "0.0"
+     .TanDMGiven "False"
+     .TanDMModel "ConstKappa"
+     .DispModelEps "None"
+     .DispModelMu "None"
+     .DispersiveFittingSchemeEps "General 1st"
+     .DispersiveFittingSchemeMu "General 1st"
+     .UseGeneralDispersionEps "False"
+     .UseGeneralDispersionMu "False"
+     .Rho "0.0"
+     .ThermalType "Normal"
+     .ThermalConductivity "0.3"
+     .SetActiveMaterial "all"
+     .Colour "0.75", "0.95", "0.85"
+     .Wireframe "False"
+     .Transparency "0"
+     .Create
+End With
+
+'@ new component: Substrate6
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.New "Substrate6"
+
+'@ define brick: Substrate6:PPREG
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Brick
+     .Reset 
+     .Name "PPREG" 
+     .Component "Substrate6" 
+     .Material "FR-4 (loss free)" 
+     .Xrange "-22.61", "22.595" 
+     .Yrange "-20.96", "20.96" 
+     .Zrange "-0.7", "0.7" 
+     .Create
+End With
+
+'@ transform: translate esf8grid_s2(PCB2)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid_s2(PCB2)" 
+     .Vector "0", "0", "-0.735" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate esf8grid-gnd(PCB3)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "esf8grid-gnd(PCB3)" 
+     .Vector "0", "0", "-0.77-3" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ delete component: component1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.Delete "component1"
+
+'@ rename component: Substrate6 to: Substrate
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.Rename "Substrate6", "Substrate"
+
+'@ define brick: Substrate:bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Brick
+     .Reset 
+     .Name "bee" 
+     .Component "Substrate" 
+     .Material "FR-4 (loss free)" 
+     .Xrange "-4", "-2.5" 
+     .Yrange "1", "6" 
+     .Zrange "10", "10.35" 
+     .Create
+End With
+
+'@ new component: bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Component.New "bee"
+
+'@ change component: Substrate:bee to: bee:bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeComponent "Substrate:bee", "bee"
+
+'@ change material: bee:bee to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "bee:bee", "PEC"
+
+'@ change material: esf8grid-gnd(PCB3)/Nets/NONE:ESF8GRID-GND.GBR to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "esf8grid-gnd(PCB3)/Nets/NONE:ESF8GRID-GND.GBR", "PEC"
+
+'@ change material: esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "PEC"
+
+'@ change material: esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR to: PEC
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Solid.ChangeMaterial "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "PEC"
+
+'@ define potential: Bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "Bee"
+     .Folder ""
+     .Value "vf"
+     .Phase "0"
+     .AddFace "bee:bee", "1"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s11
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s11"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "181"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s11_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s11_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "496"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ rename potential: s11 to: s11_!
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "s11", "s11_!"
+
+'@ define potential: s21_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s21_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "138"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s21_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s21_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "668"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s12_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s12_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "501"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s12_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s12_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "724"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s13_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s13_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "675"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ rename potential: s11_! to: s11_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "s11_!", "s11_1"
+
+'@ define potential: s13_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s13_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s14_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s14_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "322"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s14_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s14_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "244"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s22_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s22_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "458"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: S22_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "S22_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "896"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s23_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s23_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "632"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s23_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s23_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "182"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s24
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s24"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "45"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s24_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s24_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "434"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ rename potential: s24 to: s24_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "s24", "s24_1"
+
+'@ define potential: s31_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s31_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "2"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s31_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s31_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "612"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s32_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s32_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "371"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: S32_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "S32_1"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "840"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s33_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s33_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "545"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s33_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s33_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "120"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s34_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s34_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "273"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s34_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s34_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "372"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ rename potential: S32_1 to: S32_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "S32_1", "S32_2"
+
+'@ define potential: s41_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s41_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "94"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s41_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s41_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "554"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s42_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s42_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "414"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s42_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s42_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "782"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s43_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s43_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "588"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s43_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s43_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "61"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s44_1
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s44_1"
+     .Folder ""
+     .Value "vc1"
+     .Phase "0"
+     .AddFace "esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR", "224"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ define potential: s44_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Potential
+     .Reset
+     .Name "s44_2"
+     .Folder ""
+     .Value "vc2"
+     .Phase "0"
+     .AddFace "esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR", "308"
+     .Type "Fixed"
+     .Create
+End With
+
+'@ set mesh properties (Tetrahedral)
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "20" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+End With 
+With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+End With 
+With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+End With 
+With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ rename potential: S22_2 to: s22_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "S22_2", "s22_2"
+
+'@ rename potential: S32_2 to: s32_2
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+Potential.Rename "S32_2", "s32_2"
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ Set and Create Mesh
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "10" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+    End With 
+    With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+     .Update
+    End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "True"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+     .UseMaxNumberOfThreads "True"
+     .MaxNumberOfThreads "1024"
+     .MaximumNumberOfCPUDevices "2"
+     .UseDistributedComputing "False"
+End With
+UseDistributedComputingForParameters "False"
+MaxNumberOfDistributedComputingParameters "2"
+UseDistributedComputingMemorySetting "False"
+MinDistributedComputingMemoryLimit "0"
+UseDistributedComputingSharedDirectory "False"
+OnlyConsider0D1DResultsForDC "False"
+
+'@ Set and Create Mesh
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "10" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+    End With 
+    With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+     .Update
+    End With
+
+'@ Set esolver cap mode ON
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "True"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "1024"
+         .MaximumNumberOfCPUDevices "2"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+
+'@ Set and Create Mesh
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "10" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+    End With 
+    With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+     .Update
+    End With
+
+'@ Set esolver cap mode ON
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "True"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "1024"
+         .MaximumNumberOfCPUDevices "2"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+
+'@ Set esolver cap mode OFF
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "False"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "1024"
+         .MaximumNumberOfCPUDevices "4"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+
+'@ Set and Create Mesh
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "10" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+    End With 
+    With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+     .Update
+    End With
+
+'@ Set esolver cap mode ON
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "True"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "2048"
+         .MaximumNumberOfCPUDevices "4"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+
+'@ Set esolver cap mode OFF
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "False"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "2048"
+         .MaximumNumberOfCPUDevices "4"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+
+'@ transform: translate bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "bee" 
+     .Vector "-2", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "bee" 
+     .Vector "0", "+0.1", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ transform: translate bee
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Transform 
+     .Reset 
+     .Name "bee" 
+     .Vector "0", "0.07", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With
+
+'@ define e-static solver parameters
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+     .Method "Tetrahedral Mesh"
+     .Accuracy "1e-6"
+     .CalcCapacitanceMatrix "False"
+     .StoreResultsInCache "False"
+     .MeshAdaption "False"
+     .TetAdaption "False"
+End With
+
+'@ Set and Create Mesh
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With Mesh 
+     .MeshType "Tetrahedral" 
+     .SetCreator "Low Frequency"
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "Version", 1%
+     'MAX CELL - WAVELENGTH REFINEMENT 
+     .Set "StepsPerWaveNear", "4" 
+     .Set "StepsPerWaveFar", "4" 
+     .Set "PhaseErrorNear", "0.02" 
+     .Set "PhaseErrorFar", "0.02" 
+     .Set "CellsPerWavelengthPolicy", "automatic" 
+     'MAX CELL - GEOMETRY REFINEMENT 
+     .Set "StepsPerBoxNear", "50" 
+     .Set "StepsPerBoxFar", "10" 
+     .Set "ModelBoxDescrNear", "maxedge" 
+     .Set "ModelBoxDescrFar", "maxedge" 
+     'MIN CELL 
+     .Set "UseRatioLimit", "0" 
+     .Set "RatioLimit", "100" 
+     .Set "MinStep", "0" 
+     'MESHING METHOD 
+     .SetMeshType "Unstr" 
+     .Set "Method", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "CurvatureOrder", "1" 
+     .Set "CurvatureOrderPolicy", "automatic" 
+     .Set "CurvRefinementControl", "NormalTolerance" 
+     .Set "NormalTolerance", "22.5" 
+     .Set "SrfMeshGradation", "1.5" 
+     .Set "SrfMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "UseMaterials",  "0" 
+     .Set "MoveMesh", "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "All" 
+     .Set "AutomaticEdgeRefinement",  "0" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Tet" 
+     .Set "UseAnisoCurveRefinement", "1" 
+     .Set "UseSameSrfAndVolMeshGradation", "1" 
+     .Set "VolMeshGradation", "1.5" 
+     .Set "VolMeshOptimization", "1" 
+    End With 
+    With MeshSettings 
+     .SetMeshType "Unstr" 
+     .Set "SmallFeatureSize", "0" 
+     .Set "CoincidenceTolerance", "1e-06" 
+     .Set "SelfIntersectionCheck", "1" 
+     .Set "OptimizeForPlanarStructures", "0" 
+    End With 
+    With Mesh 
+     .SetParallelMesherMode "Tet", "maximum" 
+     .SetMaxParallelMesherThreads "Tet", "1" 
+     .Update
+    End With
+
+'@ Set esolver cap mode ON
+
+'[VERSION]2024.5|33.0.1|20240614[/VERSION]
+With EStaticSolver
+         .Method "Tetrahedral Mesh"
+         .Accuracy "1e-6"
+         .CalcCapacitanceMatrix "True"
+         .StoreResultsInCache "False"
+         .MeshAdaption "False"
+         .TetAdaption "False"
+         .UseMaxNumberOfThreads "True"
+         .MaxNumberOfThreads "2048"
+         .MaximumNumberOfCPUDevices "4"
+         .UseDistributedComputing "False"
+         End With
+        UseDistributedComputingForParameters "False"
+        MaxNumberOfDistributedComputingParameters "2"
+        UseDistributedComputingMemorySetting "False"
+        MinDistributedComputingMemoryLimit "0"
+        UseDistributedComputingSharedDirectory "False"
+        OnlyConsider0D1DResultsForDC "False"
+

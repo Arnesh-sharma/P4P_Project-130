@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=P1 Old Footprint=ece-BNC_ROUND New Footprint=HDR1X2
+Added Member To Class: ClassName=U_power Member=Component P1 Ref

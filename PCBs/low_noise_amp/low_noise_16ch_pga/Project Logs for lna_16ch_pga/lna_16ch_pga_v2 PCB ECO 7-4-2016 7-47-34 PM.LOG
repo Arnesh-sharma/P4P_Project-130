@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=GND_A Pin=U1_amplifier.SchDoc1-5
+Added Pin To Net: NetName=GND_A Pin=U1_amplifier.SchDoc2-5
+Added Pin To Net: NetName=GND_A Pin=U1_amplifier.SchDoc3-5
+Added Pin To Net: NetName=GND_A Pin=U1_amplifier.SchDoc4-5
+Added Pin To Net: NetName=GND_A Pin=U2_amplifier.SchDoc1-5
+Added Pin To Net: NetName=GND_A Pin=U2_amplifier.SchDoc2-5
+Added Pin To Net: NetName=GND_A Pin=U2_amplifier.SchDoc3-5
+Added Pin To Net: NetName=GND_A Pin=U2_amplifier.SchDoc4-5
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component C12_amplifier.SchDoc1 (C12) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component C12_amplifier.SchDoc3 (C12) 100nF

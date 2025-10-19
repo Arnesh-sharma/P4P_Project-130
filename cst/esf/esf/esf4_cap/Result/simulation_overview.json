@@ -1,0 +1,865 @@
+{
+    "date": "2025-07-11, 20:54:43, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 1,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 20:57:25, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 2,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:30:25, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 3,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:30:37, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 4,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:30:49, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 5,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:31:02, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 6,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:31:16, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 7,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:31:30, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 8,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:31:43, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 9,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:31:57, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 10,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:32:10, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 11,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:32:24, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "parameter sweep",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 12,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-11, 23:47:37, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 2,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-12, 14:26:20, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 2,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-12, 14:31:13, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 12,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-12, 14:36:01, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 13,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-12, 14:59:58, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 14,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}{
+    "date": "2025-07-12, 15:15:07, New Zealand Standard Time",
+    "solver_runs_and_tasks": {
+        "module_name": "standard simulation project",
+        "solver_run": {
+            "license_and_hardware_request": {
+                "in_use": true,
+                "license_type": "CST legacy token",
+                "mpi": {
+                    "consistency_check": true,
+                    "num_different_mpi_nodes": 0,
+                    "num_local_mpi_nodes": 0,
+                    "num_mpi_nodes": 0
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 0,
+                "num_gpus": 0,
+                "num_physical_cores": -1,
+                "num_threads": 1024
+            },
+            "opt_par_run_id": 15,
+            "return_code": 0,
+            "solver_hwacc_usage": {
+                "info": "gathered from solver run",
+                "mpi": {
+                    "consistency_check": false,
+                    "num_different_mpi_nodes": -1,
+                    "num_local_mpi_nodes": -1,
+                    "num_mpi_nodes": -1
+                },
+                "num_cpu_sockets": 1,
+                "num_dc_nodes": 2,
+                "num_gpus": -1,
+                "num_threads_or_physical_cores": 8
+            },
+            "solver_used": "EM Static Solver",
+            "task_name": "solver run",
+            "time_info": {
+                "details": {
+                    "discretizer": 0,
+                    "solver": 0
+                },
+                "run_time": 0
+            }
+        }
+    },
+    "studio-version": "2024.5 Release from 2024-06-14 (change 1285309)",
+    "version": 1
+}

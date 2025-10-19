@@ -1,0 +1,19 @@
+FeatureKeywords:string:block:type:saved:EMSSCHEM, mesh::background::boolean, visualization:mesh_view:legacy_engine, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, modeler:hidfile:unique_ids, mesh:workflow:cadsurf, visualization:mesh_view:default_engine, DELETERESULTS:0SP0, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:open:ConvPML, boundary:open:xmax, boundary:open:xmin, boundary:open:ymax, boundary:open:ymin, boundary:open:zmax, boundary:open:zmin, mesh:tet, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:Hz, units:Inductance:nH, units:Length:m, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, la:direct, la:precond:pdss7, visualization:field_plot:default_engine, DELETERESULTS:M000, la:iterative, DELETERESULTS:0000, mesh:tet:adaptive, boundary:magnetic:xmax, boundary:magnetic:xmin, boundary:magnetic:ymax, boundary:magnetic:ymin, boundary:magnetic:zmax, boundary:magnetic:zmin, DELETERESULTS:00P0, modeler:history:header_not_parsed, modeler:load:fastloading, solver:lf:eqs:td, source:potential:floating, ti:implicit_euler, ti:fixed, mf:nonlinear:allow_weighted_matching_fallback, ti:linear, mf:nonlinear:linear, DenseInitDangerousDim, modeler:Plot:Send3DViewerCommand, units:Time:ms
+LastWorkflowState:string:tetmesh:success
+solver_lt_eqs_tet/InitialFreePhysicalInMB:int:14874
+solver_lt_eqs_tet/MaxResidentSizeInMB:int:46
+solver_lt_eqs_tet/MaxResidentSizeMiB:int:721
+solver_lt_eqs_tet/MinFreePhysicalInMB:int:14841
+solver_pp/InitialFreePhysicalInMB:int:14766
+solver_pp/MaxResidentSizeInMB:int:23
+solver_pp/MaxResidentSizeMiB:int:4
+solver_pp/MinFreePhysicalInMB:int:14763
+solver_se_tet/InitialFreePhysicalInMB:int:14899
+solver_se_tet/MaxResidentSizeInMB:int:387
+solver_se_tet/MaxResidentSizeMiB:int:513
+solver_se_tet/MinFreePhysicalInMB:int:14508
+tetmesh/InitialFreePhysicalInMB:int:14881
+tetmesh/MaxResidentSizeInMB:int:46
+tetmesh/MaxResidentSizeMiB:int:287
+tetmesh/MinFreePhysicalInMB:int:14787
+---

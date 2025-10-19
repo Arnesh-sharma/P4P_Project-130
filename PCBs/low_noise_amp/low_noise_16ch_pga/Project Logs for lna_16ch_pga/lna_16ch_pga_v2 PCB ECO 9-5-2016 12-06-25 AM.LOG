@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C19 Old Footprint=CAP 1206 New Footprint=ECE-CAPC2012-0805SM
+Change Component Footprint: Designator=C21 Old Footprint=CAP 1206 New Footprint=ECE-CAPC2012-0805SM
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component Dout_amplifier.SchDoc4 (Dout) Socket

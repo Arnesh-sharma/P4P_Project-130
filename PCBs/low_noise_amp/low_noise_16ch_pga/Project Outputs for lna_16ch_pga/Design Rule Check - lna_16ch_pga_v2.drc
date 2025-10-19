@@ -1,0 +1,1064 @@
+Protel Design System Design Rule Check
+PCB File : Z:\npat025\Documents\research\schematics\low_noise_16ch_pga\lna_16ch_pga_v2.PcbDoc
+Date     : 9/9/2016
+Time     : 5:56:35 AM
+
+ERROR : More than 500 violations detected, DRC was stopped
+
+Processing Rule : Room main (Bounding Region = (26.797mm, 79.502mm, 47.371mm, 135.128mm) (InComponentClass('main'))
+Rule Violations :0
+
+Processing Rule : Room U_power (Bounding Region = (43.561mm, 79.629mm, 62.992mm, 135.001mm) (InComponentClass('U_power'))
+Rule Violations :0
+
+Processing Rule : Room amplifier.SchDoc4 (Bounding Region = (152.146mm, 79.756mm, 180.975mm, 135.001mm) (InComponentClass('amplifier.SchDoc4'))
+Rule Violations :0
+
+Processing Rule : Room amplifier.SchDoc3 (Bounding Region = (122.682mm, 79.756mm, 151.511mm, 135.001mm) (InComponentClass('amplifier.SchDoc3'))
+Rule Violations :0
+
+Processing Rule : Room amplifier.SchDoc2 (Bounding Region = (93.091mm, 79.756mm, 121.92mm, 135.001mm) (InComponentClass('amplifier.SchDoc2'))
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Text "C24" (-0.737mm,-45.237mm)  Top Overlay and 
+                     Arc (-0.014mm,-44.349mm)  Top Overlay
+Rule Violations :1
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Pad OC_amplifier.SchDoc4-1(127.254mm,-39.751mm)  Multi-Layer and 
+                     Arc (127.254mm,-41.13mm)  Top Overlay
+   Violation between Pad OC_amplifier.SchDoc3-1(97.79mm,-39.751mm)  Multi-Layer and 
+                     Arc (97.79mm,-41.13mm)  Top Overlay
+   Violation between Pad OC_amplifier.SchDoc2-1(68.199mm,-39.751mm)  Multi-Layer and 
+                     Arc (68.199mm,-41.13mm)  Top Overlay
+   Violation between Pad OC_amplifier.SchDoc1-1(38.735mm,-39.751mm)  Multi-Layer and 
+                     Arc (38.735mm,-41.13mm)  Top Overlay
+   Violation between Text "C22" (2.032mm,-26.695mm)  Top Overlay and 
+                     Pad C21-2(4.158mm,-25.251mm)  Top Layer
+   Violation between Text "U7" (4.521mm,-26.746mm)  Top Overlay and 
+                     Pad C21-2(4.158mm,-25.251mm)  Top Layer
+   Violation between Text "C20" (6.528mm,-23.952mm)  Top Overlay and 
+                     Pad C19-1(9.105mm,-22.352mm)  Top Layer
+   Violation between Text "C20" (6.528mm,-23.952mm)  Top Overlay and 
+                     Pad C19-2(7.405mm,-22.352mm)  Top Layer
+   Violation between Track (104.54mm,-44.015mm)(104.54mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc4-1(104.14mm,-44.665mm)  Top Layer
+   Violation between Track (103.74mm,-44.015mm)(103.74mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc4-1(104.14mm,-44.665mm)  Top Layer
+   Violation between Text "Din_amplifier.SchDoc4" (103.022mm,-45.568mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc4-1(104.14mm,-44.665mm)  Top Layer
+   Violation between Track (104.54mm,-44.015mm)(104.54mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc4-2(104.14mm,-42.965mm)  Top Layer
+   Violation between Track (103.74mm,-44.015mm)(103.74mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc4-2(104.14mm,-42.965mm)  Top Layer
+   Violation between Track (74.276mm,-44.015mm)(74.276mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc3-1(74.676mm,-44.665mm)  Top Layer
+   Violation between Track (75.076mm,-44.015mm)(75.076mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc3-1(74.676mm,-44.665mm)  Top Layer
+   Violation between Text "Din_amplifier.SchDoc3" (73.558mm,-45.568mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc3-1(74.676mm,-44.665mm)  Top Layer
+   Violation between Track (74.276mm,-44.015mm)(74.276mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc3-2(74.676mm,-42.965mm)  Top Layer
+   Violation between Track (75.076mm,-44.015mm)(75.076mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc3-2(74.676mm,-42.965mm)  Top Layer
+   Violation between Track (45.485mm,-44.015mm)(45.485mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc2-1(45.085mm,-44.665mm)  Top Layer
+   Violation between Track (44.685mm,-44.015mm)(44.685mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc2-1(45.085mm,-44.665mm)  Top Layer
+   Violation between Text "Din_amplifier.SchDoc2" (43.967mm,-45.568mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc2-1(45.085mm,-44.665mm)  Top Layer
+   Violation between Track (45.485mm,-44.015mm)(45.485mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc2-2(45.085mm,-42.965mm)  Top Layer
+   Violation between Track (44.685mm,-44.015mm)(44.685mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc2-2(45.085mm,-42.965mm)  Top Layer
+   Violation between Track (15.221mm,-44.015mm)(15.221mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc1-1(15.621mm,-44.665mm)  Top Layer
+   Violation between Track (16.021mm,-44.015mm)(16.021mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc1-1(15.621mm,-44.665mm)  Top Layer
+   Violation between Text "Din_amplifier.SchDoc1" (14.503mm,-45.568mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc1-1(15.621mm,-44.665mm)  Top Layer
+   Violation between Track (15.221mm,-44.015mm)(15.221mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc1-2(15.621mm,-42.965mm)  Top Layer
+   Violation between Track (16.021mm,-44.015mm)(16.021mm,-43.615mm)  Top Overlay and 
+                     Pad R11_amplifier.SchDoc1-2(15.621mm,-42.965mm)  Top Layer
+   Violation between Track (6.223mm,-13.208mm)(6.731mm,-13.208mm)  Top Overlay and 
+                     Pad C13-1(7.747mm,-13.467mm)  Top Layer
+   Violation between Track (8.763mm,-13.208mm)(9.144mm,-13.208mm)  Top Overlay and 
+                     Pad C13-1(7.747mm,-13.467mm)  Top Layer
+   Violation between Track (5.588mm,-17.653mm)(6.731mm,-17.653mm)  Top Overlay and 
+                     Pad C13-2(7.747mm,-17.267mm)  Top Layer
+   Violation between Track (8.763mm,-17.653mm)(9.906mm,-17.653mm)  Top Overlay and 
+                     Pad C13-2(7.747mm,-17.267mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc4" (102.184mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc4-2(104.432mm,-19.939mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc4" (102.184mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc4-1(102.832mm,-19.939mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc4" (115.9mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc4-2(118.148mm,-19.431mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc4" (115.9mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc4-1(116.548mm,-19.431mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc4" (121.031mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc4-2(121.12mm,-31.115mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc4" (121.031mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc4-1(122.72mm,-31.115mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc3" (72.72mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc3-2(74.968mm,-19.939mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc3" (72.72mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc3-1(73.368mm,-19.939mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc3" (86.436mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc3-2(88.684mm,-19.431mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc3" (86.436mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc3-1(87.084mm,-19.431mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc3" (91.567mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc3-2(91.656mm,-31.115mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc3" (91.567mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc3-1(93.256mm,-31.115mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc2" (43.129mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc2-2(45.377mm,-19.939mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc2" (43.129mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc2-1(43.777mm,-19.939mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc2" (56.845mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc2-2(59.093mm,-19.431mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc2" (56.845mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc2-1(57.493mm,-19.431mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc2" (61.976mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc2-2(62.065mm,-31.115mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc2" (61.976mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc2-1(63.665mm,-31.115mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc1" (13.665mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc1-2(15.913mm,-19.939mm)  Top Layer
+   Violation between Text "C9_amplifier.SchDoc1" (13.665mm,-20.523mm)  Top Overlay and 
+                     Pad C7_amplifier.SchDoc1-1(14.313mm,-19.939mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc1" (27.381mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc1-2(29.629mm,-19.431mm)  Top Layer
+   Violation between Text "C10_amplifier.SchDoc1" (27.381mm,-20.015mm)  Top Overlay and 
+                     Pad C11_amplifier.SchDoc1-1(28.029mm,-19.431mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc1" (32.512mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc1-2(32.601mm,-31.115mm)  Top Layer
+   Violation between Text "R6_amplifier.SchDoc1" (32.512mm,-32.537mm)  Top Overlay and 
+                     Pad C12_amplifier.SchDoc1-1(34.201mm,-31.115mm)  Top Layer
+   Violation between Text "C2_amplifier.SchDoc4" (108.458mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc4-1(107.696mm,-9.017mm)  Top Layer
+   Violation between Text "C3_amplifier.SchDoc4" (105.918mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc4-1(107.696mm,-9.017mm)  Top Layer
+   Violation between Text "C5_amplifier.SchDoc4" (122.428mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc4-1(121.92mm,-9.017mm)  Top Layer
+   Violation between Text "C6_amplifier.SchDoc4" (119.888mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc4-1(121.92mm,-9.017mm)  Top Layer
+   Violation between Text "C2_amplifier.SchDoc3" (78.994mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc3-1(78.232mm,-9.017mm)  Top Layer
+   Violation between Text "C3_amplifier.SchDoc3" (76.454mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc3-1(78.232mm,-9.017mm)  Top Layer
+   Violation between Text "C5_amplifier.SchDoc3" (92.964mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc3-1(92.456mm,-9.017mm)  Top Layer
+   Violation between Text "C6_amplifier.SchDoc3" (90.424mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc3-1(92.456mm,-9.017mm)  Top Layer
+   Violation between Text "C2_amplifier.SchDoc2" (49.403mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc2-1(48.641mm,-9.017mm)  Top Layer
+   Violation between Text "C3_amplifier.SchDoc2" (46.863mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc2-1(48.641mm,-9.017mm)  Top Layer
+   Violation between Text "C5_amplifier.SchDoc2" (63.373mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc2-1(62.865mm,-9.017mm)  Top Layer
+   Violation between Text "C6_amplifier.SchDoc2" (60.833mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc2-1(62.865mm,-9.017mm)  Top Layer
+   Violation between Text "C2_amplifier.SchDoc1" (19.939mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc1-1(19.177mm,-9.017mm)  Top Layer
+   Violation between Text "C3_amplifier.SchDoc1" (17.399mm,-10.566mm)  Top Overlay and 
+                     Pad I1_amplifier.SchDoc1-1(19.177mm,-9.017mm)  Top Layer
+   Violation between Text "C6_amplifier.SchDoc1" (31.369mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc1-1(33.401mm,-9.017mm)  Top Layer
+   Violation between Text "C5_amplifier.SchDoc1" (33.909mm,-10.566mm)  Top Overlay and 
+                     Pad I2_amplifier.SchDoc1-1(33.401mm,-9.017mm)  Top Layer
+   Violation between Text "C14_amplifier.SchDoc4" (116.281mm,-39.319mm)  Top Overlay and 
+                     Pad C15_amplifier.SchDoc4-2(116.37mm,-37.846mm)  Top Layer
+   Violation between Text "C14_amplifier.SchDoc3" (86.817mm,-39.319mm)  Top Overlay and 
+                     Pad C15_amplifier.SchDoc3-2(86.906mm,-37.846mm)  Top Layer
+   Violation between Text "C14_amplifier.SchDoc2" (57.226mm,-39.319mm)  Top Overlay and 
+                     Pad C15_amplifier.SchDoc2-2(57.315mm,-37.846mm)  Top Layer
+   Violation between Text "C14_amplifier.SchDoc1" (27.762mm,-39.319mm)  Top Overlay and 
+                     Pad C15_amplifier.SchDoc1-2(27.851mm,-37.846mm)  Top Layer
+   Violation between Track (109.582mm,-33.855mm)(109.582mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc4-1(109.982mm,-32.805mm)  Top Layer
+   Violation between Track (110.382mm,-33.855mm)(110.382mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc4-1(109.982mm,-32.805mm)  Top Layer
+   Violation between Track (109.582mm,-33.855mm)(109.582mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc4-2(109.982mm,-34.505mm)  Top Layer
+   Violation between Track (110.382mm,-33.855mm)(110.382mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc4-2(109.982mm,-34.505mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc4" (107.01mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc4-6(107.442mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc4" (107.01mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc4-7(108.712mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc4" (107.01mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc4-8(109.982mm,-23.863mm)  Top Layer
+   Violation between Text "R4_amplifier.SchDoc4" (108.661mm,-14.427mm)  Top Overlay and 
+                     Pad C2_amplifier.SchDoc4-2(109.093mm,-13.627mm)  Top Layer
+   Violation between Track (111.741mm,-22.171mm)(111.741mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc4-1(112.141mm,-21.121mm)  Top Layer
+   Violation between Track (112.541mm,-22.171mm)(112.541mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc4-1(112.141mm,-21.121mm)  Top Layer
+   Violation between Track (111.741mm,-22.171mm)(111.741mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc4-2(112.141mm,-22.821mm)  Top Layer
+   Violation between Track (112.541mm,-22.171mm)(112.541mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc4-2(112.141mm,-22.821mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc4" (106.883mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc4-2(109.258mm,-27.178mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc4" (106.883mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc4-1(107.658mm,-27.178mm)  Top Layer
+   Violation between Track (114.7mm,-27.251mm)(114.7mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc4-1(114.3mm,-27.901mm)  Top Layer
+   Violation between Track (113.9mm,-27.251mm)(113.9mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc4-1(114.3mm,-27.901mm)  Top Layer
+   Violation between Track (114.7mm,-27.251mm)(114.7mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc4-2(114.3mm,-26.201mm)  Top Layer
+   Violation between Track (113.9mm,-27.251mm)(113.9mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc4-2(114.3mm,-26.201mm)  Top Layer
+   Violation between Track (108.131mm,-29.864mm)(108.531mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc4-1(107.481mm,-29.464mm)  Top Layer
+   Violation between Track (108.131mm,-29.064mm)(108.531mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc4-1(107.481mm,-29.464mm)  Top Layer
+   Violation between Track (108.131mm,-29.864mm)(108.531mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc4-2(109.181mm,-29.464mm)  Top Layer
+   Violation between Track (108.131mm,-29.064mm)(108.531mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc4-2(109.181mm,-29.464mm)  Top Layer
+   Violation between Text "R5_amplifier.SchDoc4" (104.089mm,-14.427mm)  Top Overlay and 
+                     Pad C3_amplifier.SchDoc4-2(106.553mm,-13.627mm)  Top Layer
+   Violation between Track (105.337mm,-16.275mm)(105.737mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-1(104.687mm,-15.875mm)  Top Layer
+   Violation between Track (105.337mm,-15.475mm)(105.737mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-1(104.687mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc4" (105.435mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-1(104.687mm,-15.875mm)  Top Layer
+   Violation between Track (105.337mm,-16.275mm)(105.737mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-2(106.387mm,-15.875mm)  Top Layer
+   Violation between Track (105.337mm,-15.475mm)(105.737mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-2(106.387mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc4" (105.435mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc4-2(106.387mm,-15.875mm)  Top Layer
+   Violation between Track (109.909mm,-16.275mm)(110.309mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc4-1(110.959mm,-15.875mm)  Top Layer
+   Violation between Track (109.909mm,-15.475mm)(110.309mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc4-1(110.959mm,-15.875mm)  Top Layer
+   Violation between Track (109.909mm,-16.275mm)(110.309mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc4-2(109.259mm,-15.875mm)  Top Layer
+   Violation between Track (109.909mm,-15.475mm)(110.309mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc4-2(109.259mm,-15.875mm)  Top Layer
+   Violation between Track (122.066mm,-34.998mm)(122.066mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc4-1(121.666mm,-33.948mm)  Top Layer
+   Violation between Track (121.266mm,-34.998mm)(121.266mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc4-1(121.666mm,-33.948mm)  Top Layer
+   Violation between Track (122.066mm,-34.998mm)(122.066mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc4-2(121.666mm,-35.648mm)  Top Layer
+   Violation between Track (121.266mm,-34.998mm)(121.266mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc4-2(121.666mm,-35.648mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc4" (120.472mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc4-5(120.142mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc4" (120.472mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc4-6(121.412mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc4" (120.472mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc4-7(122.682mm,-23.863mm)  Top Layer
+   Violation between Text "R20_amplifier.SchDoc4" (124.536mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc4-8(123.952mm,-23.863mm)  Top Layer
+   Violation between Text "C15_amplifier.SchDoc4" (114.122mm,-36.398mm)  Top Overlay and 
+                     Pad U4_amplifier.SchDoc4-8(113.678mm,-35.179mm)  Top Layer
+   Violation between Text "R9_amplifier.SchDoc4" (122.631mm,-14.427mm)  Top Overlay and 
+                     Pad C5_amplifier.SchDoc4-2(123.063mm,-13.627mm)  Top Layer
+   Violation between Track (125.711mm,-22.171mm)(125.711mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc4-1(126.111mm,-21.121mm)  Top Layer
+   Violation between Track (126.511mm,-22.171mm)(126.511mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc4-1(126.111mm,-21.121mm)  Top Layer
+   Violation between Track (125.711mm,-22.171mm)(125.711mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc4-2(126.111mm,-22.821mm)  Top Layer
+   Violation between Track (126.511mm,-22.171mm)(126.511mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc4-2(126.111mm,-22.821mm)  Top Layer
+   Violation between Track (116.732mm,-27.251mm)(116.732mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc4-1(116.332mm,-27.901mm)  Top Layer
+   Violation between Track (115.932mm,-27.251mm)(115.932mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc4-1(116.332mm,-27.901mm)  Top Layer
+   Violation between Track (116.732mm,-27.251mm)(116.732mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc4-2(116.332mm,-26.201mm)  Top Layer
+   Violation between Track (115.932mm,-27.251mm)(115.932mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc4-2(116.332mm,-26.201mm)  Top Layer
+   Violation between Track (125.784mm,-26.143mm)(126.184mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc4-1(126.834mm,-26.543mm)  Top Layer
+   Violation between Track (125.784mm,-26.943mm)(126.184mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc4-1(126.834mm,-26.543mm)  Top Layer
+   Violation between Track (125.784mm,-26.143mm)(126.184mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc4-2(125.134mm,-26.543mm)  Top Layer
+   Violation between Track (125.784mm,-26.943mm)(126.184mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc4-2(125.134mm,-26.543mm)  Top Layer
+   Violation between Text "R10_amplifier.SchDoc4" (118.059mm,-14.427mm)  Top Overlay and 
+                     Pad C6_amplifier.SchDoc4-2(120.523mm,-13.627mm)  Top Layer
+   Violation between Track (119.307mm,-16.275mm)(119.707mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-1(118.657mm,-15.875mm)  Top Layer
+   Violation between Track (119.307mm,-15.475mm)(119.707mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-1(118.657mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc4" (119.405mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-1(118.657mm,-15.875mm)  Top Layer
+   Violation between Track (119.307mm,-16.275mm)(119.707mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-2(120.357mm,-15.875mm)  Top Layer
+   Violation between Track (119.307mm,-15.475mm)(119.707mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-2(120.357mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc4" (119.405mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc4-2(120.357mm,-15.875mm)  Top Layer
+   Violation between Track (123.879mm,-16.275mm)(124.279mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc4-1(124.929mm,-15.875mm)  Top Layer
+   Violation between Track (123.879mm,-15.475mm)(124.279mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc4-1(124.929mm,-15.875mm)  Top Layer
+   Violation between Track (123.879mm,-16.275mm)(124.279mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc4-2(123.229mm,-15.875mm)  Top Layer
+   Violation between Track (123.879mm,-15.475mm)(124.279mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc4-2(123.229mm,-15.875mm)  Top Layer
+   Violation between Track (80.118mm,-33.855mm)(80.118mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc3-1(80.518mm,-32.805mm)  Top Layer
+   Violation between Track (80.918mm,-33.855mm)(80.918mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc3-1(80.518mm,-32.805mm)  Top Layer
+   Violation between Track (80.118mm,-33.855mm)(80.118mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc3-2(80.518mm,-34.505mm)  Top Layer
+   Violation between Track (80.918mm,-33.855mm)(80.918mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc3-2(80.518mm,-34.505mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc3" (77.546mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc3-6(77.978mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc3" (77.546mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc3-7(79.248mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc3" (77.546mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc3-8(80.518mm,-23.863mm)  Top Layer
+   Violation between Text "R4_amplifier.SchDoc3" (79.197mm,-14.427mm)  Top Overlay and 
+                     Pad C2_amplifier.SchDoc3-2(79.629mm,-13.627mm)  Top Layer
+   Violation between Track (82.277mm,-22.171mm)(82.277mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc3-1(82.677mm,-21.121mm)  Top Layer
+   Violation between Track (83.077mm,-22.171mm)(83.077mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc3-1(82.677mm,-21.121mm)  Top Layer
+   Violation between Track (82.277mm,-22.171mm)(82.277mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc3-2(82.677mm,-22.821mm)  Top Layer
+   Violation between Track (83.077mm,-22.171mm)(83.077mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc3-2(82.677mm,-22.821mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc3" (77.419mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc3-2(79.794mm,-27.178mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc3" (77.419mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc3-1(78.194mm,-27.178mm)  Top Layer
+   Violation between Track (84.436mm,-27.251mm)(84.436mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc3-1(84.836mm,-27.901mm)  Top Layer
+   Violation between Track (85.236mm,-27.251mm)(85.236mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc3-1(84.836mm,-27.901mm)  Top Layer
+   Violation between Track (84.436mm,-27.251mm)(84.436mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc3-2(84.836mm,-26.201mm)  Top Layer
+   Violation between Track (85.236mm,-27.251mm)(85.236mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc3-2(84.836mm,-26.201mm)  Top Layer
+   Violation between Track (78.667mm,-29.864mm)(79.067mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc3-1(78.017mm,-29.464mm)  Top Layer
+   Violation between Track (78.667mm,-29.064mm)(79.067mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc3-1(78.017mm,-29.464mm)  Top Layer
+   Violation between Track (78.667mm,-29.864mm)(79.067mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc3-2(79.717mm,-29.464mm)  Top Layer
+   Violation between Track (78.667mm,-29.064mm)(79.067mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc3-2(79.717mm,-29.464mm)  Top Layer
+   Violation between Text "R5_amplifier.SchDoc3" (74.625mm,-14.427mm)  Top Overlay and 
+                     Pad C3_amplifier.SchDoc3-2(77.089mm,-13.627mm)  Top Layer
+   Violation between Track (75.873mm,-16.275mm)(76.273mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-1(75.223mm,-15.875mm)  Top Layer
+   Violation between Track (75.873mm,-15.475mm)(76.273mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-1(75.223mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc3" (75.971mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-1(75.223mm,-15.875mm)  Top Layer
+   Violation between Track (75.873mm,-16.275mm)(76.273mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-2(76.923mm,-15.875mm)  Top Layer
+   Violation between Track (75.873mm,-15.475mm)(76.273mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-2(76.923mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc3" (75.971mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc3-2(76.923mm,-15.875mm)  Top Layer
+   Violation between Track (80.445mm,-16.275mm)(80.845mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc3-1(81.495mm,-15.875mm)  Top Layer
+   Violation between Track (80.445mm,-15.475mm)(80.845mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc3-1(81.495mm,-15.875mm)  Top Layer
+   Violation between Track (80.445mm,-16.275mm)(80.845mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc3-2(79.795mm,-15.875mm)  Top Layer
+   Violation between Track (80.445mm,-15.475mm)(80.845mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc3-2(79.795mm,-15.875mm)  Top Layer
+   Violation between Track (91.802mm,-34.998mm)(91.802mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc3-1(92.202mm,-33.948mm)  Top Layer
+   Violation between Track (92.602mm,-34.998mm)(92.602mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc3-1(92.202mm,-33.948mm)  Top Layer
+   Violation between Track (91.802mm,-34.998mm)(91.802mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc3-2(92.202mm,-35.648mm)  Top Layer
+   Violation between Track (92.602mm,-34.998mm)(92.602mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc3-2(92.202mm,-35.648mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc3" (91.008mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc3-5(90.678mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc3" (91.008mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc3-6(91.948mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc3" (91.008mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc3-7(93.218mm,-23.863mm)  Top Layer
+   Violation between Text "R20_amplifier.SchDoc3" (95.072mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc3-8(94.488mm,-23.863mm)  Top Layer
+   Violation between Text "C15_amplifier.SchDoc3" (84.658mm,-36.398mm)  Top Overlay and 
+                     Pad U4_amplifier.SchDoc3-8(84.214mm,-35.179mm)  Top Layer
+   Violation between Text "R9_amplifier.SchDoc3" (93.167mm,-14.427mm)  Top Overlay and 
+                     Pad C5_amplifier.SchDoc3-2(93.599mm,-13.627mm)  Top Layer
+   Violation between Track (96.247mm,-22.171mm)(96.247mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc3-1(96.647mm,-21.121mm)  Top Layer
+   Violation between Track (97.047mm,-22.171mm)(97.047mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc3-1(96.647mm,-21.121mm)  Top Layer
+   Violation between Track (96.247mm,-22.171mm)(96.247mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc3-2(96.647mm,-22.821mm)  Top Layer
+   Violation between Track (97.047mm,-22.171mm)(97.047mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc3-2(96.647mm,-22.821mm)  Top Layer
+   Violation between Track (86.468mm,-27.251mm)(86.468mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc3-1(86.868mm,-27.901mm)  Top Layer
+   Violation between Track (87.268mm,-27.251mm)(87.268mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc3-1(86.868mm,-27.901mm)  Top Layer
+   Violation between Track (86.468mm,-27.251mm)(86.468mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc3-2(86.868mm,-26.201mm)  Top Layer
+   Violation between Track (87.268mm,-27.251mm)(87.268mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc3-2(86.868mm,-26.201mm)  Top Layer
+   Violation between Track (96.32mm,-26.143mm)(96.72mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc3-1(97.37mm,-26.543mm)  Top Layer
+   Violation between Track (96.32mm,-26.943mm)(96.72mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc3-1(97.37mm,-26.543mm)  Top Layer
+   Violation between Track (96.32mm,-26.143mm)(96.72mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc3-2(95.67mm,-26.543mm)  Top Layer
+   Violation between Track (96.32mm,-26.943mm)(96.72mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc3-2(95.67mm,-26.543mm)  Top Layer
+   Violation between Text "R10_amplifier.SchDoc3" (88.595mm,-14.427mm)  Top Overlay and 
+                     Pad C6_amplifier.SchDoc3-2(91.059mm,-13.627mm)  Top Layer
+   Violation between Track (89.843mm,-16.275mm)(90.243mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-1(89.193mm,-15.875mm)  Top Layer
+   Violation between Track (89.843mm,-15.475mm)(90.243mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-1(89.193mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc3" (89.941mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-1(89.193mm,-15.875mm)  Top Layer
+   Violation between Track (89.843mm,-16.275mm)(90.243mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-2(90.893mm,-15.875mm)  Top Layer
+   Violation between Track (89.843mm,-15.475mm)(90.243mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-2(90.893mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc3" (89.941mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc3-2(90.893mm,-15.875mm)  Top Layer
+   Violation between Track (94.415mm,-16.275mm)(94.815mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc3-1(95.465mm,-15.875mm)  Top Layer
+   Violation between Track (94.415mm,-15.475mm)(94.815mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc3-1(95.465mm,-15.875mm)  Top Layer
+   Violation between Track (94.415mm,-16.275mm)(94.815mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc3-2(93.765mm,-15.875mm)  Top Layer
+   Violation between Track (94.415mm,-15.475mm)(94.815mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc3-2(93.765mm,-15.875mm)  Top Layer
+   Violation between Track (50.527mm,-33.855mm)(50.527mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc2-1(50.927mm,-32.805mm)  Top Layer
+   Violation between Track (51.327mm,-33.855mm)(51.327mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc2-1(50.927mm,-32.805mm)  Top Layer
+   Violation between Track (50.527mm,-33.855mm)(50.527mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc2-2(50.927mm,-34.505mm)  Top Layer
+   Violation between Track (51.327mm,-33.855mm)(51.327mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc2-2(50.927mm,-34.505mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc2" (47.955mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc2-6(48.387mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc2" (47.955mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc2-7(49.657mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc2" (47.955mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc2-8(50.927mm,-23.863mm)  Top Layer
+   Violation between Text "R4_amplifier.SchDoc2" (49.606mm,-14.427mm)  Top Overlay and 
+                     Pad C2_amplifier.SchDoc2-2(50.038mm,-13.627mm)  Top Layer
+   Violation between Track (52.686mm,-22.171mm)(52.686mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc2-1(53.086mm,-21.121mm)  Top Layer
+   Violation between Track (53.486mm,-22.171mm)(53.486mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc2-1(53.086mm,-21.121mm)  Top Layer
+   Violation between Track (52.686mm,-22.171mm)(52.686mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc2-2(53.086mm,-22.821mm)  Top Layer
+   Violation between Track (53.486mm,-22.171mm)(53.486mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc2-2(53.086mm,-22.821mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc2" (47.828mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc2-2(50.203mm,-27.178mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc2" (47.828mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc2-1(48.603mm,-27.178mm)  Top Layer
+   Violation between Track (55.645mm,-27.251mm)(55.645mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc2-1(55.245mm,-27.901mm)  Top Layer
+   Violation between Track (54.845mm,-27.251mm)(54.845mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc2-1(55.245mm,-27.901mm)  Top Layer
+   Violation between Track (55.645mm,-27.251mm)(55.645mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc2-2(55.245mm,-26.201mm)  Top Layer
+   Violation between Track (54.845mm,-27.251mm)(54.845mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc2-2(55.245mm,-26.201mm)  Top Layer
+   Violation between Track (49.076mm,-29.864mm)(49.476mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc2-1(48.426mm,-29.464mm)  Top Layer
+   Violation between Track (49.076mm,-29.064mm)(49.476mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc2-1(48.426mm,-29.464mm)  Top Layer
+   Violation between Track (49.076mm,-29.864mm)(49.476mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc2-2(50.126mm,-29.464mm)  Top Layer
+   Violation between Track (49.076mm,-29.064mm)(49.476mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc2-2(50.126mm,-29.464mm)  Top Layer
+   Violation between Text "R5_amplifier.SchDoc2" (45.034mm,-14.427mm)  Top Overlay and 
+                     Pad C3_amplifier.SchDoc2-2(47.498mm,-13.627mm)  Top Layer
+   Violation between Track (46.282mm,-16.275mm)(46.682mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-1(45.632mm,-15.875mm)  Top Layer
+   Violation between Track (46.282mm,-15.475mm)(46.682mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-1(45.632mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc2" (46.38mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-1(45.632mm,-15.875mm)  Top Layer
+   Violation between Track (46.282mm,-16.275mm)(46.682mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-2(47.332mm,-15.875mm)  Top Layer
+   Violation between Track (46.282mm,-15.475mm)(46.682mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-2(47.332mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc2" (46.38mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc2-2(47.332mm,-15.875mm)  Top Layer
+   Violation between Track (50.854mm,-16.275mm)(51.254mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc2-1(51.904mm,-15.875mm)  Top Layer
+   Violation between Track (50.854mm,-15.475mm)(51.254mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc2-1(51.904mm,-15.875mm)  Top Layer
+   Violation between Track (50.854mm,-16.275mm)(51.254mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc2-2(50.204mm,-15.875mm)  Top Layer
+   Violation between Track (50.854mm,-15.475mm)(51.254mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc2-2(50.204mm,-15.875mm)  Top Layer
+   Violation between Track (62.211mm,-34.998mm)(62.211mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc2-1(62.611mm,-33.948mm)  Top Layer
+   Violation between Track (63.011mm,-34.998mm)(63.011mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc2-1(62.611mm,-33.948mm)  Top Layer
+   Violation between Track (62.211mm,-34.998mm)(62.211mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc2-2(62.611mm,-35.648mm)  Top Layer
+   Violation between Track (63.011mm,-34.998mm)(63.011mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc2-2(62.611mm,-35.648mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc2" (61.417mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc2-5(61.087mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc2" (61.417mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc2-6(62.357mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc2" (61.417mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc2-7(63.627mm,-23.863mm)  Top Layer
+   Violation between Text "R20_amplifier.SchDoc2" (65.481mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc2-8(64.897mm,-23.863mm)  Top Layer
+   Violation between Text "C15_amplifier.SchDoc2" (55.067mm,-36.398mm)  Top Overlay and 
+                     Pad U4_amplifier.SchDoc2-8(54.623mm,-35.179mm)  Top Layer
+   Violation between Text "R9_amplifier.SchDoc2" (63.576mm,-14.427mm)  Top Overlay and 
+                     Pad C5_amplifier.SchDoc2-2(64.008mm,-13.627mm)  Top Layer
+   Violation between Track (66.656mm,-22.171mm)(66.656mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc2-1(67.056mm,-21.121mm)  Top Layer
+   Violation between Track (67.456mm,-22.171mm)(67.456mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc2-1(67.056mm,-21.121mm)  Top Layer
+   Violation between Track (66.656mm,-22.171mm)(66.656mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc2-2(67.056mm,-22.821mm)  Top Layer
+   Violation between Track (67.456mm,-22.171mm)(67.456mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc2-2(67.056mm,-22.821mm)  Top Layer
+   Violation between Track (57.677mm,-27.251mm)(57.677mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc2-1(57.277mm,-27.901mm)  Top Layer
+   Violation between Track (56.877mm,-27.251mm)(56.877mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc2-1(57.277mm,-27.901mm)  Top Layer
+   Violation between Track (57.677mm,-27.251mm)(57.677mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc2-2(57.277mm,-26.201mm)  Top Layer
+   Violation between Track (56.877mm,-27.251mm)(56.877mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc2-2(57.277mm,-26.201mm)  Top Layer
+   Violation between Track (66.729mm,-26.143mm)(67.129mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc2-1(67.779mm,-26.543mm)  Top Layer
+   Violation between Track (66.729mm,-26.943mm)(67.129mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc2-1(67.779mm,-26.543mm)  Top Layer
+   Violation between Track (66.729mm,-26.143mm)(67.129mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc2-2(66.079mm,-26.543mm)  Top Layer
+   Violation between Track (66.729mm,-26.943mm)(67.129mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc2-2(66.079mm,-26.543mm)  Top Layer
+   Violation between Text "R10_amplifier.SchDoc2" (59.004mm,-14.427mm)  Top Overlay and 
+                     Pad C6_amplifier.SchDoc2-2(61.468mm,-13.627mm)  Top Layer
+   Violation between Track (60.252mm,-16.275mm)(60.652mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-1(59.602mm,-15.875mm)  Top Layer
+   Violation between Track (60.252mm,-15.475mm)(60.652mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-1(59.602mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc2" (60.35mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-1(59.602mm,-15.875mm)  Top Layer
+   Violation between Track (60.252mm,-16.275mm)(60.652mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-2(61.302mm,-15.875mm)  Top Layer
+   Violation between Track (60.252mm,-15.475mm)(60.652mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-2(61.302mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc2" (60.35mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc2-2(61.302mm,-15.875mm)  Top Layer
+   Violation between Track (64.824mm,-16.275mm)(65.224mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc2-1(65.874mm,-15.875mm)  Top Layer
+   Violation between Track (64.824mm,-15.475mm)(65.224mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc2-1(65.874mm,-15.875mm)  Top Layer
+   Violation between Track (64.824mm,-16.275mm)(65.224mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc2-2(64.174mm,-15.875mm)  Top Layer
+   Violation between Track (64.824mm,-15.475mm)(65.224mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc2-2(64.174mm,-15.875mm)  Top Layer
+   Violation between Track (21.063mm,-33.855mm)(21.063mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc1-1(21.463mm,-32.805mm)  Top Layer
+   Violation between Track (21.863mm,-33.855mm)(21.863mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc1-1(21.463mm,-32.805mm)  Top Layer
+   Violation between Track (21.063mm,-33.855mm)(21.063mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc1-2(21.463mm,-34.505mm)  Top Layer
+   Violation between Track (21.863mm,-33.855mm)(21.863mm,-33.455mm)  Top Overlay and 
+                     Pad R1_amplifier.SchDoc1-2(21.463mm,-34.505mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc1" (18.491mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc1-6(18.923mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc1" (18.491mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc1-7(20.193mm,-23.863mm)  Top Layer
+   Violation between Text "C16_amplifier.SchDoc1" (18.491mm,-25.73mm)  Top Overlay and 
+                     Pad U1_amplifier.SchDoc1-8(21.463mm,-23.863mm)  Top Layer
+   Violation between Text "R4_amplifier.SchDoc1" (20.142mm,-14.427mm)  Top Overlay and 
+                     Pad C2_amplifier.SchDoc1-2(20.574mm,-13.627mm)  Top Layer
+   Violation between Track (23.222mm,-22.171mm)(23.222mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc1-1(23.622mm,-21.121mm)  Top Layer
+   Violation between Track (24.022mm,-22.171mm)(24.022mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc1-1(23.622mm,-21.121mm)  Top Layer
+   Violation between Track (23.222mm,-22.171mm)(23.222mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc1-2(23.622mm,-22.821mm)  Top Layer
+   Violation between Track (24.022mm,-22.171mm)(24.022mm,-21.771mm)  Top Overlay and 
+                     Pad R2_amplifier.SchDoc1-2(23.622mm,-22.821mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc1" (18.364mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc1-2(20.739mm,-27.178mm)  Top Layer
+   Violation between Text "R19_amplifier.SchDoc1" (18.364mm,-28.016mm)  Top Overlay and 
+                     Pad C16_amplifier.SchDoc1-1(19.139mm,-27.178mm)  Top Layer
+   Violation between Track (25.381mm,-27.251mm)(25.381mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc1-1(25.781mm,-27.901mm)  Top Layer
+   Violation between Track (26.181mm,-27.251mm)(26.181mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc1-1(25.781mm,-27.901mm)  Top Layer
+   Violation between Track (25.381mm,-27.251mm)(25.381mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc1-2(25.781mm,-26.201mm)  Top Layer
+   Violation between Track (26.181mm,-27.251mm)(26.181mm,-26.851mm)  Top Overlay and 
+                     Pad R3_amplifier.SchDoc1-2(25.781mm,-26.201mm)  Top Layer
+   Violation between Track (19.612mm,-29.864mm)(20.012mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc1-1(18.962mm,-29.464mm)  Top Layer
+   Violation between Track (19.612mm,-29.064mm)(20.012mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc1-1(18.962mm,-29.464mm)  Top Layer
+   Violation between Track (19.612mm,-29.864mm)(20.012mm,-29.864mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc1-2(20.662mm,-29.464mm)  Top Layer
+   Violation between Track (19.612mm,-29.064mm)(20.012mm,-29.064mm)  Top Overlay and 
+                     Pad R19_amplifier.SchDoc1-2(20.662mm,-29.464mm)  Top Layer
+   Violation between Text "R5_amplifier.SchDoc1" (15.57mm,-14.427mm)  Top Overlay and 
+                     Pad C3_amplifier.SchDoc1-2(18.034mm,-13.627mm)  Top Layer
+   Violation between Track (16.818mm,-16.275mm)(17.218mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-1(16.168mm,-15.875mm)  Top Layer
+   Violation between Track (16.818mm,-15.475mm)(17.218mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-1(16.168mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc1" (16.916mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-1(16.168mm,-15.875mm)  Top Layer
+   Violation between Track (16.818mm,-16.275mm)(17.218mm,-16.275mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-2(17.868mm,-15.875mm)  Top Layer
+   Violation between Track (16.818mm,-15.475mm)(17.218mm,-15.475mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-2(17.868mm,-15.875mm)  Top Layer
+   Violation between Text "U1_amplifier.SchDoc1" (16.916mm,-16.993mm)  Top Overlay and 
+                     Pad R5_amplifier.SchDoc1-2(17.868mm,-15.875mm)  Top Layer
+   Violation between Track (21.39mm,-16.275mm)(21.79mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc1-1(22.44mm,-15.875mm)  Top Layer
+   Violation between Track (21.39mm,-15.475mm)(21.79mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc1-1(22.44mm,-15.875mm)  Top Layer
+   Violation between Track (21.39mm,-16.275mm)(21.79mm,-16.275mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc1-2(20.74mm,-15.875mm)  Top Layer
+   Violation between Track (21.39mm,-15.475mm)(21.79mm,-15.475mm)  Top Overlay and 
+                     Pad R4_amplifier.SchDoc1-2(20.74mm,-15.875mm)  Top Layer
+   Violation between Track (32.747mm,-34.998mm)(32.747mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc1-1(33.147mm,-33.948mm)  Top Layer
+   Violation between Track (33.547mm,-34.998mm)(33.547mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc1-1(33.147mm,-33.948mm)  Top Layer
+   Violation between Track (32.747mm,-34.998mm)(32.747mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc1-2(33.147mm,-35.648mm)  Top Layer
+   Violation between Track (33.547mm,-34.998mm)(33.547mm,-34.598mm)  Top Overlay and 
+                     Pad R6_amplifier.SchDoc1-2(33.147mm,-35.648mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc1" (31.953mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc1-5(31.623mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc1" (31.953mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc1-6(32.893mm,-23.863mm)  Top Layer
+   Violation between Text "C17_amplifier.SchDoc1" (31.953mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc1-7(34.163mm,-23.863mm)  Top Layer
+   Violation between Text "R20_amplifier.SchDoc1" (36.017mm,-25.095mm)  Top Overlay and 
+                     Pad U2_amplifier.SchDoc1-8(35.433mm,-23.863mm)  Top Layer
+   Violation between Text "C15_amplifier.SchDoc1" (25.603mm,-36.398mm)  Top Overlay and 
+                     Pad U4_amplifier.SchDoc1-8(25.159mm,-35.179mm)  Top Layer
+   Violation between Text "R9_amplifier.SchDoc1" (34.112mm,-14.427mm)  Top Overlay and 
+                     Pad C5_amplifier.SchDoc1-2(34.544mm,-13.627mm)  Top Layer
+   Violation between Track (37.192mm,-22.171mm)(37.192mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc1-1(37.592mm,-21.121mm)  Top Layer
+   Violation between Track (37.992mm,-22.171mm)(37.992mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc1-1(37.592mm,-21.121mm)  Top Layer
+   Violation between Track (37.192mm,-22.171mm)(37.192mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc1-2(37.592mm,-22.821mm)  Top Layer
+   Violation between Track (37.992mm,-22.171mm)(37.992mm,-21.771mm)  Top Overlay and 
+                     Pad R7_amplifier.SchDoc1-2(37.592mm,-22.821mm)  Top Layer
+   Violation between Track (27.413mm,-27.251mm)(27.413mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc1-1(27.813mm,-27.901mm)  Top Layer
+   Violation between Track (28.213mm,-27.251mm)(28.213mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc1-1(27.813mm,-27.901mm)  Top Layer
+   Violation between Track (27.413mm,-27.251mm)(27.413mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc1-2(27.813mm,-26.201mm)  Top Layer
+   Violation between Track (28.213mm,-27.251mm)(28.213mm,-26.851mm)  Top Overlay and 
+                     Pad R8_amplifier.SchDoc1-2(27.813mm,-26.201mm)  Top Layer
+   Violation between Track (37.265mm,-26.143mm)(37.665mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc1-1(38.315mm,-26.543mm)  Top Layer
+   Violation between Track (37.265mm,-26.943mm)(37.665mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc1-1(38.315mm,-26.543mm)  Top Layer
+   Violation between Track (37.265mm,-26.143mm)(37.665mm,-26.143mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc1-2(36.615mm,-26.543mm)  Top Layer
+   Violation between Track (37.265mm,-26.943mm)(37.665mm,-26.943mm)  Top Overlay and 
+                     Pad R20_amplifier.SchDoc1-2(36.615mm,-26.543mm)  Top Layer
+   Violation between Text "R10_amplifier.SchDoc1" (29.54mm,-14.427mm)  Top Overlay and 
+                     Pad C6_amplifier.SchDoc1-2(32.004mm,-13.627mm)  Top Layer
+   Violation between Track (30.788mm,-16.275mm)(31.188mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-1(30.138mm,-15.875mm)  Top Layer
+   Violation between Track (30.788mm,-15.475mm)(31.188mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-1(30.138mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc1" (30.886mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-1(30.138mm,-15.875mm)  Top Layer
+   Violation between Track (30.788mm,-16.275mm)(31.188mm,-16.275mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-2(31.838mm,-15.875mm)  Top Layer
+   Violation between Track (30.788mm,-15.475mm)(31.188mm,-15.475mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-2(31.838mm,-15.875mm)  Top Layer
+   Violation between Text "U2_amplifier.SchDoc1" (30.886mm,-16.993mm)  Top Overlay and 
+                     Pad R10_amplifier.SchDoc1-2(31.838mm,-15.875mm)  Top Layer
+   Violation between Track (35.36mm,-16.275mm)(35.76mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc1-1(36.41mm,-15.875mm)  Top Layer
+   Violation between Track (35.36mm,-15.475mm)(35.76mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc1-1(36.41mm,-15.875mm)  Top Layer
+   Violation between Track (35.36mm,-16.275mm)(35.76mm,-16.275mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc1-2(34.71mm,-15.875mm)  Top Layer
+   Violation between Track (35.36mm,-15.475mm)(35.76mm,-15.475mm)  Top Overlay and 
+                     Pad R9_amplifier.SchDoc1-2(34.71mm,-15.875mm)  Top Layer
+   Violation between Track (5.969mm,-5.588mm)(6.477mm,-5.588mm)  Top Overlay and 
+                     Pad C8-1(7.493mm,-5.847mm)  Top Layer
+   Violation between Track (8.509mm,-5.588mm)(8.89mm,-5.588mm)  Top Overlay and 
+                     Pad C8-1(7.493mm,-5.847mm)  Top Layer
+   Violation between Track (8.509mm,-10.033mm)(9.652mm,-10.033mm)  Top Overlay and 
+                     Pad C8-2(7.493mm,-9.647mm)  Top Layer
+   Violation between Track (5.334mm,-10.033mm)(6.477mm,-10.033mm)  Top Overlay and 
+                     Pad C8-2(7.493mm,-9.647mm)  Top Layer
+   Violation between Text "C13" (5.334mm,-11.354mm)  Top Overlay and 
+                     Pad C8-2(7.493mm,-9.647mm)  Top Layer
+   Violation between Text "U7" (4.521mm,-26.746mm)  Top Overlay and 
+                     Pad C20-2(7.168mm,-25.417mm)  Top Layer
+   Violation between Text "Dout_amplifier.SchDoc4" (126.009mm,-45.695mm)  Top Overlay and 
+                     Pad OD_amplifier.SchDoc4-1(127.254mm,-43.18mm)  Multi-Layer
+   Violation between Text "Dout_amplifier.SchDoc3" (96.545mm,-45.695mm)  Top Overlay and 
+                     Pad OD_amplifier.SchDoc3-1(97.79mm,-43.18mm)  Multi-Layer
+   Violation between Text "Dout_amplifier.SchDoc2" (66.954mm,-45.695mm)  Top Overlay and 
+                     Pad OD_amplifier.SchDoc2-1(68.199mm,-43.18mm)  Multi-Layer
+   Violation between Text "Dout_amplifier.SchDoc1" (37.49mm,-45.695mm)  Top Overlay and 
+                     Pad OD_amplifier.SchDoc1-1(38.735mm,-43.18mm)  Multi-Layer
+   Violation between Text "C23" (-7.772mm,-15.164mm)  Top Overlay and 
+                     Pad P1-1(-6.223mm,-13.716mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-1(-17.907mm,-1.016mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-2(-17.907mm,-3.556mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-3(-17.907mm,-6.096mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-4(-17.907mm,-8.636mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-5(-17.907mm,-11.176mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-6(-17.907mm,-13.716mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-7(-17.907mm,-16.256mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-8(-17.907mm,-18.796mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-9(-17.907mm,-21.336mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-10(-17.907mm,-23.876mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-11(-17.907mm,-26.416mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-12(-17.907mm,-28.956mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-13(-17.907mm,-31.496mm)  Multi-Layer
+   Violation between Track (-16.747mm,-36.076mm)(-16.747mm,1.024mm)  Top Overlay and 
+                     Pad U5-14(-17.907mm,-34.036mm)  Multi-Layer
+Rule Violations :365
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Via (4.065mm,-22.072mm) Top Layer to Bottom Layer and 
+                     Pad C21-1(4.158mm,-23.551mm)  Top Layer
+   Violation between Via (6.315mm,-23.572mm) Top Layer to Bottom Layer and 
+                     Pad C19-2(7.405mm,-22.352mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-2(112.081mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-1(112.081mm,-42.481mm)  Top Layer
+   Violation between Via (112.815mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad U3_amplifier.SchDoc4-1(112.081mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-3(112.081mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-2(112.081mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-4(112.081mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-3(112.081mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-5(112.081mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-4(112.081mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-6(112.081mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-5(112.081mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-7(112.081mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-6(112.081mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-8(112.081mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-7(112.081mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-15(117.281mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-16(117.281mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-14(117.281mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-15(117.281mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-13(117.281mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-14(117.281mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-12(117.281mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-13(117.281mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-11(117.281mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-12(117.281mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-10(117.281mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-11(117.281mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc4-9(117.281mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc4-10(117.281mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-2(82.617mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-1(82.617mm,-42.481mm)  Top Layer
+   Violation between Via (81.315mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad U3_amplifier.SchDoc3-1(82.617mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-3(82.617mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-2(82.617mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-4(82.617mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-3(82.617mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-5(82.617mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-4(82.617mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-6(82.617mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-5(82.617mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-7(82.617mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-6(82.617mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-8(82.617mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-7(82.617mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-15(87.817mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-16(87.817mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-14(87.817mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-15(87.817mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-13(87.817mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-14(87.817mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-12(87.817mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-13(87.817mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-11(87.817mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-12(87.817mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-10(87.817mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-11(87.817mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc3-9(87.817mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc3-10(87.817mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-2(53.026mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-1(53.026mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-3(53.026mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-2(53.026mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-4(53.026mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-3(53.026mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-5(53.026mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-4(53.026mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-6(53.026mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-5(53.026mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-7(53.026mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-6(53.026mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-8(53.026mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-7(53.026mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-15(58.226mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-16(58.226mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-14(58.226mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-15(58.226mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-13(58.226mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-14(58.226mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-12(58.226mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-13(58.226mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-11(58.226mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-12(58.226mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-10(58.226mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-11(58.226mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc2-9(58.226mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc2-10(58.226mm,-46.291mm)  Top Layer
+   Violation between Via (-1.185mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad U6-1(-0.014mm,-42.824mm)  Top Layer
+   Violation between Via (6.315mm,-14.572mm) Top Layer to Bottom Layer and 
+                     Pad C13-1(7.747mm,-13.467mm)  Top Layer
+   Violation between Via (6.315mm,-11.572mm) Top Layer to Bottom Layer and 
+                     Pad C13-1(7.747mm,-13.467mm)  Top Layer
+   Violation between Via (9.315mm,-14.572mm) Top Layer to Bottom Layer and 
+                     Pad C13-1(7.747mm,-13.467mm)  Top Layer
+   Violation between Via (9.315mm,-17.572mm) Top Layer to Bottom Layer and 
+                     Pad C13-2(7.747mm,-17.267mm)  Top Layer
+   Violation between Via (118.237mm,-17.78mm) Top Layer to Bottom Layer and 
+                     Pad C11_amplifier.SchDoc4-2(118.148mm,-19.431mm)  Top Layer
+   Violation between Via (124.065mm,-31.072mm) Top Layer to Bottom Layer and 
+                     Pad C12_amplifier.SchDoc4-1(122.72mm,-31.115mm)  Top Layer
+   Violation between Via (88.773mm,-17.78mm) Top Layer to Bottom Layer and 
+                     Pad C11_amplifier.SchDoc3-2(88.684mm,-19.431mm)  Top Layer
+   Violation between Via (59.182mm,-17.78mm) Top Layer to Bottom Layer and 
+                     Pad C11_amplifier.SchDoc2-2(59.093mm,-19.431mm)  Top Layer
+   Violation between Via (29.718mm,-17.78mm) Top Layer to Bottom Layer and 
+                     Pad C11_amplifier.SchDoc1-2(29.629mm,-19.431mm)  Top Layer
+   Violation between Via (13.065mm,-22.072mm) Top Layer to Bottom Layer and 
+                     Pad C9_amplifier.SchDoc1-2(14.313mm,-21.971mm)  Top Layer
+   Violation between Via (108.315mm,-35.572mm) Top Layer to Bottom Layer and 
+                     Pad C1_amplifier.SchDoc4-2(107.442mm,-34.455mm)  Top Layer
+   Violation between Via (107.696mm,-21.59mm) Top Layer to Bottom Layer and 
+                     Pad U1_amplifier.SchDoc4-6(107.442mm,-23.863mm)  Top Layer
+   Violation between Via (78.232mm,-21.59mm) Top Layer to Bottom Layer and 
+                     Pad U1_amplifier.SchDoc3-6(77.978mm,-23.863mm)  Top Layer
+   Violation between Via (49.815mm,-35.572mm) Top Layer to Bottom Layer and 
+                     Pad R1_amplifier.SchDoc2-2(50.927mm,-34.505mm)  Top Layer
+   Violation between Via (46.065mm,-25.072mm) Top Layer to Bottom Layer and 
+                     Pad U1_amplifier.SchDoc2-5(47.117mm,-23.863mm)  Top Layer
+   Violation between Via (48.641mm,-21.59mm) Top Layer to Bottom Layer and 
+                     Pad U1_amplifier.SchDoc2-6(48.387mm,-23.863mm)  Top Layer
+   Violation between Via (52.815mm,-35.572mm) Top Layer to Bottom Layer and 
+                     Pad U4_amplifier.SchDoc2-8(54.623mm,-35.179mm)  Top Layer
+   Violation between Via (56.565mm,-34.072mm) Top Layer to Bottom Layer and 
+                     Pad U4_amplifier.SchDoc2-7(54.623mm,-33.909mm)  Top Layer
+   Violation between Via (19.815mm,-35.572mm) Top Layer to Bottom Layer and 
+                     Pad C1_amplifier.SchDoc1-2(18.923mm,-34.455mm)  Top Layer
+   Violation between Via (6.315mm,-11.572mm) Top Layer to Bottom Layer and 
+                     Pad C8-2(7.493mm,-9.647mm)  Top Layer
+   Violation between Via (91.065mm,-40.072mm) Top Layer to Bottom Layer and 
+                     Pad C18_amplifier.SchDoc3-1(92.329mm,-40.729mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-2(23.562mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-1(23.562mm,-42.481mm)  Top Layer
+   Violation between Via (24.315mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad U3_amplifier.SchDoc1-1(23.562mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-3(23.562mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-2(23.562mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-4(23.562mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-3(23.562mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-5(23.562mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-4(23.562mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-6(23.562mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-5(23.562mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-7(23.562mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-6(23.562mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-8(23.562mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-7(23.562mm,-46.291mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-15(28.762mm,-43.117mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-16(28.762mm,-42.481mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-14(28.762mm,-43.752mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-15(28.762mm,-43.117mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-13(28.762mm,-44.386mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-14(28.762mm,-43.752mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-12(28.762mm,-45.022mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-13(28.762mm,-44.386mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-11(28.762mm,-45.657mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-12(28.762mm,-45.022mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-10(28.762mm,-46.291mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-11(28.762mm,-45.657mm)  Top Layer
+   Violation between Pad U3_amplifier.SchDoc1-9(28.762mm,-46.926mm)  Top Layer and 
+                     Pad U3_amplifier.SchDoc1-10(28.762mm,-46.291mm)  Top Layer
+   Violation between Via (6.315mm,-26.572mm) Top Layer to Bottom Layer and 
+                     Pad C20-2(7.168mm,-25.417mm)  Top Layer
+   Violation between Pad U7-8(5.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-10(6.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-9(5.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-7(5.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-5(6.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-6(5.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-12(7.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-11(6.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-14(8.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-3(7.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-4(6.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-1(8.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-13(7.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-2(7.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-15(7.379mm,-29.718mm)  Top Layer
+   Violation between Pad U7-9(5.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-8(5.104mm,-31.173mm)  Top Layer
+   Violation between Via (5.334mm,-30.228mm) Top Layer to Bottom Layer and 
+                     Pad U7-8(5.104mm,-31.173mm)  Top Layer
+   Violation between Pad U7-10(6.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-9(5.604mm,-31.173mm)  Top Layer
+   Violation between Via (5.334mm,-30.228mm) Top Layer to Bottom Layer and 
+                     Pad U7-9(5.604mm,-31.173mm)  Top Layer
+   Violation between Pad U7-11(6.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-10(6.104mm,-31.173mm)  Top Layer
+   Violation between Pad U7-12(7.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-11(6.604mm,-31.173mm)  Top Layer
+   Violation between Pad U7-13(7.604mm,-31.173mm)  Top Layer and 
+                     Pad U7-12(7.104mm,-31.173mm)  Top Layer
+   Violation between Pad U7-14(8.104mm,-31.173mm)  Top Layer and 
+                     Pad U7-13(7.604mm,-31.173mm)  Top Layer
+   Violation between Pad U7-6(5.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-7(5.104mm,-28.263mm)  Top Layer
+   Violation between Via (5.334mm,-29.198mm) Top Layer to Bottom Layer and 
+                     Pad U7-7(5.104mm,-28.263mm)  Top Layer
+   Violation between Pad U7-5(6.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-6(5.604mm,-28.263mm)  Top Layer
+   Violation between Via (5.334mm,-29.198mm) Top Layer to Bottom Layer and 
+                     Pad U7-6(5.604mm,-28.263mm)  Top Layer
+   Violation between Pad U7-4(6.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-5(6.104mm,-28.263mm)  Top Layer
+   Violation between Pad U7-3(7.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-4(6.604mm,-28.263mm)  Top Layer
+   Violation between Via (6.904mm,-29.193mm) Top Layer to Bottom Layer and 
+                     Pad U7-4(6.604mm,-28.263mm)  Top Layer
+   Violation between Pad U7-2(7.604mm,-28.263mm)  Top Layer and 
+                     Pad U7-3(7.104mm,-28.263mm)  Top Layer
+   Violation between Via (6.904mm,-29.193mm) Top Layer to Bottom Layer and 
+                     Pad U7-3(7.104mm,-28.263mm)  Top Layer
+   Violation between Pad U7-1(8.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-2(7.604mm,-28.263mm)  Top Layer
+   Violation between Via (7.904mm,-29.193mm) Top Layer to Bottom Layer and 
+                     Pad U7-2(7.604mm,-28.263mm)  Top Layer
+   Violation between Via (7.904mm,-29.193mm) Top Layer to Bottom Layer and 
+                     Pad U7-1(8.104mm,-28.263mm)  Top Layer
+   Violation between Via (126.315mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc4-1(127.254mm,-43.18mm)  Multi-Layer
+   Violation between Via (127.815mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc4-1(127.254mm,-43.18mm)  Multi-Layer
+   Violation between Via (97.815mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc3-1(97.79mm,-43.18mm)  Multi-Layer
+   Violation between Via (67.815mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc2-1(68.199mm,-43.18mm)  Multi-Layer
+   Violation between Via (69.315mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc2-1(68.199mm,-43.18mm)  Multi-Layer
+   Violation between Via (39.315mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc1-1(38.735mm,-43.18mm)  Multi-Layer
+   Violation between Via (37.815mm,-41.572mm) Top Layer to Bottom Layer and 
+                     Pad OD_amplifier.SchDoc1-1(38.735mm,-43.18mm)  Multi-Layer
+   Violation between Via (-4.935mm,-7.072mm) Top Layer to Bottom Layer and 
+                     Pad P1-4(-6.223mm,-6.096mm)  Multi-Layer
+   Violation between Via (-4.935mm,-10.072mm) Top Layer to Bottom Layer and 
+                     Pad P1-2(-6.223mm,-11.176mm)  Multi-Layer
+   Violation between Via (-19.185mm,0.428mm) Top Layer to Bottom Layer and 
+                     Pad U5-1(-17.907mm,-1.016mm)  Multi-Layer
+   Violation between Via (-16.185mm,-5.572mm) Top Layer to Bottom Layer and 
+                     Pad U5-3(-17.907mm,-6.096mm)  Multi-Layer
+   Violation between Via (-16.185mm,-8.572mm) Top Layer to Bottom Layer and 
+                     Pad U5-4(-17.907mm,-8.636mm)  Multi-Layer
+   Violation between Via (-16.185mm,-11.572mm) Top Layer to Bottom Layer and 
+                     Pad U5-5(-17.907mm,-11.176mm)  Multi-Layer
+   Violation between Via (-16.185mm,-23.572mm) Top Layer to Bottom Layer and 
+                     Pad U5-10(-17.907mm,-23.876mm)  Multi-Layer
+Rule Violations :132
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=2.54mm) (Preferred=0.508mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.508mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (All),(All)
+   Violation between Pad U7-7(5.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+   Violation between Pad U7-5(6.104mm,-28.263mm)  Top Layer and 
+                     Pad U7-16(5.534mm,-29.708mm)  Top Layer
+Rule Violations :2
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Room amplifier.SchDoc1 (Bounding Region = (63.627mm, 79.756mm, 92.456mm, 135.001mm) (InComponentClass('amplifier.SchDoc1'))
+Rule Violations :0
+
+
+Violations Detected : 500
+Time Elapsed        : 00:00:01

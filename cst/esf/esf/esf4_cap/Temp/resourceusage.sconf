@@ -1,0 +1,19 @@
+FeatureKeywords:string:block:type:saved:EMSSCHEM, modeler:boolean:add, modeler:construction_info:object_names, modeler:hidfile:unique_ids, modeler:hidfile:diagnostics, mesh::background::boolean, DELETERESULTS:0SP0, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, mesh:workflow:cadsurf, acceleration:cpu:8, acceleration:cpudevices:1, background:normal, boundary:magnetic:xmax, boundary:magnetic:xmin, boundary:magnetic:ymax, boundary:magnetic:ymin, boundary:magnetic:zmax, boundary:magnetic:zmin, mesh:tet, mesh:tet:adaptive, solver:lf:e-static, source:potential:fixed, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:MHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, la:direct, la:precond:pdss7, visualization:field_plot:default_engine, DELETERESULTS:00P0, CSolverControl:progress:nullptr, DELETERESULTS:M000, source:charge:pec, modeler:Plot:Send3DViewerCommand, DELETERESULTS:0000, visualization:mesh_view:legacy_engine, visualization:mesh_view:default_engine, block:type:saved:CURR, units:Frequency:kHz, units:Time:ms, modeler:history:header_not_parsed, modeler:load:fastloading, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, modeler:variables:rebuild, modeler:variables:fastrebuild, monitor:resultfilemap:load, solver:lf:eqs:td, la:iterative, mf:nonlinear:linear, ti:implicit_euler, ti:fixed, mf:nonlinear:allow_weighted_matching_fallback, ti:linear, DenseInitDangerousDim, source:potential:floating, DELETERESULTS:M0P0, modeler:variables:fullrebuild, front:parametersweep
+LastWorkflowState:string:tetmesh:success
+solver_lt_eqs_tet/InitialFreePhysicalInMB:int:17275
+solver_lt_eqs_tet/MaxResidentSizeInMB:int:54
+solver_lt_eqs_tet/MaxResidentSizeMiB:int:38
+solver_lt_eqs_tet/MinFreePhysicalInMB:int:17106
+solver_pp/InitialFreePhysicalInMB:int:15524
+solver_pp/MaxResidentSizeInMB:int:23
+solver_pp/MaxResidentSizeMiB:int:5
+solver_pp/MinFreePhysicalInMB:int:15516
+solver_se_tet/InitialFreePhysicalInMB:int:15636
+solver_se_tet/MaxResidentSizeInMB:int:201
+solver_se_tet/MaxResidentSizeMiB:int:179
+solver_se_tet/MinFreePhysicalInMB:int:15526
+tetmesh/InitialFreePhysicalInMB:int:15631
+tetmesh/MaxResidentSizeInMB:int:76
+tetmesh/MaxResidentSizeMiB:int:54
+tetmesh/MinFreePhysicalInMB:int:15589
+---

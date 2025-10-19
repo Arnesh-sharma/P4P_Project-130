@@ -1,0 +1,28 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C19
+Change Component Designator: OldDesignator=C? NewDesignator=C20
+Change Component Designator: OldDesignator=C? NewDesignator=C21
+Change Component Designator: OldDesignator=C? NewDesignator=C22
+Change Component Designator: OldDesignator=U? NewDesignator=U7
+Added Pin To Net: NetName=NetC19_1 Pin=C19-1
+Added Pin To Net: NetName=NetC19_1 Pin=C20-1
+Added Pin To Net: NetName=NetC19_1 Pin=U7-1
+Added Net: Name=NetC19_1
+Added Pin To Net: NetName=NetC19_2 Pin=C19-2
+Added Pin To Net: NetName=NetC19_2 Pin=C21-1
+Added Pin To Net: NetName=NetC19_2 Pin=U7-4
+Added Pin To Net: NetName=NetC19_2 Pin=U7-4
+Added Pin To Net: NetName=NetC19_2 Pin=U7-5
+Added Net: Name=NetC19_2
+Added Pin To Net: NetName=NetC20_2 Pin=C20-2
+Added Pin To Net: NetName=NetC20_2 Pin=U7-3
+Added Net: Name=NetC20_2
+Added Pin To Net: NetName=NetC21_2 Pin=C21-2
+Added Pin To Net: NetName=NetC21_2 Pin=C22-2
+Added Pin To Net: NetName=NetC21_2 Pin=U7-7
+Added Net: Name=NetC21_2
+Added Pin To Net: NetName=NetC22_1 Pin=C22-1
+Added Pin To Net: NetName=NetC22_1 Pin=U7-11
+Added Net: Name=NetC22_1
+Added Member To Class: ClassName=U_power Member=Component C19 10uF
+Added Member To Class: ClassName=U_power Member=Component C20 10nF
+Added Member To Class: ClassName=U_power Member=Component C21 10uF

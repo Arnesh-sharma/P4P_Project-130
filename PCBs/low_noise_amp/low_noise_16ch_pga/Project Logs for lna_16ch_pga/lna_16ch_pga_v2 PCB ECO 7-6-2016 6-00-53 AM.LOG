@@ -1,0 +1,16 @@
+Change Component DesignItemId : Designator=C20 Old DesignItemId=CAP000037 New DesignItemId=CAP000618
+Change Component DesignItemId : Designator=C22 Old DesignItemId=CAP000037 New DesignItemId=CAP000618
+Change Component Footprint: Designator=C20 Old Footprint=ECE-CAPR0.2x0.1TH New Footprint=ECE-CAPC1608-0603SM
+Change Component Footprint: Designator=C22 Old Footprint=ECE-CAPR0.2x0.1TH New Footprint=ECE-CAPC1608-0603SM
+Added Pin To Net: NetName=+V5 Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=+V5 Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=-V5 Pin=C21-2
+Added Pin To Net: NetName=-V5 Pin=C22-2
+Added Pin To Net: NetName=+V5 Pin=U7-1
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=GND Pin=U7-5
+Added Pin To Net: NetName=-V5 Pin=U7-7
+Added Member To Class: ClassName=U_power Member=Component C22 10nF

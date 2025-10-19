@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND_A Pin=P1-1
+Removed Pin From Net: NetName=VCC Pin=P1-2
+Change Component Comment : Designator=P1 Old Comment=PowerIn New Comment=Ref
+Added Pin To Net: NetName=V25 Pin=P1-1
+Added Pin To Net: NetName=GND_A Pin=P1-2

@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=RST Pin=P?-5
+Removed Pin From Net: NetName=RST Pin=P?-7
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Change Component Designator: OldDesignator=P? NewDesignator=P5
+Added Pin To Net: NetName=RST Pin=P1-7
+Added Pin To Net: NetName=5VDIGITAL Pin=P2-2
+Added Pin To Net: NetName=CLK_amplifier.SchDoc1 Pin=P2-3
+Added Pin To Net: NetName=DIN_amplifier.SchDoc1 Pin=P2-4
+Added Pin To Net: NetName=RST Pin=P2-5
+Added Pin To Net: NetName=GND Pin=P2-6
+Change Net Name : Old Net Name=NetP?_1 New Net Name=NetP5_1
+Change Net Name : Old Net Name=NetP?_3 New Net Name=NetP5_3
+Change Net Name : Old Net Name=NetP?_8 New Net Name=NetP5_8
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=U5-23
+Added Net: Name=NetP1_1
+Added Pin To Net: NetName=NetP1_2 Pin=P1-2
+Added Pin To Net: NetName=NetP1_2 Pin=U5-24
+Added Net: Name=NetP1_2
+Added Pin To Net: NetName=NetP1_3 Pin=P1-3
+Added Pin To Net: NetName=NetP1_3 Pin=U5-25
+Added Net: Name=NetP1_3
+Added Pin To Net: NetName=NetP1_4 Pin=P1-4
+Added Pin To Net: NetName=NetP1_4 Pin=U5-26
+Added Net: Name=NetP1_4
+Added Pin To Net: NetName=NetP1_5 Pin=P1-5
+Added Pin To Net: NetName=NetP1_5 Pin=U5-27
+Added Net: Name=NetP1_5
+Added Pin To Net: NetName=NetP1_6 Pin=P1-6
+Added Pin To Net: NetName=NetP1_6 Pin=U5-28
+Added Net: Name=NetP1_6
+Added Pin To Net: NetName=NetP2_1 Pin=P2-1
+Added Pin To Net: NetName=NetP2_1 Pin=U5-18
+Added Net: Name=NetP2_1
+Added Pin To Net: NetName=NetP5_2 Pin=P5-2
+Added Pin To Net: NetName=NetP5_2 Pin=U5-3
+Added Net: Name=NetP5_2
+Added Pin To Net: NetName=NetP5_4 Pin=P5-4
+Added Pin To Net: NetName=NetP5_4 Pin=U5-5
+Added Net: Name=NetP5_4
+Added Pin To Net: NetName=NetP5_5 Pin=P5-5
+Added Pin To Net: NetName=NetP5_5 Pin=U5-6
+Added Net: Name=NetP5_5
+Added Pin To Net: NetName=NetP5_6 Pin=P5-6
+Added Pin To Net: NetName=NetP5_6 Pin=U5-11
+Added Net: Name=NetP5_6
+Added Pin To Net: NetName=NetP5_7 Pin=P5-7
+Added Pin To Net: NetName=NetP5_7 Pin=U5-12
+Added Net: Name=NetP5_7
+Added Member To Class: ClassName=main Member=Component P1 PortC
+Added Member To Class: ClassName=main Member=Component P5 PortD

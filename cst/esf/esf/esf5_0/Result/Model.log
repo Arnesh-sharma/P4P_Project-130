@@ -1,0 +1,116 @@
+2025-07-12 17:40:44   Electrostatic Solver
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:44   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  MHz
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:44   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: magnetic
+                        Xmax: magnetic
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: magnetic
+                        Zmax: magnetic
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:44   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:44   --- Material prioritization table with "ElectricConductivity" scheme was used
+                      ---
+                       - PEC
+                       - esf1-B_Cu_0(PCB2)/PEC Sheets
+                       - esf1-F_Cu_0(PCB1)/PEC Sheets
+                       - Copper (annealed)
+                       - esf1-B_Cu_0(PCB2)/Copper
+                       - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+                       - esf1-F_Cu_0(PCB1)/Copper
+                       - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+                       - $CoilMaterial$
+                       - $NFSMaterial$
+                       - Air
+                       - FR-4 (lossy)
+                       - Folder1/material1
+                       - air_0
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:47   Solver started at: 2025-07-12 17:40:47 +1200
+
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:47   Solver order = 2
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:47   Detected 2 independent conductive sets.
+2025-07-12 17:40:47   Desired accuracy = 1.0e-062025-07-12 17:40:47   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:47   Using mesh with curved elements order: 3
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Capacitance computation
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Solver Timing Statistics: (last run)
+
+                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  2s
+
+                        Number of threads used:           1024 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Solver Size Statistics:
+
+                        Number of mesh cells:         18432 
+                        Number of unknowns:           23280
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Linear Solver Results: (last run)
+
+                        Accuracy:                     1.573073e-15
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         1
+                        Maximum number of iterations: 10000
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        14760                         15045148     15045148     
+                        Solver run total    116060                        15045072     14999620     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-12 17:40:48   Creating parametric 1D results for Run ID 1
+
+                      ------------------------------------------------------------------------------

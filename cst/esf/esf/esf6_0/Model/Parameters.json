@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "100",
+            "name": "VFrame",
+            "value": "100"
+        },
+        {
+            "expr": "-1",
+            "name": "vc2",
+            "value": "-1"
+        },
+        {
+            "expr": "1",
+            "name": "vc1",
+            "value": "1"
+        },
+        {
+            "expr": "1.6",
+            "name": "ppreg",
+            "value": "1.6"
+        },
+        {
+            "expr": "35e-3",
+            "name": "oz",
+            "value": "35e-3"
+        }
+    ],
+    "version": 1
+}

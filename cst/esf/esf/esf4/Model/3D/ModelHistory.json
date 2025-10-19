@@ -1,0 +1,2637 @@
+{
+    "general": {
+        "version": "2024.5",
+        "date": "2024-06-14",
+        "acis": "33.0.1",
+        "buildnumber": "20240614",
+        "project_type": "EMS",
+        "length": "mm",
+        "frequency": {
+            "unit": "kHz",
+            "minimum": "0",
+            "maximum": "0",
+            "minimum_expr": "0.0",
+            "maximum_expr": "0.0"
+        },
+        "time": "ms",
+        "created": "2024.5|33.0.1|20240614"
+    },
+    "history": [
+        {
+            "caption": "use template: Capacitive Sensors.cfg",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "'set the units",
+                "With Units",
+                "    .SetUnit \"Length\", \"mm\"",
+                "    .SetUnit \"Frequency\", \"MHz\"",
+                "    .SetUnit \"Voltage\", \"V\"",
+                "    .SetUnit \"Resistance\", \"Ohm\"",
+                "    .SetUnit \"Inductance\", \"nH\"",
+                "    .SetUnit \"Temperature\",  \"degC\"",
+                "    .SetUnit \"Time\", \"ns\"",
+                "    .SetUnit \"Current\", \"A\"",
+                "    .SetUnit \"Conductance\", \"S\"",
+                "    .SetUnit \"Capacitance\", \"pF\"",
+                "End With",
+                "",
+                "ThermalSolver.AmbientTemperature \"0\"",
+                "",
+                "'----------------------------------------------------------------------------",
+                "",
+                "Plot.DrawBox True",
+                "",
+                "With Background",
+                "     .ResetBackground",
+                "     .Type \"Normal\"",
+                "     .Epsilon \"1.0\"",
+                "     .Mu \"1.0\"",
+                "     .Rho \"1.204\"",
+                "     .ThermalType \"Normal\"",
+                "     .ThermalConductivity \"0.026\"",
+                "      .SpecificHeat \"1005\", \"J/K/kg\"",
+                "     .XminSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .XmaxSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .YminSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .YmaxSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .ZminSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .ZmaxSpace 10e-3 * Units.GetGeometrySIToUnit()",
+                "     .ApplyInAllDirections \"True\"",
+                "End With",
+                "",
+                "With Boundary",
+                "     .Xmin \"electric\"",
+                "     .Xmax \"electric\"",
+                "     .Ymin \"electric\"",
+                "     .Ymax \"electric\"",
+                "     .Zmin \"electric\"",
+                "     .Zmax \"electric\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "End With",
+                "",
+                "With Mesh",
+                "     .MeshType \"Tetrahedral\"",
+                "     .RatioLimit \"50\"",
+                "     .MinimumStepNumber \"20\"",
+                "     .MinimumStepNumberTet \"5\"",
+                "     .SetAutomeshRefineDielectricsType \"None\"",
+                "     .DensityTransitions \"0.8\"",
+                "End With",
+                "",
+                "With MeshSettings",
+                "     .SetMeshType \"Hex\"",
+                "     .Set \"StepsPerBoxNear\", \"20\"",
+                "     .Set \"StepsPerBoxFar\", \"10\"",
+                "     .SetMeshType \"Tet\"",
+                "     .Set \"StepsPerBoxFar\", \"5\"",
+                "     .SetMeshType \"Plane\"",
+                "     .Set \"StepsPerBoxFar\", \"5\"",
+                "End With",
+                "",
+                "With MeshAdaption3D",
+                "     .SetLFAdaptionStrategy \"Energy\"",
+                "End With",
+                "",
+                "'----------------------------------------------------------------------------",
+                "",
+                "'set the solver type",
+                "ChangeSolverType(\"LF EStatic\")",
+                "",
+                "'----------------------------------------------------------------------------"
+            ]
+        },
+        {
+            "caption": "new component: component1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component1\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid1\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"0\", \"3\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"-d/2-th\", \"-d/2\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid2\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-6\", \"-3\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"-d/2-th\", \"-d/2\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid3\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-6\", \"6\" ",
+                "     .Yrange \"4\", \"5\" ",
+                "     .Zrange \"-d/2-th\", \"-d/2\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component1:solid1, component1:solid2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component1:solid1\", \"component1:solid2\""
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component1:solid1, component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component1:solid1\", \"component1:solid3\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid2\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-6\", \"6\" ",
+                "     .Yrange \"-4\", \"5\" ",
+                "     .Zrange \"0.25\", \"0.75\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid3\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-3\", \"0\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"0.25\", \"0.75\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid4\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"3\", \"6\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"d/2\", \"d/2+th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "paste structure data: 1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With SAT ",
+                "     .Reset ",
+                "     .FileName \"*1.cby\" ",
+                "     .SubProjectScaleFactor \"0.001\" ",
+                "     .ImportToActiveCoordinateSystem \"True\" ",
+                "     .ScaleToUnit \"True\" ",
+                "     .Curves \"False\" ",
+                "     .Read ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean intersect shapes: component1:solid2_1, component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Intersect \"component1:solid2_1\", \"component1:solid3\""
+            ]
+        },
+        {
+            "caption": "boolean intersect shapes: component1:solid2, component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Intersect \"component1:solid2\", \"component1:solid4\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid3\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-3\", \"0\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"d/2\", \"d/2+th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete shape: component1:solid2_1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"component1:solid2_1\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid4\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-6\", \"6\" ",
+                "     .Yrange \"-5\", \"-4\" ",
+                "     .Zrange \"0.25\", \"0.75\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete shape: component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"component1:solid3\""
+            ]
+        },
+        {
+            "caption": "define units",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Units ",
+                "     .SetUnit \"Length\", \"mm\"",
+                "     .SetUnit \"Temperature\", \"degC\"",
+                "     .SetUnit \"Voltage\", \"V\"",
+                "     .SetUnit \"Current\", \"A\"",
+                "     .SetUnit \"Resistance\", \"Ohm\"",
+                "     .SetUnit \"Conductance\", \"S\"",
+                "     .SetUnit \"Capacitance\", \"pF\"",
+                "     .SetUnit \"Inductance\", \"nH\"",
+                "     .SetUnit \"Frequency\", \"kHz\"",
+                "     .SetUnit \"Time\", \"ms\"",
+                "     .SetResultUnit \"frequency\", \"frequency\", \"\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component1:solid2, component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component1:solid2\", \"component1:solid3\""
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component1:solid2, component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component1:solid2\", \"component1:solid4\""
+            ]
+        },
+        {
+            "caption": "define potential: potential1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential1\"",
+                "     .Folder \"\"",
+                "     .Value \"5\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"13\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"-5\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"25\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid3\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-50\", \"50\" ",
+                "     .Yrange \"-50\", \"50\" ",
+                "     .Zrange \"-50\", \"-53\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid4\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-50\", \"50\" ",
+                "     .Yrange \"-50\", \"50\" ",
+                "     .Zrange \"50\", \"53\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete potential: potential1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential1\""
+            ]
+        },
+        {
+            "caption": "delete potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential2\""
+            ]
+        },
+        {
+            "caption": "define potential: potential1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential1\"",
+                "     .Folder \"\"",
+                "     .Value \"10\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid3\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"-10\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid4\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"-1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                "     .Xmin \"magnetic\"",
+                "     .Xmax \"magnetic\"",
+                "     .Ymin \"magnetic\"",
+                "     .Ymax \"magnetic\"",
+                "     .Zmin \"magnetic\"",
+                "     .Zmax \"magnetic\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "     .ApplyInAllDirections \"True\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define background",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Background ",
+                "     .ResetBackground ",
+                "     .XminSpace \"0\" ",
+                "     .XmaxSpace \"0\" ",
+                "     .YminSpace \"0\" ",
+                "     .YmaxSpace \"0\" ",
+                "     .ZminSpace \"0\" ",
+                "     .ZmaxSpace \"0\" ",
+                "     .ApplyInAllDirections \"True\" ",
+                "End With ",
+                "",
+                "With Material ",
+                "     .Reset ",
+                "     .Rho \"1.204\"",
+                "     .ThermalType \"Normal\"",
+                "     .ThermalConductivity \"0.026\"",
+                "     .SpecificHeat \"1005\", \"J/K/kg\"",
+                "     .DynamicViscosity \"1.84e-5\"",
+                "     .UseEmissivity \"True\"",
+                "     .Emissivity \"0.0\"",
+                "     .MetabolicRate \"0.0\"",
+                "     .VoxelConvection \"0.0\"",
+                "     .BloodFlow \"0\"",
+                "     .Absorptance \"0\"",
+                "     .MechanicsType \"Unused\"",
+                "     .IntrinsicCarrierDensity \"0\"",
+                "     .FrqType \"all\"",
+                "     .Type \"Normal\"",
+                "     .MaterialUnit \"Frequency\", \"Hz\"",
+                "     .MaterialUnit \"Geometry\", \"m\"",
+                "     .MaterialUnit \"Time\", \"s\"",
+                "     .MaterialUnit \"Temperature\", \"K\"",
+                "     .Epsilon \"1.0\"",
+                "     .Mu \"1.0\"",
+                "     .Sigma \"0.0\"",
+                "     .TanD \"0.0\"",
+                "     .TanDFreq \"0.0\"",
+                "     .TanDGiven \"False\"",
+                "     .TanDModel \"ConstSigma\"",
+                "     .SetConstTanDStrategyEps \"AutomaticOrder\"",
+                "     .ConstTanDModelOrderEps \"3\"",
+                "     .DjordjevicSarkarUpperFreqEps \"0\"",
+                "     .SetElParametricConductivity \"False\"",
+                "     .ReferenceCoordSystem \"Global\"",
+                "     .CoordSystemType \"Cartesian\"",
+                "     .SigmaM \"0\"",
+                "     .TanDM \"0.0\"",
+                "     .TanDMFreq \"0.0\"",
+                "     .TanDMGiven \"False\"",
+                "     .TanDMModel \"ConstSigma\"",
+                "     .SetConstTanDStrategyMu \"AutomaticOrder\"",
+                "     .ConstTanDModelOrderMu \"3\"",
+                "     .DjordjevicSarkarUpperFreqMu \"0\"",
+                "     .SetMagParametricConductivity \"False\"",
+                "     .DispModelEps  \"None\"",
+                "     .DispModelMu \"None\"",
+                "     .DispersiveFittingSchemeEps \"Nth Order\"",
+                "     .MaximalOrderNthModelFitEps \"10\"",
+                "     .ErrorLimitNthModelFitEps \"0.1\"",
+                "     .UseOnlyDataInSimFreqRangeNthModelEps \"False\"",
+                "     .DispersiveFittingSchemeMu \"Nth Order\"",
+                "     .MaximalOrderNthModelFitMu \"10\"",
+                "     .ErrorLimitNthModelFitMu \"0.1\"",
+                "     .UseOnlyDataInSimFreqRangeNthModelMu \"False\"",
+                "     .UseGeneralDispersionEps \"False\"",
+                "     .UseGeneralDispersionMu \"False\"",
+                "     .NLAnisotropy \"False\"",
+                "     .NLAStackingFactor \"1\"",
+                "     .NLADirectionX \"1\"",
+                "     .NLADirectionY \"0\"",
+                "     .NLADirectionZ \"0\"",
+                "     .Colour \"0.6\", \"0.6\", \"0.6\" ",
+                "     .Wireframe \"False\" ",
+                "     .Reflection \"False\" ",
+                "     .Allowoutline \"True\" ",
+                "     .Transparentoutline \"False\" ",
+                "     .Transparency \"0\" ",
+                "     .ChangeBackgroundMaterial",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver mesh adaption properties",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .TetAdaptionMinCycles \"2\"",
+                "     .TetAdaptionMaxCycles \"10\"",
+                "     .TetAdaptionAccuracy \"0.01\"",
+                "     .TetAdaptionRefinementPercentage \"10\"",
+                "     .SnapToGeometry \"True\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"True\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"-1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"+1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "define potential: potential1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential1\"",
+                "     .Folder \"\"",
+                "     .Value \"50\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid3\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"-50\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid4\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"-1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"10\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "delete potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential3\""
+            ]
+        },
+        {
+            "caption": "delete potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential4\""
+            ]
+        },
+        {
+            "caption": "define charge: charge1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Charge",
+                "     .Reset",
+                "     .Name \"charge1\"",
+                "     .Value \"2e-12\"",
+                "     .Face \"component1:solid2\", \"25\"",
+                "     .Type \"PEC\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define charge: charge2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Charge",
+                "     .Reset",
+                "     .Name \"charge2\"",
+                "     .Value \"-2e-12\"",
+                "     .Face \"component1:solid1\", \"13\"",
+                "     .Type \"PEC\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"True\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "define time monitor 3d: force (component1;solid1; t_n(0.0;0.0;1.0) t_o(0.0;0.0;0.0); ext)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With TimeMonitor3D",
+                "     .Reset",
+                "     .Name \"force (component1;solid1; t_n(0.0;0.0;1.0) t_o(0.0;0.0;0.0); ext)\"",
+                "     .FieldType \"Force and Torque\"",
+                "     .UseAllSolids \"False\"",
+                "     .SolidName \"component1:solid1\"",
+                "     .SolidType \"solid\"",
+                "     .TorqueNormal \"0.0\", \"0.0\", \"1.0\"",
+                "     .TorqueOrigin \"0.0\", \"0.0\", \"0.0\"",
+                "     .Extend2TouchingShapes \"True\"",
+                "     .ComputeForceDensity \"False\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete charge: charge1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Charge.Delete \"charge1\""
+            ]
+        },
+        {
+            "caption": "delete charge: charge2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Charge.Delete \"charge2\""
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid4\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"-50\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid4\", \"4\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"14\"",
+                "     .Type \"Floating\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"20\"",
+                "     .Type \"Floating\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "set mesh properties (Tetrahedral)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Mesh ",
+                "     .MeshType \"Tetrahedral\" ",
+                "     .SetCreator \"Low Frequency\"",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"Version\", 1%",
+                "     'MAX CELL - WAVELENGTH REFINEMENT ",
+                "     .Set \"StepsPerWaveNear\", \"4\" ",
+                "     .Set \"StepsPerWaveFar\", \"4\" ",
+                "     .Set \"PhaseErrorNear\", \"0.02\" ",
+                "     .Set \"PhaseErrorFar\", \"0.02\" ",
+                "     .Set \"CellsPerWavelengthPolicy\", \"automatic\" ",
+                "     'MAX CELL - GEOMETRY REFINEMENT ",
+                "     .Set \"StepsPerBoxNear\", \"20\" ",
+                "     .Set \"StepsPerBoxFar\", \"5\" ",
+                "     .Set \"ModelBoxDescrNear\", \"maxedge\" ",
+                "     .Set \"ModelBoxDescrFar\", \"maxedge\" ",
+                "     'MIN CELL ",
+                "     .Set \"UseRatioLimit\", \"0\" ",
+                "     .Set \"RatioLimit\", \"100\" ",
+                "     .Set \"MinStep\", \"0\" ",
+                "     'MESHING METHOD ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"Method\", \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"CurvatureOrder\", \"1\" ",
+                "     .Set \"CurvatureOrderPolicy\", \"automatic\" ",
+                "     .Set \"CurvRefinementControl\", \"NormalTolerance\" ",
+                "     .Set \"NormalTolerance\", \"22.5\" ",
+                "     .Set \"SrfMeshGradation\", \"1.5\" ",
+                "     .Set \"SrfMeshOptimization\", \"1\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"UseMaterials\",  \"0\" ",
+                "     .Set \"MoveMesh\", \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"All\" ",
+                "     .Set \"AutomaticEdgeRefinement\",  \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"UseAnisoCurveRefinement\", \"1\" ",
+                "     .Set \"UseSameSrfAndVolMeshGradation\", \"1\" ",
+                "     .Set \"VolMeshGradation\", \"1.5\" ",
+                "     .Set \"VolMeshOptimization\", \"1\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"SmallFeatureSize\", \"0\" ",
+                "     .Set \"CoincidenceTolerance\", \"1e-06\" ",
+                "     .Set \"SelfIntersectionCheck\", \"1\" ",
+                "     .Set \"OptimizeForPlanarStructures\", \"0\" ",
+                "End With ",
+                "With Mesh ",
+                "     .SetParallelMesherMode \"Tet\", \"maximum\" ",
+                "     .SetMaxParallelMesherThreads \"Tet\", \"1\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"14\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"20\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"False\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF Time Domain (MQS)\""
+            ]
+        },
+        {
+            "caption": "define units",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Units ",
+                "     .SetUnit \"Length\", \"mm\"",
+                "     .SetUnit \"Temperature\", \"degC\"",
+                "     .SetUnit \"Voltage\", \"V\"",
+                "     .SetUnit \"Current\", \"A\"",
+                "     .SetUnit \"Resistance\", \"Ohm\"",
+                "     .SetUnit \"Conductance\", \"S\"",
+                "     .SetUnit \"Capacitance\", \"pF\"",
+                "     .SetUnit \"Inductance\", \"nH\"",
+                "     .SetUnit \"Frequency\", \"MHz\"",
+                "     .SetUnit \"Time\", \"ms\"",
+                "     .SetResultUnit \"frequency\", \"frequency\", \"\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define excitation signal: signal1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With TimeSignal ",
+                "     .Reset ",
+                "     .Name \"signal1\" ",
+                "     .SignalType \"Sine\" ",
+                "     .ProblemType \"Low Frequency\" ",
+                "     .Ttotal \"1.0\" ",
+                "     .Offset \"0.0\" ",
+                "     .Frequency \"1\" ",
+                "     .Create ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define units",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Units ",
+                "     .SetUnit \"Length\", \"mm\"",
+                "     .SetUnit \"Temperature\", \"degC\"",
+                "     .SetUnit \"Voltage\", \"V\"",
+                "     .SetUnit \"Current\", \"A\"",
+                "     .SetUnit \"Resistance\", \"Ohm\"",
+                "     .SetUnit \"Conductance\", \"S\"",
+                "     .SetUnit \"Capacitance\", \"pF\"",
+                "     .SetUnit \"Inductance\", \"nH\"",
+                "     .SetUnit \"Frequency\", \"kHz\"",
+                "     .SetUnit \"Time\", \"ms\"",
+                "     .SetResultUnit \"frequency\", \"frequency\", \"\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define mqs excitations",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver ",
+                "     .ResetExcitationList ",
+                "     .ExcitationName \"potential1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential3\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential4\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define lf time domain solver (mqs) parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver",
+                "     .Reset",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .EquationType \"Magnetoquasistatic\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .SystemSolverType \"Auto\"",
+                "     .MaxNumIter \"0\"",
+                "     .PECDefault \"Grounded\"",
+                "     .Accuracy \"1e-06\"",
+                "     .SimulationDuration \"1\"",
+                "     .TimeIntegrationMethod \"low order\"",
+                "     .TimeHarmonicMethod \"Non Harmonic\"",
+                "     .TimeAdaption \"False\"",
+                "     .TimeStepWidthActive \"False\"",
+                "     .TimeStepWidth \"1e-2\"",
+                "     .TimeStepSamples \"40\"",
+                "     .TimeStepMin \"1e-6\"",
+                "     .TimeStepMax \"1e-1\"",
+                "     .TimeStepInit \"1e-2\"",
+                "     .TimeStepTolerance \"1e-4\"",
+                "     .TetSolverOrder \"2\"",
+                "     .SteadyStateDetectionActive \"False\"",
+                "     .SteadyStateDetectionAccuracy \"1e-5\"",
+                "     .SteadyStateDetectionPeriod \"0.0\"",
+                "     .SteadyStateDetectionMonitor \"Total Losses\"",
+                "     .SteadyStateDetectionFilterStartCondition \"100.0\"",
+                "     .SteadyStateDetectionFilterTimeConstant \"0.10000000000000001\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential4\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid2\", \"20\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential3\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1:solid1\", \"14\"",
+                "     .Type \"Floating\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define mqs excitations",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver ",
+                "     .ResetExcitationList ",
+                "     .ExcitationName \"potential1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential3\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"signal1\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential4\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF EStatic\""
+            ]
+        },
+        {
+            "caption": "delete potential: potential3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential3\""
+            ]
+        },
+        {
+            "caption": "delete potential: potential4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": true,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential4\""
+            ]
+        },
+        {
+            "caption": "delete shape: component1:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Delete \"component1:solid4\""
+            ]
+        },
+        {
+            "caption": "paste structure data: 2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With SAT ",
+                "     .Reset ",
+                "     .FileName \"*2.cby\" ",
+                "     .SubProjectScaleFactor \"0.001\" ",
+                "     .ImportToActiveCoordinateSystem \"True\" ",
+                "     .ScaleToUnit \"True\" ",
+                "     .Curves \"False\" ",
+                "     .Read ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define curve polygon: curve1:polygon1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Polygon ",
+                "     .Reset ",
+                "     .Name \"polygon1\" ",
+                "     .Curve \"curve1\" ",
+                "     .Point \"-6\", \"-4\" ",
+                "     .LineTo \"-6\", \"-5\" ",
+                "     .LineTo \"6\", \"-5\" ",
+                "     .LineTo \"6\", \"4\" ",
+                "     .LineTo \"3\", \"4\" ",
+                "     .LineTo \"3\", \"-4\" ",
+                "     .LineTo \"-0\", \"-4\" ",
+                "     .LineTo \"0\", \"4\" ",
+                "     .LineTo \"-3\", \"4\" ",
+                "     .LineTo \"-3\", \"-4\" ",
+                "     .LineTo \"-6\", \"-4\" ",
+                "     .Create ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "new component: component2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component2\""
+            ]
+        },
+        {
+            "caption": "define curve polygon: curve1:polygon2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Polygon ",
+                "     .Reset ",
+                "     .Name \"polygon2\" ",
+                "     .Curve \"curve1\" ",
+                "     .Point \"-6\", \"-4\" ",
+                "     .LineTo \"-6\", \"-5\" ",
+                "     .LineTo \"6\", \"-5\" ",
+                "     .LineTo \"6\", \"4\" ",
+                "     .LineTo \"3\", \"4\" ",
+                "     .LineTo \"3\", \"-4\" ",
+                "     .LineTo \"0\", \"-4\" ",
+                "     .LineTo \"0\", \"4\" ",
+                "     .LineTo \"-3\", \"4\" ",
+                "     .LineTo \"-3\", \"-4\" ",
+                "     .LineTo \"-6\", \"-4\" ",
+                "     .Create ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete curve item: curve1:polygon2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Curve.DeleteCurveItem \"curve1\", \"polygon2\""
+            ]
+        },
+        {
+            "caption": "define facefromextrudecurve: face1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Face",
+                "     .Reset ",
+                "     .Name \"face1\" ",
+                "     .Type \"ExtrudeCurve\" ",
+                "     .Thickness \"th\" ",
+                "     .Twistangle \"0.0\" ",
+                "     .Taperangle \"0.0\" ",
+                "     .DeleteCurve \"True\" ",
+                "     .Curve \"curve1:polygon1\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete component: component2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.Delete \"component2\""
+            ]
+        },
+        {
+            "caption": "delete curve: curve1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Curve.DeleteCurve \"curve1\""
+            ]
+        },
+        {
+            "caption": "delete face: face1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Face.Delete \"face1\""
+            ]
+        },
+        {
+            "caption": "new component: component2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component2\""
+            ]
+        },
+        {
+            "caption": "define brick: component2:solid2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid2\" ",
+                "     .Component \"component2\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-6\", \"6\" ",
+                "     .Yrange \"-5\", \"-4\" ",
+                "     .Zrange \"d/2\", \"d/2+th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component2:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid3\" ",
+                "     .Component \"component2\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-3\", \"-0\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"d/2\", \"d/2+th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "new component: component3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component3\""
+            ]
+        },
+        {
+            "caption": "new component: component4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component4\""
+            ]
+        },
+        {
+            "caption": "delete component: component4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.Delete \"component4\""
+            ]
+        },
+        {
+            "caption": "delete component: component3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.Delete \"component3\""
+            ]
+        },
+        {
+            "caption": "new component: component3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Component.New \"component3\""
+            ]
+        },
+        {
+            "caption": "define brick: component3:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid4\" ",
+                "     .Component \"component3\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"3\", \"6\" ",
+                "     .Yrange \"-4\", \"4\" ",
+                "     .Zrange \"d/2\", \"d/2+th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change component: component3:solid4 to: component2:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.ChangeComponent \"component3:solid4\", \"component2\""
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component2:solid2, component2:solid3",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component2:solid2\", \"component2:solid3\""
+            ]
+        },
+        {
+            "caption": "boolean add shapes: component2:solid2, component2:solid4",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Add \"component2:solid2\", \"component2:solid4\""
+            ]
+        },
+        {
+            "caption": "define brick: component3:frame1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"frame1\" ",
+                "     .Component \"component3\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-Wframe/2\", \"wFrame/2\" ",
+                "     .Yrange \"-hFrame/2\", \"hFrame/2\" ",
+                "     .Zrange \"dFrame/2\", \"dFrame/2-th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component3:Frame2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"Frame2\" ",
+                "     .Component \"component3\" ",
+                "     .Material \"PEC\" ",
+                "     .Xrange \"-Wframe/2\", \"Wframe/2\" ",
+                "     .Yrange \"-hFrame/2\", \"hFrame/2\" ",
+                "     .Zrange \"-dFrame/2\", \"-dFrame/2-th\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                "     .Xmin \"magnetic\"",
+                "     .Xmax \"magnetic\"",
+                "     .Ymin \"magnetic\"",
+                "     .Ymax \"magnetic\"",
+                "     .Zmin \"magnetic\"",
+                "     .Zmax \"magnetic\"",
+                "     .Xsymmetry \"none\"",
+                "     .Ysymmetry \"none\"",
+                "     .Zsymmetry \"none\"",
+                "     .ApplyInAllDirections \"True\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define background",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Background ",
+                "     .ResetBackground ",
+                "     .XminSpace \"0\" ",
+                "     .XmaxSpace \"0\" ",
+                "     .YminSpace \"0\" ",
+                "     .YmaxSpace \"0\" ",
+                "     .ZminSpace \"0\" ",
+                "     .ZmaxSpace \"0\" ",
+                "     .ApplyInAllDirections \"True\" ",
+                "End With ",
+                "",
+                "With Material ",
+                "     .Reset ",
+                "     .Rho \"1.204\"",
+                "     .ThermalType \"Normal\"",
+                "     .ThermalConductivity \"0.026\"",
+                "     .SpecificHeat \"1005\", \"J/K/kg\"",
+                "     .DynamicViscosity \"1.84e-5\"",
+                "     .UseEmissivity \"True\"",
+                "     .Emissivity \"0.0\"",
+                "     .MetabolicRate \"0.0\"",
+                "     .VoxelConvection \"0.0\"",
+                "     .BloodFlow \"0\"",
+                "     .Absorptance \"0\"",
+                "     .MechanicsType \"Unused\"",
+                "     .IntrinsicCarrierDensity \"0\"",
+                "     .FrqType \"all\"",
+                "     .Type \"Normal\"",
+                "     .MaterialUnit \"Frequency\", \"Hz\"",
+                "     .MaterialUnit \"Geometry\", \"m\"",
+                "     .MaterialUnit \"Time\", \"s\"",
+                "     .MaterialUnit \"Temperature\", \"K\"",
+                "     .Epsilon \"1.0\"",
+                "     .Mu \"1.0\"",
+                "     .Sigma \"0.0\"",
+                "     .TanD \"0.0\"",
+                "     .TanDFreq \"0.0\"",
+                "     .TanDGiven \"False\"",
+                "     .TanDModel \"ConstSigma\"",
+                "     .SetConstTanDStrategyEps \"AutomaticOrder\"",
+                "     .ConstTanDModelOrderEps \"3\"",
+                "     .DjordjevicSarkarUpperFreqEps \"0\"",
+                "     .SetElParametricConductivity \"False\"",
+                "     .ReferenceCoordSystem \"Global\"",
+                "     .CoordSystemType \"Cartesian\"",
+                "     .SigmaM \"0\"",
+                "     .TanDM \"0.0\"",
+                "     .TanDMFreq \"0.0\"",
+                "     .TanDMGiven \"False\"",
+                "     .TanDMModel \"ConstSigma\"",
+                "     .SetConstTanDStrategyMu \"AutomaticOrder\"",
+                "     .ConstTanDModelOrderMu \"3\"",
+                "     .DjordjevicSarkarUpperFreqMu \"0\"",
+                "     .SetMagParametricConductivity \"False\"",
+                "     .DispModelEps  \"None\"",
+                "     .DispModelMu \"None\"",
+                "     .DispersiveFittingSchemeEps \"Nth Order\"",
+                "     .MaximalOrderNthModelFitEps \"10\"",
+                "     .ErrorLimitNthModelFitEps \"0.1\"",
+                "     .UseOnlyDataInSimFreqRangeNthModelEps \"False\"",
+                "     .DispersiveFittingSchemeMu \"Nth Order\"",
+                "     .MaximalOrderNthModelFitMu \"10\"",
+                "     .ErrorLimitNthModelFitMu \"0.1\"",
+                "     .UseOnlyDataInSimFreqRangeNthModelMu \"False\"",
+                "     .UseGeneralDispersionEps \"False\"",
+                "     .UseGeneralDispersionMu \"False\"",
+                "     .NLAnisotropy \"False\"",
+                "     .NLAStackingFactor \"1\"",
+                "     .NLADirectionX \"1\"",
+                "     .NLADirectionY \"0\"",
+                "     .NLADirectionZ \"0\"",
+                "     .Colour \"0.6\", \"0.6\", \"0.6\" ",
+                "     .Wireframe \"False\" ",
+                "     .Reflection \"False\" ",
+                "     .Allowoutline \"True\" ",
+                "     .Transparentoutline \"False\" ",
+                "     .Transparency \"0\" ",
+                "     .ChangeBackgroundMaterial",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF Time Domain (MQS)\""
+            ]
+        },
+        {
+            "caption": "define potential: Vframe1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"Vframe1\"",
+                "     .Folder \"\"",
+                "     .Value \"VFrame\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component3:frame1\", \"2\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: Vframe2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"Vframe2\"",
+                "     .Folder \"\"",
+                "     .Value \"-VFrame\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component3:Frame2\", \"1\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "rename block: component1:solid1 to: component1:Sensor1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Rename \"component1:solid1\", \"Sensor1\""
+            ]
+        },
+        {
+            "caption": "rename block: component2:solid2 to: component2:Sensor2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Rename \"component2:solid2\", \"Sensor2\""
+            ]
+        },
+        {
+            "caption": "set mesh properties (Tetrahedral)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Mesh ",
+                "     .MeshType \"Tetrahedral\" ",
+                "     .SetCreator \"Low Frequency\"",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"Version\", 1%",
+                "     'MAX CELL - WAVELENGTH REFINEMENT ",
+                "     .Set \"StepsPerWaveNear\", \"4\" ",
+                "     .Set \"StepsPerWaveFar\", \"4\" ",
+                "     .Set \"PhaseErrorNear\", \"0.02\" ",
+                "     .Set \"PhaseErrorFar\", \"0.02\" ",
+                "     .Set \"CellsPerWavelengthPolicy\", \"automatic\" ",
+                "     'MAX CELL - GEOMETRY REFINEMENT ",
+                "     .Set \"StepsPerBoxNear\", \"20\" ",
+                "     .Set \"StepsPerBoxFar\", \"5\" ",
+                "     .Set \"ModelBoxDescrNear\", \"maxedge\" ",
+                "     .Set \"ModelBoxDescrFar\", \"maxedge\" ",
+                "     'MIN CELL ",
+                "     .Set \"UseRatioLimit\", \"0\" ",
+                "     .Set \"RatioLimit\", \"100\" ",
+                "     .Set \"MinStep\", \"0\" ",
+                "     'MESHING METHOD ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"Method\", \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"CurvatureOrder\", \"1\" ",
+                "     .Set \"CurvatureOrderPolicy\", \"automatic\" ",
+                "     .Set \"CurvRefinementControl\", \"NormalTolerance\" ",
+                "     .Set \"NormalTolerance\", \"22.5\" ",
+                "     .Set \"SrfMeshGradation\", \"1.5\" ",
+                "     .Set \"SrfMeshOptimization\", \"1\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"UseMaterials\",  \"0\" ",
+                "     .Set \"MoveMesh\", \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"All\" ",
+                "     .Set \"AutomaticEdgeRefinement\",  \"0\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Tet\" ",
+                "     .Set \"UseAnisoCurveRefinement\", \"1\" ",
+                "     .Set \"UseSameSrfAndVolMeshGradation\", \"1\" ",
+                "     .Set \"VolMeshGradation\", \"1.5\" ",
+                "     .Set \"VolMeshOptimization\", \"1\" ",
+                "End With ",
+                "With MeshSettings ",
+                "     .SetMeshType \"Unstr\" ",
+                "     .Set \"SmallFeatureSize\", \"0\" ",
+                "     .Set \"CoincidenceTolerance\", \"1e-06\" ",
+                "     .Set \"SelfIntersectionCheck\", \"1\" ",
+                "     .Set \"OptimizeForPlanarStructures\", \"0\" ",
+                "End With ",
+                "With Mesh ",
+                "     .SetParallelMesherMode \"Tet\", \"maximum\" ",
+                "     .SetMaxParallelMesherThreads \"Tet\", \"1\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define time monitor: potential (t=0.0..1(0.1))",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With TimeMonitor",
+                "     .Reset ",
+                "     .Name  \"potential (t=0.0..1(0.1))\"",
+                "     .FieldType  \"Potential\"",
+                "     .Tstart \"0.0\"",
+                "     .Tstep \"0.1\"",
+                "     .Tend  \"1\"",
+                "     .UseTend \"True\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define excitation signal: SineSig1k",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With TimeSignal ",
+                "     .Reset ",
+                "     .Name \"SineSig1k\" ",
+                "     .SignalType \"Sine\" ",
+                "     .ProblemType \"Low Frequency\" ",
+                "     .Ttotal \"1.0\" ",
+                "     .Offset \"0.0\" ",
+                "     .Frequency \"1\" ",
+                "     .Create ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"component1:Sensor1\", \"27\""
+            ]
+        },
+        {
+            "caption": "define time monitor 0d: b-field (X; 0 0 -0.8)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With TimeMonitor0D",
+                "     .Reset",
+                "     .Name \"b-field (X; 0 0 -0.8)\"",
+                "     .FieldType \"B-Field\"",
+                "     .Component \"X\"",
+                "     .UsePickedPoint \"True\"",
+                "     .Position \"0\", \"0\", \"-0.8\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick mid point",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickMidpointFromId \"component2:Sensor2\", \"3\""
+            ]
+        },
+        {
+            "caption": "define time monitor 0d: potential (3 0 0.83)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With TimeMonitor0D",
+                "     .Reset",
+                "     .Name \"potential (3 0 0.83)\"",
+                "     .FieldType \"Potential\"",
+                "     .Component \"X\"",
+                "     .UsePickedPoint \"True\"",
+                "     .Position \"3\", \"0\", \"0.83\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "modify time monitor 0d: b-field (X; 0 0 -0.8)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With TimeMonitor0D",
+                "     .Reset",
+                "     .Name \"b-field (X; 0 0 -0.8)\"",
+                "     .FieldType \"Potential\"",
+                "     .Component \"X\"",
+                "     .UsePickedPoint \"True\"",
+                "     .Position \"0\", \"0\", \"-0.8\"",
+                "     .Modify",
+                "End With"
+            ]
+        },
+        {
+            "caption": "rename time monitor 0d: b-field (X; 0 0 -0.8) to: potential (0 0 -0.8)",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "TimeMonitor0D.Rename  \"b-field (X; 0 0 -0.8)\", \"potential (0 0 -0.8)\""
+            ]
+        },
+        {
+            "caption": "define mqs excitations",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver ",
+                "     .ResetExcitationList ",
+                "     .ExcitationName \"Vframe1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"Vframe2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define lf time domain solver (mqs) parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver",
+                "     .Reset",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .EquationType \"Magnetoquasistatic\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .SystemSolverType \"Auto\"",
+                "     .MaxNumIter \"0\"",
+                "     .PECDefault \"Grounded\"",
+                "     .Accuracy \"1e-06\"",
+                "     .SimulationDuration \"1\"",
+                "     .TimeIntegrationMethod \"low order\"",
+                "     .TimeHarmonicMethod \"Non Harmonic\"",
+                "     .TimeAdaption \"False\"",
+                "     .TimeStepWidthActive \"False\"",
+                "     .TimeStepWidth \"1e-2\"",
+                "     .TimeStepSamples \"40\"",
+                "     .TimeStepMin \"1e-6\"",
+                "     .TimeStepMax \"1e-1\"",
+                "     .TimeStepInit \"1e-2\"",
+                "     .TimeStepTolerance \"1e-4\"",
+                "     .TetSolverOrder \"2\"",
+                "     .SteadyStateDetectionActive \"False\"",
+                "     .SteadyStateDetectionAccuracy \"1e-5\"",
+                "     .SteadyStateDetectionPeriod \"0.0\"",
+                "     .SteadyStateDetectionMonitor \"Total Losses\"",
+                "     .SteadyStateDetectionFilterStartCondition \"100.0\"",
+                "     .SteadyStateDetectionFilterTimeConstant \"0.10000000000000001\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF EStatic\""
+            ]
+        },
+        {
+            "caption": "define charge: charge1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Charge",
+                "     .Reset",
+                "     .Name \"charge1\"",
+                "     .Value \"2e-12\"",
+                "     .Face \"component2:Sensor2\", \"13\"",
+                "     .Type \"PEC\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define charge: charge2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Charge",
+                "     .Reset",
+                "     .Name \"charge2\"",
+                "     .Value \"-12e-12\"",
+                "     .Face \"component1/component1:solid1\", \"9\"",
+                "     .Type \"PEC\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF Time Domain (MQS)\""
+            ]
+        },
+        {
+            "caption": "define potential: potential1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential1\"",
+                "     .Folder \"\"",
+                "     .Value \"1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component2:Sensor2\", \"13\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"-1\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1/component1:solid1\", \"8\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define lf time domain solver (mqs) parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver",
+                "     .Reset",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .EquationType \"Electroquasistatic\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .SystemSolverType \"Auto\"",
+                "     .MaxNumIter \"0\"",
+                "     .PECDefault \"Grounded\"",
+                "     .Accuracy \"1e-06\"",
+                "     .SimulationDuration \"1\"",
+                "     .TimeIntegrationMethod \"low order\"",
+                "     .TimeHarmonicMethod \"Non Harmonic\"",
+                "     .TimeAdaption \"False\"",
+                "     .TimeStepWidthActive \"False\"",
+                "     .TimeStepWidth \"1e-2\"",
+                "     .TimeStepSamples \"40\"",
+                "     .TimeStepMin \"1e-6\"",
+                "     .TimeStepMax \"1e-1\"",
+                "     .TimeStepInit \"1e-2\"",
+                "     .TimeStepTolerance \"1e-4\"",
+                "     .TetSolverOrder \"2\"",
+                "     .SteadyStateDetectionActive \"False\"",
+                "     .SteadyStateDetectionAccuracy \"1e-5\"",
+                "     .SteadyStateDetectionPeriod \"0.0\"",
+                "     .SteadyStateDetectionMonitor \"Total Losses\"",
+                "     .SteadyStateDetectionFilterStartCondition \"100.0\"",
+                "     .SteadyStateDetectionFilterTimeConstant \"0.10000000000000001\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define mqs excitations",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver ",
+                "     .ResetExcitationList ",
+                "     .ExcitationName \"Vframe1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"Vframe2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"SineSig1k\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"default\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define potential: potential2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Potential",
+                "     .Reset",
+                "     .Name \"potential2\"",
+                "     .Folder \"\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .AddFace \"component1/component1:solid1\", \"8\"",
+                "     .Type \"Fixed\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define mqs excitations",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver ",
+                "     .ResetExcitationList ",
+                "     .ExcitationName \"Vframe1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"Vframe2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"[Reference]\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential1\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"SineSig1k\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "     .ExcitationName \"potential2\" ",
+                "     .ExcitationType \"potential\" ",
+                "     .ExcitationShift \"0.0\" ",
+                "     .ExcitationSignal \"default\" ",
+                "     .ExcitationActive \"True\" ",
+                "     .CreateExcitation ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define lf time domain solver (mqs) parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With MQSTDSolver",
+                "     .Reset",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .EquationType \"Electroquasistatic\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .SystemSolverType \"Auto\"",
+                "     .MaxNumIter \"0\"",
+                "     .PECDefault \"Grounded\"",
+                "     .Accuracy \"1e-06\"",
+                "     .SimulationDuration \"1\"",
+                "     .TimeIntegrationMethod \"high order\"",
+                "     .TimeHarmonicMethod \"Non Harmonic\"",
+                "     .TimeAdaption \"False\"",
+                "     .TimeStepWidthActive \"False\"",
+                "     .TimeStepWidth \"1e-2\"",
+                "     .TimeStepSamples \"40\"",
+                "     .TimeStepMin \"1e-6\"",
+                "     .TimeStepMax \"1e-1\"",
+                "     .TimeStepInit \"1e-2\"",
+                "     .TimeStepTolerance \"1e-4\"",
+                "     .TetSolverOrder \"2\"",
+                "     .SteadyStateDetectionActive \"False\"",
+                "     .SteadyStateDetectionAccuracy \"1e-5\"",
+                "     .SteadyStateDetectionPeriod \"0.0\"",
+                "     .SteadyStateDetectionMonitor \"Total Losses\"",
+                "     .SteadyStateDetectionFilterStartCondition \"100.0\"",
+                "     .SteadyStateDetectionFilterTimeConstant \"0.10000000000000001\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete potentials",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Potential.Delete \"potential1\" ",
+                "Potential.Delete \"potential2\""
+            ]
+        },
+        {
+            "caption": "define curve line: curve1:line1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Line",
+                "     .Reset ",
+                "     .Name \"line1\" ",
+                "     .Curve \"curve1\" ",
+                "     .X1 \"4.6\" ",
+                "     .Y1 \"-0\" ",
+                "     .X2 \"4.415\" ",
+                "     .Y2 \"0\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define voltage path from curve: path1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With VoltageWire",
+                "     .Reset ",
+                "     .Name \"path1\" ",
+                "     .Type \"CurvePath\" ",
+                "     .Voltage \"0.0\" ",
+                "     .Phase \"0.0\" ",
+                "     .Curve \"curve1:line1\" ",
+                "     .Add ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete voltagepath: path1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "VoltageWire.Delete \"path1\""
+            ]
+        },
+        {
+            "caption": "define curve line: curve1:vline1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Line",
+                "     .Reset ",
+                "     .Name \"vline1\" ",
+                "     .Curve \"curve1\" ",
+                "     .X1 \"-d/2\" ",
+                "     .Y1 \"0\" ",
+                "     .X2 \"d/2\" ",
+                "     .Y2 \"0\" ",
+                "     .Create",
+                "End With",
+                ""
+            ]
+        },
+        {
+            "caption": "delete curve item: curve1:vline1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Curve.DeleteCurveItem \"curve1\", \"vline1\""
+            ]
+        },
+        {
+            "caption": "define current port: currentport1",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With CurrentPort",
+                "     .Reset",
+                "     .Name \"currentport1\"",
+                "     .Folder \"\"",
+                "     .Value \"10e-12\"",
+                "     .Phase \"0\"",
+                "     .ValueType \"Current\"",
+                "     .CurrentDirection \"FaceNormal\"",
+                "     .Face \"component1/component1:solid1\", \"8\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define current port: 10e-12:currentport2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With CurrentPort",
+                "     .Reset",
+                "     .Name \"currentport2\"",
+                "     .Folder \"10e-12\"",
+                "     .Value \"0\"",
+                "     .Phase \"0\"",
+                "     .ValueType \"Current\"",
+                "     .CurrentDirection \"FaceNormal\"",
+                "     .Face \"component2:Sensor2\", \"13\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "delete current port: 10e-12:currentport2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "CurrentPort.Delete \"10e-12:currentport2\""
+            ]
+        },
+        {
+            "caption": "delete current port folder: 10e-12",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "CurrentPort.DeleteFolder \"10e-12\""
+            ]
+        },
+        {
+            "caption": "define current port: currentport2",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With CurrentPort",
+                "     .Reset",
+                "     .Name \"currentport2\"",
+                "     .Folder \"\"",
+                "     .Value \"10e-12\"",
+                "     .Phase \"0\"",
+                "     .ValueType \"Current\"",
+                "     .CurrentDirection \"FaceNormal\"",
+                "     .Face \"component2:Sensor2\", \"13\"",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF EStatic\""
+            ]
+        },
+        {
+            "caption": "define e-static solver parameters",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With EStaticSolver",
+                "     .Method \"Tetrahedral Mesh\"",
+                "     .Accuracy \"1e-6\"",
+                "     .CalcCapacitanceMatrix \"False\"",
+                "     .StoreResultsInCache \"False\"",
+                "     .MeshAdaption \"False\"",
+                "     .TetAdaption \"True\"",
+                "     .UseMaxNumberOfThreads \"True\"",
+                "     .MaxNumberOfThreads \"1024\"",
+                "     .MaximumNumberOfCPUDevices \"2\"",
+                "     .UseDistributedComputing \"False\"",
+                "End With",
+                "UseDistributedComputingForParameters \"False\"",
+                "MaxNumberOfDistributedComputingParameters \"2\"",
+                "UseDistributedComputingMemorySetting \"False\"",
+                "MinDistributedComputingMemoryLimit \"0\"",
+                "UseDistributedComputingSharedDirectory \"False\"",
+                "OnlyConsider0D1DResultsForDC \"False\""
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.5|33.0.1|20240614",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"LF Time Domain (MQS)\""
+            ]
+        }
+    ]
+}

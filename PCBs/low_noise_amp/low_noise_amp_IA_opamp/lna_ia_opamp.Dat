@@ -1,0 +1,26 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~lna_ia_opamp.PrjPcb|ReportField=ProjectFullPath~Z:\npat025\Documents\research\schematics\low_noise_amp_IA_opamp\lna_ia_opamp.PrjPcb|ReportField=Title~Bill of Materials For Project [lna_ia_opamp.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~57|ReportField=ReportTime~9:22:28 AM|ReportField=ReportDate~3/7/2016|ReportField=ReportDateTime~3/7/2016 9:22:28 AM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~3/7/2016|ReportField=CurrentTime~9:21:56 AM|ReportField=Date~|ReportField=DocumentFullPathAndName~Z:\npat025\Documents\research\schematics\low_noise_amp_IA_opamp\main.SchDoc|ReportField=DocumentName~main.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2/24/2016|ReportField=Organization~|ReportField=ProjectName~lna_ia_opamp.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~lna_ia_opamp.PrjPcb|ReportField=DataSourceFullPath~Z:\npat025\Documents\research\schematics\low_noise_amp_IA_opamp\lna_ia_opamp.PrjPcb
+LT3042|LowNoise Vreg|*U1|DFN10|LT3042|1
+1nF|CAP CER 10nF 50V X7R SM0603|C1, C4|ECE-CAPC1608-0603SM|CAP000618|2
+100nF|CAP CER 100nF 25V X7R SM0603|C2, C3, C5, C6, C7, C9, C10, C14, C15|ECE-CAPC1608-0603SM|CAP000624|9
+10uF|CAP 10uF 16V ELE SM|C8|ECE-CAPAE4X5.4SM|CAP000303|1
+4.7uF|CAP CER 1uF 50V X7R SM0805|C11, C13|CAP 1206|CAP000530|2
+1uF|CAP CER 1uF 50V X7R SM0805|C12|ECE-CAPC2012-0805SM|CAP000530|1
+1000pF|CAP CER 1000pF 50V X7R SM0603|C16, C17|ECE-CAPC1608-0603SM|CAP000612|2
+Test pin|TEST PIN|J1, J2|ECE-HDR1TH|CON000017|2
+Inductor|Inductor|L1, L2|CC2012-0805|Inductor|2
+Output|Header, 2-Pin|P1|HDR1X2|Header 2|1
+Channel 1|Header, 2-Pin|P2, P4, P7, P8, P10, P11|HDR1X2|Header 2|6
+GND|Header, 2-Pin|P3|HDR1X2|Header 2|1
+DC IN + 6V|Header, 4-Pin|P5|HDR1X4|Header 4|1
+BNCROUND|BNC Round Socket|P6, P9|ece-BNC_ROUND|BNCROUND|2
+100K|RES CER 100K 1608 SM|R1, R6, R12, R13|ECE-RESC1608-0603SM|RES000162|4
+47R|RES CER 47R 1608 SM|R2, R7|ECE-RESC1608-0603SM|RES000122|2
+1K|RES CER 1K 1608 SM|R3, R8|ECE-RESC1608-0603SM|RES000138|2
+220K|RES CER 220K 1608 SM|R4, R5, R9, R10, R11|ECE-RESC1608-0603SM|RES000166|5
+470R|RES CER 470R 1608 SM|R14|ECE-RESC1608-0603SM|RES000134|1
+470K|RES CER 470K 1608 SM|R15|ECE-RESC1608-0603SM|RES000170|1
+47K|RES CER 47K 1608 SM|R16|ECE-RESC1608-0603SM|RES000158|1
+10K|RES CER 10K 1608 SM|R17, R18|ECE-RESC1608-0603SM|RES000150|2
+56K|RES CER 56K 1608 SM|R19, R20|ECE-RESC1608-0603SM|RES000159|2
+LT1167|Instrumentation amplifier, Low noise|U1, U2|S8_N|LT1167|2
+LT1678|45MHz, 45V/µs, Dual Rail-to-Rail Input and Output Precision Operational Amplifier|U3, U4|S8_N|LT1632CS8|2

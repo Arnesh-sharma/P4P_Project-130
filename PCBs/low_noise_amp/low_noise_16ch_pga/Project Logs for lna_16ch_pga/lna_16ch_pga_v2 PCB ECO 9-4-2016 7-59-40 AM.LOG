@@ -1,0 +1,99 @@
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=Din_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=GND Pin=R3_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc1_1 Pin=R3_amplifier.SchDoc1-2
+Removed Pin From Net: NetName=GND Pin=R3_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc2_1 Pin=R3_amplifier.SchDoc2-2
+Removed Pin From Net: NetName=GND Pin=R3_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc3_1 Pin=R3_amplifier.SchDoc3-2
+Removed Pin From Net: NetName=GND Pin=R3_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc4_1 Pin=R3_amplifier.SchDoc4-2
+Removed Pin From Net: NetName=GND Pin=R8_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc1_1 Pin=R8_amplifier.SchDoc1-2
+Removed Pin From Net: NetName=GND Pin=R8_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc2_1 Pin=R8_amplifier.SchDoc2-2
+Removed Pin From Net: NetName=GND Pin=R8_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc3_1 Pin=R8_amplifier.SchDoc3-2
+Removed Pin From Net: NetName=GND Pin=R8_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc4_1 Pin=R8_amplifier.SchDoc4-2
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=U3_amplifier.SchDoc2-7
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=U3_amplifier.SchDoc3-7
+Removed Pin From Net: NetName=DIN_amplifier.SchDoc1 Pin=U3_amplifier.SchDoc4-7
+Change Component DesignItemId : Designator=R3_amplifier.SchDoc1 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R3_amplifier.SchDoc2 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R3_amplifier.SchDoc3 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R3_amplifier.SchDoc4 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R8_amplifier.SchDoc1 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R8_amplifier.SchDoc2 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R8_amplifier.SchDoc3 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component DesignItemId : Designator=R8_amplifier.SchDoc4 Old DesignItemId=RES000138 New DesignItemId=RES000150
+Change Component Comment : Designator=R3_amplifier.SchDoc1 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R3_amplifier.SchDoc2 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R3_amplifier.SchDoc3 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R3_amplifier.SchDoc4 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R8_amplifier.SchDoc1 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R8_amplifier.SchDoc2 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R8_amplifier.SchDoc3 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=R8_amplifier.SchDoc4 Old Comment=1K New Comment=10K
+Change Component Comment : Designator=C16_amplifier.SchDoc1 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C16_amplifier.SchDoc2 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C16_amplifier.SchDoc3 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C16_amplifier.SchDoc4 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C17_amplifier.SchDoc1 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C17_amplifier.SchDoc2 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C17_amplifier.SchDoc3 Old Comment=1000pF New Comment=4.7u
+Change Component Comment : Designator=C17_amplifier.SchDoc4 Old Comment=1000pF New Comment=4.7u
+Change Component Description : Designator=C16_amplifier.SchDoc1 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C16_amplifier.SchDoc2 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C16_amplifier.SchDoc3 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C16_amplifier.SchDoc4 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C17_amplifier.SchDoc1 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C17_amplifier.SchDoc2 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C17_amplifier.SchDoc3 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=C17_amplifier.SchDoc4 Old Description=CAP CER 1000pF 50V X7R SM0603 New Description=CAP CER 4.7uF 50V X7R SM0603
+Change Component Description : Designator=R3_amplifier.SchDoc1 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R3_amplifier.SchDoc2 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R3_amplifier.SchDoc3 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R3_amplifier.SchDoc4 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R8_amplifier.SchDoc1 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R8_amplifier.SchDoc2 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R8_amplifier.SchDoc3 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Change Component Description : Designator=R8_amplifier.SchDoc4 Old Description=RES CER 1K 1608 SM New Description=RES CER 10K 1608 SM
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc1_1 Pin=R3_amplifier.SchDoc1-1
+Added Pin To Net: NetName=GND Pin=R3_amplifier.SchDoc1-2
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc2_1 Pin=R3_amplifier.SchDoc2-1
+Added Pin To Net: NetName=GND Pin=R3_amplifier.SchDoc2-2
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc3_1 Pin=R3_amplifier.SchDoc3-1
+Added Pin To Net: NetName=GND Pin=R3_amplifier.SchDoc3-2
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc4_1 Pin=R3_amplifier.SchDoc4-1
+Added Pin To Net: NetName=GND Pin=R3_amplifier.SchDoc4-2
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc1_1 Pin=R8_amplifier.SchDoc1-1
+Added Pin To Net: NetName=GND Pin=R8_amplifier.SchDoc1-2
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc2_1 Pin=R8_amplifier.SchDoc2-1
+Added Pin To Net: NetName=GND Pin=R8_amplifier.SchDoc2-2
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc3_1 Pin=R8_amplifier.SchDoc3-1
+Added Pin To Net: NetName=GND Pin=R8_amplifier.SchDoc3-2
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc4_1 Pin=R8_amplifier.SchDoc4-1
+Added Pin To Net: NetName=GND Pin=R8_amplifier.SchDoc4-2
+Change Net Name : Old Net Name=DIN_amplifier.SchDoc1 New Net Name=DIN1
+Added Pin To Net: NetName=DIN2 Pin=Din_amplifier.SchDoc2-1
+Added Pin To Net: NetName=DIN2 Pin=Dout_amplifier.SchDoc1-1
+Added Pin To Net: NetName=DIN2 Pin=U3_amplifier.SchDoc1-9
+Added Pin To Net: NetName=DIN2 Pin=U3_amplifier.SchDoc2-7
+Added Net: Name=DIN2
+Added Pin To Net: NetName=DIN3 Pin=Din_amplifier.SchDoc3-1
+Added Pin To Net: NetName=DIN3 Pin=Dout_amplifier.SchDoc2-1
+Added Pin To Net: NetName=DIN3 Pin=U3_amplifier.SchDoc2-9
+Added Pin To Net: NetName=DIN3 Pin=U3_amplifier.SchDoc3-7
+Added Net: Name=DIN3
+Added Pin To Net: NetName=DIN4 Pin=Din_amplifier.SchDoc4-1
+Added Pin To Net: NetName=DIN4 Pin=Dout_amplifier.SchDoc3-1
+Added Pin To Net: NetName=DIN4 Pin=U3_amplifier.SchDoc3-9
+Added Pin To Net: NetName=DIN4 Pin=U3_amplifier.SchDoc4-7
+Added Net: Name=DIN4
+Added Pin To Net: NetName=DOUT4 Pin=Dout_amplifier.SchDoc4-1
+Added Pin To Net: NetName=DOUT4 Pin=U3_amplifier.SchDoc4-9
+Added Net: Name=DOUT4
+Added Class: Name=DIN[1..4]
+Added Class: Name=DOUT[1..4]

@@ -1,0 +1,37 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C13
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc1 NewDesignator=C7_amplifier.SchDoc1
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc1 NewDesignator=C11_amplifier.SchDoc1
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc1 NewDesignator=C12_amplifier.SchDoc1
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc2 NewDesignator=C7_amplifier.SchDoc2
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc2 NewDesignator=C11_amplifier.SchDoc2
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc2 NewDesignator=C12_amplifier.SchDoc2
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc3 NewDesignator=C7_amplifier.SchDoc3
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc3 NewDesignator=C11_amplifier.SchDoc3
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc3 NewDesignator=C12_amplifier.SchDoc3
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc4 NewDesignator=C7_amplifier.SchDoc4
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc4 NewDesignator=C11_amplifier.SchDoc4
+Change Component Designator: OldDesignator=C?_amplifier.SchDoc4 NewDesignator=C12_amplifier.SchDoc4
+Added Pin To Net: NetName=GND_A Pin=C11_amplifier.SchDoc1-1
+Added Pin To Net: NetName=-V5 Pin=C11_amplifier.SchDoc1-2
+Added Pin To Net: NetName=GND_A Pin=C11_amplifier.SchDoc2-1
+Added Pin To Net: NetName=-V5 Pin=C11_amplifier.SchDoc2-2
+Added Pin To Net: NetName=GND_A Pin=C11_amplifier.SchDoc3-1
+Added Pin To Net: NetName=-V5 Pin=C11_amplifier.SchDoc3-2
+Added Pin To Net: NetName=GND_A Pin=C11_amplifier.SchDoc4-1
+Added Pin To Net: NetName=-V5 Pin=C11_amplifier.SchDoc4-2
+Added Pin To Net: NetName=GND_A Pin=C12_amplifier.SchDoc1-1
+Added Pin To Net: NetName=-V5 Pin=C12_amplifier.SchDoc1-2
+Added Pin To Net: NetName=GND_A Pin=C12_amplifier.SchDoc2-1
+Added Pin To Net: NetName=-V5 Pin=C12_amplifier.SchDoc2-2
+Added Pin To Net: NetName=GND_A Pin=C12_amplifier.SchDoc3-1
+Added Pin To Net: NetName=-V5 Pin=C12_amplifier.SchDoc3-2
+Added Pin To Net: NetName=GND_A Pin=C12_amplifier.SchDoc4-1
+Added Pin To Net: NetName=-V5 Pin=C12_amplifier.SchDoc4-2
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component C7_amplifier.SchDoc1 (C7) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component C7_amplifier.SchDoc2 (C7) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component C7_amplifier.SchDoc3 (C7) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component C7_amplifier.SchDoc4 (C7) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component C11_amplifier.SchDoc1 (C11) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component C11_amplifier.SchDoc2 (C11) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component C11_amplifier.SchDoc3 (C11) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component C11_amplifier.SchDoc4 (C11) 100nF

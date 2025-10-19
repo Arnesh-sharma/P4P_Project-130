@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SolutionVectorDescription creator="Es-Solver">
+  <Field>
+    <Boundary>magnetic; magnetic; magnetic; magnetic; magnetic; magnetic</Boundary>
+    <Frequency>0</Frequency>
+    <Symmetry>none; none; none</Symmetry>
+    <Type>E-Field</Type>
+  </Field>
+  <Mesh>
+    <BBox>-5.2000000019637902; 5.2000000019637902; -5.8000000000000007; 5.8000000000000007; -0.40000000000000002; 0.43500000000000005</BBox>
+    <File>3d.slim</File>
+    <GeomScale>0.001</GeomScale>
+    <Type>Tet</Type>
+  </Mesh>
+</SolutionVectorDescription>

@@ -1,0 +1,15 @@
+esf6_s1(PCB1)/Nets/NONE:ESF6_S1.GBR
+0
+1
+esf6_s2(PCB2)/Nets/NONE:ESF6_S2.GBR
+0
+1
+esf6_gnd(PCB3)/Nets/NONE:ESF6_GND.GBR
+0
+1
+esf6_source(PCB4)/Nets/NONE:ESF6_SOURCE.GBR
+0
+1
+substrate:substrate
+0
+1

@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc1_1 Pin=U4_amplifier.SchDoc1-2
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-3
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-5
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc1_1 Pin=U4_amplifier.SchDoc1-6
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-7
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc2_1 Pin=U4_amplifier.SchDoc2-2
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-3
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-5
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc2_1 Pin=U4_amplifier.SchDoc2-6
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-7
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc3_1 Pin=U4_amplifier.SchDoc3-2
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-3
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-5
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc3_1 Pin=U4_amplifier.SchDoc3-6
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-7
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-1
+Removed Pin From Net: NetName=NetC1_amplifier.SchDoc4_1 Pin=U4_amplifier.SchDoc4-2
+Removed Pin From Net: NetName=NetC16_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-3
+Removed Pin From Net: NetName=NetC17_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-5
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc4_1 Pin=U4_amplifier.SchDoc4-6
+Removed Pin From Net: NetName=NetC4_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-7
+Added Component: Designator=C14_amplifier.SchDoc1(ECE-CAPC1608-0603SM)
+Added Component: Designator=C14_amplifier.SchDoc2(ECE-CAPC1608-0603SM)
+Added Component: Designator=C14_amplifier.SchDoc3(ECE-CAPC1608-0603SM)
+Added Component: Designator=C14_amplifier.SchDoc4(ECE-CAPC1608-0603SM)
+Added Component: Designator=C18_amplifier.SchDoc1(ECE-CAPC1608-0603SM)
+Added Component: Designator=C18_amplifier.SchDoc2(ECE-CAPC1608-0603SM)
+Added Component: Designator=C18_amplifier.SchDoc3(ECE-CAPC1608-0603SM)
+Added Component: Designator=C18_amplifier.SchDoc4(ECE-CAPC1608-0603SM)
+Added Pin To Net: NetName=+V5 Pin=C14_amplifier.SchDoc1-1
+Added Pin To Net: NetName=GND Pin=C14_amplifier.SchDoc1-2
+Added Pin To Net: NetName=+V5 Pin=C14_amplifier.SchDoc2-1
+Added Pin To Net: NetName=GND Pin=C14_amplifier.SchDoc2-2
+Added Pin To Net: NetName=+V5 Pin=C14_amplifier.SchDoc3-1
+Added Pin To Net: NetName=GND Pin=C14_amplifier.SchDoc3-2
+Added Pin To Net: NetName=+V5 Pin=C14_amplifier.SchDoc4-1
+Added Pin To Net: NetName=GND Pin=C14_amplifier.SchDoc4-2
+Added Pin To Net: NetName=GND Pin=C18_amplifier.SchDoc1-1
+Added Pin To Net: NetName=-V5 Pin=C18_amplifier.SchDoc1-2
+Added Pin To Net: NetName=GND Pin=C18_amplifier.SchDoc2-1
+Added Pin To Net: NetName=-V5 Pin=C18_amplifier.SchDoc2-2
+Added Pin To Net: NetName=GND Pin=C18_amplifier.SchDoc3-1
+Added Pin To Net: NetName=-V5 Pin=C18_amplifier.SchDoc3-2
+Added Pin To Net: NetName=GND Pin=C18_amplifier.SchDoc4-1
+Added Pin To Net: NetName=-V5 Pin=C18_amplifier.SchDoc4-2
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-1
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc1_1 Pin=U4_amplifier.SchDoc1-2
+Added Pin To Net: NetName=NetC17_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-3
+Added Pin To Net: NetName=NetC16_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-5
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc1_1 Pin=U4_amplifier.SchDoc1-6
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc1_2 Pin=U4_amplifier.SchDoc1-7
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-1
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc2_1 Pin=U4_amplifier.SchDoc2-2
+Added Pin To Net: NetName=NetC17_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-3
+Added Pin To Net: NetName=NetC16_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-5
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc2_1 Pin=U4_amplifier.SchDoc2-6
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc2_2 Pin=U4_amplifier.SchDoc2-7
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-1
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc3_1 Pin=U4_amplifier.SchDoc3-2
+Added Pin To Net: NetName=NetC17_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-3
+Added Pin To Net: NetName=NetC16_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-5
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc3_1 Pin=U4_amplifier.SchDoc3-6
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc3_2 Pin=U4_amplifier.SchDoc3-7
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-1
+Added Pin To Net: NetName=NetC4_amplifier.SchDoc4_1 Pin=U4_amplifier.SchDoc4-2
+Added Pin To Net: NetName=NetC17_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-3
+Added Pin To Net: NetName=NetC16_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-5
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc4_1 Pin=U4_amplifier.SchDoc4-6
+Added Pin To Net: NetName=NetC1_amplifier.SchDoc4_2 Pin=U4_amplifier.SchDoc4-7
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component C14_amplifier.SchDoc1 (C14) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component C14_amplifier.SchDoc2 (C14) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component C14_amplifier.SchDoc3 (C14) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component C14_amplifier.SchDoc4 (C14) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc1 Member=Component C18_amplifier.SchDoc1 (C18) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc2 Member=Component C18_amplifier.SchDoc2 (C18) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc3 Member=Component C18_amplifier.SchDoc3 (C18) 100nF
+Added Member To Class: ClassName=amplifier.SchDoc4 Member=Component C18_amplifier.SchDoc4 (C18) 100nF
+Added Member To Class: ClassName=main Member=Component P2 ISP
