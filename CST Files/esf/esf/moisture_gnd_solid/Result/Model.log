@@ -1,0 +1,133 @@
+2025-07-13 11:10:50   Electrostatic Solver
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:50   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  MHz
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:50   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: magnetic
+                        Xmax: magnetic
+
+                        Ymin: magnetic
+                        Ymax: magnetic
+
+                        Zmin: magnetic
+                        Zmax: magnetic
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:50   *** Warning ***
+
+                      This software is licensed for non-commercial use only.
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:50   --- Material prioritization table with "ElectricConductivity" scheme was used
+                      ---
+                       - PEC
+                       - moisture_B_Cu(PCB2)/PEC Sheets
+                       - moisture_F_Cu(PCB1)/PEC Sheets
+                       - moisture_gnd(PCB1)/PEC Sheets
+                       - moisture_gnd_hatched(PCB3)/PEC Sheets
+                       - moisture_gnd_solid(PCB3)/PEC Sheets
+                       - moisture_s1(PCB2)/PEC Sheets
+                       - moisture_s1_0(PCB1)/PEC Sheets
+                       - moisture_s2(PCB2)/PEC Sheets
+                       - Copper (annealed)
+                       - moisture_B_Cu(PCB2)/Copper
+                       - moisture_B_Cu(PCB2)/VIAS_MATERIAL
+                       - moisture_F_Cu(PCB1)/Copper
+                       - moisture_F_Cu(PCB1)/VIAS_MATERIAL
+                       - moisture_gnd(PCB1)/Copper
+                       - moisture_gnd(PCB1)/VIAS_MATERIAL
+                       - moisture_gnd_hatched(PCB3)/Copper
+                       - moisture_gnd_hatched(PCB3)/VIAS_MATERIAL
+                       - moisture_gnd_solid(PCB3)/Copper
+                       - moisture_gnd_solid(PCB3)/VIAS_MATERIAL
+                       - moisture_s1(PCB2)/Copper
+                       - moisture_s1(PCB2)/VIAS_MATERIAL
+                       - moisture_s1_0(PCB1)/Copper
+                       - moisture_s1_0(PCB1)/VIAS_MATERIAL
+                       - moisture_s2(PCB2)/Copper
+                       - moisture_s2(PCB2)/VIAS_MATERIAL
+                       - $CoilMaterial$
+                       - $NFSMaterial$
+                       - Air
+                       - FR-4 (loss free)
+                       - air_0
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:53   Solver started at: 2025-07-13 11:10:53 +1200
+
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2024.5 Release from 2024-06-14 (change 1285309)
+
+                        Hardware:
+                           Computer name: EN461026
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:53   Solver order = 2
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:53   Detected 3 independent conductive sets.
+2025-07-13 11:10:53   Desired accuracy = 1.0e-062025-07-13 11:10:53   
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:53   Using mesh with curved elements order: 3
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Capacitance computation
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Solver Timing Statistics: (last run)
+
+                        Mesh generation:                  0d :  0h :  0m :  2s
+                        Assembling process:               0d :  0h :  0m :  0s
+                        Linear solver:                    0d :  0h :  0m :  0s
+                                                       --------------------------
+                        Total time:                       0d :  0h :  0m :  2s
+
+                        Number of threads used:           1024 
+
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Solver Size Statistics:
+
+                        Number of mesh cells:         45118 
+                        Number of unknowns:           52369
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Linear Solver Results: (last run)
+
+                        Accuracy:                     8.771530e-07
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         15
+                        Maximum number of iterations: 10000
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Memory statistics:
+
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        14572                         15295092     15291792     
+                        Solver run total    91636                         15278032     15202468     
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-07-13 11:10:54   Creating parametric 1D results for Run ID 1
+
+                      ------------------------------------------------------------------------------

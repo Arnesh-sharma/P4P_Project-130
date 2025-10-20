@@ -1,0 +1,28 @@
+# Archived Data Folder Contents
+
+This folder contains archived data from early-stage testing. 
+This data is not relevant to the final project and should be ignored for analysis.
+
+## 25_07_25
+Contains old testing data for:
+* Electret BeeSpy sensors
+* JFET (Vero board) sensors
+
+**Note:** This data is archived because it is not relevant. The Electret BeeSpy data in this folder was collected *before* connections were secured with the RJ45 adapter and is therefore not valid.
+
+## archived_instrumentation_amp_raw_data
+Contains raw oscilloscope waveform captures (as .csv and .txt files) of the capacitive sensor with the instrumentation amplifier. This data is not relevant to the final project.
+
+**File Naming Convention:**
+The number in the filename (e.g., `inst_15`) indicates the frequency of the 5Vpp sinusoidal test signal used.
+* `inst_10`: 10 Hz test signal
+* `inst_15`: 15 Hz test signal
+* `inst_25`: 25 Hz test signal
+* `inst_60`: 60 Hz test signal
+* `inst_100`: 100 Hz test signal
+* `inst_150`: 150 Hz test signal
+
+## electret stuff
+Contains old, invalid data from the Electret BeeSpy sensors.
+
+**Note:** This data was collected *before* securing the sensor connections with the RJ45 adapter and is not valid.

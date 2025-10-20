@@ -1,0 +1,155 @@
+[10:32:03] -------- TetMesher Log --------
+[10:32:03] Build Number: 20240614; ID: 2024.5 Release from 2024-06-14 (change 1285309); Date: 2024-06-14; ACIS version: 33.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: Low Frequency
+[10:32:03] Temporary directory: "C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf8grid\Temp\15-temp.tet"
+[10:32:03] - Reading information
+[10:32:03] - Building single body
+[10:32:03] Found 1703 faces.
+[10:32:03] Choosing Advanced Boolean Loop...
+[10:32:03] Volume Attributes disabled
+[10:32:03] Sorted out 1 special bodies.
+[10:32:03] Processing 35 entities.
+[10:32:03] Queue Size: 1
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #1 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #2 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #3 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #4 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #5 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #6 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #7 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #8 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #9 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #10 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #11 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #12 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #13 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #14 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #15 out of 17)
+[10:32:03] Combining solid esf8grid_s1(PCB1)/Nets/NONE:ESF8GRID_S1.GBR and solid esf8grid_s2(PCB2)/Nets/NONE:ESF8GRID_S2.GBR (Pair #16 out of 17)
+[10:32:03] Combining solid Substrate:PPREG and solid esf8grid-gnd(PCB3)/Nets/NONE:ESF8GRID-GND.GBR (Pair #17 out of 17)
+[10:32:03] Processing 18 entities.
+[10:32:03] Queue Size: 1
+[10:32:03] Combining Compound Body and Compound Body (Pair #1 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #2 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #3 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #4 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #5 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #6 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #7 out of 9)
+[10:32:03] Combining Compound Body and solid bee:bee (Pair #8 out of 9)
+[10:32:03] Combining Compound Body and Compound Body (Pair #9 out of 9)
+[10:32:03] Processing 9 entities.
+[10:32:03] Queue Size: 1
+[10:32:03] Combining Compound Body and Compound Body (Pair #1 out of 4)
+[10:32:03] Combining Compound Body and Compound Body (Pair #2 out of 4)
+[10:32:03] Combining Compound Body and Compound Body (Pair #3 out of 4)
+[10:32:03] Adding Compound Body to Compound Body (Pair #4 out of 4)
+[10:32:03] Processing 5 entities.
+[10:32:03] Queue Size: 1
+[10:32:03] Combining Compound Body and Compound Body (Pair #1 out of 2)
+[10:32:04] Adding Compound Body to Compound Body (Pair #2 out of 2)
+[10:32:04] Processing 3 entities.
+[10:32:04] Queue Size: 1
+[10:32:04] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[10:32:04] Processing 2 entities.
+[10:32:04] Queue Size: 1
+[10:32:04] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[10:32:04] Exiting Boolean Unite Module.
+[10:32:04] Added Compound Body (ID: 55, 1, 82, 6868, 430, 2038, 5755, 8902, 2572, 715, 7570, 7909, 181, 970, 8236, 8563, 3076, 4084, 4339, 9568, 2827, 3835, 5392, 9241, 2323, 3331, 5029, 6130, 1468, 3580, 4684, 7231, 1219, 1753, 6505) to model
+[10:32:04] Added background material (ID: 28) to model
+[10:32:04] - Storing model cells
+[10:32:04] [CADSurf] - Mesh sizes: global mesh size near to model = 9.0410000000000001e-01
+              min requested = 9.0410000000000001e-01
+              max requested = 4.5205000000000002e+00
+[10:32:04] [CADSurf] MeshGems Version: MeshGems-Core 2.15-1
+[10:32:04] [CADSurf] === Begin: PreCAD-related parameters ===
+[10:32:04] [CADSurf] == CADSurf Parameters == 
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "use_precad",  "yes")
+[10:32:04] [CADSurf] Bounding box diagonal = 9.6176675056897238e+01
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "remove_nano_edges",  "0")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_topology",  "0")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "process_3d_topology",  "0")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_2d_topology",  "0")
+[10:32:04] [CADSurf] Default periodic tolerance (1e-4*diag) = 9.6176675056897244e-03
+[10:32:04] [CADSurf] Minimum periodic tolerance = 1.0000000000000001e-05
+[10:32:04] [CADSurf] Setting it to max( 1.0000000000000001e-05, 9.6176675056897244e-03 )
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "periodic_tolerance",  "0.0096176675056897244")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "remove_duplicate_cad_faces",  "0")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_uv_edges",  "0")
+[10:32:04] [CADSurf] === End: PreCAD-related parameters ===
+[10:32:04] [CADSurf] ==
+[10:32:04] [CADSurf] == CADSurf Parameters == 
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[10:32:04] [CADSurf] 	 Max user size    = 4.5205000000000002e+00
+[10:32:04] [CADSurf] 	 Global size near = 9.0410000000000001e-01
+[10:32:04] [CADSurf] 	 Global size far  = 4.5205000000000002e+00
+[10:32:04] [CADSurf] 	 Upper size bound = 4.5205000000000002e+00
+[10:32:04] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "4.5205000000000002")
+[10:32:04] [CADSurf] 	Calculating min. mesh size for CADSurf...
+[10:32:04] [CADSurf] 	Diagonal of model + background box: 9.6176675056897238e+01
+[10:32:04] [CADSurf] 	Min. mesh size by diagonal (1e-3 x diagonal): 9.6176675056897240e-02
+[10:32:04] [CADSurf] 	Diagonal of model: 6.3246761379536267e+01
+[10:32:05] [CADSurf] 	Min. mesh size of model: 9.0410000000000001e-01
+[10:32:05] [CADSurf] 	Max. cell defined by user (near to model): 9.0410000000000001e-01
+[10:32:05] [CADSurf] 	Min. cell defined by user: 0.0000000000000000e+00
+[10:32:05] [CADSurf] 	Min. cell used for calculation: 9.0410000000000004e-03
+[10:32:05] [CADSurf] 	Note: min. mesh size by diagonal is too large, consider using (0.01 x max. cell = 9.0410000000000004e-03)
+[10:32:05] [CADSurf] Geometric refinement uses "min_size" setting.
+[10:32:05] [CADSurf] CADSurf "min_size" is set to min. cell: 9.0410000000000004e-03
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "0.0090410000000000004")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "local")
+[10:32:05] [CADSurf] Setting Triangle as default element type
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "1.5")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "1")
+[10:32:05] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[10:32:05] [CADSurf] ==
+[10:32:10] [CADSurf] Status: OK
+[10:32:10] [CADSurf] Number of intersecting edges: 0, total edge count: 21430
+[10:32:10] [CADSurf] Number of intersecting faces: 0
+[10:32:10] [CADSurf] - Mesh stats: N=39709, E=21430, T=88767, Q=0
+[10:32:10] [CADSurf] Testing watertightness
+[10:32:11] [CADSurf] - OK
+[10:32:11] Creating volume mesh from surface mesh
+[10:32:11] [SrfToVol] Volume meshing: 8 threads will be allocated
+[10:32:11] [SrfToVol] Running CVM
+[10:32:11] [SrfToVol] Surface to volume mesh: verifying input data
+[10:32:11] [SrfToVol] Not meshed regions = 9859 9860 9861 9862 9863 9864 9865 9866 9867 9868 9869 9870 9871 9872 9873 9874 9875 9876 9877 9878 9879 9880 9881 9882 9883 9884 9885 9886 9887 9888 9889 9890 9891 9892 
+
+[10:32:11] [SrfToVol] Generate volume mesh for 2 subdomains using 8 threads 
+ 
+[10:32:15] [SrfToVol] Assembling volume mesh
+[10:32:15] [SrfToVol] Volume mesh generated - Status = ok
+[10:32:15] [SrfToVol] - Volume mesh stats: Nb nodes = 86369, Nb edges = 21430, Nb surface elements = 88767, Nb tets = 451073
+[10:32:15] Skipping creation of mesh topology. Using CAD topology.
+[10:32:15] Writing ACIS sat.tet file because UIDs may have changed.
+[10:32:16] Using generalized mesh output routines.
+[10:32:16] Writing Bc file
+[10:32:16] Running model geometry simplification... 
+[10:32:16] Model geometry simplification: 0 seconds
+[10:32:16] Writing topot.tet...
+[10:32:16] Done (topot.tet)
+[10:32:16] Writing moegeom.tet ...
+[10:32:16] Done (moegeom.tet) 
+[10:32:17] Creating volume mesh from surface mesh - done
+[10:32:17] Writing gex file for volume mesh
+[10:32:17] Mesh curving:
+[10:32:17]     available cores:   8
+[10:32:17]     number of threads: 8
+[10:32:17] Curving elements
+[10:32:17]  Curve elements, order = 3
+
+[10:32:21] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[10:32:21] Done

@@ -1,0 +1,267 @@
+{
+    "!v": 1,
+    "decimate": false,
+    "max_value": 1.1754943508222875e-38,
+    "min_value": 3.4028234663852886e+38,
+    "num_elements": 25178,
+    "tesselation": [
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 0,
+                "length": 20460
+            },
+            "normals": {
+                "filename": "E-Field (Js) (Contour Plot)000.normals",
+                "from": 0,
+                "length": 20460
+            },
+            "triangleIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 0,
+                "length": 34272
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 20460,
+                "length": 22221
+            },
+            "normals": {
+                "filename": "E-Field (Js) (Contour Plot)000.normals",
+                "from": 20460,
+                "length": 22221
+            },
+            "triangleIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 34272,
+                "length": 37458
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 42681,
+                "length": 2748
+            },
+            "normals": {
+                "filename": "E-Field (Js) (Contour Plot)000.normals",
+                "from": 42681,
+                "length": 2748
+            },
+            "triangleIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 71730,
+                "length": 1902
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 45429,
+                "length": 2748
+            },
+            "normals": {
+                "filename": "E-Field (Js) (Contour Plot)000.normals",
+                "from": 45429,
+                "length": 2748
+            },
+            "triangleIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 73632,
+                "length": 1902
+            }
+        },
+        {
+            "color": [
+                0.0,
+                0.0,
+                0.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 48177,
+                "length": 3318
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 75534,
+                "length": 2204
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                0.0,
+                0.0,
+                0.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 51495,
+                "length": 3486
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 77738,
+                "length": 2316
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                0.0,
+                0.0,
+                0.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 54981,
+                "length": 456
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 80054,
+                "length": 288
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                0.0,
+                0.0,
+                0.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 55437,
+                "length": 456
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 80342,
+                "length": 288
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 55893,
+                "length": 3318
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 80630,
+                "length": 2204
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 59211,
+                "length": 3486
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 82834,
+                "length": 2316
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 62697,
+                "length": 456
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 85150,
+                "length": 288
+            },
+            "triangleIndices": null
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                255.0
+            ],
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 63153,
+                "length": 456
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 85438,
+                "length": 288
+            },
+            "triangleIndices": null
+        },
+        {
+            "coordinates": {
+                "filename": "E-Field (Js) (Contour Plot)000.coords",
+                "from": 63609,
+                "length": 48177
+            },
+            "lineIndices": {
+                "filename": "E-Field (Js) (Contour Plot)000.indices",
+                "from": 85726,
+                "length": 75398
+            },
+            "triangleIndices": null
+        }
+    ],
+    "unit": ""
+}

@@ -1,6 +1,5 @@
 # Project 130: Motion Detection of Bees Using Electrostatic Sensors
 #### Researchers: Jayti Pattni & Arnesh Sharma
-
 ---
 
 ## Project Details
@@ -19,16 +18,18 @@ This folder holds the code and the project files for using the Capacitive Sensin
 This folder contains code and CAD files for the custom CoreXY used for the demo and calibration for this project. 
 
 ### `Experimental_cap_sense`
-This folder contains the code and project files for another PSoC-based capacitive sensing technique using the relaxation oscillator. 
+This folder contains the code and project files for another PSoC-based capacitive sensing technique using the relaxation oscillator. It also includes the LT_Spice folder, this folder consists of LT Spice files used to simulate some of the sensors, such as the relaxation oscillator, for this project. 
 
-### `LT_SPICE`
-This folder consists of LT Spice files used to simulate some of the sensors, such as the relaxation oscillator, for this project. 
+### `Notes_&_Deliverables`
+Contains notes from meetings and experimental ideas
 
-### `Matlab_Diode`
-This folder contains the files to plot the readings received from Putty for the diode + Capacitive sensor configuration. 
+### `Matlab Code`
+This folder contains the files to plot the readings received from Putty, scope data, and psoc plotters for the diode, Capacitive sensor configuration, FFT analysis.
 
-### `Old_Sensor/analogReadSerial`
-The code to read from the BeeSpy Sensors.
+This also inclu demonstration matlab code for the capacitive sensor with instrumentation amplifier that shows a heat map of intensity and gives a live fft.
+
+### `BeeSpy Arduino Code`
+This folder contains arduino code to read from the BeeSpy Sensors.
 
 ### `PCBs`
 This folder contains the PCB projects for the sensors used for this project. It included: 
@@ -38,25 +39,16 @@ This folder contains the PCB projects for the sensors used for this project. It 
 - A PCB with multiple circuits that connect to the capacitive sensor
 
 ### `Photos`
-This folder includes the photos of the test rig and the Faraday cage. 
-
-### `Raw_Data`
-This folder holds the data obtained from the observation hive testing. 
+This folder includes the photos of the test rig and the Faraday cage. Also contains are folder 'photos of sensors' which consists of the photos of the sensors developed throughout this project. 
 
 ### `Testing Data`
 This folder contains the files of the data collected from laboratory testing, with a few images on how the tests were set up. 
 
-### `cst`
+### `CST Files`
 This folder contains CST Studio files used to simulate and test the capacitive sensors. 
 
 ### `laser_cutting_files`
 This folder contains the laser-cut files for the acrylic test rig. 
-
-### `old_sesnors`
-Another folder that is used for reading the data readings of the old BeeSpy sensors. 
-
-### `photos of sensors`
-This folder consists of the photos of the sensors developed throughout this project. 
 
 ---
 

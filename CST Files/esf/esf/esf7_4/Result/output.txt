@@ -1,0 +1,1003 @@
+_______________________________________________________________________________________________________________________
+    Message output from C:\Users\npat025\OneDrive - The University of Auckland\mystuff\cst\esf\esf7_4
+    Build: 2024.5 Release from 2024-06-14 (change 1285309)
+_______________________________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+For an optimal performance, hyper threading is ignored for parallel computations.
+_______________________________________________________________________________________________________________________
+WARNING:
+This software is licensed for non-commercial use only.
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+Electrostatic Solver (2nd order)
+_______________________________________________________________________________________________________________________
+Detected 9 independent conductive sets.
+
+_______________________________________________________________________________________________________________________
+Desired accuracy = 1.0e-06
+_______________________________________________________________________________________________________________________
+Step		Residual
+_______________________________________________________________________________________________________________________
+
+0		1.000000e+00
+_______________________________________________________________________________________________________________________
+
+24		8.028457e-07
+_______________________________________________________________________________________________________________________
+Capacitance computation
+_______________________________________________________________________________________________________________________
+Electrostatic Solver successful
+_______________________________________________________________________________________________________________________
+Creating parametric 1D results for Run ID 1
+_______________________________________________________________________________________________________________________
+WARNING:
+1 warning occurred.
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+For an optimal performance, hyper threading is ignored for parallel computations.
+_______________________________________________________________________________________________________________________
+WARNING:
+This software is licensed for non-commercial use only.
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+Electrostatic Solver (2nd order)
+_______________________________________________________________________________________________________________________
+Detected 9 independent conductive sets.
+
+_______________________________________________________________________________________________________________________
+Desired accuracy = 1.0e-06
+_______________________________________________________________________________________________________________________
+Step		Residual
+_______________________________________________________________________________________________________________________
+
+0		1.000000e+00
+_______________________________________________________________________________________________________________________
+
+26		6.675079e-07
+_______________________________________________________________________________________________________________________
+Capacitance computation
+_______________________________________________________________________________________________________________________
+Electrostatic Solver successful
+_______________________________________________________________________________________________________________________
+Creating parametric 1D results for Run ID 1
+_______________________________________________________________________________________________________________________
+WARNING:
+1 warning occurred.
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+For an optimal performance, hyper threading is ignored for parallel computations.
+_______________________________________________________________________________________________________________________
+WARNING:
+This software is licensed for non-commercial use only.
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+Electrostatic Solver (2nd order)
+_______________________________________________________________________________________________________________________
+Detected 9 independent conductive sets.
+
+_______________________________________________________________________________________________________________________
+Desired accuracy = 1.0e-06
+_______________________________________________________________________________________________________________________
+Step		Residual
+_______________________________________________________________________________________________________________________
+
+0		1.000000e+00
+_______________________________________________________________________________________________________________________
+
+25		9.734289e-07
+_______________________________________________________________________________________________________________________
+Capacitance computation
+_______________________________________________________________________________________________________________________
+Electrostatic Solver successful
+_______________________________________________________________________________________________________________________
+Creating parametric 1D results for Run ID 1
+_______________________________________________________________________________________________________________________
+WARNING:
+1 warning occurred.
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+The length ratio between the shortest and the longest model edges is 1:1674. Short model edges can be highlighted via <a href="35888.menu">Mesh:Mesh Control->Check Mesh->Check Model Edge Length...</a>. (It may be advantageous to model the metallizations as infinitely thin sheets.) <a href="2103;2385.htm">More...</a>
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+For some elements the curvature had to be reduced to maintain the quality of the mesh. <a href="2085;2365.htm">More...</a>
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+For an optimal performance, hyper threading is ignored for parallel computations.
+_______________________________________________________________________________________________________________________
+WARNING:
+This software is licensed for non-commercial use only.
+_______________________________________________________________________________________________________________________
+--- Material prioritization table with "ElectricConductivity" scheme was used ---
+ - PEC
+ - esf1-B_Cu_0(PCB2)/PEC Sheets
+ - esf1-F_Cu_0(PCB1)/PEC Sheets
+ - esf6-B(PCB4)/PEC Sheets
+ - esf6-F(PCB3)/PEC Sheets
+ - esf7_gnd(PCB3)/PEC Sheets
+ - esf7_s1(PCB1)/PEC Sheets
+ - esf7_s2(PCB2)/PEC Sheets
+ - Copper (annealed)
+ - esf1-B_Cu_0(PCB2)/Copper
+ - esf1-B_Cu_0(PCB2)/VIAS_MATERIAL
+ - esf1-F_Cu_0(PCB1)/Copper
+ - esf1-F_Cu_0(PCB1)/VIAS_MATERIAL
+ - esf6-B(PCB4)/Copper
+ - esf6-B(PCB4)/VIAS_MATERIAL
+ - esf6-F(PCB3)/Copper
+ - esf6-F(PCB3)/VIAS_MATERIAL
+ - esf7_gnd(PCB3)/Copper
+ - esf7_gnd(PCB3)/VIAS_MATERIAL
+ - esf7_s1(PCB1)/Copper
+ - esf7_s1(PCB1)/VIAS_MATERIAL
+ - esf7_s2(PCB2)/Copper
+ - esf7_s2(PCB2)/VIAS_MATERIAL
+ - $CoilMaterial$
+ - $NFSMaterial$
+ - Air
+ - FR-4 (lossy)
+ - Folder1/material1
+ - air_0
+
+_______________________________________________________________________________________________________________________
+Meshing successful
+_______________________________________________________________________________________________________________________
+Electrostatic Solver (2nd order)
+_______________________________________________________________________________________________________________________
+Detected 9 independent conductive sets.
+
+_______________________________________________________________________________________________________________________
+Desired accuracy = 1.0e-06
+_______________________________________________________________________________________________________________________
+Step		Residual
+_______________________________________________________________________________________________________________________
+
+0		1.000000e+00
+_______________________________________________________________________________________________________________________
+
+25		9.588517e-07
+_______________________________________________________________________________________________________________________
+Capacitance computation
+_______________________________________________________________________________________________________________________
+Electrostatic Solver successful
+_______________________________________________________________________________________________________________________
+Creating parametric 1D results for Run ID 1
+_______________________________________________________________________________________________________________________
+WARNING:
+1 warning occurred.

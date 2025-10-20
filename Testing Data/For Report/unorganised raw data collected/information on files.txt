@@ -1,0 +1,101 @@
+# Waveform (WFM) Data File Information
+## Electret BeeSpy Sensor Tests
+
+### Electret Plate Test - 3.3V
+WFM01: E.CH1 #1
+WFM02: E.CH1 #2
+WFM03: E.CH2 #1
+WFM04: E.CH2 #2
+WFM05: E.CH3 #1
+WFM06: E.CH3 #2
+WFM07: E.CH4 #1
+WFM08: E.CH4 #2
+WFM09: E.CH5 #1
+WFM10: E.CH5 #2
+WFM11: E.CH6 #1
+WFM12: E.CH6 #2
+
+### Electret Point Test
+WFM13: E.CH1 #1
+WFM14: E.CH1 #2
+WFM15: E.CH2 #1
+WFM16: E.CH2 #2
+WFM17: E.CH3 #1
+WFM18: E.CH3 #2
+WFM19: E.CH4 #1
+WFM20: E.CH4 #2
+WFM21: E.CH5 #1
+WFM22: E.CH5 #2
+WFM23: E.CH6 #1
+WFM24: E.CH6 #2 
+
+## JFET BeeSpy 5 Sensor Tests
+
+### JFET BeeSpy Channel Mapping:
+#1 -> Sensor 0
+#2 -> Sensor 1
+#3 -> Sensor 3
+#4 -> Sensor 2
+#5 -> Sensor 4
+#6 -> Sensor 5
+
+### JFET Point Test - 5.0V - Centre
+WFM25: JB.CH1 #1 (Sensor 0)
+WFM26: JB.CH1 #2 (Sensor 0)
+WFM27: JB.CH2 #1 (Sensor 1)
+WFM28: JB.CH2 #2 (Sensor 1)
+WFM29: JB.CH3 #1 (Sensor 3)
+WFM30: JB.CH3 #2 (Sensor 3)
+WFM31: JB.CH4 #1 (Sensor 2)
+WFM32: JB.CH4 #2 (Sensor 2)
+WFM33: JB.CH5 #1 (Sensor 4)
+WFM34: JB.CH5 #2 (Sensor 4)
+WFM35: JB.CH6 #1 (Sensor 5)
+WFM36: JB.CH6 #2 (Sensor 5)
+
+### JFET Plate Test - Centre
+WFM37: JBJ.CH1 #1 (Sensor 0)
+WFM38: JBJ.CH1 #2 (Sensor 0)
+WFM39: J.CH2 #1 (Sensor 1)
+WFM40: J.CH2 #2 (Sensor 1)
+WFM41: J.CH3 #1 (Sensor 3)
+WFM42: J.CH3 #2 (Sensor 3)
+WFM43: J.CH4 #1 (Sensor 2)
+WFM44: J.CH4 #2 (Sensor 2)
+WFM45: J.CH5 #1 (Sensor 4)
+WFM46: J.CH5 #2 (Sensor 4)
+WFM47: J.CH6 #1 (Sensor 5)
+WFM48: J.CH6 #2 (Sensor 5)
+
+## Other Sensor Prototype Tests
+### 25 Capacitive Sensor with Instrumentation Amplifier, parallel plate test, only one channel was tested (bottom right corner)
+WFM49: 25IA #1 (invalid)
+WFM50: 25IA #2
+WFM51: 25IA #3
+
+### JFET Vero Board Prototype
+WFM52: FET Vero Self biasing #CH1
+WFM53: FET Vero Self biasing #CH2
+
+### Capacitive Sensor Array (25-Sensor Board) Tests run in the Beehive
+(25IA Sensor board test)
+WFM54: CH1 (Bottom Left) & CH2 (Top Right)
+WFM55: CH1 (Bottom Left) & CH2 (Bottom Right)
+WFM56: CH1 (Bottom Right) & CH2 (Centre) 
+       * NOTE: CH1 has offset at -600mV
+WFM57: CH1 (Bottom Right) & CH2 (Centre)
+WFM59: CH1 (Centre) & CH2 (Top Left)
+WFM60: CH1 (Centre) & CH2 (Bottom Left)
+
+### Capacitive Sensor Array (25-Sensor Board) Tests run in lab
+### Point test, the 1cm copper plate was placed in the centre of the board
+WFM58: Centre
+WFM61: BL (Bottom Left)
+WFM62: TL (Top Left)
+WFM63: TR (Top Right)
+WFM64: BR (Bottom Right)
+
+# Plate test, only the bottom 3 sensor data was taken 
+WFM65: Bottom Right right CH8
+WFM66: Bottom right CH2
+WFM67: Bottom centre CH3

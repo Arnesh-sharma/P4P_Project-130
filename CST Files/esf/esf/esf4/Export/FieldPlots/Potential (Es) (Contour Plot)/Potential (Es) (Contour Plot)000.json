@@ -1,0 +1,124 @@
+{
+    "!v": 1,
+    "decimate": false,
+    "max_value": 50.00000762939453,
+    "min_value": 0.0,
+    "num_elements": 12362,
+    "tesselation": [
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                50.999996185302734
+            ],
+            "coordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.coords",
+                "from": 0,
+                "length": 426
+            },
+            "normals": {
+                "filename": "Potential (Es) (Contour Plot)000.normals",
+                "from": 0,
+                "length": 426
+            },
+            "triangleIndices": {
+                "filename": "Potential (Es) (Contour Plot)000.indices",
+                "from": 0,
+                "length": 432
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                50.999996185302734
+            ],
+            "coordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.coords",
+                "from": 426,
+                "length": 426
+            },
+            "normals": {
+                "filename": "Potential (Es) (Contour Plot)000.normals",
+                "from": 426,
+                "length": 426
+            },
+            "triangleIndices": {
+                "filename": "Potential (Es) (Contour Plot)000.indices",
+                "from": 432,
+                "length": 426
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                50.999996185302734
+            ],
+            "coordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.coords",
+                "from": 852,
+                "length": 3456
+            },
+            "normals": {
+                "filename": "Potential (Es) (Contour Plot)000.normals",
+                "from": 852,
+                "length": 3456
+            },
+            "triangleIndices": {
+                "filename": "Potential (Es) (Contour Plot)000.indices",
+                "from": 858,
+                "length": 2706
+            }
+        },
+        {
+            "color": [
+                204.0,
+                204.0,
+                204.0,
+                50.999996185302734
+            ],
+            "coordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.coords",
+                "from": 4308,
+                "length": 3456
+            },
+            "normals": {
+                "filename": "Potential (Es) (Contour Plot)000.normals",
+                "from": 4308,
+                "length": 3456
+            },
+            "triangleIndices": {
+                "filename": "Potential (Es) (Contour Plot)000.indices",
+                "from": 3564,
+                "length": 2706
+            }
+        },
+        {
+            "coordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.coords",
+                "from": 7764,
+                "length": 16938
+            },
+            "normals": {
+                "filename": "Potential (Es) (Contour Plot)000.normals",
+                "from": 7764,
+                "length": 16938
+            },
+            "textureCoordinates": {
+                "filename": "Potential (Es) (Contour Plot)000.texcoords",
+                "from": 0,
+                "length": 5646
+            },
+            "triangleIndices": {
+                "filename": "Potential (Es) (Contour Plot)000.indices",
+                "from": 6270,
+                "length": 30816
+            }
+        }
+    ],
+    "unit": "V"
+}

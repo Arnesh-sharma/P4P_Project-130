@@ -1,0 +1,14 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "d1",
+         "type": "float",
+         "value": 0.0
+      }
+   ],
+   "outputVariables": []
+}

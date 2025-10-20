@@ -1,0 +1,21 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [],
+   "outputVariables": [
+      {
+         "len": 1,
+         "name": "3D\\E-Field (50) (Arrows Plot)",
+         "type": "float",
+         "value": 1.0
+      },
+      {
+         "len": 1,
+         "name": "3D\\E-Field (Js) (Contour Plot)",
+         "type": "float",
+         "value": 1.0
+      }
+   ]
+}

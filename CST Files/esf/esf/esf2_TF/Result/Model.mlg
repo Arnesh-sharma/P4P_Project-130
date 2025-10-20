@@ -1,0 +1,125 @@
+Electrostatic Solver - Adaptive Computation
+----------------------------------------------------------------------
+Pass: 1
+----------------------------------------------------------------------
+      Number of mesh cells:        44515
+      Number of unknowns:          67815
+      Timing:
+               System assembling:   0h :  0m :  0s
+               Linear solver:       0h :  0m :  0s
+               Error estimation:    0h :  0m :  0s
+
+      Energy:                      4.82467e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 2
+----------------------------------------------------------------------
+      Number of mesh cells:        57395
+      Number of unknowns:          86186
+      Timing:
+               Mesh adaptation:     0h :  0m :  1s
+               System assembling:   0h :  0m :  0s
+               Linear solver:       0h :  0m :  0s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    0.000247985
+      Energy:                      4.82348e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 3
+----------------------------------------------------------------------
+      Number of mesh cells:        77279
+      Number of unknowns:          114854
+      Timing:
+               Mesh adaptation:     0h :  0m :  0s
+               System assembling:   0h :  0m :  0s
+               Linear solver:       0h :  0m :  0s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    0.000161388
+      Energy:                      4.8227e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 4
+----------------------------------------------------------------------
+      Number of mesh cells:        102817
+      Number of unknowns:          151013
+      Timing:
+               Mesh adaptation:     0h :  0m :  0s
+               System assembling:   0h :  0m :  1s
+               Linear solver:       0h :  0m :  0s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    0.000104567
+      Energy:                      4.82219e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 5
+----------------------------------------------------------------------
+      Number of mesh cells:        139185
+      Number of unknowns:          203463
+      Timing:
+               Mesh adaptation:     0h :  0m :  1s
+               System assembling:   0h :  0m :  1s
+               Linear solver:       0h :  0m :  0s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    7.92483e-05
+      Energy:                      4.82181e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 6
+----------------------------------------------------------------------
+      Number of mesh cells:        188487
+      Number of unknowns:          273431
+      Timing:
+               Mesh adaptation:     0h :  0m :  1s
+               System assembling:   0h :  0m :  2s
+               Linear solver:       0h :  0m :  1s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    5.08088e-05
+      Energy:                      4.82157e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 7
+----------------------------------------------------------------------
+      Number of mesh cells:        248811
+      Number of unknowns:          360773
+      Timing:
+               Mesh adaptation:     0h :  0m :  1s
+               System assembling:   0h :  0m :  2s
+               Linear solver:       0h :  0m :  1s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    3.7991e-05
+      Energy:                      4.82138e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Pass: 8
+----------------------------------------------------------------------
+      Number of mesh cells:        338346
+      Number of unknowns:          488116
+      Timing:
+               Mesh adaptation:     0h :  0m :  2s
+               System assembling:   0h :  0m :  3s
+               Linear solver:       0h :  0m :  2s
+               Error estimation:    0h :  0m :  0s
+
+      Relative estimated error:    2.93862e-05
+      Energy:                      4.82124e-11 J
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+Total adaptive computation time:  0h :  0m : 30s
+
+Maximum number of passes reached, mesh adaptation stopped.
+----------------------------------------------------------------------
+

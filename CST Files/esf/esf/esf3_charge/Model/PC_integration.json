@@ -1,0 +1,15 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [],
+   "outputVariables": [
+      {
+         "len": 1,
+         "name": "3D\\Potential (Es) (Contour Plot)",
+         "type": "float",
+         "value": 1.0
+      }
+   ]
+}

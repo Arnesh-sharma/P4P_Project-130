@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchematicTopology Version="2.5" Seed="1" Grid="25">
+    <Block Id="1" ForeignId="1306996649" Class="EMSSCHEM" ImageIndex="1">
+        <Size Height="375" Width="300"/>
+        <Pins Distribution="TwoSidesDownward">
+            <Pin Index="0" Port="0" BlockPosition="Left">
+                <Label>potential:Vframe1<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="2" Port="1" BlockPosition="Left">
+                <Label>potential:Vsense1<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="0" Port="2" BlockPosition="Right">
+                <Label>potential:Vsense2<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="1" Port="3" BlockPosition="Left">
+                <Label>potential:Vframe1'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="3" Port="4" BlockPosition="Left">
+                <Label>potential:Vsense1'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Pin Index="1" Port="5" BlockPosition="Right">
+                <Label>potential:Vsense2'<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Left Top">
+                        <Font PointSize="16"/>
+                    </LabelAppearance>
+                </Label>
+            </Pin>
+            <Ports>
+                <Port Name="potential:Vframe1" Label="" Differential="3"/>
+                <Port Name="potential:Vsense1" Label="" Differential="4"/>
+                <Port Name="potential:Vsense2" Label="" Differential="5"/>
+                <Port Name="potential:Vframe1'" Label=""/>
+                <Port Name="potential:Vsense1'" Label=""/>
+                <Port Name="potential:Vsense2'" Label=""/>
+            </Ports>
+        </Pins>
+        <Image IconPosition="TopRight" FileName="../3D/Model.dib" Scale="AutoFit">
+            <Size Height="256" Width="256"/>
+        </Image>
+        <Pos X="75" Y="-12.5"/>
+        <ToolTip>CST EM STUDIO schematic block EMSSCHEM1</ToolTip>
+    </Block>
+</SchematicTopology>
